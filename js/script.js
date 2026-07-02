@@ -16,7 +16,7 @@ function sendReservation(event) {
   const infos = document.getElementById("message").value;
 
   const message =
-    "🚖 Nouvelle réservation Twins Fab Cab Service VTC\n\n" +
+    "🚖 Demande de Réservation\n\n" +
     "👤 Nom : " + nom + "\n" +
     "📞 Téléphone : " + telephone + "\n" +
     "📧 Email : " + email + "\n\n" +
