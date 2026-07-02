@@ -1,1 +1,94 @@
-<html><head><link rel='stylesheet' href='style.css'></head><body><h1>Réservation</h1></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation | Twins Fab Cab Service VTC</title>
+  <meta name="description" content="Réservez votre chauffeur VTC à Lille avec Twins Fab Cab Service VTC.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <h1>Twins Fab Cab Service VTC</h1>
+      <p>Votre chauffeur privé à Lille</p>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="flotte.html">Notre Véhicule</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section-label">Réservation</p>
+    <h2>Réservez votre chauffeur VTC</h2>
+    <p>Demande de réservation minimum 24 heures avant le départ.</p>
+    <p class="minimum">⭐ Tarif minimum : 30 €</p>
+  </div>
+</section>
+
+<section class="booking">
+  <div class="container">
+    <form class="booking-form" onsubmit="sendReservation(event)">
+
+      <input type="text" id="nom" placeholder="Votre nom complet" required>
+      <input type="tel" id="telephone" placeholder="Téléphone" required>
+      <input type="email" id="email" placeholder="Email">
+
+      <input type="text" id="depart" placeholder="Adresse de départ" required>
+      <input type="text" id="destination" placeholder="Destination" required>
+
+      <input type="date" id="date" required>
+      <input type="time" id="heure" required>
+
+      <select id="passagers" required>
+        <option value="">Nombre de passagers</option>
+        <option>1 passager</option>
+        <option>2 passagers</option>
+        <option>3 passagers</option>
+        <option>4 passagers</option>
+      </select>
+
+      <select id="paiement">
+        <option value="">Mode de paiement souhaité</option>
+        <option>Espèces</option>
+        <option>Carte bancaire</option>
+        <option>Virement bancaire</option>
+      </select>
+
+      <textarea id="message" placeholder="Informations complémentaires"></textarea>
+
+      <button type="submit" class="btn">Envoyer ma demande</button>
+
+      <p class="form-note">
+        Le tarif définitif sera communiqué après étude de votre demande.
+      </p>
+
+    </form>
+  </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/33621144767" target="_blank">WhatsApp</a>
+
+<footer>
+  <p class="copyright">© 2026 Twins Fab Cab Service VTC – Tous droits réservés.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
