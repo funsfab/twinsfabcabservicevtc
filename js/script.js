@@ -29,7 +29,7 @@ function sendReservation(event) {
     "📝 Informations : " + infos;
 
   const numero = "33621144767";
-
+alert("Votre demande de réservation va s’ouvrir dans WhatsApp.");
   window.location.href =
     "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
 }
