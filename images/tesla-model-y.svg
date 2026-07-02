@@ -1,0 +1,18 @@
+<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="420" fill="white"/>
+  <ellipse cx="455" cy="350" rx="330" ry="35" fill="#eeeeee"/>
+  <path d="M165 260 C210 175, 305 130, 450 125 C585 120, 690 165, 750 245 L805 260 C835 268, 850 290, 840 315 L823 338 H95 L75 315 C65 292, 88 268, 120 263 Z" fill="#111"/>
+  <path d="M245 245 C285 175, 345 145, 455 145 C560 145, 645 178, 710 245 Z" fill="#1f2937"/>
+  <path d="M278 235 C315 175, 365 160, 452 160 L443 235 Z" fill="#dbeafe"/>
+  <path d="M465 160 C555 160, 620 188, 675 235 L468 235 Z" fill="#dbeafe"/>
+  <path d="M130 275 C155 260, 205 255, 250 258" stroke="#c89216" stroke-width="8" stroke-linecap="round"/>
+  <path d="M675 258 C725 252, 775 260, 805 278" stroke="#c89216" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="235" cy="335" r="48" fill="#050505"/>
+  <circle cx="235" cy="335" r="24" fill="#c89216"/>
+  <circle cx="235" cy="335" r="12" fill="#111"/>
+  <circle cx="675" cy="335" r="48" fill="#050505"/>
+  <circle cx="675" cy="335" r="24" fill="#c89216"/>
+  <circle cx="675" cy="335" r="12" fill="#111"/>
+  <rect x="390" y="270" width="120" height="35" rx="6" fill="#f8f8f8"/>
+  <text x="450" y="293" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#111">TWINS FAB</text>
+</svg>
