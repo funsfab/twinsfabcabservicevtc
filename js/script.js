@@ -17,7 +17,6 @@ function sendReservation(event) {
 
   const message =
 `📋 *Demande de Réservation*
-
 👤 Nom : ${nom}
 📞 Téléphone : ${telephone}
 📧 Email : ${email}
