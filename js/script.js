@@ -16,18 +16,23 @@ function sendReservation(event) {
   const infos = document.getElementById("message").value;
 
   const message =
-    "🚖 Demande de Réservation\n\n" +
-    "👤 Nom : " + nom + "\n" +
-    "📞 Téléphone : " + telephone + "\n" +
-    "📧 Email : " + email + "\n\n" +
-    "📍 Départ : " + depart + "\n" +
-    "🎯 Destination : " + destination + "\n\n" +
-    "📅 Date : " + date + "\n" +
-    "🕒 Heure : " + heure + "\n\n" +
-    "👥 Passagers : " + passagers + "\n" +
-    "💳 Paiement : " + paiement + "\n\n" +
-    "📝 Informations : " + infos;
+`📋 *Demande de Réservation*
 
+👤 Nom : ${nom}
+📞 Téléphone : ${telephone}
+📧 Email : ${email}
+
+📍 Départ : ${depart}
+🎯 Destination : ${destination}
+
+📅 Date : ${date}
+🕒 Heure : ${heure}
+
+👥 Passagers : ${passagers}
+💳 Paiement : ${paiement}
+
+📝 Informations :
+${infos}`;
   const numero = "33621144767";
 alert("Votre demande de réservation va s’ouvrir dans WhatsApp.");
   window.location.href =
