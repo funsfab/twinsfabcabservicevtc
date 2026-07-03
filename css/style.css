@@ -494,3 +494,10 @@ display:none;
     text-align:center;
     white-space:nowrap;
 }
+
+.booking-form select,
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
