@@ -501,3 +501,21 @@ display:none;
   width: 100%;
   font-family: 'Poppins', sans-serif;
 }
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d4af37, #f4d03f);
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(212,175,55,0.3);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(212,175,55,0.45);
+}
