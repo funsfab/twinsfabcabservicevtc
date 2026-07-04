@@ -37,3 +37,16 @@ alert("Votre demande de réservation va s’ouvrir dans WhatsApp.");
   window.location.href =
     "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
 }
+
+function estimerTarif() {
+  const depart = document.getElementById("estDepart").value;
+  const destination = document.getElementById("estDestination").value;
+  const resultat = document.getElementById("tarifResultat");
+
+  if (depart === "" || destination === "") {
+    resultat.innerHTML = "Veuillez renseigner le départ et la destination.";
+    return;
+  }
+
+  resultat.innerHTML = "Tarif estimé : entre 45 € et 60 €";
+}
