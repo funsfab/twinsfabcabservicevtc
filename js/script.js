@@ -46,7 +46,7 @@ function estimerTarif() {
   if (depart === "" || destination === "") {
     resultat.innerHTML = "Veuillez renseigner le départ et la destination.";
     return;
-  }
 
-  resultat.innerHTML = "Tarif estimé : entre 45 € et 60 €";
+    resultat.innerHTML =
+"Tarif estimé : entre 30 € et 60 €<br><small>*Le tarif définitif sera confirmé après étude de votre trajet.</small>";
 }
