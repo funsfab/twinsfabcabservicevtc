@@ -44,6 +44,19 @@
 
 <section class="booking">
   <div class="container">
+    <div class="fare-estimator">
+  <h3>🚖 Estimez votre tarif</h3>
+  <p>Obtenez une estimation rapide avant votre demande.</p>
+
+  <input type="text" id="estDepart" placeholder="Adresse de départ">
+  <input type="text" id="estDestination" placeholder="Destination">
+
+  <button type="button" onclick="estimerTarif()" class="estimate-btn">
+    Estimer le tarif
+  </button>
+
+  <p id="tarifResultat" class="tarif-resultat"></p>
+</div>
     <form class="booking-form" onsubmit="sendReservation(event)">
 
       <input type="text" id="nom" placeholder="Votre nom complet" required>
