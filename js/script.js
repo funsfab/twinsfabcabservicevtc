@@ -37,7 +37,6 @@ alert("Votre demande de réservation va s’ouvrir dans WhatsApp.");
   window.location.href =
     "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
 }
-
 function estimerTarif() {
   const depart = document.getElementById("estDepart").value;
   const destination = document.getElementById("estDestination").value;
@@ -46,7 +45,7 @@ function estimerTarif() {
   if (depart === "" || destination === "") {
     resultat.innerHTML = "Veuillez renseigner le départ et la destination.";
     return;
+  }
 
-    resultat.innerHTML =
-"Tarif estimé : entre 30 € et 60 €<br><small>*Le tarif définitif sera confirmé après étude de votre trajet.</small>";
+  resultat.innerHTML = `Tarif estimé : entre 30 € et 60 €<br><small>*Le tarif définitif sera confirmé après étude de votre trajet.</small>`;
 }
