@@ -588,3 +588,32 @@ display:none;
   line-height: 1.5;
   color: #555;
 }
+
+.reviews {
+  padding: 70px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.reviews-subtitle {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.review-card {
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 18px;
+  margin: 18px 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+
+.review-card p {
+  font-size: 17px;
+  line-height: 1.6;
+}
