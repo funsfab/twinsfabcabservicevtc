@@ -14,6 +14,7 @@ function sendReservation(event) {
   const passagers = document.getElementById("passagers").value;
   const paiement = document.getElementById("paiement").value;
   const infos = document.getElementById("message").value;
+const tarifEstime = document.getElementById("tarifResultat").innerText;
 
   const message =
 `📋 *Demande de Réservation*
@@ -31,6 +32,7 @@ function sendReservation(event) {
 💳 Paiement : ${paiement}
 
 📝 Informations :
+💶 Tarif estimé : ${tarifEstime}
 ${infos}`;
   const numero = "33621144767";
 alert("Votre demande de réservation va s’ouvrir dans WhatsApp.");
