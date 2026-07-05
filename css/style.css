@@ -617,3 +617,38 @@ display:none;
   font-size: 17px;
   line-height: 1.6;
 }
+
+.why-us{
+    padding:70px 20px;
+    background:#f8f8f8;
+}
+
+.why-us h2{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:40px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+.why-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.why-card h3{
+    color:#c99700;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#555;
+    line-height:1.6;
+}
