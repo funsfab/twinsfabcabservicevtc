@@ -38,14 +38,16 @@ alert("Votre demande de réservation va s’ouvrir dans WhatsApp.");
     "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
 }
 function estimerTarif() {
-  const depart = document.getElementById("estDepart").value;
-  const destination = document.getElementById("estDestination").value;
+  const km = Number(document.getElementById("estKm").value);
   const resultat = document.getElementById("tarifResultat");
 
-  if (depart === "" || destination === "") {
-    resultat.innerHTML = "Veuillez renseigner le départ et la destination.";
+  if (!km || km <= 0) {
+    resultat.innerHTML = "Veuillez entrer une distance valide en kilomètres.";
     return;
   }
 
-  resultat.innerHTML = `Tarif estimé : entre 30 € et 60 €<br><small>*Le tarif définitif sera confirmé après étude de votre trajet.</small>`;
+  const prix = Math.max(30, km * 2);
+
+  resultat.innerHTML =
+    `Tarif estimé : ${prix.toFixed(0)} €<br><small>*Le tarif définitif sera confirmé après étude de votre trajet.</small>`;
 }
