@@ -32,7 +32,7 @@ const tarifEstime = document.getElementById("tarifResultat").innerText;
 💳 Paiement : ${paiement}
 
 📝 Informations :
-💶 Tarif estimé : ${tarifEstime}
+💶 ${tarifEstime}
 ${infos}`;
   const numero = "33621144767";
 alert("Votre demande de réservation va s’ouvrir dans WhatsApp.");
