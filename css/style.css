@@ -652,3 +652,17 @@ display:none;
     color:#555;
     line-height:1.6;
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section,
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
