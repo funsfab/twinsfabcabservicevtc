@@ -666,3 +666,29 @@ section,
   max-width: 100%;
   overflow-x: hidden;
 }
+
+.whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 99999;
+}
+
+.call-float {
+  position: fixed;
+  right: 25px;
+  bottom: 95px;
+  z-index: 99999;
+}
+
+@media (max-width: 600px) {
+  .whatsapp {
+    right: 25px;
+    bottom: 25px;
+  }
+
+  .call-float {
+    right: 25px;
+    bottom: 95px;
+  }
+}
