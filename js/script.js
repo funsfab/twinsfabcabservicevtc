@@ -34,10 +34,8 @@ const tarifEstime = document.getElementById("tarifResultat").innerText;
 📝 Informations :
 💶 ${tarifEstime}
 ${infos}`;
-  const numero = "33621144767";
-alert("Votre demande de réservation va s’ouvrir dans WhatsApp.");
-  window.location.href =
-    "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
+  reservationMessage = message;
+openContactModal();
 }
 function estimerTarif() {
   const km = Number(document.getElementById("estKm").value);
