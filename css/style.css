@@ -937,7 +937,7 @@ html {
 .hero-image img {
   display: block;
   width: 100%;
-  animation: teslaSlowZoom 10s ease-in-out infinite alternate;
+  animation: teslaSlowZoom 12s ease-in-out infinite;
   transform-origin: center;
 }
 
