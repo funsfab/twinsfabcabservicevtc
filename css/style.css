@@ -1089,34 +1089,30 @@ html {
     }
 }
 
-/* ===== Keep booking button and minimum price together ===== */
+/* ===== Button and tariff grouped together on laptop ===== */
 
 .hero-content .btn {
-  display: inline-block;
+  display: block;
+  width: fit-content;
 }
 
 .hero-content .minimum {
   display: block;
   width: fit-content;
-  margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
 /* Laptop */
 @media (min-width: 769px) {
   .hero-content {
-    text-align: center;
+    text-align: left;
   }
 
   .hero-content .btn {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 28px auto 0;
   }
 
   .hero-content .minimum {
-    margin-top: 14px;
+    margin: 14px auto 0;
   }
 }
-
