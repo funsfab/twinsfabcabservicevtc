@@ -1088,3 +1088,35 @@ html {
         transform: translateY(0px) scale(1);
     }
 }
+
+/* ===== Keep booking button and minimum price together ===== */
+
+.hero-content .btn {
+  display: inline-block;
+}
+
+.hero-content .minimum {
+  display: block;
+  width: fit-content;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-content .minimum {
+    margin-top: 14px;
+  }
+}
+
