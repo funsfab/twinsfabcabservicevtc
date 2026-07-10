@@ -985,3 +985,65 @@ html {
     gap: 40px;
   }
 }
+
+/* ===== Twins Fab Cab logo ===== */
+
+.brand-line {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-mark {
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #c99510;
+  border-radius: 50%;
+
+  background: #111;
+  color: #d4a017;
+
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+}
+
+.brand-text h1 {
+  margin: 0;
+}
+
+.brand-text p {
+  margin: 4px 0 0;
+}
+
+/* Phone */
+@media (max-width: 768px) {
+  .brand-line {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .brand-mark {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+    font-size: 17px;
+  }
+
+  .brand-text h1 {
+    font-size: clamp(22px, 6vw, 31px);
+    line-height: 1.08;
+  }
+
+  .brand-text p {
+    font-size: 16px;
+  }
+}
