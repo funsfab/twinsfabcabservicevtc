@@ -808,3 +808,36 @@ section,
     padding: 34px 18px 22px;
   }
 }
+/* ===== Smooth animations ===== */
+
+.btn,
+.service-card,
+.airport-card,
+.review-card,
+.contact-card {
+    transition: all 0.35s ease;
+}
+
+/* Cards lift slightly */
+.service-card:hover,
+.airport-card:hover,
+.review-card:hover,
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+/* Buttons */
+.btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(201,149,16,.35);
+}
+
+/* Mobile touch effect */
+.btn:active,
+.service-card:active,
+.airport-card:active,
+.review-card:active,
+.contact-card:active {
+    transform: scale(.98);
+}
