@@ -127,39 +127,58 @@ function estimerTarif() {
     `Tarif estimé : ${prix.toFixed(0)} €<br><small>*Le tarif définitif sera confirmé après étude de votre trajet.</small>`;
 }
 
-const counters = document.querySelectorAll(".counter");
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll(".counter");
 
-const counterObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
+  counters.forEach(function (counter) {
+    const target = Number(counter.dataset.target);
+    let intervalId = null;
+    let restartId = null;
 
-      const counter = entry.target;
-      const target = Number(counter.dataset.target);
+    function stopCounter() {
+      clearInterval(intervalId);
+      clearTimeout(restartId);
+
+      intervalId = null;
+      restartId = null;
+    }
+
+    function runCounter() {
+      stopCounter();
+
       let current = 0;
-      const duration = 1200;
-      const interval = 40;
-      const step = target / (duration / interval);
+      counter.textContent = current;
 
-      const timer = setInterval(() => {
-        current += step;
+      intervalId = setInterval(function () {
+        current++;
+        counter.textContent = current;
 
         if (current >= target) {
-          counter.textContent = target;
-          clearInterval(timer);
-        } else {
-          counter.textContent = Math.floor(current);
+          clearInterval(intervalId);
+
+          restartId = setTimeout(function () {
+            runCounter();
+          }, 1200);
         }
-      }, interval);
+      }, 300);
+    }
 
-      observer.unobserve(counter);
-    });
-  },
-  {
-    threshold: 0.6
-  }
-);
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            runCounter();
+          } else {
+            stopCounter();
+            counter.textContent = "0";
+          }
+        });
+      },
+      {
+        threshold: 0.4
+      }
+    );
 
-counters.forEach((counter) => {
-  counterObserver.observe(counter);
+    observer.observe(counter);
+  });
 });
