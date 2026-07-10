@@ -927,3 +927,33 @@ section,
 html {
   scroll-behavior: smooth;
 }
+
+/* ===== Slow Tesla image zoom ===== */
+
+.hero-image {
+  overflow: hidden;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  animation: teslaSlowZoom 10s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes teslaSlowZoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.03);
+  }
+}
+
+/* Reduce animation for visitors who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-image img {
+    animation: none;
+  }
+}
