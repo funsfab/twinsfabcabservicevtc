@@ -126,3 +126,40 @@ function estimerTarif() {
   resultat.innerHTML =
     `Tarif estimé : ${prix.toFixed(0)} €<br><small>*Le tarif définitif sera confirmé après étude de votre trajet.</small>`;
 }
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      const counter = entry.target;
+      const target = Number(counter.dataset.target);
+      let current = 0;
+      const duration = 1200;
+      const interval = 40;
+      const step = target / (duration / interval);
+
+      const timer = setInterval(() => {
+        current += step;
+
+        if (current >= target) {
+          counter.textContent = target;
+          clearInterval(timer);
+        } else {
+          counter.textContent = Math.floor(current);
+        }
+      }, interval);
+
+      observer.unobserve(counter);
+    });
+  },
+  {
+    threshold: 0.6
+  }
+);
+
+counters.forEach((counter) => {
+  counterObserver.observe(counter);
+});
