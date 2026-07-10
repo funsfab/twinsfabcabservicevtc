@@ -131,7 +131,52 @@
     </form>
   </div>
 </section>
+  
+<!-- Fenêtre de choix du moyen de communication -->
+<div id="contactModal" class="contact-modal" aria-hidden="true">
+  <div class="contact-modal-box">
 
+    <button
+      type="button"
+      class="contact-modal-close"
+      onclick="closeContactModal()"
+      aria-label="Fermer"
+    >
+      ×
+    </button>
+
+    <h2>Choisissez votre moyen de communication</h2>
+
+    <p>
+      Votre demande de réservation est prête.<br>
+      Comment souhaitez-vous nous contacter ?
+    </p>
+
+    <div class="contact-options">
+
+      <button type="button" class="contact-choice whatsapp-choice"
+              onclick="sendByWhatsApp()">
+        🟢 WhatsApp
+      </button>
+
+      <button type="button" class="contact-choice"
+              onclick="contactByPhone()">
+        📞 Téléphone
+      </button>
+
+      <button type="button" class="contact-choice"
+              onclick="sendBySms()">
+        💬 SMS
+      </button>
+
+      <button type="button" class="contact-choice"
+              onclick="sendByEmail()">
+        ✉️ E-mail
+      </button>
+
+    </div>
+  </div>
+</div>
   <a class="whatsapp" href="https://wa.me/33621144767" target="_blank" aria-label="WhatsApp">💬</a>
 <a href="tel:+33621144767" class="call-float" aria-label="Appeler">📞</a>
 <footer>
