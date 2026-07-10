@@ -965,3 +965,23 @@ html {
     animation: none;
   }
 }
+
+
+/* ===== Hero section spacing ===== */
+
+.hero {
+  padding: 70px 6%;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Phone layout */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+}
