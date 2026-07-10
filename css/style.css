@@ -879,3 +879,48 @@ section,
     left: 140%;
   }
 }
+
+/* ===== Interactive cards: phone and laptop ===== */
+
+.feature-card,
+.card,
+.airports .features > div,
+.engagements .features > div {
+  position: relative;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  will-change: transform;
+}
+
+/* Laptop: effect when the mouse passes over a card */
+@media (hover: hover) and (pointer: fine) {
+  .feature-card:hover,
+  .card:hover,
+  .airports .features > div:hover,
+  .engagements .features > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.14);
+    border-color: #c99510;
+  }
+}
+
+/* Phone and laptop: effect while pressing */
+.feature-card:active,
+.card:active,
+.airports .features > div:active,
+.engagements .features > div:active {
+  transform: translateY(-3px) scale(0.98);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .feature-card,
+  .card,
+  .airports .features > div,
+  .engagements .features > div {
+    transition: none;
+  }
+}
