@@ -594,14 +594,42 @@ display:none;
   text-align: center;
 }
 
-.reviews h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
+.reviews h2{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 18px;
+
+    background: linear-gradient(
+        90deg,
+        #111111,
+        #c99510,
+        #111111
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .reviews-subtitle {
-  margin-bottom: 30px;
-  color: #555;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+
+    background: linear-gradient(
+        90deg,
+        #c99510,
+        #f5d76e,
+        #c99510
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .review-card {
