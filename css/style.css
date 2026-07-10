@@ -1089,30 +1089,40 @@ html {
     }
 }
 
-/* ===== Button and tariff grouped together on laptop ===== */
+/* ===== Booking button and minimum price together ===== */
 
-.hero-content .btn {
-  display: block;
+.booking-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: fit-content;
+  margin: 28px auto 0;
 }
 
-.hero-content .minimum {
+.booking-group .btn {
   display: block;
-  width: fit-content;
+  margin: 0;
+}
+
+.booking-group .minimum {
+  display: block;
+  width: 100%;
+  margin: 14px 0 0;
   text-align: center;
 }
 
-/* Laptop */
-@media (min-width: 769px) {
-  .hero-content {
-    text-align: left;
+/* Phone */
+@media (max-width: 768px) {
+  .booking-group {
+    width: 100%;
+    margin-top: 6px;
   }
 
-  .hero-content .btn {
-    margin: 28px auto 0;
+  .booking-group .btn {
+    width: 100%;
   }
 
-  .hero-content .minimum {
-    margin: 14px auto 0;
+  .booking-group .minimum {
+    margin-top: 12px;
   }
 }
