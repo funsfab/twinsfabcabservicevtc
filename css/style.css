@@ -981,8 +981,32 @@ html {
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
-    padding: 60px 20px;
-    gap: 40px;
+    padding: 28px 20px 34px;
+    gap: 20px;
+  }
+
+  .hero-content h2 {
+    margin-bottom: 16px;
+    font-size: clamp(42px, 11vw, 58px);
+    line-height: 1.05;
+  }
+
+  .hero-content > p {
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .hero-content .btn {
+    margin-top: 4px;
+    margin-bottom: 12px;
+  }
+
+  .minimum {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
