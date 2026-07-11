@@ -1263,8 +1263,8 @@ html {
   }
 
   .menu-btn {
-    width: 58px;
-    height: 58px;
+width: 42px;
+    height: 42px;
     flex: 0 0 58px;
     margin: 0;
 
@@ -1278,7 +1278,7 @@ html {
     background: #cf950b;
     color: #ffffff;
 
-    font-size: 34px;
+    font-size: 15px;
     line-height: 1;
 
     box-shadow: 0 8px 18px rgba(201, 149, 16, 0.25);
