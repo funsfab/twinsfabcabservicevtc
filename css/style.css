@@ -1627,3 +1627,27 @@ width: 42px;
     border-radius: 16px;
   }
 }
+
+/* ===== Final Tesla caption fit on mobile ===== */
+
+@media (max-width: 768px) {
+  .hero-image img {
+    max-height: 245px !important;
+  }
+
+  .car-caption {
+    margin-top: 8px !important;
+    padding: 0 6px 8px !important;
+    font-size: 12px !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+  }
+
+  .car-caption br {
+    margin-top: 2px !important;
+  }
+
+  .car-caption .counter {
+    display: inline !important;
+  }
+}
