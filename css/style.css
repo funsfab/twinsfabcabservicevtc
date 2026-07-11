@@ -1702,3 +1702,49 @@ width: 42px;
     transform: scale(1.08);
     box-shadow: 0 12px 25px rgba(201,149,16,.35);
 }
+
+/* ===== Premium trust bar ===== */
+
+.trust-bar {
+  padding: 22px 20px;
+  background: #111111;
+  color: #ffffff;
+}
+
+.trust-bar-inner {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.trust-bar-inner div {
+  padding: 12px 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.trust-bar-inner div::first-letter {
+  color: #d4a017;
+}
+
+/* Phone */
+@media (max-width: 768px) {
+  .trust-bar {
+    padding: 16px 14px;
+  }
+
+  .trust-bar-inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .trust-bar-inner div {
+    padding: 9px 5px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
