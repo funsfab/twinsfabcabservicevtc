@@ -1126,3 +1126,13 @@ html {
     margin-top: 12px;
   }
 }
+
+.car-caption{
+    text-align:center;
+    line-height:1.7;
+}
+
+.car-caption br{
+    display:block;
+    margin-top:6px;
+}
