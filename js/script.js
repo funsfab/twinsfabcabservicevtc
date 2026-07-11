@@ -1,5 +1,9 @@
-function toggleMenu(){
-  document.querySelector("nav").classList.toggle("active");
+function toggleMenu() {
+  const nav = document.querySelector("#mainHeader nav");
+
+  if (nav) {
+    nav.classList.toggle("open");
+  }
 }
 function sendReservation(event) {
   event.preventDefault();
