@@ -1184,3 +1184,111 @@ html {
     font-size: 13px;
   }
 }
+
+/* ========================================
+   NEW PREMIUM MOBILE HEADER
+======================================== */
+
+@media (max-width: 768px) {
+
+  #mainHeader {
+    background: #ffffff;
+    width: 100%;
+  }
+
+  #mainHeader .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 18px;
+    gap: 12px;
+  }
+
+  #mainHeader .logo {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .brand-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .brand-mark {
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid #c99510;
+    border-radius: 50%;
+
+    background: #111111;
+    color: #d4a017;
+
+    font-size: 21px;
+    font-weight: 800;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+  }
+
+  .brand-text {
+    min-width: 0;
+    text-align: left;
+  }
+
+  .brand-text h1 {
+    margin: 0;
+    max-width: 230px;
+
+    font-size: 22px;
+    line-height: 1.05;
+    text-align: left;
+  }
+
+  .brand-text p {
+    margin: 6px 0 0;
+
+    color: #b8860b;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .menu-btn {
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #cf950b;
+    color: #ffffff;
+
+    font-size: 34px;
+    line-height: 1;
+
+    box-shadow: 0 8px 18px rgba(201, 149, 16, 0.25);
+  }
+
+  #mainHeader nav {
+    position: absolute;
+    top: 100%;
+    left: 18px;
+    right: 18px;
+    z-index: 1100;
+  }
+}
