@@ -1402,3 +1402,47 @@ width: 42px;
     grid-column: 1 / -1;
   }
 }
+
+/* ===== Premium mobile hero spacing ===== */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 24px 20px 34px !important;
+    gap: 18px !important;
+  }
+
+  .hero-badge {
+    margin-bottom: 10px !important;
+    padding: 8px 14px !important;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-text h2,
+  .hero-content h2 {
+    margin: 0 0 16px !important;
+    font-size: clamp(40px, 10.5vw, 56px) !important;
+    line-height: 1.04 !important;
+  }
+
+  .hero-text > p:not(.hero-badge),
+  .hero-content > p:not(.hero-badge):not(.minimum) {
+    margin-bottom: 18px !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+  }
+
+  .booking-group {
+    margin-top: 8px !important;
+  }
+
+  .booking-group .btn {
+    min-height: 58px;
+  }
+
+  .booking-group .minimum {
+    margin-top: 10px !important;
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+  }
+}
