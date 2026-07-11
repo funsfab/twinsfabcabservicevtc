@@ -182,3 +182,22 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(counter);
   });
 });
+
+/* ===== Header effect while scrolling ===== */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mainHeader = document.getElementById("mainHeader");
+
+  if (!mainHeader) return;
+
+  function updateHeader() {
+    if (window.scrollY > 40) {
+      mainHeader.classList.add("header-scrolled");
+    } else {
+      mainHeader.classList.remove("header-scrolled");
+    }
+  }
+
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
+});
