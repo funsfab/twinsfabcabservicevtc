@@ -1684,3 +1684,21 @@ width: 42px;
     0 18px 40px rgba(0, 0, 0, 0.18),
     0 0 0 1px rgba(201, 149, 16, 0.08);
 }
+/* ===== Premium button animation ===== */
+
+.btn,
+.menu-btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(201,149,16,.35);
+}
+
+.menu-btn:hover,
+.menu-btn:active {
+    transform: scale(1.08);
+    box-shadow: 0 12px 25px rgba(201,149,16,.35);
+}
