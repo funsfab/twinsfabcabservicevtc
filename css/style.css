@@ -1156,3 +1156,31 @@ html {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+
+/* ===== Premium hero badge ===== */
+
+.hero-badge {
+  display: inline-block;
+  margin: 0 0 18px;
+  padding: 9px 16px;
+
+  border: 1px solid rgba(201, 149, 16, 0.35);
+  border-radius: 999px;
+
+  background: rgba(201, 149, 16, 0.08);
+  color: #a97700;
+
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+/* Phone */
+@media (max-width: 768px) {
+  .hero-badge {
+    margin-bottom: 14px;
+    padding: 8px 13px;
+    font-size: 13px;
+  }
+}
