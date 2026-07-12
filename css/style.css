@@ -1849,25 +1849,25 @@ width: 42px;
     font-size: 20px;
   }
 }
-/* ===== Smaller mobile dropdown menu ===== */
+/* ===== Small premium dropdown menu ===== */
 
 @media (max-width: 768px) {
 
   #mainHeader nav {
-    left: 50% !important;
-    right: auto !important;
-    width: calc(100% - 120px) !important;
-    max-width: 360px !important;
-    transform: translate(-50%, -12px) scale(0.98);
-  }
+    right: 14px !important;
+    top: calc(100% + 8px) !important;
 
-  #mainHeader nav.open {
-    transform: translate(-50%, 0) scale(1);
+    width: 240px !important;
+    max-width: 240px !important;
+
+    border-radius: 18px !important;
+    padding: 8px 0 !important;
   }
 
   #mainHeader nav a {
-    padding: 8px 34px 8px 12px !important;
-    font-size: 14px !important;
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
   }
 
   #mainHeader nav ul {
@@ -1875,8 +1875,8 @@ width: 42px;
   }
 
   #mainHeader nav a::after {
-    right: 12px !important;
-    font-size: 18px !important;
+    right: 14px !important;
+    font-size: 16px !important;
   }
 
 }
