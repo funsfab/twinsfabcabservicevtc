@@ -1852,12 +1852,12 @@ width: 42px;
 /* ===== Smaller mobile dropdown menu ===== */
 
 @media (max-width: 768px) {
+
   #mainHeader nav {
     left: 50% !important;
     right: auto !important;
-    width: calc(100% - 70px) !important;
-    max-width: 430px !important;
-
+    width: calc(100% - 120px) !important;
+    max-width: 360px !important;
     transform: translate(-50%, -12px) scale(0.98);
   }
 
@@ -1866,11 +1866,17 @@ width: 42px;
   }
 
   #mainHeader nav a {
-    padding: 10px 42px 10px 14px !important;
-    font-size: 15px !important;
+    padding: 8px 34px 8px 12px !important;
+    font-size: 14px !important;
+  }
+
+  #mainHeader nav ul {
+    gap: 0 !important;
   }
 
   #mainHeader nav a::after {
-    right: 16px !important;
+    right: 12px !important;
+    font-size: 18px !important;
   }
+
 }
