@@ -1,10 +1,37 @@
-function toggleMenu() {
+function toggleMenu(event) {
+  if (event) {
+    event.stopPropagation();
+  }
+
   const nav = document.querySelector("#mainHeader nav");
 
   if (nav) {
     nav.classList.toggle("open");
   }
 }
+document.addEventListener("click", function (event) {
+  const nav = document.querySelector("#mainHeader nav");
+  const menuButton = document.querySelector(".menu-btn");
+
+  if (!nav || !menuButton) return;
+
+  const clickedInsideMenu = nav.contains(event.target);
+  const clickedMenuButton = menuButton.contains(event.target);
+
+  if (!clickedInsideMenu && !clickedMenuButton) {
+    nav.classList.remove("open");
+  }
+});
+
+document.querySelectorAll("#mainHeader nav a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    const nav = document.querySelector("#mainHeader nav");
+
+    if (nav) {
+      nav.classList.remove("open");
+    }
+  });
+});
 function sendReservation(event) {
   event.preventDefault();
 
