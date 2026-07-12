@@ -1880,3 +1880,36 @@ width: 42px;
   }
 
 }
+/* ===== Dropdown directly below gold menu button ===== */
+
+@media (max-width: 768px) {
+
+  #mainHeader .container {
+    position: relative !important;
+  }
+
+  #mainHeader nav {
+    left: auto !important;
+    right: 14px !important;
+    top: calc(100% + 8px) !important;
+
+    width: 280px !important;
+    max-width: calc(100vw - 28px) !important;
+
+    transform: translateY(-10px) scale(0.97) !important;
+    transform-origin: top right !important;
+  }
+
+  #mainHeader nav.open {
+    transform: translateY(0) scale(1) !important;
+  }
+
+  #mainHeader nav a {
+    padding: 9px 36px 9px 14px !important;
+    font-size: 14px !important;
+  }
+
+  #mainHeader nav a::after {
+    right: 13px !important;
+  }
+}
