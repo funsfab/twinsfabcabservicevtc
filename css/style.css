@@ -1849,3 +1849,28 @@ width: 42px;
     font-size: 20px;
   }
 }
+/* ===== Smaller mobile dropdown menu ===== */
+
+@media (max-width: 768px) {
+  #mainHeader nav {
+    left: 50% !important;
+    right: auto !important;
+    width: calc(100% - 70px) !important;
+    max-width: 430px !important;
+
+    transform: translate(-50%, -12px) scale(0.98);
+  }
+
+  #mainHeader nav.open {
+    transform: translate(-50%, 0) scale(1);
+  }
+
+  #mainHeader nav a {
+    padding: 10px 42px 10px 14px !important;
+    font-size: 15px !important;
+  }
+
+  #mainHeader nav a::after {
+    right: 16px !important;
+  }
+}
