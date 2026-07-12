@@ -1975,3 +1975,7 @@ width: 42px;
     bottom: 18px;
   }
 }
+.call-float {
+  background: linear-gradient(135deg, #c99700, #e6b325) !important;
+  color: #ffffff !important;
+}
