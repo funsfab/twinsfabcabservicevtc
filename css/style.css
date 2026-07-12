@@ -1916,3 +1916,62 @@ width: 42px;
     margin-left: 8px !important;
     font-size: 16px !important;
 }
+/* ===== Better floating contact buttons ===== */
+
+.call-float,
+.whatsapp {
+  position: fixed;
+  right: 18px;
+  z-index: 1500;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  font-size: 24px;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.call-float {
+  bottom: 94px;
+}
+
+.whatsapp {
+  bottom: 24px;
+}
+
+.call-float:hover,
+.call-float:active,
+.whatsapp:hover,
+.whatsapp:active {
+  transform: scale(1.08);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+}
+
+/* Phone */
+@media (max-width: 768px) {
+  .call-float,
+  .whatsapp {
+    right: 14px;
+    width: 54px;
+    height: 54px;
+    font-size: 22px;
+  }
+
+  .call-float {
+    bottom: 82px;
+  }
+
+  .whatsapp {
+    bottom: 18px;
+  }
+}
