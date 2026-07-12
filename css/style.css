@@ -1979,3 +1979,6 @@ width: 42px;
   background: linear-gradient(135deg, #c99700, #e6b325) !important;
   color: #ffffff !important;
 }
+html {
+  scroll-behavior: smooth;
+}
