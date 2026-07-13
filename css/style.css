@@ -2022,3 +2022,23 @@ html {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
+
+
+/* ===== Keep mobile menu accessible while scrolling ===== */
+
+@media (max-width: 768px) {
+  .menu-btn {
+    position: fixed !important;
+    top: 18px !important;
+    right: 18px !important;
+    z-index: 5001 !important;
+  }
+
+  #mainHeader nav {
+    position: fixed !important;
+    top: 88px !important;
+    right: 14px !important;
+    left: auto !important;
+    z-index: 5000 !important;
+  }
+}
