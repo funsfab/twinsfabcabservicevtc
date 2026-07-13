@@ -232,3 +232,39 @@ document.addEventListener("DOMContentLoaded", function () {
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
 });
+/* ===== Highlight active menu section ===== */
+
+const sectionLinks = document.querySelectorAll(
+  '#mainHeader nav a[href^="#"]'
+);
+
+const pageSections = document.querySelectorAll(
+  '#home, #services, #vehicule, #apropos, #contact'
+);
+
+const activeSectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      sectionLinks.forEach((link) => {
+        link.classList.remove("active");
+      });
+
+      const activeLink = document.querySelector(
+        `#mainHeader nav a[href="#${entry.target.id}"]`
+      );
+
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
+    });
+  },
+  {
+    threshold: 0.35
+  }
+);
+
+pageSections.forEach((section) => {
+  activeSectionObserver.observe(section);
+});
