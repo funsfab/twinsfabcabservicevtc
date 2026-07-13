@@ -239,14 +239,14 @@ const sectionLinks = document.querySelectorAll(
 );
 
 const pageSections = document.querySelectorAll(
-  '#home, #services, #vehicule, #apropos, #contact'
+  '#accueil, #services, #vehicule, #apropos, #contact'
 );
 
 function updateActiveMenuLink() {
-  let currentSection = "home";
+  let currentSection = "accueil";
   const triggerPoint = window.innerHeight * 0.35;
 
-  pageSections.forEach((section) => {
+  pageSections.forEach(function (section) {
     const sectionTop = section.getBoundingClientRect().top;
 
     if (sectionTop <= triggerPoint) {
@@ -254,10 +254,10 @@ function updateActiveMenuLink() {
     }
   });
 
-  sectionLinks.forEach((link) => {
+  sectionLinks.forEach(function (link) {
     link.classList.remove("active");
 
-    if (link.getAttribute("href") === `#${currentSection}`) {
+    if (link.getAttribute("href") === "#" + currentSection) {
       link.classList.add("active");
     }
   });
