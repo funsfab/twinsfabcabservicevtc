@@ -2010,3 +2010,15 @@ html {
   color: #b8860b !important;
   background: rgba(201, 149, 16, 0.12) !important;
 }
+
+
+/* ===== Keep the header visible while scrolling ===== */
+
+#mainHeader {
+  position: sticky;
+  top: 0;
+  z-index: 3000;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
