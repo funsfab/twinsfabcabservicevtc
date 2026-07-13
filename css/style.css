@@ -1982,3 +1982,24 @@ width: 42px;
 html {
   scroll-behavior: smooth;
 }
+
+/* ===== Correct anchor position under header ===== */
+
+#home,
+#services,
+#vehicule,
+#apropos,
+#contact {
+  scroll-margin-top: 120px;
+}
+
+/* Phone */
+@media (max-width: 768px) {
+  #home,
+  #services,
+  #vehicule,
+  #apropos,
+  #contact {
+    scroll-margin-top: 150px;
+  }
+}
