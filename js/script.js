@@ -242,29 +242,26 @@ const pageSections = document.querySelectorAll(
   '#home, #services, #vehicule, #apropos, #contact'
 );
 
-const activeSectionObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
+function updateActiveMenuLink() {
+  let currentSection = "home";
+  const triggerPoint = window.innerHeight * 0.35;
 
-      sectionLinks.forEach((link) => {
-        link.classList.remove("active");
-      });
+  pageSections.forEach((section) => {
+    const sectionTop = section.getBoundingClientRect().top;
 
-      const activeLink = document.querySelector(
-        `#mainHeader nav a[href="#${entry.target.id}"]`
-      );
+    if (sectionTop <= triggerPoint) {
+      currentSection = section.id;
+    }
+  });
 
-      if (activeLink) {
-        activeLink.classList.add("active");
-      }
-    });
-  },
-  {
-    threshold: 0.35
-  }
-);
+  sectionLinks.forEach((link) => {
+    link.classList.remove("active");
 
-pageSections.forEach((section) => {
-  activeSectionObserver.observe(section);
-});
+    if (link.getAttribute("href") === `#${currentSection}`) {
+      link.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", updateActiveMenuLink);
+window.addEventListener("load", updateActiveMenuLink);
