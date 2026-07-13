@@ -2003,3 +2003,10 @@ html {
     scroll-margin-top: 150px;
   }
 }
+
+/* ===== Active mobile menu link ===== */
+
+#mainHeader nav a.active {
+  color: #b8860b !important;
+  background: rgba(201, 149, 16, 0.12) !important;
+}
