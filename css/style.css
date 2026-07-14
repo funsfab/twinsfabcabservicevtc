@@ -2032,3 +2032,18 @@ html {
   color: #222;
     font-weight: 600;
 }
+
+/* Make date and time text clearly visible */
+.booking-form input[type="date"],
+.booking-form input[type="time"] {
+    color: #222;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Calendar and clock icons */
+.booking-form input[type="date"]::-webkit-calendar-picker-indicator,
+.booking-form input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    cursor: pointer;
+}
