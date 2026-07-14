@@ -2023,4 +2023,12 @@ html {
   -webkit-backdrop-filter: blur(12px);
 }
 
+/* ===== Reservation field labels ===== */
 
+.booking-form .field-label {
+  display: block;
+  margin: 4px 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #8f6b00;
+}
