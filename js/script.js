@@ -50,7 +50,13 @@ const allerRetour = document.getElementById("allerRetour")?.value || "Non préci
   const paiement = document.getElementById("paiement").value;
   const infos = document.getElementById("message").value;
 const tarifEstime = document.getElementById("tarifResultat").innerText;
+const tarifEstime = document.getElementById("tarifEstime").textContent;
 
+alert("Step 1B");
+
+const message = `
+📋 *Demande de Réservation*
+...
   const message =
 `📋 *Demande de Réservation*
 👤 Nom : ${nom}
