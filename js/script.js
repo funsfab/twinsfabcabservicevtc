@@ -60,7 +60,7 @@ const tarifEstime = document.getElementById("tarifResultat")?.textContent || "No
 📍 Départ : ${depart}
 🎯 Destination : ${destination}
 
-📅 Date : ${date}
+📅 Date : ${dateFr}
 🕒 Heure : ${heure}
 
 👥 Passagers : ${passagers}
