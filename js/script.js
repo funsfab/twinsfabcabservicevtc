@@ -47,7 +47,6 @@ const transport = document.getElementById("transport")?.value || "Non précisé"
 const allerRetour = document.getElementById("allerRetour")?.value || "Non précisé";
   const paiement = document.getElementById("paiement").value;
   const infos = document.getElementById("message").value;
-const tarifEstime = document.getElementById("tarifResultat").innerText;
 const tarifEstime =
   document.getElementById("tarifResultat")?.textContent || "Non estimé";
 
