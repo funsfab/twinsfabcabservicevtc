@@ -65,9 +65,9 @@ const tarifEstime = document.getElementById("tarifResultat")?.textContent || "No
 🔁 Type de trajet : ${allerRetour || "Non précisé"}
 ✈️ N° de vol ou de train : ${transport || "Non précisé"}
 💳 Paiement : ${paiement}
-📝 Informations :
-💶 ${tarifEstime}`;
-${infos}`;
+📝 Informations : ${infos || "Aucune"}
+💶 Tarif estimé : ${tarifEstime}
+`;
   reservationMessage = message;
 openContactModal();
 }
