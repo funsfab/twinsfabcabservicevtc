@@ -2115,3 +2115,55 @@ html {
     padding: 26px 20px;
   }
 }
+
+
+/* ===== DESTINATION STRIP ===== */
+
+.destination-strip{
+    overflow-x:auto;
+    padding:15px 0 25px;
+    scrollbar-width:none;
+}
+
+.destination-strip::-webkit-scrollbar{
+    display:none;
+}
+
+.destination-strip-track{
+    display:flex;
+    gap:15px;
+    padding:0 20px;
+}
+
+.destination-chip{
+    min-width:130px;
+    background:#fff;
+    border-radius:18px;
+    padding:18px 14px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    border:1px solid #f1f1f1;
+    transition:.3s;
+}
+
+.destination-chip:hover{
+    transform:translateY(-5px);
+}
+
+.destination-chip span{
+    font-size:28px;
+    display:block;
+    margin-bottom:8px;
+}
+
+.destination-chip strong{
+    display:block;
+    font-size:18px;
+    color:#111;
+    margin-bottom:4px;
+}
+
+.destination-chip small{
+    color:#999;
+    font-size:14px;
+}
