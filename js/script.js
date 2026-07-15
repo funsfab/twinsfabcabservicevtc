@@ -43,9 +43,9 @@ function sendReservation(event) {
   const date = document.getElementById("date").value;
   const heure = document.getElementById("heure").value;
   const passagers = document.getElementById("passagers").value;
-  const bagages = document.getElementById("bagages").value;
-const transport = document.getElementById("transport").value;
-const allerRetour = document.getElementById("allerRetour").value;
+  const bagages = document.getElementById("bagages")?.value || "Non précisé";
+const transport = document.getElementById("transport")?.value || "Non précisé";
+const allerRetour = document.getElementById("allerRetour")?.value || "Non précisé";
   const paiement = document.getElementById("paiement").value;
   const infos = document.getElementById("message").value;
 const tarifEstime = document.getElementById("tarifResultat").innerText;
