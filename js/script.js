@@ -68,6 +68,8 @@ const tarifEstime = document.getElementById("tarifResultat")?.textContent || "No
 📝 Informations : ${infos || "Aucune"}
 💶 Tarif estimé : ${tarifEstime}
 `;
+alert("La demande est prête");
+  
   reservationMessage = message;
 openContactModal();
 }
