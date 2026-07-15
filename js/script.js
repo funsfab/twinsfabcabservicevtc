@@ -34,6 +34,7 @@ document.querySelectorAll("#mainHeader nav a").forEach(function (link) {
 });
 function sendReservation(event) {
   event.preventDefault();
+  alert("Step 1");
 
   const nom = document.getElementById("nom").value;
   const telephone = document.getElementById("telephone").value;
@@ -71,6 +72,7 @@ const tarifEstime = document.getElementById("tarifResultat").innerText;
 💶 ${tarifEstime}
 ${infos}`;
   reservationMessage = message;
+  alert("Step 2");
 openContactModal();
 }
 let reservationMessage = "";
