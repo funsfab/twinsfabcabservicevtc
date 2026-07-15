@@ -62,8 +62,7 @@ const tarifEstime = document.getElementById("tarifResultat").innerText;
 📅 Date : ${date}
 🕒 Heure : ${heure}
 
-👥 Passagers : ${passagers}
-💳 Paiement : ${paiement}
+Passagers : ${passagers}
 
 📝 Informations :
 💶 ${tarifEstime}
