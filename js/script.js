@@ -48,9 +48,6 @@ const allerRetour = document.getElementById("allerRetour")?.value || "Non préci
   const paiement = document.getElementById("paiement").value;
   const infos = document.getElementById("message").value;
 const tarifEstime = document.getElementById("tarifResultat")?.textContent || "Non estimé";
-const message = `
-📋 *Demande de Réservation*
-...
   const message =
 `📋 *Demande de Réservation*
 👤 Nom : ${nom}
@@ -69,7 +66,7 @@ const message = `
 ✈️ N° de vol ou de train : ${transport || "Non précisé"}
 💳 Paiement : ${paiement}
 📝 Informations :
-💶 ${tarifEstime}
+💶 ${tarifEstime}`;
 ${infos}`;
   reservationMessage = message;
 openContactModal();
