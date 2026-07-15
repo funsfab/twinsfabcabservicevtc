@@ -62,9 +62,11 @@ const tarifEstime = document.getElementById("tarifResultat").innerText;
 📅 Date : ${date}
 🕒 Heure : ${heure}
 
-const bagages = document.getElementById("bagages").value;
-const transport = document.getElementById("transport").value;
-const allerRetour = document.getElementById("allerRetour").value;
+👥 Passagers : ${passagers}
+🧳 Bagages : ${bagages || "Non précisé"}
+🔁 Type de trajet : ${allerRetour || "Non précisé"}
+✈️ N° de vol ou de train : ${transport || "Non précisé"}
+💳 Paiement : ${paiement}
 📝 Informations :
 💶 ${tarifEstime}
 ${infos}`;
