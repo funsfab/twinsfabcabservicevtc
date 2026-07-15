@@ -40,6 +40,9 @@ function sendReservation(event) {
   const depart = document.getElementById("depart").value;
   const destination = document.getElementById("destination").value;
   const date = document.getElementById("date").value;
+  const dateFr = date
+  ? date.split("-").reverse().join("/")
+  : "Non précisée";
   const heure = document.getElementById("heure").value;
   const passagers = document.getElementById("passagers").value;
   const bagages = document.getElementById("bagages")?.value || "Non précisé";
