@@ -34,8 +34,6 @@ document.querySelectorAll("#mainHeader nav a").forEach(function (link) {
 });
 function sendReservation(event) {
   event.preventDefault();
-  alert("Step 1");
-
   const nom = document.getElementById("nom").value;
   const telephone = document.getElementById("telephone").value;
   const email = document.getElementById("email").value;
@@ -50,9 +48,8 @@ const allerRetour = document.getElementById("allerRetour")?.value || "Non préci
   const paiement = document.getElementById("paiement").value;
   const infos = document.getElementById("message").value;
 const tarifEstime = document.getElementById("tarifResultat").innerText;
-const tarifEstime = document.getElementById("tarifEstime").textContent;
-
-alert("Step 1B");
+const tarifEstime =
+  document.getElementById("tarifResultat")?.textContent || "Non estimé";
 
 const message = `
 📋 *Demande de Réservation*
@@ -78,7 +75,6 @@ const message = `
 💶 ${tarifEstime}
 ${infos}`;
   reservationMessage = message;
-  alert("Step 2");
 openContactModal();
 }
 let reservationMessage = "";
