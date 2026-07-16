@@ -589,9 +589,9 @@ display:none;
 }
 
 .reviews {
-  padding: 70px 0;
-  background: #fff;
-  text-align: center;
+    padding: 45px 0;
+    background: #fff;
+    text-align: center;
 }
 
 .reviews h2{
@@ -619,7 +619,7 @@ display:none;
     font-weight: 700;
     text-align: center;
     margin-top: 12px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     line-height: 1.6;
 
     background: linear-gradient(
