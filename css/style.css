@@ -599,7 +599,8 @@ display:none;
     font-weight: 800;
     text-align: center;
     margin-bottom: 18px;
-    white-space: nowrap;
+    white-space: normal;
+    line-height: 1.2;
 
     background: linear-gradient(
         90deg,
