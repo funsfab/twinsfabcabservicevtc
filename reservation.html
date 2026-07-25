@@ -1,161 +1,587 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>Réservation | Twins Fab Cab Service VTC</title>
-  <meta name="description" content="Réservez votre chauffeur VTC à Lille avec Twins Fab Cab Service VTC.">
+
+  <meta
+    name="description"
+    content="Réservez votre chauffeur privé VTC à Lille avec Twins Fab Cab Service VTC."
+  >
+
+  <!-- CSS principal -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Icônes Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
 </head>
 
-<body>
+<body class="reservation-page">
 
-<header id="mainHeader">
-  <div class="container">
-    <div class="logo">
-      <h1>Twins Fab Cab Service VTC</h1>
-      <p>Votre chauffeur privé à Lille</p>
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header id="mainHeader" class="premium-header">
+  <div class="container header-inner">
+
+    <a href="#accueil" class="premium-brand" aria-label="Accueil">
+      <div class="premium-brand-mark">
+        TF
+      </div>
+
+      <div class="premium-brand-text">
+        <strong>TWINS FAB CAB<br>SERVICE VTC</strong>
+
+        <span class="brand-subtitle">
+          Votre chauffeur privé à Lille
+        </span>
+      </div>
+    </a>
+
+    <div class="header-actions">
+      <a
+        href="reservation.html"
+        class="header-booking-btn"
+      >
+        <i class="fa-regular fa-calendar-days"></i>
+        <span>Réserver</span>
+      </a>
+
+      <button
+        class="menu-btn"
+        type="button"
+        onclick="toggleMenu(event)"
+        aria-label="Ouvrir le menu"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-    <nav>
+    <nav aria-label="Navigation principale">
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="flotte.html">Notre Véhicule</a></li>
-        <li><a href="reservation.html">Réservation</a></li>
-        <li><a href="apropos.html">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#accueil">ACCUEIL</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#destinations">TRAJETS POPULAIRES</a></li>
+        <li><a href="#vehicule">NOTRE VÉHICULE</a></li>
+        <li><a href="#tarifs">À PROPOS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
+
   </div>
 </header>
 
-<section class="page-hero">
-  <div class="container">
-    <p class="section-label">Réservation</p>
-    <h2>Réservez votre chauffeur VTC</h2>
-    <p>Demande de réservation minimum 24 heures avant le départ.</p>
-    <p class="minimum">⭐ Tarif minimum : 30 €</p>
-  </div>
-</section>
 
-<section class="booking">
-  <div class="container">
-    <div class="fare-estimator">
-  <h3>🚖 Estimez votre tarif</h3>
-  <p>Obtenez une estimation rapide avant votre demande.</p>
+  <main>
 
-  <input type="number" id="estKm" placeholder="Distance estimée en km">
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="reservation-hero">
 
-  <button type="button" onclick="estimerTarif()" class="estimate-btn">
-    Estimer le tarif
-  </button>
+      <div class="reservation-hero-overlay"></div>
 
-  <p id="tarifResultat" class="tarif-resultat"></p>
-</div>
-    <form class="booking-form" onsubmit="sendReservation(event)">
+      <div class="reservation-hero-content">
 
-      <input type="text" id="nom" placeholder="Votre nom complet" required>
-      <input type="tel" id="telephone" placeholder="Téléphone" required>
-      <input type="email" id="email" placeholder="Email">
+        <p class="reservation-eyebrow">
+          – RÉSERVATION –
+        </p>
 
-      <input type="text" id="depart" placeholder="Adresse de départ" required>
-      <input type="text" id="destination" placeholder="Destination" required>
-      <input type="text" id="transport" placeholder="N° de vol ou de train (optionnel)">
-      <label for="allerRetour" class="field-label">Type de trajet</label>
+        <h1>
+          Réservez votre<br>
+          chauffeur VTC
+        </h1>
 
-<select id="allerRetour">
-    <option value="aller">Aller simple</option>
-    <option value="aller-retour">Aller-retour</option>
-</select>
+        <p class="reservation-hero-description">
+          Demande de réservation minimum<br>
+          24 heures avant le départ.
+        </p>
 
-      <label for="date" class="field-label">Date de départ</label>
-<input type="date" id="date" required>
-<label for="heure" class="field-label">Heure de départ</label>
-<input type="time" id="heure" required>
-      <select id="passagers" required>
-  <option value="">Nombre de passagers</option>
-  <option value="1 passager">1 passager</option>
-  <option value="2 passagers">2 passagers</option>
-  <option value="3 passagers">3 passagers</option>
-  <option value="4 passagers">4 passagers</option>
-</select>
-      <select id="bagages">
-  <option value="">Choisissez vos bagages</option>
-  <option value="1petit">1 petit bagage</option>
-  <option value="1grand">1 grand bagage</option>
-  <option value="1grand1petit">1 grand + 1 petit</option>
-  <option value="2grands1petit">2 grands + 1 petit</option>
-  <option value="max">2 grands + 2 petits (maximum)</option>
-</select>
-      <select id="paiement">
-        <option value="">Mode de paiement souhaité</option>
-        <option>Espèces</option>
-        <option>Carte bancaire</option>
-        <option>Virement bancaire</option>
-      </select>
+        <div class="reservation-minimum-badge">
+          <i class="fa-solid fa-star"></i>
+          <strong>Tarif minimum : 30 €</strong>
+        </div>
 
-      <textarea id="message" placeholder="Informations complémentaires (retard de vol, point de rendez-vous, demandes particulières...)"></textarea>
+      </div>
 
-      <button type="submit" class="btn">Envoyer ma demande</button>
+    </section>
 
-      <p class="form-note">
-        Le tarif définitif sera communiqué après étude de votre demande.
+
+    <!-- =========================
+         FORMULAIRE
+    ========================== -->
+    <section class="reservation-form-section">
+
+      <div class="reservation-container">
+
+        <div class="reservation-form-card">
+
+          <div class="reservation-card-heading">
+
+            <i class="fa-regular fa-calendar-days"></i>
+
+            <div>
+              <h2>Votre demande de réservation</h2>
+              <span class="reservation-heading-line"></span>
+            </div>
+
+          </div>
+
+
+          <form
+            class="reservation-form"
+            id="reservationForm"
+            novalidate
+          >
+
+            <!-- Nom -->
+            <div class="reservation-field">
+              <i class="fa-regular fa-user"></i>
+
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Votre nom complet"
+                autocomplete="name"
+                required
+              >
+            </div>
+
+
+            <!-- Téléphone -->
+            <div class="reservation-field">
+              <i class="fa-solid fa-phone"></i>
+
+              <input
+                type="tel"
+                id="telephone"
+                name="telephone"
+                placeholder="Téléphone"
+                autocomplete="tel"
+                required
+              >
+            </div>
+
+
+            <!-- Email -->
+            <div class="reservation-field">
+              <i class="fa-regular fa-envelope"></i>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                autocomplete="email"
+              >
+            </div>
+
+
+            <!-- Adresse de départ -->
+            <div class="reservation-field">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <input
+                type="text"
+                id="depart"
+                name="depart"
+                placeholder="Adresse de départ"
+                autocomplete="off"
+                required
+              >
+            </div>
+
+
+            <!-- Destination -->
+            <div class="reservation-field">
+              <i class="fa-solid fa-location-crosshairs"></i>
+
+              <input
+                type="text"
+                id="destination"
+                name="destination"
+                placeholder="Destination"
+                autocomplete="off"
+                required
+              >
+            </div>
+
+
+            <!-- Numéro vol ou train -->
+            <div class="reservation-field">
+              <i class="fa-solid fa-plane"></i>
+
+              <input
+                type="text"
+                id="transport"
+                name="transport"
+                placeholder="N° de vol ou de train (optionnel)"
+              >
+            </div>
+
+
+            <!-- Type de trajet -->
+            <div class="reservation-field reservation-select-field">
+
+              <div class="reservation-select-label">
+                Type de trajet
+              </div>
+
+              <select
+                id="allerRetour"
+                name="allerRetour"
+                aria-label="Type de trajet"
+              >
+                <option value="Aller simple">
+                  Aller simple
+                </option>
+
+                <option value="Aller-retour">
+                  Aller-retour
+                </option>
+              </select>
+
+            </div>
+
+
+            <!-- Date et heure -->
+            <div class="reservation-date-time-grid">
+
+              <div class="reservation-field">
+                <i class="fa-regular fa-calendar-days"></i>
+
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  aria-label="Date de départ"
+                  required
+                >
+              </div>
+
+              <div class="reservation-field">
+                <i class="fa-regular fa-clock"></i>
+
+                <input
+                  type="time"
+                  id="heure"
+                  name="heure"
+                  aria-label="Heure de départ"
+                  required
+                >
+              </div>
+
+            </div>
+
+
+            <!-- Passagers -->
+            <div class="reservation-field">
+              <i class="fa-solid fa-people-group"></i>
+
+              <select
+                id="passagers"
+                name="passagers"
+                required
+              >
+                <option value="">
+                  Nombre de passagers
+                </option>
+
+                <option value="1 passager">
+                  1 passager
+                </option>
+
+                <option value="2 passagers">
+                  2 passagers
+                </option>
+
+                <option value="3 passagers">
+                  3 passagers
+                </option>
+
+                <option value="4 passagers">
+                  4 passagers
+                </option>
+              </select>
+            </div>
+
+
+            <!-- Bagages -->
+            <div class="reservation-field">
+              <i class="fa-solid fa-suitcase-rolling"></i>
+
+              <select
+                id="bagages"
+                name="bagages"
+              >
+                <option value="">
+                  Choisissez vos bagages
+                </option>
+
+                <option value="1 petit bagage">
+                  1 petit bagage
+                </option>
+
+                <option value="1 grand bagage">
+                  1 grand bagage
+                </option>
+
+                <option value="1 grand + 1 petit">
+                  1 grand + 1 petit
+                </option>
+
+                <option value="2 grands + 1 petit">
+                  2 grands + 1 petit
+                </option>
+
+                <option value="2 grands + 2 petits">
+                  2 grands + 2 petits (maximum)
+                </option>
+              </select>
+            </div>
+
+
+            <!-- Paiement -->
+            <div class="reservation-field">
+              <i class="fa-regular fa-credit-card"></i>
+
+              <select
+                id="paiement"
+                name="paiement"
+              >
+                <option value="">
+                  Mode de paiement souhaité
+                </option>
+
+                <option value="Espèces">
+                  Espèces
+                </option>
+
+                <option value="Carte bancaire">
+                  Carte bancaire
+                </option>
+
+                <option value="Virement bancaire">
+                  Virement bancaire
+                </option>
+              </select>
+            </div>
+
+
+            <!-- Informations complémentaires -->
+            <div class="reservation-field reservation-textarea-field">
+              <i class="fa-regular fa-file-lines"></i>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Informations complémentaires (retard de vol, point de rendez-vous, demandes particulières...)"
+              ></textarea>
+            </div>
+
+
+            <!-- Bouton -->
+            <button
+              type="submit"
+              class="reservation-submit-button"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Envoyer ma demande</span>
+            </button>
+
+
+            <p class="reservation-form-note">
+              <i class="fa-solid fa-shield-halved"></i>
+
+              <span>
+                Le tarif définitif sera communiqué après étude de votre demande.
+              </span>
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CARTE DE CONTACT
+    ========================== -->
+    <section class="reservation-help-section">
+
+      <div class="reservation-container">
+
+        <div class="reservation-help-card">
+
+          <div class="reservation-help-main">
+
+            <div class="reservation-help-icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <div class="reservation-help-text">
+              <h2>Besoin d’aide ou une question ?</h2>
+
+              <p>
+                Notre équipe est à votre disposition<br>
+                pour toute question.
+              </p>
+            </div>
+
+            <a
+              href="contact.html"
+              class="reservation-contact-button"
+            >
+              <i class="fa-solid fa-phone"></i>
+              Nous contacter
+            </a>
+
+          </div>
+
+
+          <div class="reservation-direct-contact">
+
+            <a
+              href="https://wa.me/33621144767"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="reservation-whatsapp-button"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+
+            <span class="reservation-contact-divider"></span>
+
+            <a
+              href="tel:+33621144767"
+              class="reservation-call-button"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <span>Appeler</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FENÊTRE DE COMMUNICATION
+  ========================== -->
+  <div
+    class="reservation-modal"
+    id="contactModal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="reservation-modal-overlay"
+      data-close-modal
+    ></div>
+
+    <div
+      class="reservation-modal-box"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="reservationModalTitle"
+    >
+
+      <button
+        type="button"
+        class="reservation-modal-close"
+        id="reservationModalClose"
+        aria-label="Fermer"
+      >
+        ×
+      </button>
+
+      <div class="reservation-modal-icon">
+        <i class="fa-regular fa-paper-plane"></i>
+      </div>
+
+      <h2 id="reservationModalTitle">
+        Choisissez votre moyen de communication
+      </h2>
+
+      <p>
+        Votre demande de réservation est prête.<br>
+        Comment souhaitez-vous nous contacter ?
       </p>
 
-    </form>
-  </div>
-</section>
-  
-<!-- Fenêtre de choix du moyen de communication -->
-<div id="contactModal" class="contact-modal" aria-hidden="true">
-  <div class="contact-modal-box">
+      <div class="reservation-modal-options">
 
-    <button
-      type="button"
-      class="contact-modal-close"
-      onclick="closeContactModal()"
-      aria-label="Fermer"
-    >
-      ×
-    </button>
+        <button
+          type="button"
+          class="reservation-modal-choice whatsapp"
+          id="sendWhatsAppButton"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </button>
 
-    <h2>Choisissez votre moyen de communication</h2>
+        <button
+          type="button"
+          class="reservation-modal-choice sms"
+          id="sendSmsButton"
+        >
+          <i class="fa-regular fa-comment-dots"></i>
+          SMS
+        </button>
 
-    <p>
-      Votre demande de réservation est prête.<br>
-      Comment souhaitez-vous nous contacter ?
-    </p>
-
-    <div class="contact-options">
-
-      <button type="button" class="contact-choice whatsapp-choice"
-              onclick="sendByWhatsApp()">
-        🟢 WhatsApp
-      </button>
-
-      <button type="button" class="contact-choice"
-              onclick="sendBySms()">
-        💬 SMS
-      </button>
-
-      <button type="button" class="contact-choice"
-              onclick="sendByEmail()">
-        ✉️ E-mail
-      </button>
-
+        <button
+          type="button"
+          class="reservation-modal-choice email"
+          id="sendEmailButton"
+        >
+          <i class="fa-regular fa-envelope"></i>
+          E-mail
+        </button>
+      </div>
     </div>
   </div>
-</div>
-  <a class="whatsapp" href="https://wa.me/33621144767" target="_blank" aria-label="WhatsApp">💬</a>
-<a href="tel:+33621144767" class="call-float" aria-label="Appeler">📞</a>
-<footer>
-  <p class="copyright">© 2026 Twins Fab Cab Service VTC – Tous droits réservés.</p>
-</footer>
 
-<script src="js/script.js"></script>
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="reservation-footer">
+    <p>
+      © 2026 Twins Fab Cab Service VTC – Tous droits réservés.
+    </p>
+  </footer>
+  
+  <link rel="stylesheet" href="https://unpkg.com/@geoapify/geocoder-autocomplete/styles/minimal.css">
+
+<script src="https://unpkg.com/@geoapify/geocoder-autocomplete/dist/index.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
