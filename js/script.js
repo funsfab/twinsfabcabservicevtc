@@ -829,16 +829,21 @@ setupAddressAutocomplete("destination");
 ========================== */
 
 document.addEventListener("DOMContentLoaded", function () {
-    const openButton = document.getElementById("openContactChoices");
+    const openButtons = [
+    document.getElementById("openContactChoices"),
+    document.getElementById("openFooterContactChoices")
+].filter(Boolean);
     const modal = document.getElementById("contactChoiceModal");
     const closeButton = document.getElementById("closeContactChoices");
 
-    if (!openButton || !modal || !closeButton) return;
+    if (!openButtons.length || !modal || !closeButton) return;
 
-    openButton.addEventListener("click", function () {
+    openButtons.forEach(function(button) {
+    button.addEventListener("click", function () {
         modal.classList.add("show");
         document.body.style.overflow = "hidden";
     });
+});
 
     closeButton.addEventListener("click", function () {
         modal.classList.remove("show");
