@@ -12026,12 +12026,12 @@ button.luxury-contact__card{
     }
 }
 
-/* Footer contact buttons */
+/* Footer phone contact button */
 .footer-contact-btn{
-    display:flex;
+    display:grid;
+    grid-template-columns:48px 1fr;
     align-items:center;
-    gap:14px;
-    width:auto;
+    width:100%;
     padding:0;
     margin:0;
 
@@ -12049,12 +12049,27 @@ button.luxury-contact__card{
     -webkit-appearance:none;
 }
 
+.footer-contact-btn i{
+    color:#e6ad27;
+    font-size:28px;
+    text-align:left;
+}
+
+.footer-contact-btn span{
+    color:#fff;
+    font-size:inherit;
+}
+
 .footer-contact-btn:hover,
 .footer-contact-btn:active,
 .footer-contact-btn:focus{
-    color:#d6a934;
     background:transparent;
     border:none;
     outline:none;
     box-shadow:none;
+}
+
+.footer-contact-btn:hover span,
+.footer-contact-btn:active span{
+    color:#e6ad27;
 }
