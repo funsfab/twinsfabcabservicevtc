@@ -12028,49 +12028,33 @@ button.luxury-contact__card{
 
 /* Footer phone contact button */
 .footer-contact-btn{
-    display:grid;
-    grid-template-columns:48px 1fr;
+    display:flex;
     align-items:center;
+    gap:18px;
     width:100%;
     padding:0;
     margin:0;
 
+    background:none;
+    border:none;
     color:inherit;
     font:inherit;
     text-align:left;
-
-    background:transparent;
-    border:none;
-    outline:none;
-    box-shadow:none;
     cursor:pointer;
-
-    appearance:none;
-    -webkit-appearance:none;
 }
 
 .footer-contact-btn i{
+    width:30px;
+    font-size:16px;
     color:#e6ad27;
-    font-size:18px;
-    text-align:left;
-  text-align:center;
+    text-align:center;
+    flex-shrink:0;
 }
 
 .footer-contact-btn span{
     color:#fff;
-    font-size:inherit;
 }
 
-.footer-contact-btn:hover,
-.footer-contact-btn:active,
-.footer-contact-btn:focus{
-    background:transparent;
-    border:none;
-    outline:none;
-    box-shadow:none;
-}
-
-.footer-contact-btn:hover span,
-.footer-contact-btn:active span{
+.footer-contact-btn:hover span{
     color:#e6ad27;
 }
