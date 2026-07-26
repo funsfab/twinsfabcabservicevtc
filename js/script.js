@@ -824,4 +824,39 @@ setupAddressAutocomplete("destination");
   }
 });
 
+/* ==========================
+   CONTACT CHOICE POPUP
+========================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const openButton = document.getElementById("openContactChoices");
+    const modal = document.getElementById("contactChoiceModal");
+    const closeButton = document.getElementById("closeContactChoices");
+
+    if (!openButton || !modal || !closeButton) return;
+
+    openButton.addEventListener("click", function () {
+        modal.classList.add("show");
+        document.body.style.overflow = "hidden";
+    });
+
+    closeButton.addEventListener("click", function () {
+        modal.classList.remove("show");
+        document.body.style.overflow = "";
+    });
+
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.classList.remove("show");
+            document.body.style.overflow = "";
+        }
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            modal.classList.remove("show");
+            document.body.style.overflow = "";
+        }
+    });
+});
 const GEOAPIFY_API_KEY = "71f8e340b9cf4c8cb9d149daa99594ee";
