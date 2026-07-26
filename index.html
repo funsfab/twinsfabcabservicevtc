@@ -1191,6 +1191,35 @@
         </button>
     </div>
 </div>
+
+  <div class="contact-choice-modal" id="emailChoiceModal">
+    <div class="contact-choice-box">
+
+        <p>Comment souhaitez-vous nous contacter ?</p>
+
+        <h3>Choisissez une option</h3>
+
+        <a href="mailto:funsfab@gmail.com"
+           class="contact-choice-btn">
+            📧 Envoyer un e-mail
+        </a>
+
+        <button
+            type="button"
+            class="contact-choice-btn"
+            id="copyEmailButton">
+            📋 Copier l'adresse e-mail
+        </button>
+
+        <button
+            type="button"
+            class="contact-choice-close"
+            id="closeEmailChoices">
+            Fermer
+        </button>
+
+    </div>
+  </div>
   <div class="luxury-contact__cards">
 
       <button
@@ -1210,10 +1239,11 @@
         Réponse rapide
     </span>
 </button>
-    <a
-      class="luxury-contact__card"
-      href="mailto:funsfab@gmail.com"
-    >
+  <button
+    type="button"
+    class="luxury-contact__card"
+    id="openEmailChoices"
+>
       <span class="luxury-contact__icon">
         <i class="fa-solid fa-envelope"></i>
       </span>
@@ -1221,7 +1251,7 @@
       <h3>Email</h3>
       <p>funsfab@gmail.com</p>
       <span class="luxury-contact__link">Nous écrire</span>
-    </a>
+    </button>
 
     <a
       class="luxury-contact__card"
