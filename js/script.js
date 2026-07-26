@@ -859,4 +859,73 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+/* ==========================
+   EMAIL CHOICE POPUP
+========================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const openEmailButton =
+        document.getElementById("openEmailChoices");
+
+    const emailModal =
+        document.getElementById("emailChoiceModal");
+
+    const closeEmailButton =
+        document.getElementById("closeEmailChoices");
+
+    const copyEmailButton =
+        document.getElementById("copyEmailButton");
+
+    const emailAddress = "funsfab@gmail.com";
+
+    if (
+        !openEmailButton ||
+        !emailModal ||
+        !closeEmailButton ||
+        !copyEmailButton
+    ) {
+        return;
+    }
+
+    function closeEmailModal() {
+        emailModal.classList.remove("show");
+        document.body.style.overflow = "";
+    }
+
+    openEmailButton.addEventListener("click", function () {
+        emailModal.classList.add("show");
+        document.body.style.overflow = "hidden";
+    });
+
+    closeEmailButton.addEventListener("click", closeEmailModal);
+
+    emailModal.addEventListener("click", function (event) {
+        if (event.target === emailModal) {
+            closeEmailModal();
+        }
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeEmailModal();
+        }
+    });
+
+    copyEmailButton.addEventListener("click", async function () {
+        try {
+            await navigator.clipboard.writeText(emailAddress);
+
+            copyEmailButton.textContent =
+                "✅ Adresse e-mail copiée";
+
+            setTimeout(function () {
+                copyEmailButton.textContent =
+                    "📋 Copier l'adresse e-mail";
+            }, 2000);
+        } catch (error) {
+            alert("Adresse e-mail : " + emailAddress);
+        }
+    });
+});
 const GEOAPIFY_API_KEY = "71f8e340b9cf4c8cb9d149daa99594ee";
