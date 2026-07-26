@@ -12051,8 +12051,9 @@ button.luxury-contact__card{
 
 .footer-contact-btn i{
     color:#e6ad27;
-    font-size:28px;
+    font-size:18px;
     text-align:left;
+  text-align:center;
 }
 
 .footer-contact-btn span{
