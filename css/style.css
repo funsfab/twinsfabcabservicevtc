@@ -11839,3 +11839,90 @@ color:#fff;
 .address-suggestion:hover{
     background:#f5f5f5;
     }
+
+/* ==========================
+   CONTACT CHOICE POPUP
+========================== */
+
+/* Remove the normal button appearance from the contact card */
+button.luxury-contact__card{
+    font-family:inherit;
+    color:inherit;
+    cursor:pointer;
+    appearance:none;
+    -webkit-appearance:none;
+}
+
+/* Dark background covering the screen */
+.contact-choice-modal{
+    position:fixed;
+    inset:0;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background:rgba(0,0,0,.78);
+    z-index:99999;
+}
+
+/* Show the popup */
+.contact-choice-modal.show{
+    display:flex;
+}
+
+/* Popup box */
+.contact-choice-box{
+    position:relative;
+    width:100%;
+    max-width:390px;
+    padding:32px 22px 24px;
+    text-align:center;
+    background:#0d0d0d;
+    border:1px solid #c99b2e;
+    border-radius:22px;
+    box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+
+.contact-choice-box h3{
+    margin:0 0 24px;
+    color:#fff;
+    font-size:26px;
+}
+
+/* Call, SMS and WhatsApp buttons */
+.contact-choice-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    min-height:54px;
+    margin:12px 0;
+    padding:12px 18px;
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    text-decoration:none;
+    background:#171717;
+    border:1px solid rgba(201,155,46,.75);
+    border-radius:14px;
+}
+
+.contact-choice-btn:hover,
+.contact-choice-btn:active{
+    color:#0b0b0b;
+    background:#d6a934;
+}
+
+/* Close button */
+.contact-choice-close{
+    width:100%;
+    min-height:50px;
+    margin-top:14px;
+    color:#ddd;
+    font-size:16px;
+    font-weight:700;
+    background:transparent;
+    border:1px solid #666;
+    border-radius:14px;
+    cursor:pointer;
+}
