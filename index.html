@@ -221,6 +221,13 @@
 
       </div>
 
+<a
+  href="#vehicule"
+  class="hero-scroll-down"
+  aria-label="Voir la section suivante"
+>
+  <i class="fa-solid fa-chevron-down"></i>
+</a>
     </section>
 
 
@@ -1191,11 +1198,8 @@
         </button>
     </div>
 </div>
-
-  <div class="contact-choice-modal" id="emailChoiceModal">
+<div class="contact-choice-modal" id="emailChoiceModal">
     <div class="contact-choice-box">
-
-      
 
         <h3>Choisissez une option</h3>
 
@@ -1219,8 +1223,10 @@
         </button>
 
     </div>
-  </div>
+</div>
   <div class="luxury-contact__cards">
+
+    
 
       <button
     type="button"
@@ -1239,11 +1245,13 @@
         Réponse rapide
     </span>
 </button>
-  <button
+  
+
+    <button
     type="button"
     class="luxury-contact__card"
-    id="openEmailChoices"
->
+    id="openEmailChoices">
+      
       <span class="luxury-contact__icon">
         <i class="fa-solid fa-envelope"></i>
       </span>
@@ -1338,7 +1346,7 @@
 
       <a
         class="luxury-reviews-google-button"
-        href="#"
+        href="https://maps.app.goo.gl/1SMHBccWhz6MQfLi7?g_st=ac"
         target="_blank"
         rel="noopener"
       >
@@ -1360,56 +1368,33 @@
   </div>
 </div>
 
-<div class="luxury-reviews-slider">
-  <button
-    class="luxury-review-arrow luxury-review-arrow--left"
-    type="button"
-    aria-label="Avis précédent"
-  >
-    <i class="fa-solid fa-chevron-left"></i>
-  </button>
+<div class="reviews-carousel" id="reviewsCarousel">
 
-  <div class="luxury-review-card">
-    <div class="luxury-review-profile">
-      <div class="luxury-review-avatar">I</div>
+    <div class="reviews-viewport">
 
-      <div>
-        <h3>
-          irie bass
-          <i class="fa-solid fa-circle-check"></i>
-        </h3>
-        <p>Il y a 9 mois</p>
-      </div>
+        <div
+            class="reviews-track"
+            id="reviewsTrack"
+        >
+            <!-- The 10 complete review cards
+                 will be inserted here by JavaScript -->
+        </div>
+
     </div>
 
-    <div class="luxury-review-stars">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-    </div>
+    <input
+        class="reviews-range"
+        id="reviewsRange"
+        type="range"
+        min="0"
+        max="1"
+        step="0.001"
+        value="0"
+        aria-label="Parcourir les avis clients"
+    >
 
-    <blockquote>
-      Excellent service ! Chauffeur fiable, aimable et très respectueux.
-      Conduite fluide et trajet très agréable.
-    </blockquote>
-  </div>
-
-  <button
-    class="luxury-review-arrow luxury-review-arrow--right"
-    type="button"
-    aria-label="Avis suivant"
-  >
-    <i class="fa-solid fa-chevron-right"></i>
-  </button>
 </div>
 
-<div class="luxury-review-dots" aria-hidden="true">
-  <span class="active"></span>
-  <span></span>
-  <span></span>
-</div>
       </div>
     </section>
 
@@ -1539,16 +1524,25 @@
     <span>Tous droits réservés.</span>
 
     <div class="luxury-footer__legal">
-      <a href="#">Mentions légales</a>
+      <a href="mentions-legales.html">Mentions légales</a>
       <span>|</span>
-      <a href="#">Politique de confidentialité</a>
+      <a href="politique-confidentialite.html">
+  Politique de confidentialité
+</a>
       <span>|</span>
-      <a href="#">CGV</a>
+      <a href="cgv.html">CGV</a>
     </div>
   </div>
 
 </footer>
-
+<button
+  type="button"
+  id="backToTop"
+  class="back-to-top"
+  aria-label="Retour en haut de la page"
+>
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
@@ -1602,4 +1596,4 @@
   });
 </script>
 </body>
-  </html>
+</html>
