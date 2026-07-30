@@ -217,12 +217,16 @@
               <i class="fa-regular fa-envelope"></i>
 
               <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                autocomplete="email"
-              >
+  type="email"
+  id="email"
+  name="email"
+  placeholder="Email"
+  autocomplete="email"
+  inputmode="email"
+  required
+  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+  title="Entrez une adresse e-mail valide, par exemple nom@gmail.com"
+>
             </div>
 
 
