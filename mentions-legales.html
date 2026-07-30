@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Mentions légales | Twins Fab Cab Service VTC
+  </title>
+
+  <meta
+    name="description"
+    content="Mentions légales du site Twins Fab Cab Service VTC."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --gold: #d4a62a;
+      --gold-light: #f0c64f;
+      --black: #080808;
+      --card: #121212;
+      --white: #ffffff;
+      --grey: #d5d5d5;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Poppins", sans-serif;
+      color: var(--white);
+      background:
+        radial-gradient(
+          circle at 85% 10%,
+          rgba(212, 166, 42, 0.14),
+          transparent 30%
+        ),
+        linear-gradient(
+          180deg,
+          #080808,
+          #0d0b08,
+          #050505
+        );
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .legal-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      min-height: 92px;
+      padding: 14px 18px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+
+      background: rgba(8, 8, 8, 0.96);
+      border-bottom: 1px solid rgba(212, 166, 42, 0.35);
+
+      backdrop-filter: blur(12px);
+    }
+
+    .legal-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      text-decoration: none;
+    }
+
+    .legal-brand-mark {
+      width: 48px;
+      height: 58px;
+      flex: 0 0 48px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: var(--gold-light);
+      border: 2px solid var(--gold);
+      border-radius: 9px 9px 20px 20px;
+
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .legal-brand-text strong {
+      display: block;
+
+      font-family: Georgia, serif;
+      font-size: 15px;
+      line-height: 1.08;
+    }
+
+    .legal-brand-text span {
+      display: block;
+      margin-top: 4px;
+
+      color: var(--gold);
+      font-size: 10px;
+    }
+
+    .back-home {
+      min-height: 44px;
+      padding: 10px 15px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+
+      color: #111111;
+      background:
+        linear-gradient(
+          135deg,
+          var(--gold),
+          var(--gold-light)
+        );
+
+      border-radius: 8px;
+
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .legal-main {
+      width: min(92%, 950px);
+      margin: 0 auto;
+      padding: 55px 0 70px;
+    }
+
+    .legal-intro {
+      margin-bottom: 38px;
+      text-align: center;
+    }
+
+    .legal-crown {
+      color: var(--gold);
+      font-size: 30px;
+    }
+
+    .legal-intro h1 {
+      margin-top: 8px;
+
+      font-family: Georgia, serif;
+      font-size: clamp(34px, 9vw, 54px);
+      line-height: 1.1;
+    }
+
+    .legal-intro h1 span {
+      color: var(--gold-light);
+    }
+
+    .legal-line {
+      width: 72px;
+      height: 2px;
+      margin: 20px auto;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          var(--gold-light),
+          transparent
+        );
+    }
+
+    .legal-intro p {
+      max-width: 650px;
+      margin: 0 auto;
+
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    .legal-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .legal-card {
+      padding: 25px 22px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.055),
+          rgba(255, 255, 255, 0.015)
+        );
+
+      border: 1px solid rgba(212, 166, 42, 0.35);
+      border-radius: 18px;
+
+      box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    }
+
+    .legal-card h2 {
+      margin-bottom: 18px;
+
+      color: var(--gold-light);
+      font-family: Georgia, serif;
+      font-size: 23px;
+      line-height: 1.25;
+    }
+
+    .legal-card h3 {
+      margin: 22px 0 8px;
+
+      color: var(--gold);
+      font-size: 16px;
+    }
+
+    .legal-card p {
+      margin-bottom: 10px;
+
+      color: #eeeeee;
+      font-size: 14px;
+    }
+
+    .legal-card strong {
+      color: var(--white);
+    }
+
+    .legal-card a {
+      color: var(--gold-light);
+      overflow-wrap: anywhere;
+    }
+
+    .legal-list {
+      display: grid;
+      gap: 10px;
+
+      list-style: none;
+    }
+
+    .legal-list li {
+      padding-bottom: 10px;
+
+      color: #eeeeee;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+      font-size: 14px;
+    }
+
+    .legal-list li:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .legal-footer {
+      padding: 28px 18px;
+
+      color: #d7d7d7;
+      background: #050505;
+      border-top: 1px solid rgba(212, 166, 42, 0.35);
+
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .legal-footer-links {
+      margin-top: 13px;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .legal-footer-links a {
+      color: var(--gold-light);
+      text-decoration: none;
+    }
+
+    @media (min-width: 750px) {
+      .legal-header {
+        padding-right: 7%;
+        padding-left: 7%;
+      }
+
+      .legal-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .legal-card-full {
+        grid-column: 1 / -1;
+      }
+
+      .legal-card {
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .legal-brand-text strong {
+        max-width: 145px;
+        font-size: 13px;
+      }
+
+      .legal-brand-text span {
+        font-size: 8px;
+      }
+
+      .back-home span {
+        display: none;
+      }
+
+      .back-home::after {
+        content: "Accueil";
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="legal-header">
+
+    <a
+      href="index.html"
+      class="legal-brand"
+      aria-label="Retour à l’accueil"
+    >
+      <div class="legal-brand-mark">
+        TF
+      </div>
+
+      <div class="legal-brand-text">
+        <strong>
+          TWINS FAB CAB<br>
+          SERVICE VTC
+        </strong>
+
+        <span>
+          Votre chauffeur privé à Lille
+        </span>
+      </div>
+    </a>
+
+    <a
+      href="index.html"
+      class="back-home"
+    >
+      ←
+      <span>Retour à l’accueil</span>
+    </a>
+
+  </header>
+
+
+  <main class="legal-main">
+
+    <section class="legal-intro">
+
+      <div class="legal-crown">
+        ♛
+      </div>
+
+      <h1>
+        Mentions <span>légales</span>
+      </h1>
+
+      <div class="legal-line"></div>
+
+      <p>
+        Informations légales relatives au site internet
+        Twins Fab Cab Service VTC.
+      </p>
+
+    </section>
+
+
+    <div class="legal-grid">
+
+      <section class="legal-card legal-card-full">
+
+        <h2>1. Éditeur du site</h2>
+
+        <ul class="legal-list">
+
+          <li>
+            <strong>Dénomination sociale :</strong>
+            TWINS FAB CAB SERVICE
+          </li>
+
+          <li>
+            <strong>Nom commercial :</strong>
+            TFC – Twins Fab Cab Service VTC
+          </li>
+
+          <li>
+            <strong>Forme juridique :</strong>
+            Société par actions simplifiée à associé unique
+            (SASU)
+          </li>
+
+          <li>
+            <strong>Capital social :</strong>
+            300 €
+          </li>
+
+          <li>
+            <strong>Siège social :</strong>
+            10 rue d’Alsace, Tour America 2B,
+            59370 Mons-en-Barœul, France
+          </li>
+
+          <li>
+            <strong>SIREN :</strong>
+            914 993 910
+          </li>
+
+          <li>
+            <strong>Immatriculation :</strong>
+            RCS Lille Métropole 914 993 910
+          </li>
+
+          <li>
+            <strong>TVA intracommunautaire :</strong>
+            FR 82 914 993 910
+          </li>
+
+          <li>
+            <strong>Téléphone :</strong>
+            <a href="tel:+33621144767">
+              +33 6 21 14 47 67
+            </a>
+          </li>
+
+          <li>
+            <strong>Adresse e-mail :</strong>
+            <a href="mailto:funsfab@gmail.com">
+              funsfab@gmail.com
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+      <section class="legal-card">
+
+        <h2>2. Directeur de la publication</h2>
+
+        <p>
+          Le directeur de la publication du site est :
+        </p>
+
+        <p>
+          <strong>
+            Monsieur FABAJO Oluwafunsho Seun
+          </strong>
+        </p>
+
+        <p>
+          En qualité de président de la société
+          TWINS FAB CAB SERVICE.
+        </p>
+
+      </section>
+
+
+      <section class="legal-card">
+
+        <h2>3. Activité réglementée</h2>
+
+        <p>
+          Activité de chauffeur VTC
+          (voiture de transport avec chauffeur).
+        </p>
+
+        <p>
+          <strong>
+            Numéro d’inscription au registre des exploitants
+            de VTC :
+          </strong>
+        </p>
+
+        <p>
+          EVTC059220217
+        </p>
+
+        <p>
+          Registre géré par le ministère chargé des Transports.
+        </p>
+
+        <p>
+          Assistance REVTC :
+          <a href="tel:+33974363172">
+            09 74 36 31 72
+          </a>
+        </p>
+
+      </section>
+
+
+      <section class="legal-card legal-card-full">
+
+        <h2>4. Hébergement du site</h2>
+
+        <p>
+          Le site est hébergé par le service
+          <strong>GitHub Pages</strong>.
+        </p>
+
+        <p>
+          <strong>GitHub, Inc.</strong><br>
+          88 Colin P. Kelly Jr. Street<br>
+          San Francisco, CA 94107<br>
+          États-Unis
+        </p>
+
+        <p>
+          Assistance :
+          <a
+            href="https://support.github.com/contact"
+            target="_blank"
+            rel="noopener"
+          >
+            Centre d’assistance GitHub
+          </a>
+        </p>
+
+        <p>
+          GitHub ne communique pas de numéro de téléphone
+          public pour son service d’hébergement.
+        </p>
+
+      </section>
+
+
+      <section class="legal-card">
+
+        <h2>5. Propriété intellectuelle</h2>
+
+        <p>
+          L’ensemble du contenu présent sur ce site,
+          notamment les textes, images, éléments graphiques,
+          logos, icônes et la structure générale, est protégé
+          par les lois françaises et internationales relatives
+          à la propriété intellectuelle.
+        </p>
+
+        <p>
+          Toute reproduction, représentation, modification,
+          publication ou adaptation, totale ou partielle,
+          est interdite sans autorisation écrite préalable.
+        </p>
+
+      </section>
+
+
+      <section class="legal-card">
+
+        <h2>6. Responsabilité</h2>
+
+        <p>
+          TWINS FAB CAB SERVICE s’efforce de fournir des
+          informations exactes et régulièrement mises à jour.
+        </p>
+
+        <p>
+          L’entreprise ne peut cependant garantir l’absence
+          totale d’erreurs ou d’interruptions temporaires du
+          site.
+        </p>
+
+        <p>
+          Les tarifs affichés sont indicatifs. Le tarif
+          définitif est confirmé après étude de la demande
+          de réservation.
+        </p>
+
+      </section>
+
+
+      <section class="legal-card">
+
+        <h2>7. Données personnelles</h2>
+
+        <p>
+          Les informations transmises par le formulaire de
+          réservation sont utilisées uniquement pour traiter
+          les demandes des clients et organiser les trajets.
+        </p>
+
+        <p>
+          Pour plus d’informations, consultez la
+          <a href="politique-confidentialite.html">
+            politique de confidentialité
+          </a>.
+        </p>
+
+      </section>
+
+
+      <section class="legal-card">
+
+        <h2>8. Droit applicable</h2>
+
+        <p>
+          Le présent site et ses mentions légales sont soumis
+          au droit français.
+        </p>
+
+        <p>
+          En cas de litige, les parties chercheront en priorité
+          une solution amiable avant toute procédure judiciaire.
+        </p>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <footer class="legal-footer">
+
+    <p>
+      © 2026 Twins Fab Cab Service VTC –
+      Tous droits réservés.
+    </p>
+
+    <div class="legal-footer-links">
+
+      <a href="index.html">
+        Accueil
+      </a>
+
+      <span>|</span>
+
+      <a href="politique-confidentialite.html">
+        Politique de confidentialité
+      </a>
+
+      <span>|</span>
+
+      <a href="cgv.html">
+        CGV
+      </a>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
