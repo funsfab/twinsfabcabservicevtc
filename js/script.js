@@ -933,4 +933,697 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-const GEOAPIFY_API_KEY = "71f8e340b9cf4c8cb9d149daa99594ee";
+
+/* =========================================
+   REVIEWS CAROUSEL — CLEAN FINAL VERSION
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel =
+        document.getElementById("reviewsCarousel");
+
+    const viewport =
+        carousel?.querySelector(".reviews-viewport");
+
+    const track =
+        document.getElementById("reviewsTrack");
+
+    const range =
+        document.getElementById("reviewsRange");
+
+    if (!carousel || !viewport || !track || !range) {
+        return;
+    }
+
+    const reviews = [
+        {
+            name: "Ana Paula Jardim",
+            avatar: "A",
+            date: "Il y a 10 mois",
+            text:
+                "Je viens du Brésil. Excellent transfert de Lille à Paris. Très bon tarif, excellente voiture et ponctualité irréprochable. Je recommande vivement ce service."
+        },
+        {
+            name: "Neta Hershkovitz Meir",
+            avatar: "N",
+            date: "Il y a 9 mois",
+            text:
+                "Excellent service ! William a été fiable, ponctuel et très sympathique. Il a rendu le trajet fluide et agréable. Je recommande vivement !"
+        },
+        {
+            name: "Elin Kristine Eriksen",
+            avatar: "E",
+            date: "Il y a 1 an",
+            text:
+                "Excellent ! Chauffeur très poli ! Il était toujours à l’heure et rendait chaque trajet agréable. Je recommande ce chauffeur, vous ne le regretterez pas !"
+        },
+        {
+            name: "Leslie Berton",
+            avatar: "L",
+            date: "Il y a 1 an",
+            text:
+                "Excellent service de A à Z. C’est toujours un plaisir de travailler avec eux. Je recommande à 100 %."
+        },
+        {
+            name: "irie bass",
+            avatar: "I",
+            date: "Il y a 9 mois",
+            text:
+                "Excellent service ! Chauffeur fiable, sympathique et très respectueux. Conduite fluide, véhicule propre et confortable. Absolument rien à redire, je recommande à 100 % !"
+        },
+        {
+            name: "Iris Macedo",
+            avatar: "I",
+            date: "Il y a 10 mois",
+            text:
+                "Je suis brésilienne et j’étais à Lille pour un déplacement professionnel. J’ai fait appel aux services de William et je le recommande vivement. Il parle anglais, ce qui a facilité la communication. Son professionnalisme, sa ponctualité, sa conduite responsable et sa gentillesse sont remarquables. Notre trajet de Lille à l’aéroport Charles-de-Gaulle pendant la nuit a été impeccable."
+        },
+        {
+            name: "Caroline Gay",
+            avatar: "C",
+            date: "Il y a 1 an",
+            text:
+                "William est un professionnel respectueux qui conduit parfaitement. La voiture est toujours propre et confortable. Il est sympathique, disponible, souriant et extrêmement ponctuel. N’hésitez pas à faire appel à lui."
+        },
+        {
+            name: "Benjamin Ulmann",
+            avatar: "B",
+            date: "Il y a 10 mois",
+            text:
+                "Une excellente expérience. Une très belle voiture et un chauffeur bilingue français-anglais, prudent, serviable et ponctuel. Je recommande vivement."
+        },
+        {
+            name: "herbet claude",
+            avatar: "H",
+            date: "Il y a 1 an",
+            text:
+                "Ayant fait appel à ses services à deux reprises, je recommande vivement ce chauffeur. Ponctuel, avec une conduite souple et beaucoup de gentillesse : un vrai professionnel. Je ferais de nouveau appel à lui sans hésitation."
+        },
+        {
+            name: "Agathe MARTIN",
+            avatar: "A",
+            date: "Il y a 2 ans",
+            text:
+                "Service professionnel et ponctuel ! La voiture était propre, avec beaucoup d’espace pour les bagages. Je recommande vivement les services de William."
+        }
+    ];
+
+    const stars = `
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    `;
+
+    track.innerHTML = reviews.map(function (review) {
+        return `
+            <article class="reviews-card">
+
+                <div class="reviews-profile">
+                    <div class="reviews-avatar">
+                        ${review.avatar}
+                    </div>
+
+                    <div class="reviews-customer">
+                        <h3 class="reviews-name">
+                            ${review.name}
+                            <i
+                                class="fa-solid fa-circle-check"
+                                aria-label="Avis vérifié"
+                            ></i>
+                        </h3>
+
+                        <p class="reviews-date">
+                            ${review.date}
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="reviews-stars"
+                    aria-label="5 étoiles sur 5"
+                >
+                    ${stars}
+                </div>
+
+                <blockquote class="reviews-text">
+                    ${review.text}
+                </blockquote>
+
+                <button
+                    type="button"
+                    class="reviews-toggle"
+                    aria-expanded="false"
+                >
+                    Lire la suite
+                </button>
+
+            </article>
+        `;
+    }).join("");
+
+    const cards = Array.from(
+        track.querySelectorAll(".reviews-card")
+    );
+
+    if (!cards.length) {
+        return;
+    }
+
+    let currentIndex = 0;
+    let direction = 1;
+    let automaticTimer = null;
+    let restartTimer = null;
+    let scrollEndTimer = null;
+    let carouselIsVisible = false;
+    let rangeIsBeingUsed = false;
+
+    function stopAutomaticMovement() {
+        if (automaticTimer !== null) {
+            window.clearInterval(automaticTimer);
+            automaticTimer = null;
+        }
+    }
+
+    function currentReviewIsExpanded() {
+        return cards.some(function (card) {
+            return card.classList.contains("is-expanded");
+        });
+    }
+
+    function startAutomaticMovement() {
+        if (
+            automaticTimer !== null ||
+            !carouselIsVisible ||
+            currentReviewIsExpanded() ||
+            rangeIsBeingUsed
+        ) {
+            return;
+        }
+
+        automaticTimer = window.setInterval(
+            showNextReview,
+            6000
+        );
+    }
+
+    function restartAutomaticMovement() {
+        window.clearTimeout(restartTimer);
+
+        restartTimer = window.setTimeout(
+            function () {
+                stopAutomaticMovement();
+                startAutomaticMovement();
+            },
+            1200
+        );
+    }
+
+    function getCardPosition(index) {
+        return (
+            cards[index].offsetLeft -
+            cards[0].offsetLeft
+        );
+    }
+
+    function getMaximumScroll() {
+        return Math.max(
+            0,
+            viewport.scrollWidth -
+            viewport.clientWidth
+        );
+    }
+
+    function setRangeProgress(value) {
+        const safeValue = Math.min(
+            1,
+            Math.max(0, value)
+        );
+
+        range.value = String(safeValue);
+        range.style.setProperty(
+            "--range-progress",
+            `${safeValue * 100}%`
+        );
+    }
+
+    function updateRangeFromCards() {
+        const maximumScroll =
+            getMaximumScroll();
+
+        const progress =
+            maximumScroll > 0
+                ? viewport.scrollLeft /
+                  maximumScroll
+                : 0;
+
+        setRangeProgress(progress);
+    }
+
+    function findNearestCardIndex() {
+        let nearestIndex = 0;
+        let nearestDistance = Infinity;
+
+        cards.forEach(function (card, index) {
+            const distance = Math.abs(
+                viewport.scrollLeft -
+                getCardPosition(index)
+            );
+
+            if (distance < nearestDistance) {
+                nearestDistance = distance;
+                nearestIndex = index;
+            }
+        });
+
+        return nearestIndex;
+    }
+
+    function closeExpandedReviews() {
+        cards.forEach(function (card) {
+            const text =
+                card.querySelector(".reviews-text");
+
+            const button =
+                card.querySelector(".reviews-toggle");
+
+            if (!text || !button) {
+                return;
+            }
+
+            card.classList.remove("is-expanded");
+            text.classList.remove("is-expanded");
+            card.style.maxHeight = "420px";
+
+            button.textContent = "Lire la suite";
+            button.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+        });
+    }
+
+    function showReview(index, behavior = "smooth") {
+        closeExpandedReviews();
+
+        currentIndex = Math.max(
+            0,
+            Math.min(index, cards.length - 1)
+        );
+
+        viewport.scrollTo({
+            left: getCardPosition(currentIndex),
+            behavior: behavior
+        });
+    }
+
+    function showNextReview() {
+        if (currentReviewIsExpanded()) {
+            return;
+        }
+
+        let nextIndex =
+            currentIndex + direction;
+
+        if (nextIndex >= cards.length) {
+            direction = -1;
+            nextIndex = cards.length - 2;
+        }
+
+        if (nextIndex < 0) {
+            direction = 1;
+            nextIndex = 1;
+        }
+
+        showReview(nextIndex);
+    }
+
+    viewport.addEventListener(
+        "pointerdown",
+        function () {
+            stopAutomaticMovement();
+        }
+    );
+
+    viewport.addEventListener(
+        "scroll",
+        function () {
+            updateRangeFromCards();
+
+            window.clearTimeout(scrollEndTimer);
+
+            scrollEndTimer = window.setTimeout(
+                function () {
+                    const nearestIndex =
+                        findNearestCardIndex();
+
+                    if (nearestIndex !== currentIndex) {
+                        direction =
+                            nearestIndex > currentIndex
+                                ? 1
+                                : -1;
+
+                        currentIndex = nearestIndex;
+                    }
+
+                    restartAutomaticMovement();
+                },
+                140
+            );
+        },
+        {
+            passive: true
+        }
+    );
+
+    range.addEventListener(
+        "pointerdown",
+        function () {
+            rangeIsBeingUsed = true;
+            stopAutomaticMovement();
+            viewport.style.scrollSnapType = "none";
+            viewport.style.scrollBehavior = "auto";
+        }
+    );
+
+    range.addEventListener(
+        "input",
+        function () {
+            const progress =
+                Number(range.value);
+
+            setRangeProgress(progress);
+
+            viewport.scrollTo({
+                left: progress * getMaximumScroll(),
+                behavior: "auto"
+            });
+        }
+    );
+
+    function finishRangeMovement() {
+        if (!rangeIsBeingUsed) {
+            return;
+        }
+
+        rangeIsBeingUsed = false;
+        viewport.style.scrollSnapType =
+            "x mandatory";
+
+        viewport.style.scrollBehavior =
+            "smooth";
+
+        currentIndex =
+            findNearestCardIndex();
+
+        showReview(currentIndex);
+        restartAutomaticMovement();
+    }
+
+    range.addEventListener(
+        "change",
+        finishRangeMovement
+    );
+
+    range.addEventListener(
+        "pointerup",
+        finishRangeMovement
+    );
+
+    range.addEventListener(
+        "pointercancel",
+        finishRangeMovement
+    );
+
+    track.addEventListener(
+        "click",
+        function (event) {
+            const button =
+                event.target.closest(
+                    ".reviews-toggle"
+                );
+
+            if (!button) {
+                return;
+            }
+
+            const card =
+                button.closest(".reviews-card");
+
+            const text =
+                card?.querySelector(
+                    ".reviews-text"
+                );
+
+            if (!card || !text) {
+                return;
+            }
+
+            const opening =
+                !card.classList.contains(
+                    "is-expanded"
+                );
+
+            if (opening) {
+                stopAutomaticMovement();
+                closeExpandedReviews();
+
+                card.classList.add("is-expanded");
+                text.classList.add("is-expanded");
+
+                button.textContent = "Cacher";
+                button.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+
+                window.requestAnimationFrame(
+                    function () {
+                        card.style.maxHeight =
+                            `${card.scrollHeight}px`;
+                    }
+                );
+            } else {
+                card.style.maxHeight =
+                    `${card.scrollHeight}px`;
+
+                window.requestAnimationFrame(
+                    function () {
+                        card.classList.remove(
+                            "is-expanded"
+                        );
+
+                        text.classList.remove(
+                            "is-expanded"
+                        );
+
+                        card.style.maxHeight =
+                            "420px";
+                    }
+                );
+
+                button.textContent =
+                    "Lire la suite";
+
+                button.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                restartAutomaticMovement();
+            }
+        }
+    );
+
+    function updateToggleVisibility() {
+        cards.forEach(function (card) {
+            const text =
+                card.querySelector(
+                    ".reviews-text"
+                );
+
+            const button =
+                card.querySelector(
+                    ".reviews-toggle"
+                );
+
+            if (!text || !button) {
+                return;
+            }
+
+            if (card.classList.contains("is-expanded")) {
+                button.hidden = false;
+                return;
+            }
+
+            button.hidden =
+                text.scrollHeight <=
+                text.clientHeight + 3;
+        });
+    }
+
+    const observer =
+        new IntersectionObserver(
+            function (entries) {
+                carouselIsVisible =
+                    entries[0].isIntersecting;
+
+                if (carouselIsVisible) {
+                    startAutomaticMovement();
+                } else {
+                    stopAutomaticMovement();
+                }
+            },
+            {
+                threshold: 0.35
+            }
+        );
+
+    observer.observe(carousel);
+
+    window.addEventListener(
+        "resize",
+        function () {
+            updateToggleVisibility();
+            showReview(currentIndex, "auto");
+            updateRangeFromCards();
+        }
+    );
+
+    showReview(0, "auto");
+    setRangeProgress(0);
+
+    window.requestAnimationFrame(
+        updateToggleVisibility
+    );
+});
+
+/* ===== SHOW/HIDE HERO DOWN ARROW ===== */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const heroSection =
+    document.getElementById("accueil");
+
+  const downArrow =
+    document.querySelector(".hero-scroll-down");
+
+  if (!heroSection || !downArrow) {
+    return;
+  }
+
+  downArrow.style.transition =
+    "opacity 0.3s ease, visibility 0.3s ease";
+
+  function updateDownArrow() {
+    const heroPosition =
+      heroSection.getBoundingClientRect();
+
+    const heroIsActive =
+      heroPosition.bottom >
+      window.innerHeight * 0.55;
+
+    downArrow.style.opacity =
+      heroIsActive ? "1" : "0";
+
+    downArrow.style.visibility =
+      heroIsActive ? "visible" : "hidden";
+
+    downArrow.style.pointerEvents =
+      heroIsActive ? "auto" : "none";
+  }
+
+  updateDownArrow();
+
+  window.addEventListener(
+    "scroll",
+    updateDownArrow,
+    { passive: true }
+  );
+});
+
+/* ===== BACK TO TOP BUTTON ===== */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTop =
+    document.getElementById("backToTop");
+
+  if (!backToTop) {
+    return;
+  }
+
+  function updateBackToTop() {
+    if (window.scrollY > 80) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  }
+
+  backToTop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+  updateBackToTop();
+
+  window.addEventListener(
+    "scroll",
+    updateBackToTop,
+    { passive: true }
+  );
+});
+
+/* ===== RESERVATION PAGE ARROWS ===== */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const downArrow = document.querySelector(
+    ".reservation-scroll-down"
+  );
+
+  const backToTop = document.getElementById(
+    "reservationBackToTop"
+  );
+
+  if (!downArrow || !backToTop) {
+    return;
+  }
+
+  downArrow.style.transition =
+    "opacity 0.3s ease, visibility 0.3s ease";
+
+  function updateReservationArrows() {
+    const pageHasScrolled = window.scrollY > 80;
+
+    backToTop.classList.toggle(
+      "show",
+      pageHasScrolled
+    );
+
+    downArrow.style.opacity =
+      pageHasScrolled ? "0" : "1";
+
+    downArrow.style.visibility =
+      pageHasScrolled ? "hidden" : "visible";
+
+    downArrow.style.pointerEvents =
+      pageHasScrolled ? "none" : "auto";
+  }
+
+  backToTop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+  updateReservationArrows();
+
+  window.addEventListener(
+    "scroll",
+    updateReservationArrows,
+    { passive: true }
+  );
+});
