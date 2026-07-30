@@ -7629,38 +7629,38 @@ html {
 }
 
 .route-bruxelles {
-  left: 51%;
+  left: 50%;
   top: 47%;
-  width: 39%;
-  transform: rotate(-42deg);
+  width: 47%;
+  transform: rotate(-57deg);
 }
 
 .route-charleroi {
-  left: 51%;
-  top: 48%;
-  width: 34%;
-  transform: rotate(-19deg);
+  left: 50%;
+  top: 47%;
+  width: 32%;
+  transform: rotate(-34deg);
 }
 
 .route-cdg {
-  left: 51%;
-  top: 49%;
-  width: 35%;
-  transform: rotate(26deg);
+  left: 50%;
+  top: 47%;
+  width: 42%;
+  transform: rotate(50deg);
 }
 
 .route-orly {
-  left: 49%;
-  top: 51%;
-  width: 34%;
-  transform: rotate(55deg);
+  left: 50%;
+  top: 47%;
+  width: 51%;
+  transform: rotate(77deg);
 }
 
 .route-beauvais {
-  left: 18%;
-  top: 66%;
-  width: 35%;
-  transform: rotate(-31deg);
+  left: 50%;
+  top: 47%;
+  width: 59%;
+  transform: rotate(143deg);
 }
 
 /* ==================================================
@@ -11838,29 +11838,7 @@ color:#fff;
 
 .address-suggestion:hover{
     background:#f5f5f5;
-    }
-
-hover,
-.contact-choice-btn:active{
-    color:#0b0b0b;
-    background:#d6a934;
 }
-
-/* Close button */
-.contact-choice-close{
-    width:100%;
-    min-height:50px;
-    margin-top:14px;
-    color:#ddd;
-    font-size:16px;
-    font-weight:700;
-    background:transparent;
-    border:1px solid #666;
-    border-radius:14px;
-    cursor:pointer;
-}
-
-
 /* ==========================
    CONTACT CHOICE POPUP
 ========================== */
@@ -12025,7 +12003,6 @@ button.luxury-contact__card{
         font-size:16px;
     }
 }
-
 /* Footer phone contact button */
 .footer-contact-btn{
     display:grid;
@@ -12079,4 +12056,736 @@ button.luxury-contact__card{
 
 .footer-contact-btn:hover span{
     color:#e6ad27;
+}
+
+/* =========================================
+   REVIEWS CAROUSEL — CLEAN FINAL VERSION
+========================================= */
+
+.reviews-carousel {
+    width: calc(100% - 32px);
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.reviews-viewport {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    touch-action: auto;
+    scrollbar-width: none;
+}
+
+.reviews-viewport::-webkit-scrollbar {
+    display: none;
+}
+
+.reviews-track {
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+
+    width: 100%;
+    transform: none;
+    transition: none;
+}
+
+.reviews-card {
+    flex: 0 0 100%;
+    width: 100%;
+
+    min-height: 420px;
+    max-height: 420px;
+
+    display: grid;
+    grid-template-rows: 118px 50px minmax(0, 1fr) 30px;
+
+    box-sizing: border-box;
+    padding: 24px;
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    color: #ffffff;
+    background: linear-gradient(
+        145deg,
+        rgba(24, 24, 24, 0.98),
+        rgba(7, 7, 7, 0.98)
+    );
+
+    border: 1.5px solid #e6ad27;
+    border-radius: 28px;
+
+    overflow: hidden;
+    transition: max-height 0.55s cubic-bezier(.4, 0, .2, 1);
+}
+
+.reviews-card.is-expanded {
+    max-height: 1200px;
+    grid-template-rows: 118px 50px auto 30px;
+}
+
+.reviews-profile {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    align-items: center;
+    gap: 15px;
+
+    width: 100%;
+    height: 118px;
+}
+
+.reviews-avatar {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    background: #116d61;
+    border: 1.5px solid #e6ad27;
+    border-radius: 50%;
+
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.reviews-customer {
+    min-width: 0;
+}
+
+.reviews-name {
+    display: block;
+    margin: 0;
+
+    color: #ffffff;
+    font-size: clamp(20px, 5vw, 24px);
+    line-height: 1.15;
+
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+.reviews-name i {
+    display: inline-block;
+    margin-left: 5px;
+
+    color: #369bf5;
+    font-size: 17px;
+}
+
+.reviews-date {
+    margin: 8px 0 0;
+
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.reviews-stars {
+    height: 50px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    color: #ffc52f;
+    font-size: 23px;
+}
+
+.reviews-text {
+    align-self: center;
+    width: 100%;
+    margin: 0;
+
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.55;
+    text-align: center;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.reviews-text.is-expanded {
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: unset;
+}
+
+.reviews-toggle {
+    align-self: end;
+    justify-self: start;
+
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    color: #e6ad27;
+    background: transparent;
+    border: none;
+
+    font: inherit;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+/* Native draggable bar: follows the cards and controls them. */
+
+.reviews-range {
+    --range-progress: 0%;
+
+    display: block;
+    width: 70%;
+    max-width: 300px;
+    height: 32px;
+    margin: 18px auto 0;
+    padding: 0;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: transparent;
+    border: 0;
+    outline: 0;
+
+    cursor: pointer;
+    touch-action: none;
+}
+
+.reviews-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+
+    background: linear-gradient(
+        to right,
+        #e6ad27 0%,
+        #e6ad27 var(--range-progress),
+        rgba(255, 255, 255, 0.28) var(--range-progress),
+        rgba(255, 255, 255, 0.28) 100%
+    );
+
+    border: 0;
+    border-radius: 999px;
+}
+
+.reviews-range::-webkit-slider-thumb {
+    width: 34px;
+    height: 12px;
+    margin-top: -3px;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: #e6ad27;
+    border: 0;
+    border-radius: 999px;
+
+    box-shadow: 0 0 10px rgba(230, 173, 39, 0.42);
+}
+
+.reviews-range::-moz-range-track {
+    width: 100%;
+    height: 6px;
+
+    background: rgba(255, 255, 255, 0.28);
+    border: 0;
+    border-radius: 999px;
+}
+
+.reviews-range::-moz-range-progress {
+    height: 6px;
+    background: #e6ad27;
+    border-radius: 999px;
+}
+
+.reviews-range::-moz-range-thumb {
+    width: 34px;
+    height: 12px;
+
+    background: #e6ad27;
+    border: 0;
+    border-radius: 999px;
+
+    box-shadow: 0 0 10px rgba(230, 173, 39, 0.42);
+}
+
+@media (max-width: 480px) {
+    .reviews-carousel {
+        width: calc(100% - 24px);
+    }
+
+    .reviews-track {
+        gap: 30px;
+    }
+
+    .reviews-card {
+        min-height: 420px;
+        max-height: 420px;
+        padding: 22px 20px;
+        border-radius: 24px;
+    }
+
+    .reviews-card.is-expanded {
+        max-height: 1200px;
+    }
+
+    .reviews-name {
+        font-size: clamp(19px, 5.4vw, 23px);
+    }
+
+    .reviews-text {
+        font-size: 17px;
+    }
+}
+
+
+/* ===== HERO DOWN ARROW ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  z-index: 20;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  font-size: 32px;
+  text-decoration: none;
+
+  transform: translateX(-50%);
+  animation: heroArrowBounce 1.6s infinite;
+}
+
+@keyframes heroArrowBounce {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, 9px);
+  }
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 22px;
+  z-index: 1000;
+
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #111111;
+  background: linear-gradient(
+    135deg,
+    #d4a62a,
+    #f0c64f
+  );
+
+  border: none;
+  border-radius: 50%;
+
+  font-size: 24px;
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.35);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateY(12px);
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translateY(0);
+}
+
+.back-to-top:active {
+  transform: scale(0.92);
+}
+
+/* ===== INFORMATION PAGE MENU HIGHLIGHT ===== */
+
+.information-page #mainHeader nav a:hover,
+.information-page #mainHeader nav a:focus,
+.information-page #mainHeader nav a:active,
+.information-page #mainHeader nav a.active {
+  color: #b8860b !important;
+  background: rgba(201, 149, 16, 0.12) !important;
+}
+/* ===== MOVE INFORMATION TITLE UP ===== */
+
+.information-page .information-hero {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.information-page .information-hero__content {
+  padding-top: 28px !important;
+}
+
+/* ===== RESERVATION DIRECT CONTACT BUTTONS ===== */
+
+.reservation-help-card {
+  gap: 20px;
+}
+
+.reservation-direct-contact {
+  width: 100%;
+  margin-top: 6px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.reservation-contact-option {
+  min-height: 74px;
+  padding: 14px 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  color: #a87900;
+  background: #ffffff;
+
+  border: 1.5px solid rgba(190, 142, 15, 0.4);
+  border-radius: 18px;
+
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.reservation-contact-option i {
+  font-size: 25px;
+}
+
+.reservation-contact-option:active {
+  transform: scale(0.96);
+}
+
+.reservation-contact-option.reservation-whatsapp-option {
+  color: #16a94a;
+}
+
+.reservation-contact-option.call {
+  color: #b17b00;
+}
+
+.reservation-contact-option.sms {
+  color: #2778c9;
+}
+
+.reservation-contact-option.email {
+  color: #b04a3f;
+}
+
+/* ===== FIX THE FOUR CONTACT BOXES ===== */
+
+.reservation-direct-contact {
+  display: grid !important;
+  grid-template-columns: repeat(2, 125px) !important;
+justify-content: center !important;
+  grid-auto-rows: 105px !important;
+  gap: 12px !important;
+}
+
+.reservation-contact-option {
+  width: 100% !important;
+  height: 105px !important;
+  min-height: 105px !important;
+  padding: 10px 6px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+
+  box-sizing: border-box !important;
+  font-size: 14px !important;
+}
+
+.reservation-contact-option i,
+.reservation-contact-option .whatsapp-svg {
+  display: block !important;
+  width: 29px !important;
+  height: 29px !important;
+  font-size: 29px !important;
+  line-height: 1 !important;
+}
+
+.reservation-whatsapp-option .whatsapp-svg {
+  color: #16a94a !important;
+}
+
+/* ===== FINAL CONTACT BUTTON FIX ===== */
+
+.reservation-help-section .reservation-direct-contact {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-auto-rows: 96px !important;
+  gap: 10px !important;
+}
+
+.reservation-help-section .reservation-contact-option {
+  width: 100% !important;
+  height: 96px !important;
+  min-height: 96px !important;
+  padding: 8px 5px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+
+  font-size: 14px !important;
+}
+
+.reservation-help-section .reservation-contact-option i {
+  font-size: 27px !important;
+}
+
+/* WhatsApp icon without Font Awesome */
+.reservation-help-section
+.reservation-whatsapp-option
+i,
+.reservation-help-section
+.reservation-whatsapp-option
+svg {
+  display: none !important;
+}
+
+.reservation-help-section
+.reservation-whatsapp-option::before {
+  content: "" !important;
+
+  display: block !important;
+  width: 28px !important;
+  height: 28px !important;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2316a94a' d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.173.198-.297.298-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.075-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785a9.87 9.87 0 0 1-5.034-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26C2.168 6.443 6.603 2.01 12.055 2.01a9.82 9.82 0 0 1 7.021 2.91 9.82 9.82 0 0 1 2.9 7.026c-.002 5.45-4.437 9.884-9.926 9.839M20.465 3.488A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.478-8.413'/%3E%3C/svg%3E") !important;
+
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+/* ===== VERY SMALL CONTACT BUTTONS ===== */
+
+.reservation-help-section .reservation-direct-contact {
+  grid-auto-rows: 50px !important;
+  gap: 8px !important;
+}
+
+.reservation-help-section .reservation-contact-option {
+  height: 50px !important;
+  min-height: 50px !important;
+  padding: 4px !important;
+  gap: 2px !important;
+
+  border-radius: 12px !important;
+  font-size: 11px !important;
+  line-height: 1 !important;
+}
+
+.reservation-help-section .reservation-contact-option i {
+  font-size: 18px !important;
+}
+
+.reservation-help-section
+.reservation-whatsapp-option::before {
+  width: 18px !important;
+  height: 18px !important;
+}
+/* ===== SMALL INNER CONTACT BUTTONS ===== */
+
+.reservation-help-section .reservation-direct-contact {
+  width: fit-content !important;
+  margin: 12px auto 0 !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(2, 100px) !important;
+  grid-auto-rows: 58px !important;
+  justify-content: center !important;
+  gap: 10px !important;
+}
+
+.reservation-help-section .reservation-contact-option {
+  width: 100px !important;
+  height: 58px !important;
+  min-height: 58px !important;
+  padding: 3px !important;
+
+  gap: 2px !important;
+  border-radius: 12px !important;
+
+  font-size: 11px !important;
+  line-height: 1 !important;
+}
+
+.reservation-help-section .reservation-contact-option i {
+  font-size: 18px !important;
+}
+
+.reservation-help-section
+.reservation-whatsapp-option::before {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* ===== RESERVATION DOWN ARROW ===== */
+
+#reservationForm {
+  scroll-margin-top: 20px;
+}
+
+.reservation-scroll-down {
+  width: 48px;
+  height: 48px;
+  margin: 12px auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #111111;
+  background: linear-gradient(
+    135deg,
+    #d4a62a,
+    #f0c64f
+  );
+
+  border-radius: 50%;
+  text-decoration: none;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  animation: reservationArrowBounce 1.6s infinite;
+}
+
+.reservation-scroll-down i {
+  font-size: 23px;
+}
+
+@keyframes reservationArrowBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+/* ===== RESERVATION BACK TO TOP ===== */
+
+.reservation-back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 22px;
+  z-index: 1000;
+
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #111111;
+  background: linear-gradient(
+    135deg,
+    #d4a62a,
+    #f0c64f
+  );
+
+  border: none;
+  border-radius: 50%;
+
+  font-size: 24px;
+  cursor: pointer;
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateY(12px);
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+}
+
+.reservation-back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.reservation-back-to-top:active {
+  transform: scale(0.92);
 }
