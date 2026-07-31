@@ -12813,6 +12813,7 @@ svg {
 
     box-shadow: none;
     border: none;
+    
   }
 
   #mainHeader.premium-header .header-inner {
@@ -12828,5 +12829,80 @@ svg {
 
   #mainHeader.premium-header .brand-subtitle {
     color: #c99a24;
+  }
+}
+
+/* =========================================
+   DESKTOP ONLY — COMPACT HEADER
+========================================= */
+
+@media (min-width: 1024px) {
+
+  #mainHeader.premium-header .header-inner {
+    width: min(92%, 1500px);
+    max-width: 1500px;
+    min-height: 76px;
+    padding: 9px 0;
+    grid-template-columns: minmax(250px, 340px) 1fr;
+    gap: 35px;
+  }
+
+  #mainHeader.premium-header .header-actions {
+    display: none;
+  }
+
+  #mainHeader.premium-header .premium-brand {
+    gap: 10px;
+  }
+
+  #mainHeader.premium-header .premium-brand-mark {
+    width: 54px;
+    height: 64px;
+    flex: 0 0 54px;
+    font-size: 24px;
+  }
+
+  #mainHeader.premium-header
+  .premium-brand-text strong {
+    font-size: clamp(18px, 1.55vw, 25px);
+    line-height: 0.98;
+  }
+
+  #mainHeader.premium-header .brand-subtitle {
+    margin-top: 5px;
+    font-size: 11px;
+    letter-spacing: 0.7px;
+    white-space: nowrap;
+  }
+
+  #mainHeader.premium-header nav {
+    justify-self: end;
+  }
+
+  #mainHeader.premium-header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(18px, 2vw, 36px);
+    margin: 0;
+    padding: 0;
+  }
+
+  #mainHeader.premium-header nav a {
+    padding: 12px 0 9px;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    color: #ffffff;
+    font-size: clamp(11px, 0.83vw, 14px);
+    white-space: nowrap;
+  }
+
+  #mainHeader.premium-header nav a.active,
+  #mainHeader.premium-header
+  nav a[aria-current="page"] {
+    color: #d3a52f !important;
+    background: transparent !important;
+    border-bottom: 2px solid #d3a52f;
   }
 }
