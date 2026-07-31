@@ -199,3 +199,68 @@
     transform: none !important;
   }
 }
+
+
+/* =========================================
+   DESKTOP 05 — NAV ACTIVE + LOCATION BADGE
+========================================= */
+
+@media screen and (min-width: 1024px) {
+
+  /* Remove the gold rectangle behind the active menu */
+  #mainHeader nav li,
+  #mainHeader nav a,
+  #mainHeader nav a.active,
+  #mainHeader nav li.active a,
+  #mainHeader nav a[aria-current="page"] {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* Remove the old large active background */
+  #mainHeader nav a::before {
+    display: none !important;
+    content: none !important;
+  }
+
+  /* Clean gold underline */
+  #mainHeader nav a {
+    position: relative !important;
+    padding: 10px 0 !important;
+  }
+
+  #mainHeader nav a::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 2px !important;
+
+    height: 2px !important;
+    background: #d4a62a !important;
+
+    transform: scaleX(0) !important;
+    transform-origin: center !important;
+  }
+
+  #mainHeader nav a.active::after,
+  #mainHeader nav li.active a::after,
+  #mainHeader nav a[aria-current="page"]::after {
+    transform: scaleX(1) !important;
+  }
+
+  /* Move the city badge closer to the WhatsApp button */
+  #accueil .hero-location {
+    white-space: nowrap !important;
+    transform: translate(-145px, 30px) !important;
+  }
+}
+
+/* Wider desktop screens */
+@media screen and (min-width: 1280px) {
+  #accueil .hero-location {
+    transform: translate(-220px, 30px) !important;
+  }
+}
