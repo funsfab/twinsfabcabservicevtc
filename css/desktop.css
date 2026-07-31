@@ -104,4 +104,36 @@
   text-decoration: none !important;
 }
 
+/* =========================================
+   DESKTOP 03 — HERO TITLE
+========================================= */
 
+@media screen and (min-width: 1024px) {
+  #accueil .hero-premium-inner {
+    grid-template-columns: 58% 42% !important;
+  }
+
+  #accueil .hero-left {
+    max-width: 760px !important;
+  }
+
+  #accueil .hero-left h1 {
+    max-width: none !important;
+    font-size: clamp(40px, 3.5vw, 52px) !important;
+    line-height: 1.04 !important;
+    letter-spacing: -1.5px !important;
+    white-space: nowrap !important;
+  }
+
+  #accueil .hero-left h1 span {
+    display: block !important;
+    width: fit-content !important;
+    color: #e0ad32 !important;
+    padding-bottom: 5px !important;
+    border-bottom: 4px solid #e0ad32 !important;
+  }
+
+  #accueil .gold-line {
+    display: none !important;
+  }
+}
