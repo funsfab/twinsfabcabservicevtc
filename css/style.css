@@ -12790,3 +12790,43 @@ svg {
   transform: scale(0.92);
 }
 
+/* =========================================
+   DESKTOP ONLY — HEADER OVER HERO
+   Mobile version is not affected
+========================================= */
+
+@media (min-width: 1024px) {
+  #mainHeader.premium-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+    padding: 0;
+
+    background: linear-gradient(
+      180deg,
+      rgba(4, 10, 17, 0.92) 0%,
+      rgba(4, 10, 17, 0.58) 60%,
+      rgba(4, 10, 17, 0) 100%
+    );
+
+    box-shadow: none;
+    border: none;
+  }
+
+  #mainHeader.premium-header .header-inner {
+    min-height: 88px;
+    padding: 12px 0;
+  }
+
+  #mainHeader.premium-header .premium-brand,
+  #mainHeader.premium-header .premium-brand-text strong,
+  #mainHeader.premium-header nav a {
+    color: #ffffff;
+  }
+
+  #mainHeader.premium-header .brand-subtitle {
+    color: #c99a24;
+  }
+}
