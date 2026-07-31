@@ -453,7 +453,32 @@ document.addEventListener("DOMContentLoaded", function () {
           .getElementById("email")
           .value
           .trim();
+const emailField = document.getElementById("email");
 
+emailField.setCustomValidity("");
+
+if (email === "") {
+  emailField.setCustomValidity(
+    "L’adresse e-mail est obligatoire."
+  );
+  emailField.reportValidity();
+  emailField.focus();
+  return;
+}
+
+const emailFormat =
+  /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/;
+
+if (!emailFormat.test(email)) {
+  emailField.setCustomValidity(
+    "Entrez une adresse e-mail valide, par exemple nom@gmail.com."
+  );
+  emailField.reportValidity();
+  emailField.focus();
+  return;
+}
+
+emailField.setCustomValidity("");
         const depart = document
           .getElementById("depart")
           .value
@@ -1627,3 +1652,143 @@ document.addEventListener("DOMContentLoaded", function () {
     { passive: true }
   );
 });
+const telephoneInputField =
+  document.getElementById("telephone");
+
+let telephoneSelector = null;
+
+if (
+  telephoneInputField &&
+  window.intlTelInput
+) {
+  telephoneSelector = window.intlTelInput(
+    telephoneInputField,
+    {
+      initialCountry: "fr",
+      separateDialCode: true,
+      countrySearch: true,
+      countrySelectorMode: "AUTO",
+      countryNameLocale: "fr",
+
+      loadUtils: () =>
+        import(
+          "https://cdn.jsdelivr.net/npm/intl-tel-input@29.1.2/dist/js/utils.js"
+        ),
+    }
+  );
+  
+  let countryPopupScrollY = 0;
+
+let countryTouchStartY = 0;
+
+function stopBackgroundTouch(event) {
+  const target = event.target;
+
+  const countryList =
+    target instanceof Element
+      ? target.closest(".iti__country-list")
+      : null;
+
+  if (!countryList) {
+    event.preventDefault();
+    return;
+  }
+
+  const currentTouchY =
+    event.touches[0].clientY;
+
+  const movingDown =
+    currentTouchY > countryTouchStartY;
+
+  const atTop =
+    countryList.scrollTop <= 0;
+
+  const atBottom =
+    Math.ceil(
+      countryList.scrollTop +
+      countryList.clientHeight
+    ) >= countryList.scrollHeight;
+
+  if (
+    (atTop && movingDown) ||
+    (atBottom && !movingDown)
+  ) {
+    event.preventDefault();
+  }
+
+  countryTouchStartY = currentTouchY;
+}
+
+telephoneInputField.addEventListener(
+  "open:countryselector",
+  function () {
+    countryPopupScrollY = window.scrollY;
+
+    document.documentElement.style.overflow =
+      "hidden";
+    document.documentElement.style.overscrollBehavior =
+      "none";
+
+    document.body.style.position = "fixed";
+    document.body.style.top =
+      `-${countryPopupScrollY}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+    document.body.style.width = "100%";
+    document.body.style.overflow = "hidden";
+
+    const countryList =
+      document.querySelector(
+        ".iti__country-list"
+      );
+
+    if (countryList) {
+      countryList.style.overscrollBehavior =
+        "contain";
+      countryList.style.touchAction = "pan-y";
+    }
+document.addEventListener(
+  "touchstart",
+  function (event) {
+    if (event.touches.length > 0) {
+      countryTouchStartY =
+        event.touches[0].clientY;
+    }
+  },
+  { passive: true }
+);
+    document.addEventListener(
+      "touchmove",
+      stopBackgroundTouch,
+      { passive: false }
+    );
+  }
+);
+
+telephoneInputField.addEventListener(
+  "close:countryselector",
+  function () {
+    document.removeEventListener(
+      "touchmove",
+      stopBackgroundTouch
+    );
+
+    document.documentElement.style.overflow =
+      "";
+    document.documentElement.style.overscrollBehavior =
+      "";
+
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.body.style.width = "";
+    document.body.style.overflow = "";
+
+    window.scrollTo(
+      0,
+      countryPopupScrollY
+    );
+  }
+);
+}
