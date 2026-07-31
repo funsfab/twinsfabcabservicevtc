@@ -12844,3 +12844,10 @@ svg {
     text-underline-offset: 7px;
   }
 }
+
+/* MOBILE — REMOVE THE OLD EXTRA GOLD LINE */
+@media screen and (max-width: 768px) {
+  #accueil .gold-line {
+    display: none !important;
+  }
+}
