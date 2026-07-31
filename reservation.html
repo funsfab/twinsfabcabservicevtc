@@ -24,6 +24,10 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   >
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/intl-tel-input@29.1.2/dist/css/intlTelInput.css"
+>
 </head>
 
 <body class="reservation-page">
@@ -199,16 +203,16 @@
 
             <!-- Téléphone -->
             <div class="reservation-field">
-              <i class="fa-solid fa-phone"></i>
+             
 
-              <input
-                type="tel"
-                id="telephone"
-                name="telephone"
-                placeholder="Téléphone"
-                autocomplete="tel"
-                required
-              >
+             <input
+  type="tel"
+  id="telephone"
+  name="telephone"
+  autocomplete="tel"
+  inputmode="tel"
+  required
+>
             </div>
 
 
@@ -224,7 +228,7 @@
   autocomplete="email"
   inputmode="email"
   required
-  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+  pattern="[^@\s]+@[^@\s]+\.[A-Za-z]{2,}"
   title="Entrez une adresse e-mail valide, par exemple nom@gmail.com"
 >
             </div>
@@ -638,6 +642,9 @@
   <link rel="stylesheet" href="https://unpkg.com/@geoapify/geocoder-autocomplete/styles/minimal.css">
 
 <script src="https://unpkg.com/@geoapify/geocoder-autocomplete/dist/index.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@29.1.2/dist/js/intlTelInput.min.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 </html>
