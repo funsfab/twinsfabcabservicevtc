@@ -171,3 +171,31 @@
     color: #d4a62a !important;
   }
 }
+
+/* =========================================
+   DESKTOP 04 FIX — RATING ABOVE TITLE
+========================================= */
+
+@media screen and (min-width: 1024px) {
+  #accueil .hero-left {
+    padding-top: 92px !important;
+  }
+
+  #accueil .google-rating {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+
+    width: max-content !important;
+    margin: 0 0 20px 0 !important;
+    padding: 8px 14px !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+}
