@@ -264,3 +264,69 @@
     transform: translate(-220px, 30px) !important;
   }
 }
+
+/* =========================================
+   DESKTOP 06 — LOGO LIKE MOBILE VERSION
+========================================= */
+
+@media screen and (min-width: 1024px) {
+
+  #mainHeader .premium-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Keep the complete crowned TF shield visible */
+  #mainHeader .premium-brand-mark {
+    width: 68px !important;
+    height: 76px !important;
+    min-width: 68px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+  }
+
+  #mainHeader .premium-brand-mark img,
+  #mainHeader .premium-brand-mark svg {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+
+  #mainHeader .premium-brand-text {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  #mainHeader .premium-brand-text strong {
+    color: #ffffff !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 23px !important;
+    font-weight: 700 !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.3px !important;
+    text-transform: uppercase !important;
+    white-space: normal !important;
+  }
+
+  #mainHeader .brand-subtitle {
+    margin-top: 7px !important;
+    color: #d4a62a !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    line-height: 1.15 !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+  }
+}
