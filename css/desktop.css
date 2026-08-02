@@ -620,3 +620,8 @@
   }
 
 }
+
+/* Show business card on desktop */
+.vehicle-business-card-wrap {
+  display: flex !important;
+}
