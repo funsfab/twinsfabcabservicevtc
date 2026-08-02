@@ -773,10 +773,7 @@
       cubic-bezier(0.22, 0.75, 0.25, 1);
   }
 
-  #vehicule .tf-business-card-scene:hover
-  .tf-business-card {
-    transform: rotateY(180deg);
-  }
+
 
 
   /* BOTH SIDES */
@@ -975,4 +972,42 @@
     text-align: center;
   }
 
+}
+
+/* AUTOMATIC CONTINUOUS BUSINESS CARD FLIP */
+
+@keyframes tfBusinessCardAutomaticFlip {
+
+  0%,
+  35% {
+    transform: rotateY(0deg);
+  }
+
+  45%,
+  85% {
+    transform: rotateY(180deg);
+  }
+
+  95%,
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  #vehicule .tf-business-card {
+    animation:
+      tfBusinessCardAutomaticFlip
+      10s
+      ease-in-out
+      infinite !important;
+
+    transition: none !important;
+  }
+
+  #vehicule .tf-business-card-scene {
+    cursor: default !important;
+    pointer-events: none !important;
+  }
 }
