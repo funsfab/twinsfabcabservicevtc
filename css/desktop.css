@@ -734,6 +734,7 @@
     justify-content: center;
 
     min-width: 0;
+   transform: translateY(28px);
   }
 
   #vehicule .business-card-label {
