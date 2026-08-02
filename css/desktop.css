@@ -1046,3 +1046,57 @@
     border-radius: 50%;
   }
 }
+
+/* BUSINESS CARD — MATCH THE HEADER TF LOGO EXACTLY */
+
+@media screen and (min-width: 1024px) {
+
+  #vehicule .business-card-logo .premium-brand-mark {
+    position: relative !important;
+
+    width: 64px !important;
+    height: 72px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    color: #c9972f !important;
+    background: #fffaf0 !important;
+
+    border: 2px solid #d4a33a !important;
+    border-radius: 17px 17px 20px 20px !important;
+
+    clip-path: none !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 25px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+
+    box-shadow:
+      0 5px 14px rgba(0, 0, 0, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+  }
+
+  #vehicule .business-card-logo .premium-brand-mark::before {
+    content: "♛" !important;
+
+    position: absolute !important;
+    top: -20px !important;
+    left: 50% !important;
+
+    transform: translateX(-50%) !important;
+
+    color: #d4a12f !important;
+    background: transparent !important;
+
+    font-size: 21px !important;
+    line-height: 1 !important;
+  }
+
+  #vehicule .business-card-logo .premium-brand-mark::after {
+    display: none !important;
+    content: none !important;
+  }
+}
