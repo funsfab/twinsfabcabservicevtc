@@ -459,3 +459,62 @@
     text-align: center !important;
   }
 }
+
+/* =========================================
+   DESKTOP 06B — SMALLER CREAM LOGO CARD
+========================================= */
+
+@media screen and (min-width: 1024px) {
+
+  #mainHeader.premium-header .premium-brand {
+    gap: 10px !important;
+    padding: 7px 14px 7px 10px !important;
+
+    background: #fffaf0 !important;
+    border: 1px solid rgba(196, 154, 44, 0.25) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12) !important;
+  }
+
+  /* Smaller shield */
+  #mainHeader.premium-header .premium-brand-mark {
+    width: 48px !important;
+    height: 56px !important;
+    min-width: 48px !important;
+    flex: 0 0 48px !important;
+    margin: 1px 0 0 !important;
+  }
+
+  #mainHeader.premium-header .premium-brand-mark::before {
+    top: 9px !important;
+    width: 42px !important;
+    height: 46px !important;
+
+    border-width: 2px !important;
+    border-radius: 12px 12px 17px 17px !important;
+
+    font-size: 20px !important;
+  }
+
+  #mainHeader.premium-header .premium-brand-mark::after {
+    top: -3px !important;
+    font-size: 17px !important;
+  }
+
+  /* Smaller company text */
+  #mainHeader.premium-header .premium-brand-text {
+    width: 185px !important;
+  }
+
+  #mainHeader.premium-header .premium-brand-text strong {
+    color: #111111 !important;
+    font-size: 17px !important;
+    line-height: 0.96 !important;
+  }
+
+  #mainHeader.premium-header .brand-subtitle {
+    margin-top: 5px !important;
+    color: #b8891f !important;
+    font-size: 8px !important;
+  }
+}
