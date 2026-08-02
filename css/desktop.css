@@ -587,10 +587,10 @@
 }
 
 
-/* DESKTOP STEP 3 — SPACE BELOW “À LILLE” */
+/* DESKTOP STEP 3 — SPACE AFTER “À LILLE” */
 
 @media screen and (min-width: 1024px) {
-  #accueil .gold-line {
-    margin-bottom: 18px !important;
+  section#accueil.hero-premium .hero-left .hero-description {
+    margin-top: 24px !important;
   }
 }
