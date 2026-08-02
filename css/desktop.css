@@ -568,3 +568,11 @@
     background-color: #fffaf0 !important;
   }
 }
+
+/* DESKTOP STEP 2 — MOVE GOOGLE RATING UP */
+
+@media screen and (min-width: 1024px) {
+  #accueil .google-rating {
+    margin-top: -18px !important;
+  }
+}
