@@ -1100,3 +1100,21 @@
     content: none !important;
   }
 }
+/* BUSINESS CARD — SMALLER TF LOGO */
+
+@media screen and (min-width: 1024px) {
+
+  #vehicule .business-card-logo .premium-brand-mark {
+    width: 48px !important;
+    height: 54px !important;
+
+    border-radius: 13px 13px 15px 15px !important;
+
+    font-size: 19px !important;
+  }
+
+  #vehicule .business-card-logo .premium-brand-mark::before {
+    top: -15px !important;
+    font-size: 16px !important;
+  }
+}
