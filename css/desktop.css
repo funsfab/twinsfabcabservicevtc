@@ -594,3 +594,11 @@
     margin-top: 64px !important;
   }
 }
+
+/* DESKTOP STEP 4 — MOVE DOWN ARROW UP */
+
+@media screen and (min-width: 1024px) {
+  section#accueil.hero-premium .hero-scroll-down {
+    bottom: 70px !important;
+  }
+}
