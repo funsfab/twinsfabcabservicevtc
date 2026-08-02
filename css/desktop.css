@@ -1162,112 +1162,95 @@ line-height: 1.2;
   }
 
 }
-/* DESKTOP — COPY THE MOBILE “POURQUOI NOUS CHOISIR” DESIGN */
+/* DESKTOP — MATCH THE MOBILE “POURQUOI NOUS CHOISIR” DESIGN */
 
 @media screen and (min-width: 1024px) {
 
   section#services .why-premium-inner {
+    position: relative !important;
+
     display: grid !important;
-
     grid-template-columns:
-      29% minmax(0, 1fr) !important;
+      31% minmax(0, 1fr) !important;
 
-    column-gap: 28px !important;
     align-items: start !important;
+    column-gap: 28px !important;
+
+    min-height: 760px !important;
 
     padding:
-      38px
-      36px
-      190px !important;
+      30px
+      32px
+      150px !important;
 
     overflow: hidden !important;
   }
 
 
-  /* GOLD ARC — POSITIONED LIKE MOBILE */
+  /* GOLD ARC — ONLY THE CURVED RIGHT SIDE */
 
   section#services .why-premium-inner::before {
     content: "" !important;
 
     position: absolute !important;
 
-    top: 45px !important;
+    top: 78px !important;
     left: -300px !important;
 
-    width: 600px !important;
-    height: 820px !important;
+    width: 670px !important;
+    height: 560px !important;
 
-    border:
+    border: 0 !important;
+    border-right:
       4px solid
-      rgba(235, 188, 63, 0.95) !important;
+      rgba(235, 188, 63, 0.98) !important;
 
-    border-right: none !important;
     border-radius: 50% !important;
 
     transform: none !important;
     opacity: 1 !important;
 
     box-shadow:
-      0 0 8px rgba(255, 206, 72, 0.85),
-      0 0 22px rgba(236, 187, 53, 0.45) !important;
+      5px 0 9px rgba(255, 210, 76, 0.80),
+      12px 0 28px rgba(225, 172, 45, 0.38) !important;
 
     pointer-events: none !important;
   }
 
 
-  /* LEFT TITLE AREA */
+  /* LEFT TITLE — POSITIONED LIKE MOBILE */
 
   section#services .why-premium-intro {
+    position: relative !important;
+    z-index: 3 !important;
+
     grid-column: 1 !important;
     grid-row: 1 !important;
-
-    align-self: start !important;
 
     width: 100% !important;
     max-width: none !important;
 
     margin: 0 !important;
+
     padding:
-      165px
+      215px
       0
       0
-      20px !important;
+      18px !important;
 
     text-align: left !important;
   }
 
-  section#services .why-premium-intro > p {
-    font-size: 31px !important;
-  }
 
-  section#services .why-premium-intro h2 {
-    font-size: 39px !important;
+  /* COMPANY CROWN */
+
+  section#services .why-premium-crown {
+    display: block !important;
+
+    margin: 0 0 17px !important;
+
     text-align: left !important;
   }
-
-  section#services .why-premium-intro > span {
-    max-width: 175px !important;
-    font-size: 16px !important;
-  }
-
-
-  /* RIGHT CARD AREA */
-
-  section#services .why-premium-list {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-
-    align-self: start !important;
-
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-
-    gap: 14px !important;
-  }
-
-
-  /* USE THE SAME COMPANY CROWN */
 
   section#services .why-premium-crown i {
     display: none !important;
@@ -1282,6 +1265,142 @@ line-height: 1.2;
 
     font-size: 21px !important;
     line-height: 1 !important;
+  }
+
+
+  /* “POURQUOI” */
+
+  section#services .why-premium-intro > p {
+    margin: 0 0 5px !important;
+
+    color: #ffffff !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif !important;
+
+    font-size: 29px !important;
+    line-height: 1.1 !important;
+    text-align: left !important;
+  }
+
+
+  /* FORCE “NOUS” AND “CHOISIR” ON TWO LINES */
+
+  section#services .why-premium-intro h2 {
+    display: block !important;
+
+    width: 170px !important;
+    max-width: 170px !important;
+
+    margin: 0 !important;
+
+    color: #d9a52e !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif !important;
+
+    font-size: 38px !important;
+    line-height: 1.06 !important;
+    text-align: left !important;
+    text-transform: uppercase !important;
+
+    white-space: normal !important;
+  }
+
+
+  section#services .why-premium-line {
+    width: 65px !important;
+
+    margin:
+      23px
+      0
+      22px !important;
+  }
+
+
+  section#services .why-premium-intro > span {
+    display: block !important;
+
+    width: 175px !important;
+    max-width: 175px !important;
+
+    color: #ffffff !important;
+
+    font-size: 16px !important;
+    line-height: 1.45 !important;
+    text-align: left !important;
+  }
+
+
+  section#services .why-premium-diamond {
+    margin:
+      29px
+      0
+      0 !important;
+
+    text-align: left !important;
+  }
+
+
+  /* RIGHT-SIDE CARDS */
+
+  section#services .why-premium-list {
+    position: relative !important;
+    z-index: 3 !important;
+
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    gap: 13px !important;
+  }
+
+
+  /* MOBILE-LIKE CARD HEIGHT */
+
+  section#services .why-premium-trigger {
+    width: 100% !important;
+    min-height: 88px !important;
+
+    padding:
+      14px
+      18px !important;
+
+    border-radius: 18px !important;
+  }
+
+
+  section#services .why-premium-icon {
+    width: 56px !important;
+    height: 56px !important;
+    min-width: 56px !important;
+
+    font-size: 20px !important;
+  }
+
+
+  section#services .why-premium-trigger strong {
+    font-size: 17px !important;
+    line-height: 1.2 !important;
+  }
+
+
+  section#services .why-premium-trigger small {
+    margin-top: 4px !important;
+
+    font-size: 13px !important;
+    line-height: 1.35 !important;
   }
 
 }
