@@ -1139,3 +1139,26 @@ line-height: 1.2;
   }
 
 }
+
+
+/* DESKTOP — MATCH “POURQUOI NOUS CHOISIR”
+   WIDTH WITH THE VEHICLE SECTION */
+
+@media screen and (min-width: 1024px) {
+
+  section#services.why-premium {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  section#services.why-premium .why-premium-inner {
+    width: 100% !important;
+    max-width: 1500px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    box-sizing: border-box !important;
+  }
+
+}
