@@ -585,3 +585,12 @@
     top: -35px !important;
   }
 }
+
+
+/* DESKTOP STEP 3 — SPACE BELOW “À LILLE” */
+
+@media screen and (min-width: 1024px) {
+  #accueil .gold-line {
+    margin-bottom: 18px !important;
+  }
+}
