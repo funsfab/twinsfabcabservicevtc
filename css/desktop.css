@@ -1125,3 +1125,15 @@
 #vehicule {
   scroll-margin-top: 0 !important;
 }
+
+/* DESKTOP — PLACE UP ARROW ABOVE CONTACT BUTTONS */
+
+@media screen and (min-width: 1024px) {
+
+  #backToTop.back-to-top {
+    right: 18px !important;
+    bottom: 164px !important;
+    z-index: 1600 !important;
+  }
+
+}
