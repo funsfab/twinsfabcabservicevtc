@@ -961,7 +961,8 @@
 
   #vehicule .tf-business-card-back small {
     margin-top: auto;
-    padding-top: 15px;
+    padding: 7px 0 10px;
+line-height: 1.2;
 
     color: #d9a72d;
 
