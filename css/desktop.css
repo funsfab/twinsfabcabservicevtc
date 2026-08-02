@@ -625,3 +625,354 @@
 .vehicle-business-card-wrap {
   display: flex !important;
 }
+
+
+/* ==================================================
+   DESKTOP — VTC SECTION + FLIPPING BUSINESS CARD
+================================================== */
+
+@media screen and (min-width: 1024px) {
+
+  #vehicule .vehicle-desktop-layout {
+    position: relative;
+    z-index: 4;
+
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1.05fr)
+      minmax(390px, 0.85fr);
+
+    align-items: center;
+    gap: 34px;
+
+    padding: 38px 38px 125px;
+  }
+
+
+  /* LEFT SIDE */
+
+  #vehicule .vehicle-service-column {
+    min-width: 0;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-experience-heading {
+    padding: 0 15px 28px !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-experience-heading p {
+    font-size: 30px !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-experience-heading h2 {
+    font-size: 38px !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-grid {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: grid !important;
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 13px !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-item {
+    min-height: 105px !important;
+    padding: 17px !important;
+
+    grid-template-columns: 55px 1fr !important;
+    gap: 13px !important;
+
+    border-radius: 16px !important;
+
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-item:hover {
+    transform: translateY(-5px);
+
+    border-color:
+      rgba(230, 179, 37, 0.65) !important;
+
+    box-shadow:
+      0 15px 28px rgba(0, 0, 0, 0.28),
+      0 0 18px rgba(218, 166, 43, 0.12) !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-icon {
+    width: 52px !important;
+    height: 52px !important;
+
+    font-size: 21px !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-item strong {
+    font-size: 15px !important;
+    line-height: 1.25 !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-item span {
+    margin-top: 5px !important;
+
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+
+
+  /* RIGHT SIDE */
+
+  #vehicule .vehicle-business-card-wrap {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+  }
+
+  #vehicule .business-card-label {
+    margin-bottom: 17px;
+
+    color: #d9a72d;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+  /* FLIP AREA */
+
+  #vehicule .tf-business-card-scene {
+    width: 100%;
+    max-width: 490px;
+    aspect-ratio: 1.55 / 1;
+
+    perspective: 1500px;
+    cursor: pointer;
+  }
+
+  #vehicule .tf-business-card {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+
+    transition:
+      transform 0.9s
+      cubic-bezier(0.22, 0.75, 0.25, 1);
+  }
+
+  #vehicule .tf-business-card-scene:hover
+  .tf-business-card {
+    transform: rotateY(180deg);
+  }
+
+
+  /* BOTH SIDES */
+
+  #vehicule .tf-business-card-face {
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden;
+
+    padding: 28px;
+
+    border:
+      1px solid rgba(230, 179, 37, 0.75);
+
+    border-radius: 25px;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    background:
+      radial-gradient(
+        circle at 75% 30%,
+        rgba(213, 160, 34, 0.14),
+        transparent 38%
+      ),
+      linear-gradient(
+        145deg,
+        #171717,
+        #080808
+      );
+
+    box-shadow:
+      0 25px 45px rgba(0, 0, 0, 0.45),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+
+  /* FRONT */
+
+  #vehicule .tf-business-card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  #vehicule .business-card-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #vehicule .business-card-logo i {
+    margin-bottom: -4px;
+
+    color: #dfa92e;
+    font-size: 20px;
+  }
+
+  #vehicule .business-card-logo span {
+    width: 70px;
+    height: 70px;
+
+    display: grid;
+    place-items: center;
+
+    color: #bd8825;
+    background: #fff7e7;
+
+    border: 2px solid #bd8825;
+    border-radius: 50%;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 29px;
+  }
+
+  #vehicule .tf-business-card-front h3 {
+    margin: 19px 0 0;
+
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+
+  #vehicule .tf-business-card-front h4 {
+    margin: 6px 0 0;
+
+    color: #d9a72d;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  #vehicule .tf-business-card-front p {
+    margin: 18px 0 0;
+
+    color: #e7ddd0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  #vehicule .business-card-values {
+    margin-top: 21px;
+
+    color: #ddb145;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+  }
+
+
+  /* BACK */
+
+  #vehicule .tf-business-card-back {
+    display: flex;
+    flex-direction: column;
+
+    transform: rotateY(180deg);
+
+    text-align: left;
+  }
+
+  #vehicule .tf-business-card-back h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+  }
+
+  #vehicule .tf-business-card-back > p:first-of-type {
+    margin: 4px 0 17px;
+
+    color: #d7a62d;
+    font-size: 12px;
+  }
+
+  #vehicule .tf-business-card-back a,
+  #vehicule .tf-business-card-back > p:not(:first-of-type) {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    margin: 0;
+    padding: 11px 0;
+
+    color: #eee6dc;
+
+    border-bottom:
+      1px solid rgba(214, 166, 44, 0.22);
+
+    font-size: 13px;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+
+  #vehicule .tf-business-card-back a i,
+  #vehicule .tf-business-card-back > p i {
+    width: 34px;
+    height: 34px;
+
+    display: grid;
+    place-items: center;
+    flex: none;
+
+    color: #dfa92d;
+
+    border:
+      1px solid rgba(223, 169, 45, 0.55);
+
+    border-radius: 50%;
+  }
+
+  #vehicule .tf-business-card-back small {
+    margin-top: auto;
+    padding-top: 15px;
+
+    color: #d9a72d;
+
+    border-top:
+      1px solid rgba(214, 166, 44, 0.22);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+    text-align: center;
+  }
+
+}
