@@ -12851,3 +12851,7 @@ svg {
     display: none !important;
   }
 }
+
+.vehicle-business-card-wrap {
+  display: none !important;
+}
