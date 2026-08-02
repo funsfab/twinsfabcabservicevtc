@@ -1367,40 +1367,78 @@ line-height: 1.2;
   }
 
 
-  /* MOBILE-LIKE CARD HEIGHT */
+/* RIGHT CARDS — ICONS AND TEXT CORRECTLY SEPARATED */
 
-  section#services .why-premium-trigger {
-    width: 100% !important;
-    min-height: 88px !important;
+section#services .why-premium-trigger {
+  position: relative !important;
 
-    padding:
-      14px
-      18px !important;
+  width: 100% !important;
+  min-height: 88px !important;
 
-    border-radius: 18px !important;
-  }
+  padding:
+    14px
+    48px
+    14px
+    92px !important;
 
+  display: flex !important;
+  align-items: center !important;
 
-  section#services .why-premium-icon {
-    width: 56px !important;
-    height: 56px !important;
-    min-width: 56px !important;
-
-    font-size: 20px !important;
-  }
+  text-align: left !important;
+}
 
 
-  section#services .why-premium-trigger strong {
-    font-size: 17px !important;
-    line-height: 1.2 !important;
-  }
+section#services
+.why-premium-trigger
+.why-premium-icon {
+  position: absolute !important;
+
+  left: 16px !important;
+  top: 50% !important;
+
+  width: 56px !important;
+  height: 56px !important;
+  min-width: 56px !important;
+
+  transform:
+    translateY(-50%) !important;
+
+  font-size: 20px !important;
+
+  z-index: 2 !important;
+}
 
 
-  section#services .why-premium-trigger small {
-    margin-top: 4px !important;
+section#services .why-premium-text {
+  position: relative !important;
 
-    font-size: 13px !important;
-    line-height: 1.35 !important;
-  }
+  display: block !important;
 
+  width: 100% !important;
+  min-width: 0 !important;
+
+  z-index: 3 !important;
+}
+
+
+section#services .why-premium-text strong {
+  display: block !important;
+
+  font-size: 17px !important;
+  line-height: 1.2 !important;
+}
+
+
+section#services .why-premium-text small {
+  display: block !important;
+
+  margin-top: 4px !important;
+
+  font-size: 13px !important;
+  line-height: 1.35 !important;
+}
+
+
+section#services .why-premium-arrow {
+  right: 18px !important;
 }
