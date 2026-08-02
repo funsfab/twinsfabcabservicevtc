@@ -1375,11 +1375,7 @@ section#services .why-premium-trigger {
   width: 100% !important;
   min-height: 88px !important;
 
-  padding:
-    14px
-    48px
-    14px
-    92px !important;
+  padding: 14px 48px 14px 108px !important;
 
   display: flex !important;
   align-items: center !important;
