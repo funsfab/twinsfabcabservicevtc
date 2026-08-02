@@ -522,3 +522,49 @@
     text-align: left !important;
   }
 }
+
+/* =========================================
+   FINAL LOGO FIX — CREAM TF SHIELD ONLY
+========================================= */
+
+@media screen and (min-width: 1024px) {
+
+  /* Remove the cream background from the complete logo area */
+  #mainHeader.premium-header a.premium-brand,
+  #mainHeader.premium-header .premium-brand {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Keep the company text directly on the dark header */
+  #mainHeader.premium-header .premium-brand-text,
+  #mainHeader.premium-header .premium-brand-text strong,
+  #mainHeader.premium-header .brand-subtitle {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  #mainHeader.premium-header .premium-brand-text strong {
+    color: #ffffff !important;
+  }
+
+  #mainHeader.premium-header .brand-subtitle {
+    color: #d4a62a !important;
+  }
+
+  /* Only the TF shield receives the cream background */
+  #mainHeader.premium-header .premium-brand-mark::before {
+    background: #fffaf0 !important;
+    background-color: #fffaf0 !important;
+  }
+}
