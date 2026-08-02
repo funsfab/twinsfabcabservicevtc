@@ -602,3 +602,21 @@
     bottom: 70px !important;
   }
 }
+
+/* DESKTOP — MAKE VEHICLE RECTANGLE ALMOST FULL WIDTH */
+
+@media screen and (min-width: 1024px) {
+
+  section#vehicule.vehicle-experience {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  section#vehicule.vehicle-experience .vehicle-experience-inner {
+    width: 100% !important;
+    max-width: 1500px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+}
