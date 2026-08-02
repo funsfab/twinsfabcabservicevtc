@@ -569,10 +569,10 @@
   }
 }
 
-/* DESKTOP STEP 2 — MOVE GOOGLE RATING UP */
+/* DESKTOP STEP 2 — MOVE LEFT HERO CONTENT UP */
 
 @media screen and (min-width: 1024px) {
-  #accueil .google-rating {
-    margin-top: -18px !important;
+  #accueil .hero-premium-inner .hero-left {
+    padding-top: 85px !important;
   }
 }
