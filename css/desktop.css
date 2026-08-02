@@ -1100,27 +1100,26 @@
     content: none !important;
   }
 }
-/* BUSINESS CARD — EXTRA SMALL TF LOGO */
+/* BUSINESS CARD — SAME SIZE AS HEADER LOGO */
 
 @media screen and (min-width: 1024px) {
 
   #vehicule .business-card-logo .premium-brand-mark {
-    width: 36px !important;
-    height: 40px !important;
-    min-width: 36px !important;
-    min-height: 40px !important;
+    width: 42px !important;
+    height: 48px !important;
+    min-width: 42px !important;
+    min-height: 48px !important;
 
-    border-radius: 10px 10px 12px 12px !important;
+    border-radius: 9px 9px 19px 19px !important;
 
-    font-size: 14px !important;
+    font-size: 23px !important;
   }
 
   #vehicule .business-card-logo .premium-brand-mark::before {
-    top: -12px !important;
-    font-size: 12px !important;
+    top: -18px !important;
+    font-size: 19px !important;
   }
 }
-
 /* DESKTOP — SHOW THE FULL VEHICLE SECTION AFTER ARROW CLICK */
 
 #vehicule {
