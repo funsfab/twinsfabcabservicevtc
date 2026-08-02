@@ -461,38 +461,40 @@
 }
 
 /* =========================================
-   DESKTOP 06B — SMALLER CREAM LOGO CARD
+   DESKTOP 06B — ONLY THE TF LOGO IS CREAM
 ========================================= */
 
 @media screen and (min-width: 1024px) {
 
+  /* Remove the cream card behind the complete brand */
   #mainHeader.premium-header .premium-brand {
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
     gap: 10px !important;
-    padding: 7px 14px 7px 10px !important;
-
-    background: #fffaf0 !important;
-    border: 1px solid rgba(196, 154, 44, 0.25) !important;
-    border-radius: 15px !important;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12) !important;
   }
 
-  /* Smaller shield */
+  /* Smaller TF shield only */
   #mainHeader.premium-header .premium-brand-mark {
     width: 48px !important;
     height: 56px !important;
     min-width: 48px !important;
     flex: 0 0 48px !important;
-    margin: 1px 0 0 !important;
+    margin: 0 !important;
   }
 
   #mainHeader.premium-header .premium-brand-mark::before {
     top: 9px !important;
-    width: 42px !important;
+    width: 43px !important;
     height: 46px !important;
 
-    border-width: 2px !important;
+    background: #fffaf0 !important;
+    border: 2px solid #c49a2c !important;
     border-radius: 12px 12px 17px 17px !important;
 
+    color: #b8891f !important;
     font-size: 20px !important;
   }
 
@@ -501,20 +503,22 @@
     font-size: 17px !important;
   }
 
-  /* Smaller company text */
+  /* Company text stays directly on the dark header */
   #mainHeader.premium-header .premium-brand-text {
-    width: 185px !important;
+    width: 190px !important;
+    align-items: flex-start !important;
+    text-align: left !important;
   }
 
   #mainHeader.premium-header .premium-brand-text strong {
-    color: #111111 !important;
-    font-size: 17px !important;
-    line-height: 0.96 !important;
+    color: #ffffff !important;
+    font-size: 18px !important;
+    text-align: left !important;
   }
 
   #mainHeader.premium-header .brand-subtitle {
-    margin-top: 5px !important;
-    color: #b8891f !important;
+    color: #d4a62a !important;
     font-size: 8px !important;
+    text-align: left !important;
   }
 }
