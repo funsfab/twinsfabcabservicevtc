@@ -577,10 +577,11 @@
   }
 }
 
-/* DESKTOP STEP 2 — MOVE LEFT HERO CONTENT UP */
+/* DESKTOP STEP 2 — MOVE ALL LEFT CONTENT UP */
 
 @media screen and (min-width: 1024px) {
-  #accueil .hero-premium-inner .hero-left {
-    padding-top: 85px !important;
+  section#accueil.hero-premium .hero-left {
+    position: relative !important;
+    top: -35px !important;
   }
 }
