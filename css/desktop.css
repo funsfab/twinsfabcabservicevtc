@@ -1120,3 +1120,9 @@
     font-size: 12px !important;
   }
 }
+
+/* DESKTOP — SHOW THE FULL VEHICLE SECTION AFTER ARROW CLICK */
+
+#vehicule {
+  scroll-margin-top: 0 !important;
+}
