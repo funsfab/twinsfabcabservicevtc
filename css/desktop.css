@@ -1011,3 +1011,38 @@
     pointer-events: none !important;
   }
 }
+
+@media screen and (min-width: 1024px) {
+
+  #vehicule .business-card-contact-row {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    margin: 0;
+    padding: 11px 0;
+
+    color: #eee6dc;
+
+    border-bottom:
+      1px solid rgba(214, 166, 44, 0.22);
+
+    font-size: 13px;
+  }
+
+  #vehicule .business-card-contact-row i {
+    width: 34px;
+    height: 34px;
+
+    display: grid;
+    place-items: center;
+    flex: none;
+
+    color: #dfa92d;
+
+    border:
+      1px solid rgba(223, 169, 45, 0.55);
+
+    border-radius: 50%;
+  }
+}
