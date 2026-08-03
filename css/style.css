@@ -12855,3 +12855,7 @@ svg {
 .vehicle-business-card-wrap {
   display: none !important;
 }
+/* Hide Tarifs title badges on mobile */
+.tarifs-heading-badge {
+  display: none;
+}
