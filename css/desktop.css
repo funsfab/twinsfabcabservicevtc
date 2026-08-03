@@ -1595,6 +1595,7 @@ section#services .why-premium-arrow {
   }
 
   #tarifs .tarifs-heading-badge {
+     display: flex !important;
     position: absolute;
     top: 34px;
 
