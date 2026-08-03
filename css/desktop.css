@@ -1438,3 +1438,25 @@ section#services .why-premium-text small {
 section#services .why-premium-arrow {
   right: 18px !important;
 }
+
+
+/* DESKTOP — MATCH TARIFS WIDTH WITH PREVIOUS SECTIONS */
+
+@media screen and (min-width: 1024px) {
+
+  section#tarifs.tarifs-premium {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  section#tarifs.tarifs-premium .tarifs-premium-inner {
+    width: 100% !important;
+    max-width: 1500px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    box-sizing: border-box !important;
+  }
+
+}
