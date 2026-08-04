@@ -1539,3 +1539,25 @@ section#services .why-premium-arrow {
     transform: rotate(180deg);
   }
 }
+
+/* DESKTOP — GARES & AÉROPORTS SAME WIDTH AS PREVIOUS SECTIONS */
+
+@media screen and (min-width: 1024px) {
+
+  section#destinations.destinations-premium {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  section#destinations.destinations-premium
+  .destinations-premium-inner {
+    width: 100% !important;
+    max-width: 1500px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    box-sizing: border-box !important;
+  }
+
+}
