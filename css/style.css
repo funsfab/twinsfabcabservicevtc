@@ -7247,17 +7247,17 @@ html {
 @media (max-width: 768px) {
 
   .tarif-minimum-card {
-    min-height: 118px;
-    padding: 18px 16px;
+  min-height: 92px;
+  padding: 12px 16px;
 
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto auto;
-    column-gap: 12px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto;
+  column-gap: 12px;
+  align-items: center;
 
-    text-align: left;
-  }
+  text-align: left;
+}
 
   .tarif-minimum-card i {
     grid-column: 1;
@@ -7285,14 +7285,8 @@ html {
   }
 
   .tarif-minimum-card p {
-    grid-column: 1 / -1;
-    grid-row: 2;
-
-    margin-top: 10px;
-
-    text-align: center;
-    font-size: 11px;
-  }
+  display: none !important;
+}
 
   .tarifs-premium-inner {
     padding-bottom: 166px;
@@ -12855,7 +12849,22 @@ svg {
 .vehicle-business-card-wrap {
   display: none !important;
 }
-/* Hide Tarifs title badges on mobile */
+/* Hide Tarifs badges on mobile */
 .tarifs-heading-badge {
-  display: none;
+  display: none !important;
+}
+
+/* MOBILE — hide Tarifs descriptions */
+@media screen and (max-width: 1023px) {
+
+  /* Hide: Des tarifs transparents pour tous vos déplacements */
+  #tarifs .tarifs-heading > span {
+    display: none !important;
+  }
+
+  /* Hide: Même pour un trajet de courte distance */
+  #tarifs [class*="minimum"] p {
+    display: none !important;
+  }
+
 }
