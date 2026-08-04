@@ -1539,7 +1539,6 @@ section#services .why-premium-arrow {
     transform: rotate(180deg);
   }
 }
-
 /* DESKTOP — GARES & AÉROPORTS SAME WIDTH AS PREVIOUS SECTIONS */
 
 @media screen and (min-width: 1024px) {
@@ -1558,6 +1557,81 @@ section#services .why-premium-arrow {
     margin-right: auto !important;
 
     box-sizing: border-box !important;
+  }
+
+}
+
+/* DESKTOP — DESTINATIONS TOP BADGES */
+
+@media screen and (min-width: 1024px) {
+
+  #destinations .destinations-heading {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 1150px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(217, 165, 46, 0.85),
+        rgba(217, 165, 46, 0.15)
+      )
+      left 255px top 70px / 115px 1px no-repeat,
+
+      linear-gradient(
+        270deg,
+        rgba(217, 165, 46, 0.85),
+        rgba(217, 165, 46, 0.15)
+      )
+      right 255px top 70px / 115px 1px no-repeat;
+  }
+
+  #destinations .destinations-heading::before,
+  #destinations .destinations-heading::after {
+    position: absolute !important;
+    top: 38px !important;
+
+    min-width: 240px !important;
+    min-height: 64px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 12px 20px !important;
+
+    color: #f1d58b !important;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(20, 20, 20, 0.94),
+        rgba(7, 7, 7, 0.9)
+      ) !important;
+
+    border: 1px solid rgba(217, 165, 46, 0.7) !important;
+    border-radius: 32px !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+
+    box-shadow:
+      0 8px 22px rgba(0, 0, 0, 0.3),
+      0 0 14px rgba(217, 165, 46, 0.1) !important;
+
+    z-index: 4 !important;
+  }
+
+  #destinations .destinations-heading::before {
+    content: "✈  Suivi des vols" !important;
+    left: 0 !important;
+  }
+
+  #destinations .destinations-heading::after {
+    content: "🚆  Prise en charge en gare" !important;
+    right: 0 !important;
   }
 
 }
