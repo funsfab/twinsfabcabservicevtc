@@ -200,7 +200,6 @@
   }
 }
 
-
 /* =========================================
    DESKTOP 05 — NAV ACTIVE + LOCATION BADGE
 ========================================= */
@@ -362,7 +361,6 @@
     white-space: nowrap !important;
   }
 }
-
 
 /* =========================================
    DESKTOP 06 FIX — COMPLETE MOBILE LOGO
@@ -569,24 +567,6 @@
   }
 }
 
-/* DESKTOP STEP 2 — MOVE LEFT HERO CONTENT UP */
-
-@media screen and (min-width: 1024px) {
-  #accueil .hero-premium-inner .hero-left {
-    padding-top: 85px !important;
-  }
-}
-
-/* DESKTOP STEP 2 — MOVE ALL LEFT CONTENT UP */
-
-@media screen and (min-width: 1024px) {
-  section#accueil.hero-premium .hero-left {
-    position: relative !important;
-    top: -35px !important;
-  }
-}
-
-
 /* DESKTOP STEP 3 — SPACE AFTER “À LILLE” */
 
 @media screen and (min-width: 1024px) {
@@ -603,29 +583,10 @@
   }
 }
 
-/* DESKTOP — MAKE VEHICLE RECTANGLE ALMOST FULL WIDTH */
-
-@media screen and (min-width: 1024px) {
-
-  section#vehicule.vehicle-experience {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
-
-  section#vehicule.vehicle-experience .vehicle-experience-inner {
-    width: 100% !important;
-    max-width: 1500px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-}
-
 /* Show business card on desktop */
 .vehicle-business-card-wrap {
   display: flex !important;
 }
-
 
 /* ==================================================
    DESKTOP — VTC SECTION + FLIPPING BUSINESS CARD
@@ -734,7 +695,7 @@
     justify-content: center;
 
     min-width: 0;
-   transform: translateY(13px);
+    transform: translateY(13px);
   }
 
   #vehicule .business-card-label {
@@ -773,7 +734,6 @@
       transform 0.9s
       cubic-bezier(0.22, 0.75, 0.25, 1);
   }
-
 
 
 
@@ -975,7 +935,6 @@ line-height: 1.2;
   }
 
 }
-
 /* AUTOMATIC CONTINUOUS BUSINESS CARD FLIP */
 
 @keyframes tfBusinessCardAutomaticFlip {
@@ -1102,6 +1061,7 @@ line-height: 1.2;
     content: none !important;
   }
 }
+
 /* BUSINESS CARD — SAME SIZE AS HEADER LOGO */
 
 @media screen and (min-width: 1024px) {
@@ -1122,12 +1082,12 @@ line-height: 1.2;
     font-size: 19px !important;
   }
 }
+
 /* DESKTOP — SHOW THE FULL VEHICLE SECTION AFTER ARROW CLICK */
 
 #vehicule {
   scroll-margin-top: 0 !important;
 }
-
 /* DESKTOP — PLACE UP ARROW ABOVE CONTACT BUTTONS */
 
 @media screen and (min-width: 1024px) {
@@ -1139,7 +1099,6 @@ line-height: 1.2;
   }
 
 }
-
 
 /* DESKTOP — MATCH “POURQUOI NOUS CHOISIR”
    WIDTH WITH THE VEHICLE SECTION */
@@ -1439,7 +1398,6 @@ section#services .why-premium-arrow {
   right: 18px !important;
 }
 
-
 /* DESKTOP — MATCH TARIFS WIDTH WITH PREVIOUS SECTIONS */
 
 @media screen and (min-width: 1024px) {
@@ -1461,12 +1419,11 @@ section#services .why-premium-arrow {
 
 }
 
-
 /* DESKTOP — TARIFS TITLE BADGES */
 
 @media screen and (min-width: 1024px) {
 
-  #tarifs .tarifs-premium-header{
+  #tarifs .tarifs-heading {
     position: relative !important;
     max-width: 1100px !important;
     margin-left: auto !important;
@@ -1474,135 +1431,14 @@ section#services .why-premium-arrow {
   }
 
   #tarifs .tarifs-heading-badge {
-    position: absolute;
+    display: flex !important;
+    position: absolute !important;
     top: 34px;
 
     min-width: 245px;
     min-height: 72px;
 
-    display: flex;
-    align-items: center;
-    gap: 14px;
-
-    padding: 12px 20px;
-
-    color: #ffffff;
-    background:
-      linear-gradient(
-        145deg,
-        rgba(20, 20, 20, 0.92),
-        rgba(8, 8, 8, 0.88)
-      );
-
-    border: 1px solid rgba(217, 165, 46, 0.75);
-    border-radius: 30px;
-
-    box-shadow:
-      0 8px 22px rgba(0, 0, 0, 0.28),
-      0 0 15px rgba(217, 165, 46, 0.08);
-
-    z-index: 4;
-  }
-
-  #tarifs .tarifs-badge-left {
-    left: 0;
-  }
-
-  #tarifs .tarifs-badge-right {
-    right: 0;
-  }
-
-  #tarifs .tarifs-heading-badge i {
-    width: 44px;
-    height: 44px;
-
-    display: grid;
-    place-items: center;
-    flex: none;
-
-    color: #d9a52e;
-
-    border: 1px solid rgba(217, 165, 46, 0.65);
-    border-radius: 50%;
-
-    font-size: 20px;
-  }
-
-  #tarifs .tarifs-heading-badge span {
-    display: block;
-  }
-
-  #tarifs .tarifs-heading-badge strong {
-    display: block;
-
-    color: #f1d58b;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 16px;
-    line-height: 1.2;
-  }
-
-  #tarifs .tarifs-heading-badge small {
-    display: block;
-    margin-top: 4px;
-
-    color: #ffffff;
-    font-size: 12px;
-    line-height: 1.2;
-  }
-
-  /* Gold connecting lines */
-
-  #tarifs .tarifs-badge-left::after,
-  #tarifs .tarifs-badge-right::before {
-    content: "";
-
-    position: absolute;
-    top: 50%;
-
-    width: 105px;
-    height: 1px;
-
-    background:
-      linear-gradient(
-        90deg,
-        rgba(217, 165, 46, 0.95),
-        rgba(217, 165, 46, 0.25)
-      );
-  }
-
-  #tarifs .tarifs-badge-left::after {
-    right: -106px;
-  }
-
-  #tarifs .tarifs-badge-right::before {
-    left: -106px;
-
-    transform: rotate(180deg);
-  }
-}
-
-
-/* DESKTOP — TARIFS TITLE BADGES */
-
-@media screen and (min-width: 1024px) {
-
-  #tarifs .tarifs-premium-heading {
-    position: relative !important;
-    max-width: 1100px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  #tarifs .tarifs-heading-badge {
-     display: flex !important;
-    position: absolute;
-    top: 34px;
-
-    min-width: 245px;
-    min-height: 72px;
-
-    display: flex;
+    
     align-items: center;
     gap: 14px;
 
