@@ -1635,3 +1635,476 @@ section#services .why-premium-arrow {
   }
 
 }
+/* ==================================================
+   DESKTOP — GARES & AÉROPORTS FINAL CENTRE
+================================================== */
+
+@media screen and (min-width: 1024px) {
+
+  /* Hide only the old centre on desktop.
+     It stays unchanged and visible on mobile. */
+
+  #destinations .destinations-main-layout {
+    display: none !important;
+  }
+
+  #destinations .destinations-desktop-redesign {
+    display: grid !important;
+    grid-template-columns:
+      minmax(0, 1.35fr)
+      minmax(390px, 0.95fr);
+
+    width: 100%;
+    min-height: 740px;
+    gap: 16px;
+    align-items: stretch;
+
+    margin-top: 6px;
+  }
+
+  #destinations .destinations-desktop-redesign,
+  #destinations .destinations-desktop-redesign * {
+    box-sizing: border-box;
+  }
+
+
+  /* =========================
+     LEFT: TWO MAP PANELS
+  ========================= */
+
+  #destinations .destinations-desktop-maps {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    min-width: 0;
+  }
+
+  #destinations .desktop-route-panel {
+    position: relative;
+    min-height: 0;
+    overflow: hidden;
+
+    border: 1px solid rgba(212, 175, 55, 0.58);
+    border-radius: 15px;
+
+    background:
+      radial-gradient(
+        circle at 50% 58%,
+        rgba(224, 171, 45, 0.18),
+        transparent 29%
+      ),
+      linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.025),
+        rgba(0, 0, 0, 0.20)
+      );
+
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.035),
+      0 10px 26px rgba(0, 0, 0, 0.22);
+  }
+
+  #destinations .desktop-route-panel-title {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    z-index: 6;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  #destinations .desktop-route-panel-icon {
+    width: 52px;
+    height: 52px;
+
+    display: grid;
+    place-items: center;
+    flex: none;
+
+    color: #e1ad32;
+
+    border: 1px solid rgba(222, 174, 48, 0.75);
+    border-radius: 50%;
+
+    font-size: 23px;
+
+    box-shadow:
+      0 0 18px rgba(222, 174, 48, 0.12);
+  }
+
+  #destinations .desktop-route-panel-title h3 {
+    margin: 0;
+
+    color: #e2b04a;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  #destinations .desktop-route-panel-title h3::after {
+    content: "";
+    display: block;
+
+    width: 50px;
+    height: 2px;
+    margin-top: 9px;
+
+    background:
+      linear-gradient(
+        90deg,
+        #e2ae35,
+        rgba(226, 174, 53, 0.15)
+      );
+  }
+
+
+  /* =========================
+     MAP CANVAS
+  ========================= */
+
+  #destinations .desktop-route-canvas {
+    --hub-x: 50%;
+    --hub-y: 57%;
+
+    position: absolute;
+    inset: 74px 22px 18px;
+    overflow: hidden;
+  }
+
+  #destinations .airport-route-canvas {
+    --hub-y: 59%;
+  }
+
+  #destinations .desktop-route-hub,
+  #destinations .desktop-route-node {
+    position: absolute;
+    z-index: 5;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #f2d487;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(36, 28, 13, 0.96),
+        rgba(12, 11, 9, 0.95)
+      );
+
+    border: 1px solid rgba(225, 174, 48, 0.86);
+    border-radius: 22px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    white-space: nowrap;
+  }
+
+  #destinations .desktop-route-hub {
+    left: var(--hub-x);
+    top: var(--hub-y);
+
+    padding: 8px 17px;
+
+    transform: translate(-50%, -50%);
+
+    color: #fff2c7;
+    font-size: 17px;
+
+    box-shadow:
+      0 0 12px rgba(235, 181, 48, 0.72),
+      0 0 34px rgba(235, 181, 48, 0.38);
+  }
+
+  #destinations .desktop-route-node {
+    padding: 6px 12px;
+    font-size: 13px;
+
+    box-shadow:
+      0 0 12px rgba(225, 174, 48, 0.12);
+  }
+
+  #destinations .desktop-route-line {
+    position: absolute;
+    left: var(--hub-x);
+    top: var(--hub-y);
+    z-index: 2;
+
+    height: 2px;
+
+    transform-origin: left center;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(241, 194, 76, 0.98),
+        rgba(241, 194, 76, 0.65)
+      );
+
+    box-shadow:
+      0 0 6px rgba(237, 184, 55, 0.78),
+      0 0 14px rgba(237, 184, 55, 0.34);
+  }
+
+  #destinations .desktop-route-line::after {
+    content: "";
+
+    position: absolute;
+    right: -4px;
+    top: 50%;
+
+    width: 8px;
+    height: 8px;
+
+    transform: translateY(-50%);
+
+    background: #f0c24c;
+    border-radius: 50%;
+
+    box-shadow:
+      0 0 8px rgba(240, 194, 76, 0.95);
+  }
+
+
+  /* =========================
+     STATION MAP POSITIONS
+  ========================= */
+
+  #destinations .station-node-flandres {
+    left: 12%;
+    top: 15%;
+  }
+
+  #destinations .station-node-europe {
+    right: 6%;
+    top: 8%;
+  }
+
+  #destinations .station-node-nord {
+    left: 5%;
+    bottom: 13%;
+  }
+
+  #destinations .station-node-midi {
+    right: 4%;
+    bottom: 15%;
+  }
+
+  #destinations .station-line-flandres {
+    width: 34%;
+    transform: rotate(-153deg);
+  }
+
+  #destinations .station-line-europe {
+    width: 34%;
+    transform: rotate(-38deg);
+  }
+
+  #destinations .station-line-nord {
+    width: 34%;
+    transform: rotate(153deg);
+  }
+
+  #destinations .station-line-midi {
+    width: 32%;
+    transform: rotate(20deg);
+  }
+
+
+  /* =========================
+     AIRPORT MAP POSITIONS
+  ========================= */
+
+  #destinations .airport-node-lesquin {
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+  }
+
+  #destinations .airport-node-brussels {
+    right: 3%;
+    top: 12%;
+  }
+
+  #destinations .airport-node-charleroi {
+    right: 2%;
+    top: 53%;
+  }
+
+  #destinations .airport-node-beauvais {
+    left: 57%;
+    bottom: 1%;
+  }
+
+  #destinations .airport-node-orly {
+    left: 4%;
+    bottom: 11%;
+  }
+
+  #destinations .airport-node-cdg {
+    left: 3%;
+    top: 42%;
+  }
+
+  #destinations .airport-line-lesquin {
+    width: 25%;
+    transform: rotate(-90deg);
+  }
+
+  #destinations .airport-line-brussels {
+    width: 31%;
+    transform: rotate(-35deg);
+  }
+
+  #destinations .airport-line-charleroi {
+    width: 35%;
+    transform: rotate(4deg);
+  }
+
+  #destinations .airport-line-beauvais {
+    width: 28%;
+    transform: rotate(67deg);
+  }
+
+  #destinations .airport-line-orly {
+    width: 34%;
+    transform: rotate(148deg);
+  }
+
+  #destinations .airport-line-cdg {
+    width: 30%;
+    transform: rotate(-165deg);
+  }
+
+
+  /* =========================
+     RIGHT DESTINATION LIST
+  ========================= */
+
+  #destinations .destinations-desktop-list {
+    display: grid;
+    grid-template-rows: repeat(9, minmax(0, 1fr));
+    gap: 8px;
+    min-width: 0;
+  }
+
+  #destinations .desktop-destination-row {
+    min-width: 0;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns:
+      31%
+      43px
+      minmax(0, 1fr)
+      18px;
+
+    align-items: center;
+
+    border: 1px solid rgba(212, 175, 55, 0.58);
+    border-radius: 13px;
+
+    background:
+      linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0.025),
+        rgba(0, 0, 0, 0.18)
+      );
+
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.025);
+  }
+
+  #destinations .desktop-destination-thumb {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+
+    border-right: 1px solid rgba(212, 175, 55, 0.28);
+  }
+
+  #destinations .desktop-destination-thumb img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+  }
+
+  #destinations .desktop-destination-thumb--icon {
+    display: grid;
+    place-items: center;
+
+    color: #dca72c;
+
+    background:
+      radial-gradient(
+        circle,
+        rgba(220, 167, 44, 0.18),
+        rgba(11, 10, 8, 0.95) 68%
+      );
+  }
+
+  #destinations .desktop-destination-thumb--icon i {
+    font-size: 27px;
+  }
+
+  #destinations .desktop-destination-type {
+    display: grid;
+    place-items: center;
+
+    color: #dfa92d;
+    font-size: 21px;
+  }
+
+  #destinations .desktop-destination-copy {
+    min-width: 0;
+    padding: 6px 8px;
+  }
+
+  #destinations .desktop-destination-copy h4 {
+    margin: 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    color: #e6bd62;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.15;
+  }
+
+  #destinations .desktop-destination-copy span {
+    display: block;
+    margin-top: 4px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    color: #eee7df;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  #destinations .desktop-destination-arrow {
+    color: #dba62c;
+    font-size: 13px;
+  }
+
+
+  /* Keep the existing lower section unchanged */
+
+  #destinations .destinations-more {
+    margin-top: 24px !important;
+  }
+
+}
