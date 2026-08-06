@@ -7946,10 +7946,22 @@ html {
     gap: 14px;
   }
 
-  .destinations-map {
-    min-height: 360px;
-    border-radius: 16px;
-  }
+ .destinations-map-crop {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.26);
+  border-radius: 16px;
+}
+
+.destinations-map-crop .destinations-map {
+  width: 100% !important;
+  height: 360px !important;
+  min-height: 360px !important;
+  transform: translateY(-65px) !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
 
   .map-city {
     padding: 6px 8px;
@@ -12865,6 +12877,289 @@ svg {
   /* Hide: Même pour un trajet de courte distance */
   #tarifs [class*="minimum"] p {
     display: none !important;
+  }
+}
+
+/* ==================================================
+   MOBILE — DESTINATIONS MAP FINAL CORRECTION
+================================================== */
+
+@media screen and (max-width: 1023px) {
+
+  /* Keep the desktop redesign hidden */
+  #destinations .destinations-desktop-redesign {
+    display: none !important;
+  }
+
+  /* Hide the unwanted sentence */
+  #destinations .destinations-heading > span {
+    display: none !important;
+  }
+/* Remove the old transparent desktop rays on mobile */
+#destinations .destinations-map::before {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+
+
+  /* =========================================
+     RESET ALL OLD DESTINATION LABEL STYLES
+  ========================================= */
+
+ #destinations .destinations-map .map-city {
+  position: absolute !important;
+
+  right: auto;
+  bottom: auto;
+
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: 108px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 6px 10px !important;
+
+  color: #e0ae2b !important;
+  background: linear-gradient(
+    145deg,
+    rgba(10, 10, 10, 0.98),
+    rgba(0, 0, 0, 0.98)
+  ) !important;
+
+  border: 1px solid rgba(224, 174, 43, 0.82) !important;
+  border-radius: 20px !important;
+
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+
+  box-shadow: 0 0 10px rgba(224, 174, 43, 0.10) !important;
+  z-index: 7 !important;
+}
+
+  /* Remove old label lines and duplicate dots */
+  #destinations .destinations-map .map-city::before,
+  #destinations .destinations-map .map-city::after {
+    content: none !important;
+    display: none !important;
+  }
+
+
+  /* =========================================
+     LILLE — CENTRE
+  ========================================= */
+
+#destinations .destinations-map .map-lille {
+  left: 50% !important;
+  top: 50% !important;
+
+  right: auto !important;
+  bottom: auto !important;
+
+  padding: 9px 16px !important;
+
+  color: #17120a !important;
+  background: linear-gradient(145deg, #f7cf55, #dfa426) !important;
+
+  border: 1px solid #ffe59a !important;
+  border-radius: 24px !important;
+
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+
+  transform: translate(-50%, -50%) !important;
+
+  box-shadow:
+    0 0 14px rgba(239, 184, 43, 0.85),
+    0 0 32px rgba(239, 184, 43, 0.34) !important;
+
+  z-index: 10 !important;
+}
+
+
+  /* =========================================
+     DESTINATION LABEL POSITIONS
+  ========================================= */
+
+  /* Upper left */
+  #destinations .map-bruxelles {
+    left: 22% !important;
+    top: 26% !important;
+
+    transform: none !important;
+  }
+
+  /* Upper right */
+  #destinations .map-charleroi {
+    left: auto !important;
+    right: 22% !important;
+    top: 26% !important;
+
+    transform: none !important;
+  }
+
+  /* Middle left */
+#destinations .map-lesquin {
+  left: 2% !important;
+  top: 50% !important;
+
+  width: 112px !important;
+  max-width: 112px !important;
+  padding: 7px 10px !important;
+
+  white-space: normal !important;
+  line-height: 1.12 !important;
+  text-align: center !important;
+
+  transform: translateY(-50%) !important;
+}
+
+  /* Middle right */
+  #destinations .map-cdg {
+    left: auto !important;
+    right: 2% !important;
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+  }
+
+  /* Lower left */
+  #destinations .map-beauvais {
+    left: 20% !important;
+    top: auto !important;
+    bottom: 24% !important;
+
+    transform: none !important;
+  }
+
+  /* Lower right */
+  #destinations .map-orly {
+    left: auto !important;
+    right: 20% !important;
+    top: auto !important;
+    bottom: 24% !important;
+
+    transform: none !important;
+  }
+
+
+  /* =========================================
+     RESET AND STYLE ALL GOLD ROUTES
+  ========================================= */
+
+  #destinations .destinations-map .map-route {
+    position: absolute !important;
+
+    left: 50% !important;
+    top: 50% !important;
+
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 0;
+    height: 3px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+    border-radius: 999px !important;
+
+    transform-origin: left center !important;
+
+    background:
+      linear-gradient(
+        90deg,
+        #f6c743,
+        #dda322
+      ) !important;
+
+    box-shadow:
+      0 0 5px rgba(242, 190, 48, 0.90),
+      0 0 12px rgba(242, 190, 48, 0.34) !important;
+
+    opacity: 1 !important;
+    overflow: visible !important;
+
+    z-index: 3 !important;
+  }
+
+  /* Remove any previous route decorations */
+  #destinations .destinations-map .map-route::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  /* One gold dot at the route endpoint */
+  #destinations .destinations-map .map-route::after {
+    content: "" !important;
+
+    position: absolute !important;
+    right: -6px !important;
+    top: 50% !important;
+
+    width: 12px !important;
+    height: 12px !important;
+
+    transform: translateY(-50%) !important;
+
+    background: #f3c44a !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+
+    box-shadow:
+      0 0 9px rgba(243, 196, 74, 0.98) !important;
+  }
+
+
+  /* =========================================
+     EVENLY SPACED ROUTES
+  ========================================= */
+
+  /* Lille → Bruxelles */
+  #destinations .route-bruxelles {
+    width: 20% !important;
+    transform: rotate(-120deg) !important;
+  }
+
+  /* Lille → Charleroi */
+  #destinations .route-charleroi {
+    width: 20% !important;
+    transform: rotate(-60deg) !important;
+  }
+
+  /* Lille → Lille-Lesquin */
+  #destinations .route-lesquin {
+    width: 31% !important;
+    transform: rotate(180deg) !important;
+  }
+
+  /* Lille → Paris CDG */
+  #destinations .route-cdg {
+    width: 31% !important;
+    transform: rotate(0deg) !important;
+  }
+
+  /* Lille → Beauvais */
+  #destinations .route-beauvais {
+    width:20% !important;
+    transform: rotate(120deg) !important;
+  }
+
+  /* Lille → Paris Orly */
+  #destinations .route-orly {
+    width: 20% !important;
+    transform: rotate(60deg) !important;
   }
 
 }
