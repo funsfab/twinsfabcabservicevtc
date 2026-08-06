@@ -1914,10 +1914,10 @@ section#services .why-premium-arrow {
     bottom: 16% !important;
   }
 
-  #destinations .station-line-flandres {
-    width: 18% !important;
-    transform: rotate(-150deg) !important;
-  }
+#destinations .station-line-flandres {
+  width: 12% !important;
+  transform: rotate(-150deg) !important;
+}
 
   #destinations .station-line-europe {
     width: 20% !important;
