@@ -1900,7 +1900,7 @@ section#services .why-premium-arrow {
   }
 
   #destinations .station-node-europe {
-    right: 26% !important;
+    right: 36% !important;
     top: 15% !important;
   }
 
@@ -1920,7 +1920,7 @@ section#services .why-premium-arrow {
 }
 
   #destinations .station-line-europe {
-    width: 20% !important;
+    width: 10% !important;
     transform: rotate(-35deg) !important;
   }
 
