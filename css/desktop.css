@@ -1635,51 +1635,72 @@ section#services .why-premium-arrow {
   }
 
 }
-/* ==============================================
-   DESKTOP — GARES & AÉROPORTS — VERSION COMPACTE
-   Remplace entièrement l'ancien bloc desktop
-   ============================================== */
+/* =========================================================
+   DESKTOP ONLY — GARES & AÉROPORTS — EXTRA COMPACT
+   Replace the complete old desktop destinations block with this.
+   Mobile stays untouched.
+   ========================================================= */
 
 @media screen and (min-width: 1024px) {
 
-  /* SECTION + CADRE EXTÉRIEUR */
+  /* ---------- COMPLETE SECTION ---------- */
+
   #destinations.destinations-premium {
-    padding: 18px 20px 24px !important;
+    padding: 8px 16px 12px !important;
   }
 
   #destinations .destinations-premium-inner {
     width: 100% !important;
     max-width: 1500px !important;
     margin: 0 auto !important;
-    padding: 18px 24px 20px !important;
+    padding: 10px 18px 12px !important;
     box-sizing: border-box !important;
   }
 
   #destinations .destinations-heading {
-    margin-bottom: 14px !important;
+    margin: 0 0 8px !important;
+    padding: 0 !important;
+  }
+
+  #destinations .destinations-heading h2 {
+    margin: 0 !important;
+    font-size: 30px !important;
+    line-height: 1 !important;
+  }
+
+  #destinations .destinations-heading p {
+    margin: 0 0 2px !important;
+    font-size: 21px !important;
+    line-height: 1.05 !important;
   }
 
   #destinations .destinations-heading > span {
-    margin-top: 6px !important;
+    margin-top: 4px !important;
+    font-size: 12px !important;
+    line-height: 1.2 !important;
   }
 
-  /* MOBILE CACHÉ UNIQUEMENT SUR DESKTOP */
+  /* Keep the mobile design hidden only on desktop */
   #destinations .destinations-main-layout {
     display: none !important;
   }
 
-  /* GRAND BLOC DESKTOP */
+  /* ---------- DESKTOP MAIN AREA ---------- */
+
   #destinations .destinations-desktop-redesign {
     display: grid !important;
     grid-template-columns:
-      minmax(0, 1.18fr)
-      minmax(360px, 0.82fr) !important;
+      minmax(0, 1.22fr)
+      minmax(330px, 0.78fr) !important;
 
     width: 100% !important;
-    min-height: 520px !important;
-    gap: 12px !important;
+    height: 430px !important;
+    min-height: 430px !important;
+    max-height: 430px !important;
+
+    gap: 9px !important;
     align-items: stretch !important;
-    margin-top: 4px !important;
+    margin: 0 !important;
   }
 
   #destinations .destinations-desktop-redesign,
@@ -1687,15 +1708,16 @@ section#services .why-premium-arrow {
     box-sizing: border-box !important;
   }
 
-  /* ==============================================
-     GAUCHE — DEUX CARTES GARES / AÉROPORTS
-     ============================================== */
+  /* =========================================================
+     LEFT — TWO SMALL ROUTE PANELS
+     ========================================================= */
 
   #destinations .destinations-desktop-maps {
     display: grid !important;
     grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
-    gap: 8px !important;
+    gap: 6px !important;
     min-width: 0 !important;
+    height: 430px !important;
   }
 
   #destinations .desktop-route-panel {
@@ -1704,58 +1726,58 @@ section#services .why-premium-arrow {
     overflow: hidden !important;
 
     border: 1px solid rgba(212, 175, 55, 0.58) !important;
-    border-radius: 12px !important;
+    border-radius: 10px !important;
 
     background:
       radial-gradient(
-        circle at 50% 56%,
-        rgba(224, 171, 45, 0.16),
-        transparent 27%
+        circle at 50% 55%,
+        rgba(224, 171, 45, 0.14),
+        transparent 24%
       ),
       linear-gradient(
         145deg,
-        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.018),
         rgba(0, 0, 0, 0.20)
       ) !important;
 
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.03),
-      0 7px 18px rgba(0, 0, 0, 0.20) !important;
+      inset 0 1px 0 rgba(255, 255, 255, 0.025),
+      0 5px 14px rgba(0, 0, 0, 0.18) !important;
   }
 
-  /* TITRE DE CHAQUE CARTE */
+  /* Small panel titles */
   #destinations .desktop-route-panel-title {
     position: absolute !important;
-    top: 10px !important;
-    left: 13px !important;
+    top: 7px !important;
+    left: 10px !important;
     z-index: 6 !important;
 
     display: flex !important;
     align-items: center !important;
-    gap: 8px !important;
+    gap: 6px !important;
   }
 
   #destinations .desktop-route-panel-icon {
-    width: 36px !important;
-    height: 36px !important;
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
 
     display: grid !important;
     place-items: center !important;
-    flex: none !important;
 
     color: #e1ad32 !important;
-    border: 1px solid rgba(222, 174, 48, 0.75) !important;
+    border: 1px solid rgba(222, 174, 48, 0.72) !important;
     border-radius: 50% !important;
-    font-size: 16px !important;
+    font-size: 13px !important;
 
-    box-shadow: 0 0 12px rgba(222, 174, 48, 0.10) !important;
+    box-shadow: 0 0 8px rgba(222, 174, 48, 0.09) !important;
   }
 
   #destinations .desktop-route-panel-title h3 {
     margin: 0 !important;
     color: #e2b04a !important;
     font-family: Georgia, "Times New Roman", serif !important;
-    font-size: 17px !important;
+    font-size: 14px !important;
     line-height: 1 !important;
     text-transform: uppercase !important;
   }
@@ -1763,31 +1785,32 @@ section#services .why-premium-arrow {
   #destinations .desktop-route-panel-title h3::after {
     content: "" !important;
     display: block !important;
-    width: 36px !important;
-    height: 2px !important;
-    margin-top: 5px !important;
+    width: 27px !important;
+    height: 1px !important;
+    margin-top: 4px !important;
 
     background: linear-gradient(
       90deg,
       #e2ae35,
-      rgba(226, 174, 53, 0.12)
+      rgba(226, 174, 53, 0.10)
     ) !important;
   }
 
-  /* CANEVAS DES TRAJETS */
+  /* Smaller route canvas */
   #destinations .desktop-route-canvas {
     --hub-x: 50%;
-    --hub-y: 56%;
+    --hub-y: 55%;
 
     position: absolute !important;
-    inset: 48px 14px 10px !important;
+    inset: 36px 10px 6px !important;
     overflow: hidden !important;
   }
 
   #destinations .airport-route-canvas {
-    --hub-y: 56%;
+    --hub-y: 55%;
   }
 
+  /* All labels */
   #destinations .desktop-route-hub,
   #destinations .desktop-route-node {
     position: absolute !important;
@@ -1804,8 +1827,8 @@ section#services .why-premium-arrow {
       rgba(12, 11, 9, 0.95)
     ) !important;
 
-    border: 1px solid rgba(225, 174, 48, 0.86) !important;
-    border-radius: 18px !important;
+    border: 1px solid rgba(225, 174, 48, 0.84) !important;
+    border-radius: 14px !important;
     font-family: Georgia, "Times New Roman", serif !important;
     white-space: nowrap !important;
   }
@@ -1813,205 +1836,213 @@ section#services .why-premium-arrow {
   #destinations .desktop-route-hub {
     left: var(--hub-x) !important;
     top: var(--hub-y) !important;
-    padding: 5px 12px !important;
+
+    padding: 4px 9px !important;
     transform: translate(-50%, -50%) !important;
 
     color: #fff2c7 !important;
-    font-size: 13px !important;
+    font-size: 11px !important;
     font-weight: 700 !important;
 
     box-shadow:
-      0 0 10px rgba(235, 181, 48, 0.68),
-      0 0 24px rgba(235, 181, 48, 0.30) !important;
+      0 0 8px rgba(235, 181, 48, 0.62),
+      0 0 18px rgba(235, 181, 48, 0.26) !important;
   }
 
   #destinations .desktop-route-node {
-    padding: 4px 8px !important;
-    font-size: 10.5px !important;
-    line-height: 1.1 !important;
-
-    box-shadow: 0 0 9px rgba(225, 174, 48, 0.10) !important;
+    padding: 3px 6px !important;
+    font-size: 9px !important;
+    line-height: 1.05 !important;
+    box-shadow: 0 0 6px rgba(225, 174, 48, 0.08) !important;
   }
 
+  /* Shorter golden routes */
   #destinations .desktop-route-line {
     position: absolute !important;
     left: var(--hub-x) !important;
     top: var(--hub-y) !important;
     z-index: 2 !important;
 
-    height: 2px !important;
+    height: 1.5px !important;
     transform-origin: left center !important;
 
     background: linear-gradient(
       90deg,
       rgba(241, 194, 76, 0.98),
-      rgba(241, 194, 76, 0.62)
+      rgba(241, 194, 76, 0.60)
     ) !important;
 
     box-shadow:
-      0 0 5px rgba(237, 184, 55, 0.76),
-      0 0 11px rgba(237, 184, 55, 0.30) !important;
+      0 0 4px rgba(237, 184, 55, 0.70),
+      0 0 8px rgba(237, 184, 55, 0.25) !important;
   }
 
   #destinations .desktop-route-line::after {
     content: "" !important;
     position: absolute !important;
-    right: -3px !important;
+    right: -2px !important;
     top: 50% !important;
 
-    width: 7px !important;
-    height: 7px !important;
+    width: 5px !important;
+    height: 5px !important;
     transform: translateY(-50%) !important;
 
     background: #f0c24c !important;
     border-radius: 50% !important;
-    box-shadow: 0 0 7px rgba(240, 194, 76, 0.90) !important;
+    box-shadow: 0 0 5px rgba(240, 194, 76, 0.86) !important;
   }
 
-  /* POSITIONS — GARES */
+  /* ---------- STATION LABELS CLOSER TO THE LINES ---------- */
+
   #destinations .station-node-flandres {
-    left: 17% !important;
-    top: 18% !important;
+    left: 24% !important;
+    top: 23% !important;
   }
 
   #destinations .station-node-europe {
-    right: 8% !important;
-    top: 12% !important;
+    right: 17% !important;
+    top: 17% !important;
   }
 
   #destinations .station-node-nord {
-    left: 8% !important;
-    bottom: 12% !important;
+    left: 20% !important;
+    bottom: 15% !important;
   }
 
   #destinations .station-node-midi {
-    right: 7% !important;
-    bottom: 13% !important;
+    right: 16% !important;
+    bottom: 16% !important;
   }
 
   #destinations .station-line-flandres {
-    width: 25% !important;
-    transform: rotate(-153deg) !important;
+    width: 18% !important;
+    transform: rotate(-150deg) !important;
   }
 
   #destinations .station-line-europe {
-    width: 25% !important;
-    transform: rotate(-38deg) !important;
+    width: 20% !important;
+    transform: rotate(-35deg) !important;
   }
 
   #destinations .station-line-nord {
-    width: 25% !important;
-    transform: rotate(153deg) !important;
+    width: 20% !important;
+    transform: rotate(150deg) !important;
   }
 
   #destinations .station-line-midi {
-    width: 24% !important;
-    transform: rotate(20deg) !important;
+    width: 19% !important;
+    transform: rotate(21deg) !important;
   }
 
-  /* POSITIONS — AÉROPORTS */
+  /* ---------- AIRPORT LABELS CLOSER TO THE LINES ---------- */
+
   #destinations .airport-node-lesquin {
     left: 50% !important;
-    top: 4% !important;
+    top: 7% !important;
     transform: translateX(-50%) !important;
   }
 
   #destinations .airport-node-brussels {
-    right: 5% !important;
-    top: 15% !important;
+    right: 15% !important;
+    top: 18% !important;
   }
 
   #destinations .airport-node-charleroi {
-    right: 4% !important;
-    top: 52% !important;
+    right: 11% !important;
+    top: 50% !important;
   }
 
   #destinations .airport-node-beauvais {
-    left: 56% !important;
-    bottom: 1% !important;
+    left: 57% !important;
+    bottom: 4% !important;
   }
 
   #destinations .airport-node-orly {
-    left: 5% !important;
+    left: 17% !important;
     bottom: 10% !important;
   }
 
   #destinations .airport-node-cdg {
-    left: 4% !important;
-    top: 41% !important;
+    left: 11% !important;
+    top: 46% !important;
   }
 
   #destinations .airport-line-lesquin {
-    width: 20% !important;
+    width: 17% !important;
     transform: rotate(-90deg) !important;
   }
 
   #destinations .airport-line-brussels {
-    width: 24% !important;
+    width: 20% !important;
     transform: rotate(-35deg) !important;
   }
 
   #destinations .airport-line-charleroi {
-    width: 25% !important;
-    transform: rotate(4deg) !important;
+    width: 20% !important;
+    transform: rotate(0deg) !important;
   }
 
   #destinations .airport-line-beauvais {
-    width: 22% !important;
-    transform: rotate(67deg) !important;
+    width: 18% !important;
+    transform: rotate(66deg) !important;
   }
 
   #destinations .airport-line-orly {
-    width: 25% !important;
-    transform: rotate(148deg) !important;
+    width: 20% !important;
+    transform: rotate(145deg) !important;
   }
 
   #destinations .airport-line-cdg {
-    width: 23% !important;
-    transform: rotate(-165deg) !important;
+    width: 20% !important;
+    transform: rotate(180deg) !important;
   }
 
-  /* ==============================================
-     DROITE — LISTE DES 9 DESTINATIONS
-     ============================================== */
+  /* =========================================================
+     RIGHT — SMALLER PHOTOS AND SMALLER ROWS
+     ========================================================= */
 
   #destinations .destinations-desktop-list {
     display: grid !important;
     grid-template-rows: repeat(9, minmax(0, 1fr)) !important;
-    gap: 5px !important;
+    gap: 4px !important;
     min-width: 0 !important;
+    height: 430px !important;
   }
 
   #destinations .desktop-destination-row {
     min-width: 0 !important;
+    min-height: 0 !important;
     overflow: hidden !important;
 
     display: grid !important;
     grid-template-columns:
-      29%
-      34px
+      23%
+      27px
       minmax(0, 1fr)
-      14px !important;
+      12px !important;
+
     align-items: center !important;
 
-    border: 1px solid rgba(212, 175, 55, 0.58) !important;
-    border-radius: 10px !important;
+    border: 1px solid rgba(212, 175, 55, 0.56) !important;
+    border-radius: 8px !important;
 
     background: linear-gradient(
       100deg,
-      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.018),
       rgba(0, 0, 0, 0.18)
     ) !important;
 
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.018) !important;
   }
 
+  /* Smaller image area */
   #destinations .desktop-destination-thumb {
     width: 100% !important;
     height: 100% !important;
     min-height: 0 !important;
     overflow: hidden !important;
-    border-right: 1px solid rgba(212, 175, 55, 0.28) !important;
+
+    border-right: 1px solid rgba(212, 175, 55, 0.24) !important;
   }
 
   #destinations .desktop-destination-thumb img {
@@ -2028,25 +2059,25 @@ section#services .why-premium-arrow {
 
     background: radial-gradient(
       circle,
-      rgba(220, 167, 44, 0.17),
-      rgba(11, 10, 8, 0.95) 68%
+      rgba(220, 167, 44, 0.14),
+      rgba(11, 10, 8, 0.95) 66%
     ) !important;
   }
 
   #destinations .desktop-destination-thumb--icon i {
-    font-size: 20px !important;
+    font-size: 15px !important;
   }
 
   #destinations .desktop-destination-type {
     display: grid !important;
     place-items: center !important;
     color: #dfa92d !important;
-    font-size: 16px !important;
+    font-size: 13px !important;
   }
 
   #destinations .desktop-destination-copy {
     min-width: 0 !important;
-    padding: 4px 8px !important;
+    padding: 2px 6px !important;
   }
 
   #destinations .desktop-destination-copy h4 {
@@ -2057,54 +2088,58 @@ section#services .why-premium-arrow {
 
     color: #e6bd62 !important;
     font-family: Georgia, "Times New Roman", serif !important;
-    font-size: 13px !important;
+    font-size: 11.5px !important;
     font-weight: 600 !important;
-    line-height: 1.1 !important;
+    line-height: 1.05 !important;
   }
 
   #destinations .desktop-destination-copy span {
     display: block !important;
-    margin-top: 2px !important;
+    margin-top: 1px !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
 
     color: #eee7df !important;
-    font-size: 9.5px !important;
-    line-height: 1.15 !important;
+    font-size: 8.5px !important;
+    line-height: 1.05 !important;
   }
 
   #destinations .desktop-destination-arrow {
     color: #dba62c !important;
-    font-size: 11px !important;
+    font-size: 9px !important;
   }
 
-  /* BAS DE LA SECTION */
+  /* =========================================================
+     BOTTOM AREA — ALSO COMPACT
+     ========================================================= */
+
   #destinations .destinations-more {
-    margin-top: 12px !important;
-    padding-top: 10px !important;
+    margin-top: 7px !important;
+    padding-top: 6px !important;
   }
 
   #destinations .destinations-more h3 {
-    margin-bottom: 8px !important;
-    font-size: 14px !important;
+    margin: 0 0 5px !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
   }
 
   #destinations .destinations-more-list {
-    gap: 6px !important;
+    gap: 4px !important;
   }
 
   #destinations .destinations-more-list span {
-    min-height: 30px !important;
-    padding: 6px 10px !important;
-    font-size: 9.5px !important;
+    min-height: 25px !important;
+    padding: 4px 8px !important;
+    font-size: 8.5px !important;
   }
 
   #destinations .destinations-booking-btn {
-    width: min(330px, 100%) !important;
-    min-height: 42px !important;
-    margin-top: 12px !important;
-    padding: 9px 14px !important;
-    font-size: 11px !important;
+    width: min(285px, 100%) !important;
+    min-height: 35px !important;
+    margin-top: 7px !important;
+    padding: 6px 11px !important;
+    font-size: 9.5px !important;
   }
 }
