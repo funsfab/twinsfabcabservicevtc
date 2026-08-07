@@ -2103,5 +2103,59 @@
     });
   });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const destinationCards = document.querySelectorAll(
+    "#destinations .desktop-destination-row"
+  );
+
+  const destinationNames = {
+    "Gare Lille Flandres": "Gare Lille Flandres",
+    "Gare Lille Europe": "Gare Lille Europe",
+    "Gare du Nord": "Gare du Nord, Paris",
+    "Bruxelles-Midi": "Bruxelles-Midi",
+    "Aéroport Lille-Lesquin": "Aéroport Lille-Lesquin",
+    "Brussels Airport": "Brussels Airport",
+    "Aéroport Paris CDG": "Aéroport Paris CDG",
+    "Aéroport Paris Orly": "Aéroport Paris Orly",
+    "Aéroport de Beauvais": "Aéroport de Beauvais"
+  };
+
+  destinationCards.forEach(function(card) {
+
+    const title = card.querySelector("h4");
+
+    if (!title) return;
+
+    const cardName = title.textContent.trim();
+    const destination = destinationNames[cardName];
+
+    if (!destination) return;
+
+    card.style.cursor = "pointer";
+    card.setAttribute("role", "link");
+    card.setAttribute("tabindex", "0");
+
+    function openReservation() {
+      window.location.href =
+        "reservation.html?destination=" +
+        encodeURIComponent(destination);
+    }
+
+    card.addEventListener("click", openReservation);
+
+    card.addEventListener("keydown", function(event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openReservation();
+      }
+    });
+
+  });
+
+});
+</script>
+  
 </body>
 </html>
