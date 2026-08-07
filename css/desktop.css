@@ -1660,6 +1660,7 @@ section#services .why-premium-arrow {
   #destinations .destinations-heading {
     margin: 0 0 8px !important;
     padding: 0 !important;
+     transform: translateX(6%) !important;
   }
 
   #destinations .destinations-heading h2 {
