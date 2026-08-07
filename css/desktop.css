@@ -2144,3 +2144,11 @@ section#services .why-premium-arrow {
     font-size: 9.5px !important;
   }
 }
+
+/* ===== VEHICLE EXPERIENCE DESKTOP WIDTH ===== */
+section#vehicule .vehicle-experience-inner {
+    width: 100% !important;
+    max-width: 1500px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
