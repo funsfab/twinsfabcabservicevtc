@@ -1910,7 +1910,7 @@ section#services .why-premium-arrow {
   }
 
   #destinations .station-node-midi {
-    right: 24% !important;
+    right: 22% !important;
     bottom: 7% !important;
   }
 
@@ -1925,7 +1925,7 @@ section#services .why-premium-arrow {
   }
 
   #destinations .station-line-nord {
-    width: 8% !important;
+    width: 14% !important;
     transform: rotate(150deg) !important;
   }
 
@@ -1943,32 +1943,32 @@ section#services .why-premium-arrow {
   }
 
   #destinations .airport-node-brussels {
-    right: 25% !important;
+    right: 28% !important;
     top: 10% !important;
   }
 
   #destinations .airport-node-charleroi {
-    right: 22% !important;
+    right: 24% !important;
     top: 50% !important;
   }
 
   #destinations .airport-node-beauvais {
-    left: 62% !important;
+    left: 48% !important;
     bottom: 4% !important;
   }
 
   #destinations .airport-node-orly {
-    left: 50% !important;
+    left: 38% !important;
     bottom: 10% !important;
   }
 
   #destinations .airport-node-cdg {
-    left: 36% !important;
+    left: 30% !important;
     top: 46% !important;
   }
 
   #destinations .airport-line-lesquin {
-    width: 12% !important;
+    width: 8% !important;
     transform: rotate(-90deg) !important;
   }
 
@@ -1988,7 +1988,7 @@ section#services .why-premium-arrow {
   }
 
   #destinations .airport-line-orly {
-    width: 14% !important;
+    width: 10% !important;
     transform: rotate(145deg) !important;
   }
 
