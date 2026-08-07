@@ -1905,12 +1905,12 @@ section#services .why-premium-arrow {
   }
 
   #destinations .station-node-nord {
-    left: 30% !important;
-    bottom: 12% !important;
+    leff: 28% !important;
+    bottom: 10% !important;
   }
 
   #destinations .station-node-midi {
-    right: 22% !important;
+    right: 23% !important;
     bottom: 7% !important;
   }
 
@@ -1953,22 +1953,22 @@ section#services .why-premium-arrow {
   }
 
   #destinations .airport-node-beauvais {
-    left: 48% !important;
+    left: 44% !important;
     bottom: 4% !important;
   }
 
   #destinations .airport-node-orly {
-    left: 38% !important;
-    bottom: 10% !important;
+    left: 36% !important;
+    bottom: 8% !important;
   }
 
   #destinations .airport-node-cdg {
-    left: 30% !important;
+    left: 24% !important;
     top: 46% !important;
   }
 
   #destinations .airport-line-lesquin {
-    width: 8% !important;
+    width: 6% !important;
     transform: rotate(-90deg) !important;
   }
 
@@ -1983,12 +1983,12 @@ section#services .why-premium-arrow {
   }
 
   #destinations .airport-line-beauvais {
-    width: 14% !important;
+    width: 10% !important;
     transform: rotate(66deg) !important;
   }
 
   #destinations .airport-line-orly {
-    width: 10% !important;
+    width: 8% !important;
     transform: rotate(145deg) !important;
   }
 
