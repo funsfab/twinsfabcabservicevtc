@@ -1938,12 +1938,12 @@ section#services .why-premium-arrow {
 
   #destinations .airport-node-lesquin {
     left: 50% !important;
-    top: 9% !important;
+    top: 9.5% !important;
     transform: translateX(-50%) !important;
   }
 
   #destinations .airport-node-brussels {
-    right: 30% !important;
+    right: 29.5% !important;
     top: 8% !important;
   }
 
