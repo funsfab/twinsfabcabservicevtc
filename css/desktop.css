@@ -1939,12 +1939,12 @@ section#services .why-premium-arrow {
 
   #destinations .airport-node-lesquin {
     left: 50% !important;
-    top: 9.5% !important;
+    top: 10% !important;
     transform: translateX(-50%) !important;
   }
 
   #destinations .airport-node-brussels {
-    right: 29.5% !important;
+    right: 29% !important;
     top: 8% !important;
   }
 
@@ -1954,7 +1954,7 @@ section#services .why-premium-arrow {
   }
 
   #destinations .airport-node-beauvais {
-    left: 35% !important;
+    left: 45% !important;
     bottom: 4% !important;
   }
 
