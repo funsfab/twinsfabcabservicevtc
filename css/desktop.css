@@ -1938,13 +1938,13 @@ section#services .why-premium-arrow {
 
   #destinations .airport-node-lesquin {
     left: 50% !important;
-    top: 8% !important;
+    top: 9% !important;
     transform: translateX(-50%) !important;
   }
 
   #destinations .airport-node-brussels {
-    right: 38% !important;
-    top: 10% !important;
+    right: 30% !important;
+    top: 8% !important;
   }
 
   #destinations .airport-node-charleroi {
