@@ -2148,7 +2148,13 @@ section#services .why-premium-arrow {
 /* ===== VEHICLE EXPERIENCE DESKTOP WIDTH ===== */
 section#vehicule .vehicle-experience-inner {
     width: 100% !important;
-    max-width: 1900px !important;
+    max-width: 1500px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+/* ===== VEHICLE EXPERIENCE DESKTOP ALIGNMENT ===== */
+section#vehicule.vehicle-experience {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
