@@ -2147,7 +2147,7 @@ section#services .why-premium-arrow {
 
 /* ===== VEHICLE EXPERIENCE DESKTOP WIDTH ===== */
 section#vehicule .vehicle-experience-inner {
-    width: calc(100% - 24px) !important;
+    width: calc(100% - 50px) !important;
     max-width: 1500px !important;
     margin-left: auto !important;
     margin-right: auto !important;
