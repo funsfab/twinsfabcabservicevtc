@@ -2169,3 +2169,36 @@ section#vehicule.vehicle-experience {
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+
+/* ===== CONTACT SECTION – COMPACT DESKTOP CONTENT ===== */
+
+#contact.luxury-contact .luxury-contact__top,
+#contact.luxury-contact .luxury-contact__cards,
+#contact.luxury-contact .luxury-contact__advantages {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* STEP 1 – SMALLER CONTACT HEADING */
+
+#contact .luxury-contact__crest {
+    transform: scale(0.78) !important;
+    transform-origin: center center !important;
+}
+
+#contact .luxury-contact__eyebrow {
+    font-size: 12px !important;
+}
+
+#contact .luxury-contact__intro h2 {
+    font-size: 38px !important;
+    line-height: 1.05 !important;
+}
+
+#contact .luxury-contact__subtitle {
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+}
