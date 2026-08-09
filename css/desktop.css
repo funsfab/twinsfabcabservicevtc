@@ -2368,11 +2368,11 @@ section#vehicule.vehicle-experience {
 
         padding: 18px 16px !important;
         min-height: 285px !important;
+       border: none !important;
+outline: none !important;
 
         border-radius: 15px !important;
         box-sizing: border-box !important;
-       border: none !important;
-outline: none !important;
     }
 
 
