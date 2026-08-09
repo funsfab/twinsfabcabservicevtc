@@ -2629,3 +2629,47 @@ outline: none !important;
     grid-row: 3 !important;
   }
 }
+
+/* ==========================================
+   FOOTER – FINAL BORDER CLEANUP DESKTOP ONLY
+   ========================================== */
+
+@media screen and (min-width: 1024px) {
+
+  /* 1. REMOVE THE SMALL EXTRA LINE UNDER 7j/7 */
+  .luxury-footer__contact,
+  .luxury-footer__contact-list {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+
+  .luxury-footer__contact::after,
+  .luxury-footer__contact-list::after {
+    content: none !important;
+    display: none !important;
+  }
+
+
+  /* 2. REMOVE OLD CARD BORDERS COMPLETELY */
+  .luxury-footer__qualities > div {
+    position: relative !important;
+    border: none !important;
+    outline: none !important;
+    overflow: visible !important;
+  }
+
+
+  /* DRAW ONE CLEAN COMPLETE GOLD BORDER INSIDE EACH CARD */
+  .luxury-footer__qualities > div::after {
+    content: "" !important;
+
+    position: absolute !important;
+    inset: 1px !important;
+
+    border: 1px solid rgba(224, 174, 43, 0.62) !important;
+    border-radius: 12px !important;
+
+    pointer-events: none !important;
+    z-index: 3 !important;
+  }
+}
