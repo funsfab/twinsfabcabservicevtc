@@ -2255,3 +2255,76 @@ section#vehicule.vehicle-experience {
     padding-top: 24px !important;
     padding-bottom: 18px !important;
 }
+
+
+/* ===== REVIEWS – COMPACT UPPER DESKTOP BLOCK ===== */
+
+/* AVIS GOOGLE */
+.premium-reviews .section-label {
+    font-size: 11px !important;
+    margin-bottom: 8px !important;
+}
+
+/* Ce que disent nos clients */
+.premium-reviews > .container > h2 {
+    font-size: 38px !important;
+    line-height: 1.05 !important;
+    margin-bottom: 10px !important;
+}
+
+/* Subtitle */
+.premium-reviews .reviews-subtitle {
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 22px !important;
+}
+
+
+/* WHOLE GOOGLE SUMMARY CARD */
+.premium-reviews .luxury-reviews-summary {
+    width: 82% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 18px 20px !important;
+}
+
+
+/* Google Reviews title */
+.premium-reviews .luxury-reviews-google {
+    font-size: 18px !important;
+    margin-bottom: 10px !important;
+}
+
+
+/* 5.0 */
+.premium-reviews .luxury-reviews-score strong {
+    font-size: 28px !important;
+}
+
+
+/* STARS */
+.premium-reviews .luxury-reviews-stars i {
+    font-size: 17px !important;
+}
+
+
+/* (46) + other small text inside summary */
+.premium-reviews .luxury-reviews-summary span {
+    font-size: 11px !important;
+}
+
+
+/* Yellow "Voir les avis Google" button */
+.premium-reviews .luxury-reviews-summary a,
+.premium-reviews .luxury-reviews-summary button {
+    min-height: 38px !important;
+    padding: 8px 14px !important;
+    font-size: 12px !important;
+}
+
+
+/* Smaller text inside bottom statistics boxes */
+.premium-reviews .luxury-reviews-summary p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+}
