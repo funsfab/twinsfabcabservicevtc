@@ -2247,3 +2247,10 @@ section#vehicule.vehicle-experience {
     font-size: 12px !important;
     margin-right: 6px !important;
 }
+
+
+/* ===== STEP 4 – REDUCE TOP EMPTY SPACE ===== */
+
+#contact.luxury-contact {
+    padding-top: 24px !important;
+}
