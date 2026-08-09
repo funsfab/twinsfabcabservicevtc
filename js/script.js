@@ -1264,25 +1264,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function showNextReview() {
-        if (currentReviewIsExpanded()) {
-            return;
-        }
-
-        let nextIndex =
-            currentIndex + direction;
-
-        if (nextIndex >= cards.length) {
-            direction = -1;
-            nextIndex = cards.length - 2;
-        }
-
-        if (nextIndex < 0) {
-            direction = 1;
-            nextIndex = 1;
-        }
-
-        showReview(nextIndex);
+    if (currentReviewIsExpanded()) {
+        return;
     }
+
+    const visibleCards =
+        window.innerWidth >= 1024 ? 3 : 1;
+
+    const maxIndex = Math.max(
+        0,
+        cards.length - visibleCards
+    );
+
+    let nextIndex =
+        currentIndex + direction;
+
+    if (nextIndex > maxIndex) {
+        direction = -1;
+        nextIndex = Math.max(0, maxIndex - 1);
+    }
+
+    if (nextIndex < 0) {
+        direction = 1;
+        nextIndex = Math.min(1, maxIndex);
+    }
+
+    showReview(nextIndex);
+}
 
     viewport.addEventListener(
         "pointerdown",
