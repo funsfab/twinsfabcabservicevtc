@@ -1145,8 +1145,12 @@ line-height: 1.2;
     overflow: hidden !important;
 
     /* SHRINK THE COMPLETE DESIGN TOGETHER */
-    transform: scale(0.88) !important;
-    transform-origin: top center !important;
+    width: 113.64% !important;
+max-width: none !important;
+left: 50% !important;
+
+transform: translateX(-50%) scale(0.88) !important;
+transform-origin: top center !important;
 
     /* REMOVE THE EMPTY SPACE CREATED BY THE SHRINK */
     margin-bottom: -90px !important;
