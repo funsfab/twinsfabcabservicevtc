@@ -2343,9 +2343,12 @@ section#vehicule.vehicle-experience {
     }
 
     #reviewsCarousel .reviews-viewport {
-        width: 100% !important;
-        overflow: hidden !important;
-    }
+    width: 100% !important;
+    overflow: hidden !important;
+
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+}
 
     #reviewsCarousel .reviews-track {
     display: flex !important;
@@ -2370,6 +2373,23 @@ section#vehicule.vehicle-experience {
         box-sizing: border-box !important;
     }
 
+
+   /* Keep the gold rectangle visible even at carousel edges */
+#reviewsCarousel .reviews-card {
+    position: relative !important;
+}
+
+#reviewsCarousel .reviews-card::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 2px !important;
+
+    border: 1px solid rgba(224, 174, 43, 0.72) !important;
+    border-radius: 13px !important;
+
+    pointer-events: none !important;
+    z-index: 2 !important;
+}
     #reviewsCarousel .reviews-avatar {
         width: 46px !important;
         height: 46px !important;
