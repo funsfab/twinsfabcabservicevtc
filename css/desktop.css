@@ -2229,3 +2229,21 @@ section#vehicule.vehicle-experience {
 #contact .luxury-contact__link {
     font-size: 13px !important;
 }
+
+
+/* ===== STEP 3 – SMALLER BOTTOM CONTACT BAR ===== */
+
+#contact .luxury-contact__advantages {
+    padding: 10px 16px !important;
+    min-height: 44px !important;
+}
+
+#contact .luxury-contact__advantages span {
+    font-size: 11px !important;
+    line-height: 1 !important;
+}
+
+#contact .luxury-contact__advantages i {
+    font-size: 12px !important;
+    margin-right: 6px !important;
+}
