@@ -2673,3 +2673,137 @@ outline: none !important;
     z-index: 3 !important;
   }
 }
+
+
+/* ==================================================
+   L'EXPÉRIENCE VTC – COMPACT DESKTOP VERSION
+   MOBILE UNCHANGED
+   ================================================== */
+
+@media screen and (min-width: 1024px) {
+
+  /* KEEP THE OUTER WIDTH WE ALREADY FIXED */
+  section#vehicule.vehicle-experience {
+    padding-top: 12px !important;
+    padding-bottom: 16px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .vehicle-experience-inner {
+    width: calc(100% - 50px) !important;
+    max-width: 1500px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+
+  /* ===== SMALLER TITLE ===== */
+
+  .vehicle-experience-heading {
+    padding: 18px 20px 10px !important;
+  }
+
+  .vehicle-experience-heading p {
+    font-size: 23px !important;
+    line-height: 1.05 !important;
+    margin-bottom: 2px !important;
+  }
+
+  .vehicle-experience-heading h2 {
+    font-size: 30px !important;
+    line-height: 1.05 !important;
+    margin-bottom: 8px !important;
+  }
+
+
+  /* ===== MAIN CONTENT – PUSH EVERYTHING UP ===== */
+
+  .vehicle-experience-content {
+    grid-template-columns: 1fr 0.78fr !important;
+    gap: 24px !important;
+
+    padding: 18px 30px 76px !important;
+  }
+
+
+  /* ===== FOUR LEFT CARDS ===== */
+
+  .vehicle-info-grid {
+    gap: 8px !important;
+  }
+
+  .vehicle-info-item {
+    min-height: 80px !important;
+    padding: 11px 13px !important;
+
+    grid-template-columns: 44px 1fr !important;
+    gap: 10px !important;
+
+    border-radius: 11px !important;
+  }
+
+  .vehicle-info-item h3 {
+    font-size: 14px !important;
+    line-height: 1.1 !important;
+    margin-bottom: 3px !important;
+  }
+
+  .vehicle-info-item p {
+    font-size: 10.5px !important;
+    line-height: 1.25 !important;
+  }
+
+  .vehicle-info-item > i,
+  .vehicle-info-item .vehicle-info-icon {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 17px !important;
+  }
+
+
+  /* ===== SMALLER FLIPPING BUSINESS CARD ===== */
+
+  .vehicle-business-card-wrap {
+    max-width: 430px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    transform: translateY(3px) !important;
+  }
+
+  .business-card-label {
+    font-size: 10px !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 7px !important;
+  }
+
+  .tf-business-card-scene {
+    width: 100% !important;
+    max-width: 430px !important;
+    aspect-ratio: 1.55 / 1 !important;
+  }
+
+
+  /* ===== SMALLER SKYLINE ===== */
+
+  .vehicle-city-skyline {
+    height: 68px !important;
+  }
+
+
+  /* ===== SMALLER GOLD BOTTOM BAR ===== */
+
+  .vehicle-experience-footer {
+    min-height: 46px !important;
+    padding: 8px 16px !important;
+
+    font-size: 13px !important;
+    line-height: 1 !important;
+  }
+
+  .vehicle-experience-footer i {
+    font-size: 13px !important;
+  }
+}
