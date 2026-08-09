@@ -2165,7 +2165,7 @@ section#vehicule.vehicle-experience {
 #contact.luxury-contact .luxury-contact__top,
 #contact.luxury-contact .luxury-contact__cards,
 #contact.luxury-contact .luxury-contact__advantages {
-    width: 50% !important;
+    width: 90% !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
