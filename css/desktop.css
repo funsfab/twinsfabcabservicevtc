@@ -2158,3 +2158,14 @@ section#vehicule.vehicle-experience {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
+
+/* ===== CONTACT SECTION – COMPACT DESKTOP CONTENT ===== */
+
+#contact.luxury-contact .luxury-contact__top,
+#contact.luxury-contact .luxury-contact__cards,
+#contact.luxury-contact .luxury-contact__advantages {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
