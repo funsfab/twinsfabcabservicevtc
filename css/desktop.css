@@ -1120,7 +1120,10 @@ line-height: 1.2;
 
     box-sizing: border-box !important;
   }
-
+section#services.why-premium .container {
+    width: 100% !important;
+    max-width: none !important;
+}
 }
 /* DESKTOP — MATCH THE MOBILE “POURQUOI NOUS CHOISIR” DESIGN */
 
