@@ -2249,8 +2249,9 @@ section#vehicule.vehicle-experience {
 }
 
 
-/* ===== STEP 4 – REDUCE TOP EMPTY SPACE ===== */
+/* ===== STEP 4 – COMPACT SECTION SPACING ===== */
 
 #contact.luxury-contact {
     padding-top: 24px !important;
+    padding-bottom: 18px !important;
 }
