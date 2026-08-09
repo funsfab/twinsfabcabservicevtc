@@ -2371,6 +2371,8 @@ section#vehicule.vehicle-experience {
 
         border-radius: 15px !important;
         box-sizing: border-box !important;
+       border: none !important;
+outline: none !important;
     }
 
 
