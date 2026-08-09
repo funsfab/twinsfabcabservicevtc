@@ -1130,7 +1130,7 @@ line-height: 1.2;
 
     display: grid !important;
     grid-template-columns:
-      31% minmax(0, 1fr) !important;
+        31% minmax(0, 1fr) !important;
 
     align-items: start !important;
     column-gap: 28px !important;
@@ -1138,12 +1138,19 @@ line-height: 1.2;
     min-height: 760px !important;
 
     padding:
-      30px
-      32px
-      150px !important;
+        30px
+        32px
+        150px !important;
 
     overflow: hidden !important;
-  }
+
+    /* SHRINK THE COMPLETE DESIGN TOGETHER */
+    transform: scale(0.88) !important;
+    transform-origin: top center !important;
+
+    /* REMOVE THE EMPTY SPACE CREATED BY THE SHRINK */
+    margin-bottom: -90px !important;
+}
 
 
   /* GOLD ARC — ONLY THE CURVED RIGHT SIDE */
