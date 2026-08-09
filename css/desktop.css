@@ -2328,3 +2328,75 @@ section#vehicule.vehicle-experience {
     font-size: 10px !important;
     line-height: 1.15 !important;
 }
+
+/* =========================================
+   REVIEWS – 3 COMPACT CARDS DESKTOP ONLY
+   ========================================= */
+
+@media screen and (min-width: 1024px) {
+
+    #reviewsCarousel {
+        width: 88% !important;
+        max-width: 1180px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    #reviewsCarousel .reviews-viewport {
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    #reviewsCarousel .reviews-track {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: stretch !important;
+        gap: 14px !important;
+    }
+
+    #reviewsCarousel .reviews-card {
+        flex: 0 0 calc((100% - 28px) / 3) !important;
+        width: calc((100% - 28px) / 3) !important;
+        min-width: 0 !important;
+        max-width: none !important;
+
+        padding: 18px 16px !important;
+        min-height: 285px !important;
+
+        border-radius: 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    #reviewsCarousel .reviews-avatar {
+        width: 46px !important;
+        height: 46px !important;
+        font-size: 18px !important;
+    }
+
+    #reviewsCarousel .reviews-card h3 {
+        font-size: 15px !important;
+        line-height: 1.15 !important;
+    }
+
+    #reviewsCarousel .reviews-card p {
+        font-size: 11px !important;
+    }
+
+    #reviewsCarousel .reviews-stars {
+        margin: 10px 0 !important;
+    }
+
+    #reviewsCarousel .reviews-stars i {
+        font-size: 14px !important;
+    }
+
+    #reviewsCarousel .reviews-card blockquote {
+        font-size: 12px !important;
+        line-height: 1.45 !important;
+    }
+
+    #reviewsCarousel .reviews-toggle {
+        font-size: 11px !important;
+        margin-top: 10px !important;
+    }
+}
