@@ -105,6 +105,78 @@
 }
 
 /* =========================================
+   DESKTOP — LANGUAGE SWITCHER
+   ========================================= */
+
+@media screen and (min-width: 1024px) {
+
+  #mainHeader .desktop-language-switcher {
+    display: flex !important;
+    align-items: center !important;
+    gap: 11px !important;
+
+    flex-shrink: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  #mainHeader .language-option {
+    appearance: none !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+
+    margin: 0 !important;
+    padding: 4px 0 !important;
+
+    color: rgba(255, 255, 255, 0.78) !important;
+    background: transparent !important;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    font-family: inherit !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+
+    cursor: pointer !important;
+    white-space: nowrap !important;
+
+    transition:
+      color 0.2s ease,
+      opacity 0.2s ease !important;
+  }
+
+  #mainHeader .language-option img {
+    display: block !important;
+
+    width: 18px !important;
+    height: 13px !important;
+
+    object-fit: cover !important;
+
+    border-radius: 1px !important;
+  }
+
+  #mainHeader .language-option:hover {
+    color: #d4a62a !important;
+  }
+
+  #mainHeader .language-option.is-active {
+    color: #d4a62a !important;
+    opacity: 1 !important;
+  }
+
+}
+/* =========================================
    DESKTOP 03 — HERO TITLE
 ========================================= */
 
