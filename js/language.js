@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const translations = {
     fr: {
+      fr: {
+  brandSubtitle: "Votre chauffeur privé à Lille",
+  navHome: "ACCUEIL",
       navHome: "ACCUEIL",
       navServices: "SERVICES",
       navPopular: "TRAJETS POPULAIRES",
@@ -24,6 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     en: {
+      en: {
+  brandSubtitle: "Your private driver in Lille",
+  navHome: "HOME",
       navHome: "HOME",
       navServices: "SERVICES",
       navPopular: "POPULAR ROUTES",
@@ -46,6 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     es: {
+      es: {
+  brandSubtitle: "Su chófer privado en Lille",
+  navHome: "INICIO",
       navHome: "INICIO",
       navServices: "SERVICIOS",
       navPopular: "TRAYECTOS POPULARES",
@@ -68,6 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     de: {
+      de: {
+  brandSubtitle: "Ihr privater Chauffeur in Lille",
+  navHome: "STARTSEITE",
       navHome: "STARTSEITE",
       navServices: "SERVICES",
       navPopular: "BELIEBTE STRECKEN",
