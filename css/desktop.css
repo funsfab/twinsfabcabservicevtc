@@ -1109,7 +1109,7 @@ line-height: 1.2;
     padding-left: 24px !important;
     padding-right: 24px !important;
     overflow: visible !important;
-  }
+}
 
   section#services.why-premium .why-premium-inner {
     width: 100% !important;
@@ -1151,7 +1151,7 @@ section#services.why-premium .container {
     overflow: hidden !important;
 
     /* SHRINK THE COMPLETE DESIGN TOGETHER */
-    width: calc(100% / 0.88) !important;
+    width: 113.64% !important;
 max-width: none !important;
 left: 50% !important;
 
