@@ -1151,7 +1151,7 @@ section#services.why-premium .container {
     overflow: hidden !important;
 
     /* SHRINK THE COMPLETE DESIGN TOGETHER */
-    width: 135% !important;
+    width: calc((100vw - 48px) / 0.88) !important;
 max-width: none !important;
 left: 50% !important;
 
