@@ -67,7 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       heroDescription:
         "Viaje con elegancia, comodidad y tranquilidad.<br>Tesla Model Y 100 % eléctrico.",
-
+de: {
+  brandSubtitle: "Ihr privater Chauffeur in Lille",
       available: "Disponible",
       payment: "Pago<br>seguro",
       personalService: "Servicio<br>personalizado",
@@ -77,8 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     de: {
-      de: {
-  brandSubtitle: "Ihr privater Chauffeur in Lille",
   navHome: "STARTSEITE",
       navHome: "STARTSEITE",
       navServices: "SERVICES",
