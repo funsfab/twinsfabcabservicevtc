@@ -1106,9 +1106,9 @@ line-height: 1.2;
 @media screen and (min-width: 1024px) {
 
   section#services.why-premium {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-     overflow: visible !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    overflow: visible !important;
   }
 
   section#services.why-premium .why-premium-inner {
@@ -1151,7 +1151,7 @@ section#services.why-premium .container {
     overflow: hidden !important;
 
     /* SHRINK THE COMPLETE DESIGN TOGETHER */
-    width: 114vw !important;
+    width: calc(100% / 0.88) !important;
 max-width: none !important;
 left: 50% !important;
 
