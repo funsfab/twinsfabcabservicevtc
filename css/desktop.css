@@ -110,50 +110,49 @@
 
 @media screen and (min-width: 1024px) {
 
-  #mainHeader .desktop-language-switcher {
-    display: flex !important;
-    align-items: center !important;
-    gap: 9px !important;
+#mainHeader .desktop-language-switcher {
+  display: flex !important;
+  align-items: center !important;
 
-    flex-shrink: 0 !important;
+  gap: 18px !important;
 
-    margin: 0 0 0 - 14px !important;
-    padding: 0 !important;
+  flex-shrink: 0 !important;
 
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-  }
+  margin: 0 0 0 -18px !important;
+  padding: 0 !important;
 
-  #mainHeader .language-option {
-    appearance: none !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
 
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 4px !important;
+#mainHeader .language-option {
+  appearance: none !important;
 
-    margin: 0 !important;
-    padding: 4px 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 
-    color: rgba(255, 255, 255, 0.78) !important;
-    background: transparent !important;
+  gap: 6px !important;
 
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
+  margin: 0 !important;
+  padding: 4px 0 !important;
 
-    font-family: inherit !important;
-    font-size: 10px !important;
-    font-weight: 700 !important;
-    line-height: 1 !important;
+  color: #ffffff !important;
+  background: transparent !important;
 
-    cursor: pointer !important;
-    white-space: nowrap !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 
-    transition:
-      color 0.2s ease,
-      opacity 0.2s ease !important;
-  }
+  font-family: inherit !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+
+  cursor: pointer !important;
+  white-space: nowrap !important;
+}
 
   #mainHeader .language-option img {
     display: block !important;
