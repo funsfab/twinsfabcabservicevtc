@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fr: {
   brandSubtitle: "Votre chauffeur privé à Lille",
       googleReviews: "Avis Google",
+  serviceArea: "Lille • Belgique • Paris • Allemagne • Pays-Bas",
       navHome: "ACCUEIL",
       navServices: "SERVICES",
       navPopular: "TRAJETS POPULAIRES",
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     en: {
   brandSubtitle: "Your private driver in Lille",
       googleReviews: "Google Reviews",
+  serviceArea: "Lille • Belgium • Paris • Germany • Netherlands",
       navHome: "HOME",
       navServices: "SERVICES",
       navPopular: "POPULAR ROUTES",
@@ -52,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     es: {
   brandSubtitle: "Su chófer privado en Lille",
       googleReviews: "Reseñas de Google",
+  serviceArea: "Lille • Bélgica • París • Alemania • Países Bajos",
       navHome: "INICIO",
       navServices: "SERVICIOS",
       navPopular: "TRAYECTOS POPULARES",
@@ -75,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     de: {
       brandSubtitle: "Ihr privater Chauffeur in Lille",
       googleReviews: "Google-Bewertungen",
+  serviceArea: "Lille • Belgien • Paris • Deutschland • Niederlande",
       navHome: "STARTSEITE",
       navServices: "SERVICES",
       navPopular: "BELIEBTE STRECKEN",
