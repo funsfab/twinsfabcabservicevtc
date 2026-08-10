@@ -1433,125 +1433,314 @@ section#services .why-premium-arrow {
 
 }
 
-/* DESKTOP — TARIFS TITLE BADGES */
+/* ==================================================
+   DESKTOP — TARIFS COMPACT
+   SAME WIDTH / SMALLER HEIGHT
+   ================================================== */
 
 @media screen and (min-width: 1024px) {
+
+  /* KEEP THE OUTER WIDTH — ONLY REDUCE HEIGHT */
+  section#tarifs.tarifs-premium {
+    padding-top: 12px !important;
+    padding-bottom: 14px !important;
+  }
+
+  section#tarifs.tarifs-premium .tarifs-premium-inner {
+    padding-top: 18px !important;
+    padding-bottom: 138px !important;
+  }
+
+
+  /* ===== TITLE ===== */
 
   #tarifs .tarifs-heading {
     position: relative !important;
     max-width: 1100px !important;
+
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-bottom: 16px !important;
   }
+
+  #tarifs .tarifs-crown {
+    margin-bottom: 4px !important;
+    font-size: 19px !important;
+  }
+
+  #tarifs .tarifs-heading > p {
+    font-size: 22px !important;
+    line-height: 1 !important;
+  }
+
+  #tarifs .tarifs-heading > h2 {
+    margin-top: 2px !important;
+    font-size: 31px !important;
+    line-height: 1 !important;
+  }
+
+  #tarifs .tarifs-heading-line {
+    width: 58px !important;
+    margin: 10px auto 8px !important;
+  }
+
+  #tarifs .tarifs-heading > span {
+    font-size: 12px !important;
+    line-height: 1.25 !important;
+  }
+
+
+  /* ===== TOP BADGES ===== */
 
   #tarifs .tarifs-heading-badge {
     display: flex !important;
     position: absolute !important;
-    top: 34px;
 
-    min-width: 245px;
-    min-height: 72px;
+    top: 26px !important;
 
-    
-    align-items: center;
-    gap: 14px;
+    min-width: 220px !important;
+    min-height: 56px !important;
 
-    padding: 12px 20px;
+    align-items: center !important;
+    gap: 10px !important;
+
+    padding: 9px 16px !important;
 
     color: #ffffff;
+
     background:
       linear-gradient(
         145deg,
         rgba(20, 20, 20, 0.92),
         rgba(8, 8, 8, 0.88)
-      );
+      ) !important;
 
-    border: 1px solid rgba(217, 165, 46, 0.75);
-    border-radius: 30px;
+    border: 1px solid rgba(217, 165, 46, 0.75) !important;
+    border-radius: 28px !important;
 
     box-shadow:
       0 8px 22px rgba(0, 0, 0, 0.28),
-      0 0 15px rgba(217, 165, 46, 0.08);
+      0 0 15px rgba(217, 165, 46, 0.08) !important;
 
-    z-index: 4;
+    z-index: 4 !important;
   }
 
   #tarifs .tarifs-badge-left {
-    left: 0;
+    left: 0 !important;
   }
 
   #tarifs .tarifs-badge-right {
-    right: 0;
+    right: 0 !important;
   }
 
   #tarifs .tarifs-heading-badge i {
-    width: 44px;
-    height: 44px;
+    width: 36px !important;
+    height: 36px !important;
 
-    display: grid;
-    place-items: center;
-    flex: none;
+    display: grid !important;
+    place-items: center !important;
+    flex: none !important;
 
-    color: #d9a52e;
+    color: #d9a52e !important;
 
-    border: 1px solid rgba(217, 165, 46, 0.65);
-    border-radius: 50%;
+    border: 1px solid rgba(217, 165, 46, 0.65) !important;
+    border-radius: 50% !important;
 
-    font-size: 20px;
-  }
-
-  #tarifs .tarifs-heading-badge span {
-    display: block;
+    font-size: 16px !important;
   }
 
   #tarifs .tarifs-heading-badge strong {
-    display: block;
-
-    color: #f1d58b;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 16px;
-    line-height: 1.2;
+    font-size: 14px !important;
+    line-height: 1.1 !important;
   }
 
   #tarifs .tarifs-heading-badge small {
-    display: block;
-    margin-top: 4px;
-
-    color: #ffffff;
-    font-size: 12px;
-    line-height: 1.2;
+    margin-top: 2px !important;
+    font-size: 10px !important;
+    line-height: 1.1 !important;
   }
-
-  /* Gold connecting lines */
 
   #tarifs .tarifs-badge-left::after,
   #tarifs .tarifs-badge-right::before {
-    content: "";
+    content: "" !important;
 
-    position: absolute;
-    top: 50%;
+    position: absolute !important;
+    top: 50% !important;
 
-    width: 105px;
-    height: 1px;
+    width: 95px !important;
+    height: 1px !important;
 
     background:
       linear-gradient(
         90deg,
         rgba(217, 165, 46, 0.95),
         rgba(217, 165, 46, 0.25)
-      );
+      ) !important;
   }
 
   #tarifs .tarifs-badge-left::after {
-    right: -106px;
+    right: -96px !important;
   }
 
   #tarifs .tarifs-badge-right::before {
-    left: -106px;
-
-    transform: rotate(180deg);
+    left: -96px !important;
+    transform: rotate(180deg) !important;
   }
+
+
+  /* ===== FIVE TARIF ROWS ===== */
+
+  #tarifs .tarifs-list {
+    gap: 7px !important;
+  }
+
+  #tarifs .tarif-service-card {
+    min-height: 68px !important;
+
+    padding:
+      9px
+      125px
+      9px
+      64px !important;
+
+    border-radius: 11px !important;
+  }
+
+  #tarifs .tarif-service-icon {
+    left: 11px !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    font-size: 16px !important;
+  }
+
+  #tarifs .tarif-service-content h3 {
+    font-size: 13px !important;
+    line-height: 1.1 !important;
+  }
+
+  #tarifs .tarif-service-content p {
+    margin-top: 3px !important;
+
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+  }
+
+  #tarifs .tarif-service-price {
+    right: 10px !important;
+    width: 100px !important;
+  }
+
+  #tarifs .tarif-service-price small {
+    font-size: 7px !important;
+  }
+
+  #tarifs .tarif-service-price strong {
+    font-size: 20px !important;
+  }
+
+  #tarifs .tarif-service-price span {
+    margin-top: 3px !important;
+    font-size: 8px !important;
+  }
+
+  #tarifs .tarif-service-price .tarif-quote {
+    font-size: 13px !important;
+  }
+
+
+  /* ===== €30 MINIMUM CARD ===== */
+
+  #tarifs .tarif-minimum-card {
+    padding: 16px 12px !important;
+    border-radius: 14px !important;
+  }
+
+  #tarifs .tarif-minimum-card i {
+    margin-bottom: 9px !important;
+    font-size: 21px !important;
+  }
+
+  #tarifs .tarif-minimum-card span {
+    font-size: 16px !important;
+  }
+
+  #tarifs .tarif-minimum-card strong {
+    margin: 8px 0 6px !important;
+    font-size: 36px !important;
+  }
+
+  #tarifs .tarif-minimum-card p {
+    font-size: 10px !important;
+    line-height: 1.25 !important;
+  }
+
+
+  /* ===== PAYMENT AREA ===== */
+
+  #tarifs .tarifs-payments {
+    margin-top: 14px !important;
+    padding-top: 11px !important;
+  }
+
+  #tarifs .tarifs-payments h3 {
+    margin-bottom: 9px !important;
+    font-size: 13px !important;
+  }
+
+  #tarifs .tarifs-payment-list {
+    gap: 7px !important;
+  }
+
+  #tarifs .tarifs-payment-list div {
+    min-height: 43px !important;
+    padding: 6px 8px !important;
+    gap: 7px !important;
+  }
+
+  #tarifs .tarifs-payment-list i {
+    font-size: 16px !important;
+  }
+
+  #tarifs .tarifs-payment-list span {
+    font-size: 10px !important;
+  }
+
+
+  /* ===== SMALLER SKYLINE ===== */
+
+  #tarifs .tarifs-skyline {
+    bottom: 82px !important;
+
+    transform: scaleY(0.68) !important;
+    transform-origin: bottom center !important;
+  }
+
+
+  /* ===== SMALLER BOOKING BUTTON ===== */
+
+  #tarifs .tarifs-booking-btn {
+    bottom: 42px !important;
+
+    min-height: 40px !important;
+    padding: 7px 14px !important;
+
+    font-size: 11px !important;
+  }
+
+
+  /* ===== SMALLER BOTTOM NOTE ===== */
+
+  #tarifs .tarifs-footer-note {
+    bottom: 7px !important;
+
+    min-height: 27px !important;
+    padding: 5px 10px !important;
+
+    font-size: 9px !important;
+  }
+
 }
 /* DESKTOP — GARES & AÉROPORTS SAME WIDTH AS PREVIOUS SECTIONS */
 
