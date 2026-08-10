@@ -2377,7 +2377,7 @@ section#vehicule.vehicle-experience {
 /* STEP 1 – SMALLER CONTACT HEADING */
 
 #contact .luxury-contact__crest {
-    transform: scale(0.60) !important;
+    transform: scale(0.50) !important;
     transform-origin: center center !important;
 }
 
