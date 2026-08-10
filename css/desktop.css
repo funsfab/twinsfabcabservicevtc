@@ -1112,14 +1112,11 @@ line-height: 1.2;
 }
 
   section#services.why-premium .why-premium-inner {
-    width: 100% !important;
-    max-width: 1500px !important;
-
     margin-left: auto !important;
     margin-right: auto !important;
 
     box-sizing: border-box !important;
-  }
+}
 section#services.why-premium .container {
   width: 100% !important;
   max-width: none !important;
