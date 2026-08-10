@@ -15,7 +15,10 @@ width:90%;
 max-width:1200px;
 margin:auto;
 }
-
+/* Hide desktop language selector on mobile */
+.desktop-language-switcher {
+  display: none !important;
+}
 header{
 background:#fff;
 padding:18px 0;
