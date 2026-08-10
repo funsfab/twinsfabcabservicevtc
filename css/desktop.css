@@ -117,7 +117,7 @@
 
     flex-shrink: 0 !important;
 
-    margin: 0 !important;
+    margin: 0 0 0 - 14px !important;
     padding: 0 !important;
 
     background: transparent !important;
