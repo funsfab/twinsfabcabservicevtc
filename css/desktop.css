@@ -113,7 +113,7 @@
   #mainHeader .desktop-language-switcher {
     display: flex !important;
     align-items: center !important;
-    gap: 11px !important;
+    gap: 9px !important;
 
     flex-shrink: 0 !important;
 
