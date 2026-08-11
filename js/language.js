@@ -15,6 +15,8 @@ whyReliabilityText: "Nous respectons toujours vos horaires.",
 
 whyComfortTitle: "Confort premium",
 whyComfortText: "Voyagez dans une Tesla Model Y 100 % électrique.",
+// French
+whyComfortDetailsText: "Voyagez dans un véhicule 100 % électrique, silencieux, confortable et moderne.",
 whyComfortDetail1: "Tesla Model Y",
 whyComfortDetail2: "100 % électrique",
 whyComfortDetail3: "4 passagers maximum",
@@ -92,6 +94,8 @@ whyReliabilityText: "We always respect your schedule.",
 
 whyComfortTitle: "Premium comfort",
 whyComfortText: "Travel in a 100% electric Tesla Model Y.",
+      // English
+whyComfortDetailsText: "Travel in a 100% electric, quiet, comfortable and modern vehicle.",
 whyComfortDetail1: "Tesla Model Y",
 whyComfortDetail2: "100% electric",
 whyComfortDetail3: "Maximum 4 passengers",
@@ -170,6 +174,8 @@ whyReliabilityText: "Siempre respetamos sus horarios.",
 
 whyComfortTitle: "Confort premium",
 whyComfortText: "Viaje en un Tesla Model Y 100 % eléctrico.",
+      // Spanish
+whyComfortDetailsText: "Viaje en un vehículo 100 % eléctrico, silencioso, cómodo y moderno.",
 whyComfortDetail1: "Tesla Model Y",
 whyComfortDetail2: "100% eléctrico",
 whyComfortDetail3: "Máximo 4 pasajeros",
@@ -246,6 +252,8 @@ whyReliabilityText: "Wir halten Ihre Termine stets ein.",
 
 whyComfortTitle: "Premium-Komfort",
 whyComfortText: "Fahren Sie in einem 100 % elektrischen Tesla Model Y.",
+      // German
+whyComfortDetailsText: "Reisen Sie in einem 100 % elektrischen, leisen, komfortablen und modernen Fahrzeug.",
 whyComfortDetail1: "Tesla Model Y",
 whyComfortDetail2: "100 % elektrisch",
 whyComfortDetail3: "Maximal 4 Fahrgäste",
