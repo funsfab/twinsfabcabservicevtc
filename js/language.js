@@ -24,6 +24,10 @@ whyAvailabilityText: "Nous sommes disponibles à tout moment.",
 
 whyPaymentTitle: "Paiement sécurisé",
 whyPaymentText: "Plusieurs moyens de paiement disponibles.",
+      whyReliabilityDetail1: "Ponctualité garantie",
+whyReliabilityDetail2: "Suivi de votre trajet en temps réel",
+whyReliabilityDetail3: "Respect total de vos horaires",
+whyReliabilityDetail4: "Prise en charge fiable",
 // French
 whyFooterSlogan: "Votre confort, notre priorité.",
       
@@ -92,6 +96,10 @@ whyAvailabilityText: "We are available at all times.",
 
 whyPaymentTitle: "Secure payment",
 whyPaymentText: "Several payment methods available.",
+      whyReliabilityDetail1: "Guaranteed punctuality",
+whyReliabilityDetail2: "Real-time tracking of your journey",
+whyReliabilityDetail3: "Full respect for your schedule",
+whyReliabilityDetail4: "Reliable pick-up",
 // English
 whyFooterSlogan: "Your comfort, our priority.",
 
@@ -161,6 +169,10 @@ whyAvailabilityText: "Estamos disponibles en todo momento.",
 
 whyPaymentTitle: "Pago seguro",
 whyPaymentText: "Varios métodos de pago disponibles.",
+      whyReliabilityDetail1: "Puntualidad garantizada",
+whyReliabilityDetail2: "Seguimiento de su trayecto en tiempo real",
+whyReliabilityDetail3: "Respeto total de sus horarios",
+whyReliabilityDetail4: "Recogida fiable",
 // Spanish
 whyFooterSlogan: "Su comodidad, nuestra prioridad.",      
       
@@ -228,6 +240,10 @@ whyAvailabilityText: "Wir sind jederzeit verfügbar.",
 
 whyPaymentTitle: "Sichere Zahlung",
 whyPaymentText: "Mehrere Zahlungsmethoden verfügbar.",
+      whyReliabilityDetail1: "Garantierte Pünktlichkeit",
+whyReliabilityDetail2: "Echtzeit-Verfolgung Ihrer Fahrt",
+whyReliabilityDetail3: "Volle Einhaltung Ihres Zeitplans",
+whyReliabilityDetail4: "Zuverlässige Abholung",
 // German
 whyFooterSlogan: "Ihr Komfort, unsere Priorität.",
       
