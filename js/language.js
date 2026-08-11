@@ -67,6 +67,12 @@ tarifsMinimum: "Tarif minimum",
 tarifsAirportTitle: "Transferts aéroports",
 tarifsAirportText: "Transferts vers et depuis tous les aéroports.",
 tarifsAccordingTrip: "Selon le trajet",
+      // French
+tarifsStationTitle: "Transferts gares",
+tarifsStationText: "Transferts vers et depuis toutes les gares.",
+      // French
+tarifsHourlyTitle: "Mise à disposition",
+tarifsHourlyText: "Véhicule avec chauffeur pour une durée déterminée.",
       
 // French
 whyFooterSlogan: "Votre confort, notre priorité.",
@@ -179,6 +185,12 @@ paymentDetail6: "PayPal accepted",
 tarifsAirportTitle: "Airport transfers",
 tarifsAirportText: "Transfers to and from all airports.",
 tarifsAccordingTrip: "Depending on the trip",
+      // English
+tarifsStationTitle: "Train station transfers",
+tarifsStationText: "Transfers to and from all train stations.",
+      // English
+tarifsHourlyTitle: "Chauffeur at your disposal",
+tarifsHourlyText: "Vehicle with driver for a specified period.",
       
 // English
 whyFooterSlogan: "Your comfort, our priority.",
@@ -292,6 +304,12 @@ paymentDetail6: "PayPal aceptado",
 tarifsAirportTitle: "Traslados al aeropuerto",
 tarifsAirportText: "Traslados hacia y desde todos los aeropuertos.",
 tarifsAccordingTrip: "Según el trayecto",
+      // Spanish
+tarifsStationTitle: "Traslados a estaciones",
+tarifsStationText: "Traslados hacia y desde todas las estaciones.",
+      // Spanish
+tarifsHourlyTitle: "Servicio a disposición",
+tarifsHourlyText: "Vehículo con chófer durante un período determinado.",
       
 // Spanish
 whyFooterSlogan: "Su comodidad, nuestra prioridad.",      
@@ -403,6 +421,12 @@ paymentDetail6: "PayPal akzeptiert",
 tarifsAirportTitle: "Flughafentransfers",
 tarifsAirportText: "Transfers zu und von allen Flughäfen.",
 tarifsAccordingTrip: "Je nach Strecke",
+      // German
+tarifsStationTitle: "Bahnhoftransfers",
+tarifsStationText: "Transfers zu und von allen Bahnhöfen.",
+      // German
+tarifsHourlyTitle: "Fahrzeug mit Chauffeur",
+tarifsHourlyText: "Fahrzeug mit Chauffeur für einen bestimmten Zeitraum.",
       
 // German
 whyFooterSlogan: "Ihr Komfort, unsere Priorität.",
