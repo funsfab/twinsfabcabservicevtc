@@ -92,7 +92,8 @@ whyAvailabilityText: "We are available at all times.",
 
 whyPaymentTitle: "Secure payment",
 whyPaymentText: "Several payment methods available.",
-
+// English
+whyFooterSlogan: "Your comfort, our priority.",
 
       
 
@@ -160,7 +161,8 @@ whyAvailabilityText: "Estamos disponibles en todo momento.",
 
 whyPaymentTitle: "Pago seguro",
 whyPaymentText: "Varios métodos de pago disponibles.",
-      
+// Spanish
+whyFooterSlogan: "Su comodidad, nuestra prioridad.",      
       
 
 vehicleAirportTitle: "Traslados al aeropuerto",
@@ -226,7 +228,8 @@ whyAvailabilityText: "Wir sind jederzeit verfügbar.",
 
 whyPaymentTitle: "Sichere Zahlung",
 whyPaymentText: "Mehrere Zahlungsmethoden verfügbar.",
-
+// German
+whyFooterSlogan: "Ihr Komfort, unsere Priorität.",
       
 
 vehicleAirportTitle: "Flughafentransfers",
