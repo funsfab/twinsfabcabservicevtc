@@ -24,7 +24,8 @@ whyAvailabilityText: "Nous sommes disponibles à tout moment.",
 
 whyPaymentTitle: "Paiement sécurisé",
 whyPaymentText: "Plusieurs moyens de paiement disponibles.",
-
+// French
+whyFooterSlogan: "Votre confort, notre priorité.",
       
 
 vehicleAirportTitle: "Transferts aéroports",
