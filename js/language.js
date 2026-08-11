@@ -10,7 +10,22 @@ document.addEventListener("DOMContentLoaded", () => {
       whyIntro: "Pourquoi",
 whyTitle: "Nous choisir",
 whySubtitle: "L’excellence à chaque trajet.",
+      whyReliabilityTitle: "Fiabilité & ponctualité",
+whyReliabilityText: "Nous respectons toujours vos horaires.",
 
+whyComfortTitle: "Confort premium",
+whyComfortText: "Voyagez dans une Tesla Model Y 100 % électrique.",
+
+whyDriverTitle: "Chauffeur professionnel",
+whyDriverText: "Chauffeur expérimenté, courtois et discret.",
+
+whyAvailabilityTitle: "Disponibilité 24/7",
+whyAvailabilityText: "Nous sommes disponibles à tout moment.",
+
+whyPaymentTitle: "Paiement sécurisé",
+whyPaymentText: "Plusieurs moyens de paiement disponibles.",
+
+      
 
 vehicleAirportTitle: "Transferts aéroports",
 vehicleAirportText: "Prise en charge ponctuelle et suivi des vols en temps réel.",
@@ -62,6 +77,23 @@ vehicleTitle: "new generation",
       whyIntro: "Why",
 whyTitle: "Choose us",
 whySubtitle: "Excellence on every journey.",
+      whyReliabilityTitle: "Reliability & punctuality",
+whyReliabilityText: "We always respect your schedule.",
+
+whyComfortTitle: "Premium comfort",
+whyComfortText: "Travel in a 100% electric Tesla Model Y.",
+
+whyDriverTitle: "Professional driver",
+whyDriverText: "Experienced, courteous and discreet driver.",
+
+whyAvailabilityTitle: "Available 24/7",
+whyAvailabilityText: "We are available at all times.",
+
+whyPaymentTitle: "Secure payment",
+whyPaymentText: "Several payment methods available.",
+
+
+      
 
 vehicleAirportTitle: "Airport transfers",
 vehicleAirportText: "Punctual pick-up and real-time flight tracking.",
@@ -113,6 +145,22 @@ vehicleTitle: "de nueva generación",
       whyIntro: "Por qué",
 whyTitle: "Elegirnos",
 whySubtitle: "La excelencia en cada trayecto.",
+      whyReliabilityTitle: "Fiabilidad y puntualidad",
+whyReliabilityText: "Siempre respetamos sus horarios.",
+
+whyComfortTitle: "Confort premium",
+whyComfortText: "Viaje en un Tesla Model Y 100 % eléctrico.",
+
+whyDriverTitle: "Conductor profesional",
+whyDriverText: "Conductor experimentado, cortés y discreto.",
+
+whyAvailabilityTitle: "Disponibilidad 24/7",
+whyAvailabilityText: "Estamos disponibles en todo momento.",
+
+whyPaymentTitle: "Pago seguro",
+whyPaymentText: "Varios métodos de pago disponibles.",
+      
+      
 
 vehicleAirportTitle: "Traslados al aeropuerto",
 vehicleAirportText: "Recogida puntual y seguimiento de vuelos en tiempo real.",
@@ -163,6 +211,22 @@ vehicleTitle: "der neuen Generation",
       whyIntro: "Warum",
 whyTitle: "Uns wählen",
 whySubtitle: "Exzellenz auf jeder Fahrt.",
+      whyReliabilityTitle: "Zuverlässigkeit & Pünktlichkeit",
+whyReliabilityText: "Wir halten Ihre Termine stets ein.",
+
+whyComfortTitle: "Premium-Komfort",
+whyComfortText: "Fahren Sie in einem 100 % elektrischen Tesla Model Y.",
+
+whyDriverTitle: "Professioneller Chauffeur",
+whyDriverText: "Erfahrener, höflicher und diskreter Chauffeur.",
+
+whyAvailabilityTitle: "24/7 verfügbar",
+whyAvailabilityText: "Wir sind jederzeit verfügbar.",
+
+whyPaymentTitle: "Sichere Zahlung",
+whyPaymentText: "Mehrere Zahlungsmethoden verfügbar.",
+
+      
 
 vehicleAirportTitle: "Flughafentransfers",
 vehicleAirportText: "Pünktliche Abholung und Flugverfolgung in Echtzeit.",
