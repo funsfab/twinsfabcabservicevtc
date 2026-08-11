@@ -5,6 +5,29 @@ document.addEventListener("DOMContentLoaded", () => {
   brandSubtitle: "Votre chauffeur privé à Lille",
       googleReviews: "Avis Google",
   serviceArea: "Lille • Belgique • Paris • Allemagne • Pays-Bas",
+      vehicleEyebrow: "L’expérience VTC",
+vehicleTitle: "nouvelle génération",
+
+vehicleAirportTitle: "Transferts aéroports",
+vehicleAirportText: "Prise en charge ponctuelle et suivi des vols en temps réel.",
+
+vehicleDistanceTitle: "Longues distances",
+vehicleDistanceText: "Voyagez loin en toute sérénité et dans un confort premium.",
+
+vehicleBusinessTitle: "Déplacements professionnels",
+vehicleBusinessText: "Ponctualité, discrétion et confort pour vos rendez-vous.",
+
+vehicleCustomTitle: "Service sur mesure",
+vehicleCustomText: "Une expérience adaptée à vos horaires et à vos besoins.",
+
+businessCardLabel: "Carte de visite animée",
+businessCardSubtitle: "Votre chauffeur privé à Lille",
+businessCardValues: "Confort • Ponctualité • Sérénité",
+businessCardJob: "Chauffeur VTC professionnel",
+businessCardLocation: "Lille - France",
+businessCardBooking: "Réservation minimum 24 h à l’avance.",
+
+vehicleSlogan: "Voyagez autrement, voyagez mieux.",
       navHome: "ACCUEIL",
       navServices: "SERVICES",
       navPopular: "TRAJETS POPULAIRES",
@@ -30,6 +53,29 @@ document.addEventListener("DOMContentLoaded", () => {
   brandSubtitle: "Your private driver in Lille",
       googleReviews: "Google Reviews",
   serviceArea: "Lille • Belgium • Paris • Germany • Netherlands",
+      vehicleEyebrow: "The VTC experience",
+vehicleTitle: "new generation",
+
+vehicleAirportTitle: "Airport transfers",
+vehicleAirportText: "Punctual pick-up and real-time flight tracking.",
+
+vehicleDistanceTitle: "Long-distance journeys",
+vehicleDistanceText: "Travel far with complete peace of mind and premium comfort.",
+
+vehicleBusinessTitle: "Business travel",
+vehicleBusinessText: "Punctuality, discretion and comfort for your appointments.",
+
+vehicleCustomTitle: "Tailored service",
+vehicleCustomText: "A service adapted to your schedule and your needs.",
+
+businessCardLabel: "Animated business card",
+businessCardSubtitle: "Your private driver in Lille",
+businessCardValues: "Comfort • Punctuality • Serenity",
+businessCardJob: "Professional VTC driver",
+businessCardLocation: "Lille - France",
+businessCardBooking: "Booking required at least 24 hours in advance.",
+
+vehicleSlogan: "Travel differently, travel better.",
       navHome: "HOME",
       navServices: "SERVICES",
       navPopular: "POPULAR ROUTES",
@@ -55,6 +101,29 @@ document.addEventListener("DOMContentLoaded", () => {
   brandSubtitle: "Su chófer privado en Lille",
       googleReviews: "Reseñas de Google",
   serviceArea: "Lille • Bélgica • París • Alemania • Países Bajos",
+      vehicleEyebrow: "La experiencia VTC",
+vehicleTitle: "de nueva generación",
+
+vehicleAirportTitle: "Traslados al aeropuerto",
+vehicleAirportText: "Recogida puntual y seguimiento de vuelos en tiempo real.",
+
+vehicleDistanceTitle: "Largas distancias",
+vehicleDistanceText: "Viaje lejos con total tranquilidad y máximo confort.",
+
+vehicleBusinessTitle: "Desplazamientos profesionales",
+vehicleBusinessText: "Puntualidad, discreción y comodidad para sus citas.",
+
+vehicleCustomTitle: "Servicio a medida",
+vehicleCustomText: "Una experiencia adaptada a sus horarios y necesidades.",
+
+businessCardLabel: "Tarjeta de visita animada",
+businessCardSubtitle: "Su chófer privado en Lille",
+businessCardValues: "Confort • Puntualidad • Serenidad",
+businessCardJob: "Chófer VTC profesional",
+businessCardLocation: "Lille - Francia",
+businessCardBooking: "Reserva obligatoria con al menos 24 h de antelación.",
+
+vehicleSlogan: "Viaje de otra manera, viaje mejor.",
       navHome: "INICIO",
       navServices: "SERVICIOS",
       navPopular: "TRAYECTOS POPULARES",
@@ -79,6 +148,29 @@ document.addEventListener("DOMContentLoaded", () => {
       brandSubtitle: "Ihr privater Chauffeur in Lille",
       googleReviews: "Google-Bewertungen",
   serviceArea: "Lille • Belgien • Paris • Deutschland • Niederlande",
+      vehicleEyebrow: "Das VTC-Erlebnis",
+vehicleTitle: "der neuen Generation",
+
+vehicleAirportTitle: "Flughafentransfers",
+vehicleAirportText: "Pünktliche Abholung und Flugverfolgung in Echtzeit.",
+
+vehicleDistanceTitle: "Langstreckenfahrten",
+vehicleDistanceText: "Reisen Sie weit mit Ruhe und erstklassigem Komfort.",
+
+vehicleBusinessTitle: "Geschäftsfahrten",
+vehicleBusinessText: "Pünktlichkeit, Diskretion und Komfort für Ihre Termine.",
+
+vehicleCustomTitle: "Maßgeschneiderter Service",
+vehicleCustomText: "Ein Service, der an Ihre Zeiten und Bedürfnisse angepasst ist.",
+
+businessCardLabel: "Animierte Visitenkarte",
+businessCardSubtitle: "Ihr privater Chauffeur in Lille",
+businessCardValues: "Komfort • Pünktlichkeit • Gelassenheit",
+businessCardJob: "Professioneller VTC-Chauffeur",
+businessCardLocation: "Lille - Frankreich",
+businessCardBooking: "Reservierung mindestens 24 Stunden im Voraus erforderlich.",
+
+vehicleSlogan: "Reisen Sie anders, reisen Sie besser.",
       navHome: "STARTSEITE",
       navServices: "SERVICES",
       navPopular: "BELIEBTE STRECKEN",
