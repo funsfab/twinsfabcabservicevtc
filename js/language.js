@@ -15,7 +15,12 @@ whyReliabilityText: "Nous respectons toujours vos horaires.",
 
 whyComfortTitle: "Confort premium",
 whyComfortText: "Voyagez dans une Tesla Model Y 100 % électrique.",
-
+whyComfortDetail1: "Tesla Model Y",
+whyComfortDetail2: "100 % électrique",
+whyComfortDetail3: "4 passagers maximum",
+whyComfortDetail4: "Véhicule climatisé",
+whyComfortDetail5: "Voyage silencieux",
+whyComfortDetail6: "Grand coffre",
 whyDriverTitle: "Chauffeur professionnel",
 whyDriverText: "Chauffeur expérimenté, courtois et discret.",
 
@@ -87,7 +92,12 @@ whyReliabilityText: "We always respect your schedule.",
 
 whyComfortTitle: "Premium comfort",
 whyComfortText: "Travel in a 100% electric Tesla Model Y.",
-
+whyComfortDetail1: "Tesla Model Y",
+whyComfortDetail2: "100% electric",
+whyComfortDetail3: "Maximum 4 passengers",
+whyComfortDetail4: "Air-conditioned vehicle",
+whyComfortDetail5: "Quiet journey",
+whyComfortDetail6: "Large boot",
 whyDriverTitle: "Professional driver",
 whyDriverText: "Experienced, courteous and discreet driver.",
 
@@ -160,7 +170,12 @@ whyReliabilityText: "Siempre respetamos sus horarios.",
 
 whyComfortTitle: "Confort premium",
 whyComfortText: "Viaje en un Tesla Model Y 100 % eléctrico.",
-
+whyComfortDetail1: "Tesla Model Y",
+whyComfortDetail2: "100% eléctrico",
+whyComfortDetail3: "Máximo 4 pasajeros",
+whyComfortDetail4: "Vehículo climatizado",
+whyComfortDetail5: "Viaje silencioso",
+whyComfortDetail6: "Maletero grande",
 whyDriverTitle: "Conductor profesional",
 whyDriverText: "Conductor experimentado, cortés y discreto.",
 
@@ -231,7 +246,12 @@ whyReliabilityText: "Wir halten Ihre Termine stets ein.",
 
 whyComfortTitle: "Premium-Komfort",
 whyComfortText: "Fahren Sie in einem 100 % elektrischen Tesla Model Y.",
-
+whyComfortDetail1: "Tesla Model Y",
+whyComfortDetail2: "100 % elektrisch",
+whyComfortDetail3: "Maximal 4 Fahrgäste",
+whyComfortDetail4: "Klimatisiertes Fahrzeug",
+whyComfortDetail5: "Leise Fahrt",
+whyComfortDetail6: "Großer Kofferraum",
 whyDriverTitle: "Professioneller Chauffeur",
 whyDriverText: "Erfahrener, höflicher und diskreter Chauffeur.",
 
