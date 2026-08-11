@@ -63,6 +63,10 @@ tarifsLocalTitle: "Trajets locaux",
 tarifsLocalText: "Déplacements dans Lille et ses alentours.",
 tarifsFrom: "À partir de",
 tarifsMinimum: "Tarif minimum",
+      // French
+tarifsAirportTitle: "Transferts aéroports",
+tarifsAirportText: "Transferts vers et depuis tous les aéroports.",
+tarifsAccordingTrip: "Selon le trajet",
       
 // French
 whyFooterSlogan: "Votre confort, notre priorité.",
@@ -171,6 +175,10 @@ paymentDetail3: "Digital invoice available",
 paymentDetail4: "Payment by bank card",
 paymentDetail5: "Cash or bank transfer",
 paymentDetail6: "PayPal accepted",
+      // English
+tarifsAirportTitle: "Airport transfers",
+tarifsAirportText: "Transfers to and from all airports.",
+tarifsAccordingTrip: "Depending on the trip",
       
 // English
 whyFooterSlogan: "Your comfort, our priority.",
@@ -280,6 +288,10 @@ paymentDetail3: "Factura digital disponible",
 paymentDetail4: "Pago con tarjeta bancaria",
 paymentDetail5: "Efectivo o transferencia bancaria",
 paymentDetail6: "PayPal aceptado",
+      // Spanish
+tarifsAirportTitle: "Traslados al aeropuerto",
+tarifsAirportText: "Traslados hacia y desde todos los aeropuertos.",
+tarifsAccordingTrip: "Según el trayecto",
       
 // Spanish
 whyFooterSlogan: "Su comodidad, nuestra prioridad.",      
@@ -387,6 +399,10 @@ paymentDetail3: "Digitale Rechnung verfügbar",
 paymentDetail4: "Zahlung per Bankkarte",
 paymentDetail5: "Barzahlung oder Banküberweisung",
 paymentDetail6: "PayPal akzeptiert",
+      // German
+tarifsAirportTitle: "Flughafentransfers",
+tarifsAirportText: "Transfers zu und von allen Flughäfen.",
+tarifsAccordingTrip: "Je nach Strecke",
       
 // German
 whyFooterSlogan: "Ihr Komfort, unsere Priorität.",
