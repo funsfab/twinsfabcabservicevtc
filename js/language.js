@@ -73,6 +73,9 @@ tarifsStationText: "Transferts vers et depuis toutes les gares.",
       // French
 tarifsHourlyTitle: "Mise à disposition",
 tarifsHourlyText: "Véhicule avec chauffeur pour une durée déterminée.",
+      // French
+tarifsPersonalizedTitle: "Devis personnalisé",
+tarifsPersonalizedText: "Longues distances et trajets sur mesure.",
       
 // French
 whyFooterSlogan: "Votre confort, notre priorité.",
@@ -191,6 +194,9 @@ tarifsStationText: "Transfers to and from all train stations.",
       // English
 tarifsHourlyTitle: "Chauffeur at your disposal",
 tarifsHourlyText: "Vehicle with driver for a specified period.",
+      // English
+tarifsPersonalizedTitle: "Custom quote",
+tarifsPersonalizedText: "Long-distance and tailor-made journeys.",
       
 // English
 whyFooterSlogan: "Your comfort, our priority.",
@@ -310,6 +316,9 @@ tarifsStationText: "Traslados hacia y desde todas las estaciones.",
       // Spanish
 tarifsHourlyTitle: "Servicio a disposición",
 tarifsHourlyText: "Vehículo con chófer durante un período determinado.",
+      // Spanish
+tarifsPersonalizedTitle: "Presupuesto personalizado",
+tarifsPersonalizedText: "Largos recorridos y trayectos a medida.",
       
 // Spanish
 whyFooterSlogan: "Su comodidad, nuestra prioridad.",      
@@ -427,6 +436,9 @@ tarifsStationText: "Transfers zu und von allen Bahnhöfen.",
       // German
 tarifsHourlyTitle: "Fahrzeug mit Chauffeur",
 tarifsHourlyText: "Fahrzeug mit Chauffeur für einen bestimmten Zeitraum.",
+      // German
+tarifsPersonalizedTitle: "Individuelles Angebot",
+tarifsPersonalizedText: "Langstrecken und maßgeschneiderte Fahrten.",
       
 // German
 whyFooterSlogan: "Ihr Komfort, unsere Priorität.",
