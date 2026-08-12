@@ -76,6 +76,8 @@ tarifsHourlyText: "Véhicule avec chauffeur pour une durée déterminée.",
       // French
 tarifsPersonalizedTitle: "Devis personnalisé",
 tarifsPersonalizedText: "Longues distances et trajets sur mesure.",
+      // French
+tarifsFrom: "À partir de",
       
 // French
 whyFooterSlogan: "Votre confort, notre priorité.",
@@ -197,6 +199,8 @@ tarifsHourlyText: "Vehicle with driver for a specified period.",
       // English
 tarifsPersonalizedTitle: "Custom quote",
 tarifsPersonalizedText: "Long-distance and tailor-made journeys.",
+      // English
+tarifsFrom: "From",
       
 // English
 whyFooterSlogan: "Your comfort, our priority.",
@@ -319,6 +323,8 @@ tarifsHourlyText: "Vehículo con chófer durante un período determinado.",
       // Spanish
 tarifsPersonalizedTitle: "Presupuesto personalizado",
 tarifsPersonalizedText: "Largos recorridos y trayectos a medida.",
+      // Spanish
+tarifsFrom: "Desde",
       
 // Spanish
 whyFooterSlogan: "Su comodidad, nuestra prioridad.",      
@@ -439,6 +445,8 @@ tarifsHourlyText: "Fahrzeug mit Chauffeur für einen bestimmten Zeitraum.",
       // German
 tarifsPersonalizedTitle: "Individuelles Angebot",
 tarifsPersonalizedText: "Langstrecken und maßgeschneiderte Fahrten.",
+      // German
+tarifsFrom: "Ab",
       
 // German
 whyFooterSlogan: "Ihr Komfort, unsere Priorität.",
