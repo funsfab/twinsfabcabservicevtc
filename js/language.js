@@ -89,6 +89,8 @@ tarifsCard: "Carte bancaire",
 tarifsBankTransfer: "Virement bancaire",
       // French
 tarifsBookNow: "Réserver maintenant",
+      // French
+tarifsFooterNote: "Réservation requise minimum 24h avant le départ.",
 
       
 // French
@@ -224,6 +226,8 @@ tarifsCard: "Bank card",
 tarifsBankTransfer: "Bank transfer", 
       // English
 tarifsBookNow: "Book now",
+      // English
+tarifsFooterNote: "Reservation required at least 24 hours before departure.",
 
       
 // English
@@ -360,6 +364,8 @@ tarifsCard: "Tarjeta bancaria",
 tarifsBankTransfer: "Transferencia bancaria",
       // Spanish
 tarifsBookNow: "Reservar ahora",
+      // Spanish
+tarifsFooterNote: "Reserva obligatoria al menos 24 horas antes de la salida.",
 
       
 // Spanish
@@ -495,6 +501,8 @@ tarifsCard: "Bankkarte",
 tarifsBankTransfer: "Banküberweisung",
       // German
 tarifsBookNow: "Jetzt buchen",
+      // German
+tarifsFooterNote: "Reservierung mindestens 24 Stunden vor der Abfahrt erforderlich.",
       
 // German
 whyFooterSlogan: "Ihr Komfort, unsere Priorität.",
