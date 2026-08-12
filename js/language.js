@@ -82,6 +82,7 @@ tarifsPersonalizedText: "Longues distances et trajets sur mesure.",
       // French
 tarifsFrom: "À partir de",
       // French
+tarifsCustomRate: "Tarif personnalisé",
 tarifsPaymentTitle: "Moyens de paiement acceptés",
       // French
 tarifsCash: "Espèces",
@@ -193,6 +194,7 @@ tarifsSubtitle: "Transparent pricing for all your journeys.",
 tarifsLocalTitle: "Local trips",
 tarifsLocalText: "Trips within Lille and the surrounding area.",
 tarifsFrom: "From",
+      tarifsCustomRate: "Custom rate",
 tarifsMinimum: "Minimum fare",
       // English
 tarifsMinimumText: "Even for a short-distance journey.",
@@ -316,6 +318,7 @@ tarifsSubtitle: "Tarifas transparentes para todos sus desplazamientos.",
 tarifsLocalTitle: "Trayectos locales",
 tarifsLocalText: "Desplazamientos en Lille y sus alrededores.",
 tarifsFrom: "Desde",
+      tarifsCustomRate: "Tarifa personalizada",
 tarifsMinimum: "Tarifa mínima",
       // Spanish
 tarifsMinimumText: "Incluso para un trayecto de corta distancia.",
@@ -452,6 +455,7 @@ tarifsSubtitle: "Transparente Preise für all Ihre Fahrten.",
 tarifsLocalTitle: "Lokale Fahrten",
 tarifsLocalText: "Fahrten in Lille und Umgebung.",
 tarifsFrom: "Ab",
+      tarifsCustomRate: "Individueller Tarif",
 tarifsMinimum: "Mindesttarif",
       // German
 tarifsMinimumText: "Auch bei einer kurzen Strecke.",
