@@ -69,6 +69,7 @@ tarifsMinimumText: "Même pour un trajet de courte distance.",
 tarifsAirportTitle: "Transferts aéroports",
 tarifsAirportText: "Transferts vers et depuis tous les aéroports.",
 tarifsAccordingTrip: "Selon le trajet",
+      tarifsQuote: "Sur devis",
       // French
 tarifsStationTitle: "Transferts gares",
 tarifsStationText: "Transferts vers et depuis toutes les gares.",
@@ -80,6 +81,8 @@ tarifsPersonalizedTitle: "Devis personnalisé",
 tarifsPersonalizedText: "Longues distances et trajets sur mesure.",
       // French
 tarifsFrom: "À partir de",
+      // French
+
       
 // French
 whyFooterSlogan: "Votre confort, notre priorité.",
@@ -194,6 +197,7 @@ paymentDetail6: "PayPal accepted",
 tarifsAirportTitle: "Airport transfers",
 tarifsAirportText: "Transfers to and from all airports.",
 tarifsAccordingTrip: "Depending on the trip",
+      tarifsQuote: "On request",
       // English
 tarifsStationTitle: "Train station transfers",
 tarifsStationText: "Transfers to and from all train stations.",
@@ -205,6 +209,8 @@ tarifsPersonalizedTitle: "Custom quote",
 tarifsPersonalizedText: "Long-distance and tailor-made journeys.",
       // English
 tarifsFrom: "From",
+      // English
+
       
 // English
 whyFooterSlogan: "Your comfort, our priority.",
@@ -320,6 +326,7 @@ paymentDetail6: "PayPal aceptado",
 tarifsAirportTitle: "Traslados al aeropuerto",
 tarifsAirportText: "Traslados hacia y desde todos los aeropuertos.",
 tarifsAccordingTrip: "Según el trayecto",
+      tarifsQuote: "Bajo presupuesto",
       // Spanish
 tarifsStationTitle: "Traslados a estaciones",
 tarifsStationText: "Traslados hacia y desde todas las estaciones.",
@@ -331,6 +338,8 @@ tarifsPersonalizedTitle: "Presupuesto personalizado",
 tarifsPersonalizedText: "Largos recorridos y trayectos a medida.",
       // Spanish
 tarifsFrom: "Desde",
+      // Spanish
+
       
 // Spanish
 whyFooterSlogan: "Su comodidad, nuestra prioridad.",      
@@ -444,6 +453,8 @@ paymentDetail6: "PayPal akzeptiert",
 tarifsAirportTitle: "Flughafentransfers",
 tarifsAirportText: "Transfers zu und von allen Flughäfen.",
 tarifsAccordingTrip: "Je nach Strecke",
+      // German
+tarifsQuote: "Auf Anfrage",
       // German
 tarifsStationTitle: "Bahnhoftransfers",
 tarifsStationText: "Transfers zu und von allen Bahnhöfen.",
