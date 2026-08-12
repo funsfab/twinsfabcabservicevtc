@@ -87,6 +87,8 @@ tarifsPaymentTitle: "Moyens de paiement acceptés",
 tarifsCash: "Espèces",
 tarifsCard: "Carte bancaire",
 tarifsBankTransfer: "Virement bancaire",
+      // French
+tarifsBookNow: "Réserver maintenant",
 
       
 // French
@@ -220,6 +222,8 @@ tarifsPaymentTitle: "Accepted payment methods",
 tarifsCash: "Cash",
 tarifsCard: "Bank card",
 tarifsBankTransfer: "Bank transfer", 
+      // English
+tarifsBookNow: "Book now",
 
       
 // English
@@ -354,6 +358,8 @@ tarifsPaymentTitle: "Métodos de pago aceptados",
 tarifsCash: "Efectivo",
 tarifsCard: "Tarjeta bancaria",
 tarifsBankTransfer: "Transferencia bancaria",
+      // Spanish
+tarifsBookNow: "Reservar ahora",
 
       
 // Spanish
@@ -487,6 +493,8 @@ tarifsPaymentTitle: "Akzeptierte Zahlungsmethoden",
 tarifsCash: "Bargeld",
 tarifsCard: "Bankkarte",
 tarifsBankTransfer: "Banküberweisung",
+      // German
+tarifsBookNow: "Jetzt buchen",
       
 // German
 whyFooterSlogan: "Ihr Komfort, unsere Priorität.",
