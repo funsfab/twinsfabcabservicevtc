@@ -82,6 +82,7 @@ tarifsPersonalizedText: "Longues distances et trajets sur mesure.",
       // French
 tarifsFrom: "À partir de",
       // French
+tarifsPaymentTitle: "Moyens de paiement acceptés",
 
       
 // French
@@ -210,6 +211,7 @@ tarifsPersonalizedText: "Long-distance and tailor-made journeys.",
       // English
 tarifsFrom: "From",
       // English
+tarifsPaymentTitle: "Accepted payment methods",
 
       
 // English
@@ -338,7 +340,8 @@ tarifsPersonalizedTitle: "Presupuesto personalizado",
 tarifsPersonalizedText: "Largos recorridos y trayectos a medida.",
       // Spanish
 tarifsFrom: "Desde",
-      // Spanish
+    // Spanish
+tarifsPaymentTitle: "Métodos de pago aceptados",
 
       
 // Spanish
@@ -466,6 +469,8 @@ tarifsPersonalizedTitle: "Individuelles Angebot",
 tarifsPersonalizedText: "Langstrecken und maßgeschneiderte Fahrten.",
       // German
 tarifsFrom: "Ab",
+      // German
+tarifsPaymentTitle: "Akzeptierte Zahlungsmethoden",
       
 // German
 whyFooterSlogan: "Ihr Komfort, unsere Priorität.",
