@@ -83,6 +83,7 @@ tarifsPersonalizedText: "Longues distances et trajets sur mesure.",
 tarifsFrom: "À partir de",
       // French
 tarifsCustomRate: "Tarif personnalisé",
+      tarifsQuickResponse: "Réponse rapide",
 tarifsPaymentTitle: "Moyens de paiement acceptés",
       // French
 tarifsCash: "Espèces",
@@ -220,6 +221,7 @@ tarifsPersonalizedTitle: "Custom quote",
 tarifsPersonalizedText: "Long-distance and tailor-made journeys.",
       // English
 tarifsFrom: "From",
+      tarifsQuickResponse: "Quick response",
       // English
 tarifsPaymentTitle: "Accepted payment methods",
      // English
@@ -359,6 +361,7 @@ tarifsPersonalizedTitle: "Presupuesto personalizado",
 tarifsPersonalizedText: "Largos recorridos y trayectos a medida.",
       // Spanish
 tarifsFrom: "Desde",
+      tarifsQuickResponse: "Respuesta rápida",
     // Spanish
 tarifsPaymentTitle: "Métodos de pago aceptados",
       // Spanish
@@ -497,6 +500,7 @@ tarifsPersonalizedTitle: "Individuelles Angebot",
 tarifsPersonalizedText: "Langstrecken und maßgeschneiderte Fahrten.",
       // German
 tarifsFrom: "Ab",
+      tarifsQuickResponse: "Schnelle Antwort",
       // German
 tarifsPaymentTitle: "Akzeptierte Zahlungsmethoden",
       // German
