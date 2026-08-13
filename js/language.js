@@ -78,6 +78,9 @@ contactEyebrow: "CONTACT RAPIDE",
 contactTitle: "Besoin d’un chauffeur ?",
 contactSubtitle: "Nous sommes à votre disposition 7j/7 pour tous vos trajets.",
       // French
+contactPhoneTitle: "Téléphone / WhatsApp",
+contactPhoneLink: "Réponse rapide",
+      // French
 tarifsLocalTitle: "Trajets locaux",
 tarifsLocalText: "Déplacements dans Lille et ses alentours.",
 tarifsFrom: "À partir de",
@@ -230,6 +233,9 @@ contactEyebrow: "QUICK CONTACT",
 contactTitle: "Need a driver?",
 contactSubtitle: "We are available 7 days a week for all your journeys.",
       // English
+contactPhoneTitle: "Phone / WhatsApp",
+contactPhoneLink: "Quick response",
+      // English
 tarifsLocalTitle: "Local trips",
 tarifsLocalText: "Trips within Lille and the surrounding area.",
 tarifsFrom: "From",
@@ -373,6 +379,9 @@ destinationsDiscoverAll: "Descubrir todos nuestros destinos",
 contactEyebrow: "CONTACTO RÁPIDO",
 contactTitle: "¿Necesita un chófer?",
 contactSubtitle: "Estamos a su disposición los 7 días de la semana para todos sus trayectos.",
+      // Spanish
+contactPhoneTitle: "Teléfono / WhatsApp",
+contactPhoneLink: "Respuesta rápida",
       // Spanish
 tarifsLocalTitle: "Trayectos locales",
 tarifsLocalText: "Desplazamientos en Lille y sus alrededores.",
@@ -530,6 +539,9 @@ destinationsDiscoverAll: "Alle unsere Ziele entdecken",
 contactEyebrow: "SCHNELLKONTAKT",
 contactTitle: "Benötigen Sie einen Fahrer?",
 contactSubtitle: "Wir stehen Ihnen 7 Tage die Woche für alle Ihre Fahrten zur Verfügung.",
+      // German
+contactPhoneTitle: "Telefon / WhatsApp",
+contactPhoneLink: "Schnelle Antwort",
       // German
 tarifsLocalTitle: "Lokale Fahrten",
 tarifsLocalText: "Fahrten in Lille und Umgebung.",
