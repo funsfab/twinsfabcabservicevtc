@@ -74,6 +74,10 @@ destinationsApprox2h10: "Environ 2h10",
 destinationsMore: "Autres destinations",
 destinationsDiscoverAll: "Découvrir toutes nos destinations",
       // French
+contactEyebrow: "CONTACT RAPIDE",
+contactTitle: "Besoin d’un chauffeur ?",
+contactSubtitle: "Nous sommes à votre disposition 7j/7 pour tous vos trajets.",
+      // French
 tarifsLocalTitle: "Trajets locaux",
 tarifsLocalText: "Déplacements dans Lille et ses alentours.",
 tarifsFrom: "À partir de",
@@ -222,6 +226,10 @@ destinationsApprox2h10: "About 2h10",
 destinationsMore: "Other destinations",
 destinationsDiscoverAll: "Discover all our destinations",
       // English
+contactEyebrow: "QUICK CONTACT",
+contactTitle: "Need a driver?",
+contactSubtitle: "We are available 7 days a week for all your journeys.",
+      // English
 tarifsLocalTitle: "Local trips",
 tarifsLocalText: "Trips within Lille and the surrounding area.",
 tarifsFrom: "From",
@@ -361,6 +369,10 @@ destinationsApprox1h20: "Aprox. 1h20",
 destinationsApprox2h10: "Aprox. 2h10",
 destinationsMore: "Otros destinos",
 destinationsDiscoverAll: "Descubrir todos nuestros destinos",
+      // Spanish
+contactEyebrow: "CONTACTO RÁPIDO",
+contactTitle: "¿Necesita un chófer?",
+contactSubtitle: "Estamos a su disposición los 7 días de la semana para todos sus trayectos.",
       // Spanish
 tarifsLocalTitle: "Trayectos locales",
 tarifsLocalText: "Desplazamientos en Lille y sus alrededores.",
@@ -514,6 +526,10 @@ destinationsApprox1h20: "Ca. 1 Std. 20 Min.",
 destinationsApprox2h10: "Ca. 2 Std. 10 Min.",
 destinationsMore: "Weitere Ziele",
 destinationsDiscoverAll: "Alle unsere Ziele entdecken",
+      // German
+contactEyebrow: "SCHNELLKONTAKT",
+contactTitle: "Benötigen Sie einen Fahrer?",
+contactSubtitle: "Wir stehen Ihnen 7 Tage die Woche für alle Ihre Fahrten zur Verfügung.",
       // German
 tarifsLocalTitle: "Lokale Fahrten",
 tarifsLocalText: "Fahrten in Lille und Umgebung.",
