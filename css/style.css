@@ -11923,12 +11923,11 @@ button.luxury-contact__card{
     line-height:1.2;
 }
 
-.contact-choice-box::before{
-    content:"Comment souhaitez-vous nous contacter ?";
-    display:block;
-    margin:42px 0 -2px;
-    color:#cfcfcf;
-    font-size:14px;
+.contact-choice-question {
+  display: block;
+  margin: 42px 0 -2px;
+  color: #cfcfcf;
+  font-size: 14px;
 }
 
 /* Contact buttons */
