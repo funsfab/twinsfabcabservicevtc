@@ -61,6 +61,9 @@ tarifsSubtitle: "Des tarifs transparents pour tous vos déplacements.",
       destinationsEyebrow: "Gares & Aéroports",
 destinationsTitle: "Desservis",
 destinationsSubtitle: "Depuis Lille, nous vous accompagnons vers les principales destinations.",
+      // French
+destinationsFlightTracking: "Suivi des vols",
+destinationsStationPickup: "Prise en charge en gare",
       destinationsStations: "Gares",
       destinationsAirports: "Aéroports",
       // French
@@ -205,6 +208,9 @@ tarifsSubtitle: "Transparent pricing for all your journeys.",
       destinationsEyebrow: "Train Stations & Airports",
 destinationsTitle: "Served",
 destinationsSubtitle: "From Lille, we take you to the main destinations.",
+      // English
+destinationsFlightTracking: "Flight tracking",
+destinationsStationPickup: "Station pickup",
       destinationsStations: "Train stations",
       destinationsAirports: "Airports",
       // English
@@ -341,6 +347,9 @@ tarifsSubtitle: "Tarifas transparentes para todos sus desplazamientos.",
       destinationsEyebrow: "Estaciones y Aeropuertos",
 destinationsTitle: "Con servicio",
 destinationsSubtitle: "Desde Lille, le llevamos a los principales destinos.",
+      // Spanish
+destinationsFlightTracking: "Seguimiento de vuelos",
+destinationsStationPickup: "Recogida en la estación",
       destinationsStations: "Estaciones",
       destinationsAirports: "Aeropuertos",
       // Spanish
@@ -490,6 +499,9 @@ tarifsSubtitle: "Transparente Preise für all Ihre Fahrten.",
       destinationsEyebrow: "Bahnhöfe & Flughäfen",
 destinationsTitle: "Angebunden",
 destinationsSubtitle: "Von Lille aus bringen wir Sie zu den wichtigsten Zielen.",
+      // German
+destinationsFlightTracking: "Flugverfolgung",
+destinationsStationPickup: "Abholung am Bahnhof",
       destinationsStations: "Bahnhöfe",
       destinationsAirports: "Flughäfen",
       // German
