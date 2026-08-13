@@ -81,6 +81,9 @@ contactSubtitle: "Nous sommes à votre disposition 7j/7 pour tous vos trajets.",
 contactPhoneTitle: "Téléphone / WhatsApp",
 contactPhoneLink: "Réponse rapide",
       // French
+contactEmailTitle: "Email",
+contactEmailLink: "Nous écrire",
+      // French
 tarifsLocalTitle: "Trajets locaux",
 tarifsLocalText: "Déplacements dans Lille et ses alentours.",
 tarifsFrom: "À partir de",
@@ -236,6 +239,9 @@ contactSubtitle: "We are available 7 days a week for all your journeys.",
 contactPhoneTitle: "Phone / WhatsApp",
 contactPhoneLink: "Quick response",
       // English
+contactEmailTitle: "Email",
+contactEmailLink: "Write to us",
+      // English
 tarifsLocalTitle: "Local trips",
 tarifsLocalText: "Trips within Lille and the surrounding area.",
 tarifsFrom: "From",
@@ -382,6 +388,9 @@ contactSubtitle: "Estamos a su disposición los 7 días de la semana para todos 
       // Spanish
 contactPhoneTitle: "Teléfono / WhatsApp",
 contactPhoneLink: "Respuesta rápida",
+      // Spanish
+contactEmailTitle: "Correo electrónico",
+contactEmailLink: "Escríbanos",
       // Spanish
 tarifsLocalTitle: "Trayectos locales",
 tarifsLocalText: "Desplazamientos en Lille y sus alrededores.",
@@ -542,6 +551,9 @@ contactSubtitle: "Wir stehen Ihnen 7 Tage die Woche für alle Ihre Fahrten zur V
       // German
 contactPhoneTitle: "Telefon / WhatsApp",
 contactPhoneLink: "Schnelle Antwort",
+      // German
+contactEmailTitle: "E-Mail",
+contactEmailLink: "Schreiben Sie uns",
       // German
 tarifsLocalTitle: "Lokale Fahrten",
 tarifsLocalText: "Fahrten in Lille und Umgebung.",
