@@ -84,6 +84,10 @@ contactPhoneLink: "Réponse rapide",
 contactEmailTitle: "Email",
 contactEmailLink: "Nous écrire",
       // French
+contactLocationTitle: "Localisation",
+contactLocationText: "Lille - France",
+contactLocationLink: "Voir sur la carte",
+      // French
 tarifsLocalTitle: "Trajets locaux",
 tarifsLocalText: "Déplacements dans Lille et ses alentours.",
 tarifsFrom: "À partir de",
@@ -242,6 +246,10 @@ contactPhoneLink: "Quick response",
 contactEmailTitle: "Email",
 contactEmailLink: "Write to us",
       // English
+contactLocationTitle: "Location",
+contactLocationText: "Lille - France",
+contactLocationLink: "View on map",
+      // English
 tarifsLocalTitle: "Local trips",
 tarifsLocalText: "Trips within Lille and the surrounding area.",
 tarifsFrom: "From",
@@ -391,6 +399,10 @@ contactPhoneLink: "Respuesta rápida",
       // Spanish
 contactEmailTitle: "Correo electrónico",
 contactEmailLink: "Escríbanos",
+      // Spanish
+contactLocationTitle: "Ubicación",
+contactLocationText: "Lille - Francia",
+contactLocationLink: "Ver en el mapa",
       // Spanish
 tarifsLocalTitle: "Trayectos locales",
 tarifsLocalText: "Desplazamientos en Lille y sus alrededores.",
@@ -554,6 +566,10 @@ contactPhoneLink: "Schnelle Antwort",
       // German
 contactEmailTitle: "E-Mail",
 contactEmailLink: "Schreiben Sie uns",
+      // German
+contactLocationTitle: "Standort",
+contactLocationText: "Lille - Frankreich",
+contactLocationLink: "Auf der Karte ansehen",
       // German
 tarifsLocalTitle: "Lokale Fahrten",
 tarifsLocalText: "Fahrten in Lille und Umgebung.",
