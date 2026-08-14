@@ -1097,12 +1097,13 @@ document.addEventListener("DOMContentLoaded", function () {
 </blockquote>
 
                 <button
-                    type="button"
-                    class="reviews-toggle"
-                    aria-expanded="false"
-                >
-                    Lire la suite
-                </button>
+  type="button"
+  class="reviews-toggle"
+  aria-expanded="false"
+>
+  <span class="reviews-toggle-more" data-i18n="reviewsReadMore">Lire la suite</span>
+  <span class="reviews-toggle-hide" data-i18n="reviewsHide" hidden>Cacher</span>
+</button>
 
             </article>
         `;
