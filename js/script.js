@@ -1427,7 +1427,8 @@ button.querySelector(".reviews-toggle-hide").hidden = true;
                 card.classList.add("is-expanded");
                 text.classList.add("is-expanded");
 
-                button.textContent = "Cacher";
+                button.querySelector(".reviews-toggle-more").hidden = true;
+button.querySelector(".reviews-toggle-hide").hidden = false;
                 button.setAttribute(
                     "aria-expanded",
                     "true"
