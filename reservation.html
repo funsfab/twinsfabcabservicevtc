@@ -46,19 +46,29 @@
   <header id="mainHeader" class="premium-header">
   <div class="container header-inner">
 
-    <a href="#accueil" class="premium-brand" aria-label="Accueil">
+    <a
+      href="index.html#accueil"
+      class="premium-brand"
+      aria-label="Accueil"
+    >
       <div class="premium-brand-mark">
         TF
       </div>
 
       <div class="premium-brand-text">
-        <strong>TWINS FAB CAB<br>SERVICE VTC</strong>
+        <strong>
+          TWINS FAB CAB<br>SERVICE VTC
+        </strong>
 
-        <span class="brand-subtitle">
+        <span
+          class="brand-subtitle"
+          data-i18n="brandSubtitle"
+        >
           Votre chauffeur privé à Lille
         </span>
       </div>
     </a>
+
 
     <div class="header-actions">
       <a
@@ -79,45 +89,122 @@
       </button>
     </div>
 
+
     <nav aria-label="Navigation principale">
       <ul>
-  <li>
-    <a href="index.html#accueil" class="active">
-      ACCUEIL
-    </a>
-  </li>
+        <li>
+          <a
+            href="index.html#accueil"
+            data-i18n="navHome"
+          >
+            ACCUEIL
+          </a>
+        </li>
 
-  <li>
-    <a href="index.html#services">
-      SERVICES
-    </a>
-  </li>
+        <li>
+          <a
+            href="index.html#services"
+            data-i18n="navServices"
+          >
+            SERVICES
+          </a>
+        </li>
 
-  <li>
-    <a href="index.html#destinations">
-      TRAJETS POPULAIRES
-    </a>
-  </li>
+        <li>
+          <a
+            href="index.html#destinations"
+            data-i18n="navPopular"
+          >
+            TRAJETS POPULAIRES
+          </a>
+        </li>
 
-  <li>
-    <a href="index.html#vehicule">
-      NOTRE VÉHICULE
-    </a>
-  </li>
+        <li>
+          <a
+            href="index.html#vehicule"
+            data-i18n="navVehicle"
+          >
+            NOTRE VÉHICULE
+          </a>
+        </li>
 
-  <li>
-    <a href="index.html#tarifs">
-      À PROPOS
-    </a>
-  </li>
+        <li>
+          <a
+            href="index.html#tarifs"
+            data-i18n="navAbout"
+          >
+            À PROPOS
+          </a>
+        </li>
 
-  <li>
-    <a href="index.html#contact">
-      CONTACT
-    </a>
-  </li>
-</ul>
+        <li>
+          <a
+            href="index.html#contact"
+            data-i18n="navContact"
+          >
+            CONTACT
+          </a>
+        </li>
+      </ul>
     </nav>
+
+
+    <div
+      class="desktop-language-switcher"
+      aria-label="Choisir la langue"
+    >
+      <button
+        type="button"
+        class="language-option is-active"
+        data-lang="fr"
+        aria-label="Français"
+      >
+        <img
+          src="https://flagcdn.com/w40/fr.png"
+          alt="France"
+        >
+        <span>FR</span>
+      </button>
+
+      <button
+        type="button"
+        class="language-option"
+        data-lang="en"
+        aria-label="English"
+      >
+        <img
+          src="https://flagcdn.com/w40/gb.png"
+          alt="United Kingdom"
+        >
+        <span>EN</span>
+      </button>
+
+      <button
+        type="button"
+        class="language-option"
+        data-lang="es"
+        aria-label="Español"
+      >
+        <img
+          src="https://flagcdn.com/w40/es.png"
+          alt="España"
+        >
+        <span>ES</span>
+      </button>
+
+      <button
+        type="button"
+        class="language-option"
+        data-lang="de"
+        aria-label="Deutsch"
+      >
+        <img
+          src="https://flagcdn.com/w40/de.png"
+          alt="Deutschland"
+        >
+        <span>DE</span>
+      </button>
+    </div>
 
   </div>
 </header>
