@@ -1242,7 +1242,8 @@ document.addEventListener("DOMContentLoaded", function () {
             text.classList.remove("is-expanded");
             card.style.maxHeight = "420px";
 
-            button.textContent = "Lire la suite";
+            button.querySelector(".reviews-toggle-more").hidden = false;
+button.querySelector(".reviews-toggle-hide").hidden = true;
             button.setAttribute(
                 "aria-expanded",
                 "false"
