@@ -142,6 +142,22 @@ reviewText10: "Service professionnel et ponctuel ! La voiture était propre, ave
 
 
       // French
+footerContactTitle: "Contact",
+footerLocation: "Lille - France",
+footerAvailability: "7j/7 - 24h/24",
+footerProfessionalDrivers: "Chauffeurs professionnels",
+footerPremiumVehicle: "Véhicule premium",
+footerPunctuality: "Ponctualité garantie",
+footerSecurePayment: "Paiement sécurisé",
+footerPaymentTitle: "Paiement sécurisé",
+footerBankTransfer: "Virement bancaire",
+footerRightsReserved: "Tous droits réservés.",
+footerLegalNotice: "Mentions légales",
+footerPrivacyPolicy: "Politique de confidentialité",
+footerTerms: "CGV",
+
+      
+      // French
 reviewsReadMore: "Lire la suite",
 reviewsHide: "Cacher",
       // French
@@ -360,6 +376,23 @@ reviewDate10: "2 years ago",
 reviewText10: "Professional and punctual service! The car was clean, with plenty of space for luggage. I highly recommend William’s services.",
 
 
+      // English
+footerContactTitle: "Contact",
+footerLocation: "Lille - France",
+footerAvailability: "7 days a week - 24 hours a day",
+footerProfessionalDrivers: "Professional drivers",
+footerPremiumVehicle: "Premium vehicle",
+footerPunctuality: "Guaranteed punctuality",
+footerSecurePayment: "Secure payment",
+footerPaymentTitle: "Secure payment",
+footerBankTransfer: "Bank transfer",
+footerRightsReserved: "All rights reserved.",
+footerLegalNotice: "Legal notice",
+footerPrivacyPolicy: "Privacy policy",
+footerTerms: "Terms & Conditions",
+
+      
+
 // English
 reviewsReadMore: "Read more",
 reviewsHide: "Hide",
@@ -572,6 +605,23 @@ reviewDate10: "Hace 2 años",
 reviewText10: "¡Servicio profesional y puntual! El coche estaba limpio y tenía mucho espacio para el equipaje. Recomiendo mucho los servicios de William.",
 
 
+
+      // Spanish
+footerContactTitle: "Contacto",
+footerLocation: "Lille - Francia",
+footerAvailability: "7 días a la semana - 24 horas al día",
+footerProfessionalDrivers: "Conductores profesionales",
+footerPremiumVehicle: "Vehículo premium",
+footerPunctuality: "Puntualidad garantizada",
+footerSecurePayment: "Pago seguro",
+footerPaymentTitle: "Pago seguro",
+footerBankTransfer: "Transferencia bancaria",
+footerRightsReserved: "Todos los derechos reservados.",
+footerLegalNotice: "Aviso legal",
+footerPrivacyPolicy: "Política de privacidad",
+footerTerms: "Términos y condiciones",
+
+      
       // Spanish
 reviewsReadMore: "Leer más",
 reviewsHide: "Ocultar",
@@ -795,6 +845,24 @@ reviewText9: "Nachdem ich seine Dienste zweimal genutzt habe, kann ich diesen Fa
 reviewDate10: "Vor 2 Jahren",
 reviewText10: "Professioneller und pünktlicher Service! Das Auto war sauber und bot viel Platz für das Gepäck. Ich kann Williams Dienste sehr empfehlen.",
 
+
+
+      // German
+footerContactTitle: "Kontakt",
+footerLocation: "Lille - Frankreich",
+footerAvailability: "7 Tage die Woche - 24 Stunden am Tag",
+footerProfessionalDrivers: "Professionelle Fahrer",
+footerPremiumVehicle: "Premium-Fahrzeug",
+footerPunctuality: "Garantierte Pünktlichkeit",
+footerSecurePayment: "Sichere Zahlung",
+footerPaymentTitle: "Sichere Zahlung",
+footerBankTransfer: "Banküberweisung",
+footerRightsReserved: "Alle Rechte vorbehalten.",
+footerLegalNotice: "Impressum",
+footerPrivacyPolicy: "Datenschutzerklärung",
+footerTerms: "AGB",
+
+      
 // German
 reviewsReadMore: "Mehr lesen",
 reviewsHide: "Ausblenden",
