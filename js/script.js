@@ -1459,9 +1459,8 @@ button.querySelector(".reviews-toggle-hide").hidden = false;
                     }
                 );
 
-                button.textContent =
-                    "Lire la suite";
-
+                button.querySelector(".reviews-toggle-more").hidden = false;
+button.querySelector(".reviews-toggle-hide").hidden = true;
                 button.setAttribute(
                     "aria-expanded",
                     "false"
