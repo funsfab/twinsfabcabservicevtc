@@ -108,6 +108,38 @@ reviewsSubtitle: "Des expériences réelles partagées par nos passagers.",
 reviewsGoogleButton: "Voir les avis Google",
 reviewsCustomerReviews: "Avis clients",
 reviewsSatisfiedCustomers: "Clients satisfaits",
+
+      reviewDate1: "Il y a 10 mois",
+reviewText1: "Je viens du Brésil. Excellent transfert de Lille à Paris. Très bon tarif, excellente voiture et ponctualité irréprochable. Je recommande vivement ce service.",
+
+reviewDate2: "Il y a 9 mois",
+reviewText2: "Excellent service ! William a été fiable, ponctuel et très sympathique. Il a rendu le trajet fluide et agréable. Je recommande vivement !",
+
+reviewDate3: "Il y a 1 an",
+reviewText3: "Excellent ! Chauffeur très poli ! Il était toujours à l’heure et rendait chaque trajet agréable. Je recommande ce chauffeur, vous ne le regretterez pas !",
+
+reviewDate4: "Il y a 1 an",
+reviewText4: "Excellent service de A à Z. C’est toujours un plaisir de travailler avec eux. Je recommande à 100 %.",
+
+reviewDate5: "Il y a 9 mois",
+reviewText5: "Excellent service ! Chauffeur fiable, sympathique et très respectueux. Conduite fluide, véhicule propre et confortable. Absolument rien à redire, je recommande à 100 % !",
+
+reviewDate6: "Il y a 10 mois",
+reviewText6: "Je suis brésilienne et j’étais à Lille pour un déplacement professionnel. J’ai fait appel aux services de William et je le recommande vivement. Il parle anglais, ce qui a facilité la communication. Son professionnalisme, sa ponctualité, sa conduite responsable et sa gentillesse sont remarquables. Notre trajet de Lille à l’aéroport Charles-de-Gaulle pendant la nuit a été impeccable.",
+
+reviewDate7: "Il y a 1 an",
+reviewText7: "William est un professionnel respectueux qui conduit parfaitement. La voiture est toujours propre et confortable. Il est sympathique, disponible, souriant et extrêmement ponctuel. N’hésitez pas à faire appel à lui.",
+
+reviewDate8: "Il y a 10 mois",
+reviewText8: "Une excellente expérience. Une très belle voiture et un chauffeur bilingue français-anglais, prudent, serviable et ponctuel. Je recommande vivement.",
+
+reviewDate9: "Il y a 1 an",
+reviewText9: "Ayant fait appel à ses services à deux reprises, je recommande vivement ce chauffeur. Ponctuel, avec une conduite souple et beaucoup de gentillesse : un vrai professionnel. Je ferais de nouveau appel à lui sans hésitation.",
+
+reviewDate10: "Il y a 2 ans",
+reviewText10: "Service professionnel et ponctuel ! La voiture était propre, avec beaucoup d’espace pour les bagages. Je recommande vivement les services de William.",
+
+      
       // French
 tarifsLocalTitle: "Trajets locaux",
 tarifsLocalText: "Déplacements dans Lille et ses alentours.",
@@ -291,6 +323,39 @@ reviewsSubtitle: "Real experiences shared by our passengers.",
 reviewsGoogleButton: "View Google reviews",
 reviewsCustomerReviews: "Customer reviews",
 reviewsSatisfiedCustomers: "Satisfied customers",
+
+
+      reviewDate1: "10 months ago",
+reviewText1: "I come from Brazil. Excellent transfer from Lille to Paris. Very good price, excellent car and impeccable punctuality. I highly recommend this service.",
+
+reviewDate2: "9 months ago",
+reviewText2: "Excellent service! William was reliable, punctual and very friendly. He made the journey smooth and pleasant. I highly recommend him!",
+
+reviewDate3: "1 year ago",
+reviewText3: "Excellent! Very polite driver! He was always on time and made every journey pleasant. I recommend this driver, you will not regret it!",
+
+reviewDate4: "1 year ago",
+reviewText4: "Excellent service from A to Z. It is always a pleasure to work with them. I recommend them 100%.",
+
+reviewDate5: "9 months ago",
+reviewText5: "Excellent service! Reliable, friendly and very respectful driver. Smooth driving, clean and comfortable vehicle. Absolutely nothing to complain about, I recommend him 100%!",
+
+reviewDate6: "10 months ago",
+reviewText6: "I am Brazilian and was in Lille on a business trip. I used William’s services and highly recommend him. He speaks English, which made communication easier. His professionalism, punctuality, responsible driving and kindness are remarkable. Our nighttime journey from Lille to Charles de Gaulle Airport was impeccable.",
+
+reviewDate7: "1 year ago",
+reviewText7: "William is a respectful professional who drives perfectly. The car is always clean and comfortable. He is friendly, available, cheerful and extremely punctual. Do not hesitate to use his services.",
+
+reviewDate8: "10 months ago",
+reviewText8: "An excellent experience. A very nice car and a bilingual French-English driver who is careful, helpful and punctual. I highly recommend him.",
+
+reviewDate9: "1 year ago",
+reviewText9: "Having used his services twice, I highly recommend this driver. Punctual, with smooth driving and a lot of kindness: a true professional. I would use his services again without hesitation.",
+
+reviewDate10: "2 years ago",
+reviewText10: "Professional and punctual service! The car was clean, with plenty of space for luggage. I highly recommend William’s services.",
+
+      
       // English
 tarifsLocalTitle: "Local trips",
 tarifsLocalText: "Trips within Lille and the surrounding area.",
@@ -466,6 +531,40 @@ reviewsSubtitle: "Experiencias reales compartidas por nuestros pasajeros.",
 reviewsGoogleButton: "Ver las reseñas de Google",
 reviewsCustomerReviews: "Reseñas de clientes",
 reviewsSatisfiedCustomers: "Clientes satisfechos",
+
+
+      reviewDate1: "Hace 10 meses",
+reviewText1: "Vengo de Brasil. Excelente traslado de Lille a París. Muy buen precio, excelente coche y puntualidad impecable. Recomiendo mucho este servicio.",
+
+reviewDate2: "Hace 9 meses",
+reviewText2: "¡Excelente servicio! William fue fiable, puntual y muy amable. Hizo que el trayecto fuera fluido y agradable. ¡Lo recomiendo mucho!",
+
+reviewDate3: "Hace 1 año",
+reviewText3: "¡Excelente! ¡Conductor muy educado! Siempre llegaba puntual y hacía que cada trayecto fuera agradable. Recomiendo a este conductor, ¡no se arrepentirá!",
+
+reviewDate4: "Hace 1 año",
+reviewText4: "Excelente servicio de principio a fin. Siempre es un placer trabajar con ellos. Los recomiendo al 100 %.",
+
+reviewDate5: "Hace 9 meses",
+reviewText5: "¡Excelente servicio! Conductor fiable, amable y muy respetuoso. Conducción suave, vehículo limpio y cómodo. Absolutamente nada que objetar, ¡lo recomiendo al 100 %!",
+
+reviewDate6: "Hace 10 meses",
+reviewText6: "Soy brasileña y estaba en Lille por un viaje de negocios. Utilicé los servicios de William y lo recomiendo mucho. Habla inglés, lo que facilitó la comunicación. Su profesionalidad, puntualidad, conducción responsable y amabilidad son extraordinarias. Nuestro trayecto nocturno de Lille al aeropuerto Charles de Gaulle fue impecable.",
+
+reviewDate7: "Hace 1 año",
+reviewText7: "William es un profesional respetuoso que conduce perfectamente. El coche está siempre limpio y cómodo. Es amable, disponible, sonriente y extremadamente puntual. No dude en recurrir a sus servicios.",
+
+reviewDate8: "Hace 10 meses",
+reviewText8: "Una experiencia excelente. Un coche muy bonito y un conductor bilingüe francés-inglés, prudente, atento y puntual. Lo recomiendo mucho.",
+
+reviewDate9: "Hace 1 año",
+reviewText9: "Después de haber utilizado sus servicios en dos ocasiones, recomiendo mucho a este conductor. Puntual, con una conducción suave y mucha amabilidad: un verdadero profesional. Volvería a recurrir a sus servicios sin dudarlo.",
+
+reviewDate10: "Hace 2 años",
+reviewText10: "¡Servicio profesional y puntual! El coche estaba limpio y tenía mucho espacio para el equipaje. Recomiendo mucho los servicios de William.",
+
+
+      
       // Spanish
 tarifsLocalTitle: "Trayectos locales",
 tarifsLocalText: "Desplazamientos en Lille y sus alrededores.",
@@ -654,6 +753,39 @@ reviewsSubtitle: "Echte Erfahrungen unserer Fahrgäste.",
 reviewsGoogleButton: "Google-Bewertungen ansehen",
 reviewsCustomerReviews: "Kundenbewertungen",
 reviewsSatisfiedCustomers: "Zufriedene Kunden",
+
+
+      reviewDate1: "Vor 10 Monaten",
+reviewText1: "Ich komme aus Brasilien. Ausgezeichneter Transfer von Lille nach Paris. Sehr guter Preis, hervorragendes Fahrzeug und tadellose Pünktlichkeit. Ich kann diesen Service sehr empfehlen.",
+
+reviewDate2: "Vor 9 Monaten",
+reviewText2: "Ausgezeichneter Service! William war zuverlässig, pünktlich und sehr freundlich. Er hat die Fahrt angenehm und reibungslos gemacht. Ich kann ihn sehr empfehlen!",
+
+reviewDate3: "Vor 1 Jahr",
+reviewText3: "Ausgezeichnet! Sehr höflicher Fahrer! Er war immer pünktlich und machte jede Fahrt angenehm. Ich kann diesen Fahrer empfehlen, Sie werden es nicht bereuen!",
+
+reviewDate4: "Vor 1 Jahr",
+reviewText4: "Ausgezeichneter Service von A bis Z. Es ist immer eine Freude, mit ihnen zusammenzuarbeiten. Ich empfehle sie zu 100 %.",
+
+reviewDate5: "Vor 9 Monaten",
+reviewText5: "Ausgezeichneter Service! Zuverlässiger, freundlicher und sehr respektvoller Fahrer. Ruhige Fahrweise, sauberes und komfortables Fahrzeug. Absolut nichts zu beanstanden, ich empfehle ihn zu 100 %!",
+
+reviewDate6: "Vor 10 Monaten",
+reviewText6: "Ich bin Brasilianerin und war geschäftlich in Lille. Ich habe Williams Dienste genutzt und kann ihn sehr empfehlen. Er spricht Englisch, was die Kommunikation erleichtert hat. Seine Professionalität, Pünktlichkeit, verantwortungsvolle Fahrweise und Freundlichkeit sind bemerkenswert. Unsere nächtliche Fahrt von Lille zum Flughafen Charles de Gaulle war tadellos.",
+
+reviewDate7: "Vor 1 Jahr",
+reviewText7: "William ist ein respektvoller Profi, der hervorragend fährt. Das Auto ist immer sauber und komfortabel. Er ist freundlich, verfügbar, gut gelaunt und äußerst pünktlich. Zögern Sie nicht, seine Dienste in Anspruch zu nehmen.",
+
+reviewDate8: "Vor 10 Monaten",
+reviewText8: "Eine ausgezeichnete Erfahrung. Ein sehr schönes Auto und ein zweisprachiger französisch-englischer Fahrer, der vorsichtig, hilfsbereit und pünktlich ist. Ich kann ihn sehr empfehlen.",
+
+reviewDate9: "Vor 1 Jahr",
+reviewText9: "Nachdem ich seine Dienste zweimal genutzt habe, kann ich diesen Fahrer sehr empfehlen. Pünktlich, mit ruhiger Fahrweise und großer Freundlichkeit: ein echter Profi. Ich würde seine Dienste jederzeit wieder ohne zu zögern in Anspruch nehmen.",
+
+reviewDate10: "Vor 2 Jahren",
+reviewText10: "Professioneller und pünktlicher Service! Das Auto war sauber und bot viel Platz für das Gepäck. Ich kann Williams Dienste sehr empfehlen.",
+
+      
       // German
 tarifsLocalTitle: "Lokale Fahrten",
 tarifsLocalText: "Fahrten in Lille und Umgebung.",
