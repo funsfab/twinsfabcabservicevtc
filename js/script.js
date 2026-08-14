@@ -1488,13 +1488,14 @@ button.querySelector(".reviews-toggle-hide").hidden = true;
             }
 
             if (card.classList.contains("is-expanded")) {
-                button.hidden = false;
-                return;
-            }
+  button.style.display = "";
+  return;
+}
 
-            button.hidden =
-                text.scrollHeight <=
-                text.clientHeight + 3;
+const needsToggle =
+  text.scrollHeight > text.clientHeight + 3;
+
+button.style.display = needsToggle ? "" : "none";
         });
     }
   const reviewTextObserver = new MutationObserver(function () {
