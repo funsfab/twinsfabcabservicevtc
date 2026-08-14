@@ -1497,6 +1497,24 @@ button.querySelector(".reviews-toggle-hide").hidden = true;
                 text.clientHeight + 3;
         });
     }
+  const reviewTextObserver = new MutationObserver(function () {
+  window.requestAnimationFrame(function () {
+    updateToggleVisibility();
+  });
+});
+
+cards.forEach(function (card) {
+  const reviewText =
+    card.querySelector(".reviews-text");
+
+  if (reviewText) {
+    reviewTextObserver.observe(reviewText, {
+      childList: true,
+      characterData: true,
+      subtree: true
+    });
+  }
+});
 
     const observer =
         new IntersectionObserver(
