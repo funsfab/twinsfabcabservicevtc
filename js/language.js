@@ -139,7 +139,11 @@ reviewText9: "Ayant fait appel à ses services à deux reprises, je recommande v
 reviewDate10: "Il y a 2 ans",
 reviewText10: "Service professionnel et ponctuel ! La voiture était propre, avec beaucoup d’espace pour les bagages. Je recommande vivement les services de William.",
 
-      
+
+
+      // French
+reviewsReadMore: "Lire la suite",
+reviewsHide: "Cacher",
       // French
 tarifsLocalTitle: "Trajets locaux",
 tarifsLocalText: "Déplacements dans Lille et ses alentours.",
@@ -355,6 +359,10 @@ reviewText9: "Having used his services twice, I highly recommend this driver. Pu
 reviewDate10: "2 years ago",
 reviewText10: "Professional and punctual service! The car was clean, with plenty of space for luggage. I highly recommend William’s services.",
 
+
+// English
+reviewsReadMore: "Read more",
+reviewsHide: "Hide",
       
       // English
 tarifsLocalTitle: "Local trips",
@@ -564,7 +572,9 @@ reviewDate10: "Hace 2 años",
 reviewText10: "¡Servicio profesional y puntual! El coche estaba limpio y tenía mucho espacio para el equipaje. Recomiendo mucho los servicios de William.",
 
 
-      
+      // Spanish
+reviewsReadMore: "Leer más",
+reviewsHide: "Ocultar",
       // Spanish
 tarifsLocalTitle: "Trayectos locales",
 tarifsLocalText: "Desplazamientos en Lille y sus alrededores.",
@@ -785,6 +795,9 @@ reviewText9: "Nachdem ich seine Dienste zweimal genutzt habe, kann ich diesen Fa
 reviewDate10: "Vor 2 Jahren",
 reviewText10: "Professioneller und pünktlicher Service! Das Auto war sauber und bot viel Platz für das Gepäck. Ich kann Williams Dienste sehr empfehlen.",
 
+// German
+reviewsReadMore: "Mehr lesen",
+reviewsHide: "Ausblenden",
       
       // German
 tarifsLocalTitle: "Lokale Fahrten",
