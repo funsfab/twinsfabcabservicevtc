@@ -1061,7 +1061,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <i class="fa-solid fa-star"></i>
     `;
 
-    track.innerHTML = reviews.map(function (review) {
+    track.innerHTML = reviews.map(function (review, index) {
         return `
             <article class="reviews-card">
 
@@ -1079,9 +1079,9 @@ document.addEventListener("DOMContentLoaded", function () {
                             ></i>
                         </h3>
 
-                        <p class="reviews-date">
-                            ${review.date}
-                        </p>
+                        <p class="reviews-date" data-i18n="reviewDate${index + 1}">
+  ${review.date}
+</p>
                     </div>
                 </div>
 
@@ -1092,9 +1092,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     ${stars}
                 </div>
 
-                <blockquote class="reviews-text">
-                    ${review.text}
-                </blockquote>
+                <blockquote class="reviews-text" data-i18n="reviewText${index + 1}">
+  ${review.text}
+</blockquote>
 
                 <button
                     type="button"
