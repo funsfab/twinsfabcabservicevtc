@@ -21,6 +21,30 @@
   border: none !important;
 }
 
+/* RESERVATION PAGE — WHITE HERO, DESKTOP ONLY */
+.reservation-page .reservation-hero {
+  background: #ffffff !important;
+}
+
+.reservation-page .reservation-hero::after {
+  display: none !important;
+}
+
+.reservation-page .reservation-hero-overlay {
+  display: none !important;
+}
+
+.reservation-page .reservation-hero h1 {
+  color: #171a21 !important;
+}
+
+.reservation-page .reservation-hero-description {
+  color: #4f5968 !important;
+}
+
+.reservation-page .reservation-eyebrow {
+  color: #d4a62a !important;
+}
 .reservation-page .reservation-hero {
   background: #040a11 !important;
   color: #ffffff !important;
