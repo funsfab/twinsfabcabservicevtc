@@ -21,7 +21,9 @@
   border: none !important;
 }
 
-
+.reservation-page #mainHeader.premium-header {
+  background: #040a11 !important;
+}
 
 
 
