@@ -26,17 +26,7 @@
   color: #ffffff !important;
 }
 
-.reservation-page .reservation-hero h1 {
-  color: #ffffff !important;
-}
 
-.reservation-page .reservation-hero-description {
-  color: rgba(255, 255, 255, 0.82) !important;
-}
-
-.reservation-page .reservation-eyebrow {
-  color: #d4a62a !important;
-}
 #mainHeader.premium-header .header-inner {
   width: min(92%, 1420px) !important;
   max-width: 1420px !important;
