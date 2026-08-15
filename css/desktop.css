@@ -23,10 +23,10 @@
 
 .reservation-page #mainHeader.premium-header {
   background: linear-gradient(
-    100deg,
+    180deg,
     #111721 0%,
     #151c27 65%,
-    #1b2330 70%
+    #1b2330 100%
   ) !important;
 }
 
