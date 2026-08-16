@@ -12466,7 +12466,8 @@ html {
 .information-page #mainHeader nav a:active,
 .information-page #mainHeader nav a.active {
   color: #b8860b !important;
-  background: rgba(201, 149, 16, 0.12) !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 /* ===== MOVE INFORMATION TITLE UP ===== */
 
