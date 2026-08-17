@@ -234,7 +234,8 @@
   margin-left: 0 !important;
 }
    /* INFORMATION PAGE — DARK LEFT /* INFORMATION PAGE — DARK LEFT SIDE OF HEADER */
-.information-page #mainHeader.premium-header {
+.information-page #mainHeader.premium-header,
+.reservation-page #mainHeader.premium-header {
   background:
     linear-gradient(
       90deg,
