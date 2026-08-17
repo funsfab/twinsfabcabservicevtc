@@ -248,6 +248,28 @@
   flex-shrink: 0 !important;
   margin-left: 0 !important;
 }
+   /* INFORMATION PAGE — DARK LEFT SIDE OF HEADER */
+.information-page #mainHeader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 46%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.98) 0%,
+    rgba(0, 0, 0, 0.94) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.information-page #mainHeader .header-inner {
+  position: relative;
+  z-index: 1;
+}
 }
 /* =========================================
    DESKTOP 03 — HERO TITLE
