@@ -196,6 +196,13 @@ tarifsBookNow: "Réserver maintenant",
       // French
 tarifsFooterNote: "Réservation requise minimum 24h avant le départ.",
 
+
+      infoNavHome: "Accueil",
+infoNavDestinations: "Destinations",
+infoNavLegal: "Mentions légales",
+infoNavPrivacy: "Confidentialité",
+infoNavTerms: "CGV",
+infoNavContact: "Contact",
       
 // French
 whyFooterSlogan: "Votre confort, notre priorité.",
@@ -439,6 +446,14 @@ tarifsBookNow: "Book now",
       // English
 tarifsFooterNote: "Reservation required at least 24 hours before departure.",
 
+
+
+      infoNavHome: "Home",
+infoNavDestinations: "Destinations",
+infoNavLegal: "Legal notice",
+infoNavPrivacy: "Privacy",
+infoNavTerms: "Terms & Conditions",
+infoNavContact: "Contact",
       
 // English
 whyFooterSlogan: "Your comfort, our priority.",
@@ -682,6 +697,13 @@ tarifsBookNow: "Reservar ahora",
       // Spanish
 tarifsFooterNote: "Reserva obligatoria al menos 24 horas antes de la salida.",
 
+
+      infoNavHome: "Inicio",
+infoNavDestinations: "Destinos",
+infoNavLegal: "Aviso legal",
+infoNavPrivacy: "Privacidad",
+infoNavTerms: "Términos y condiciones",
+infoNavContact: "Contacto",
       
 // Spanish
 whyFooterSlogan: "Su comodidad, nuestra prioridad.",      
@@ -924,6 +946,14 @@ tarifsBankTransfer: "Banküberweisung",
 tarifsBookNow: "Jetzt buchen",
       // German
 tarifsFooterNote: "Reservierung mindestens 24 Stunden vor der Abfahrt erforderlich.",
+
+
+      infoNavHome: "Startseite",
+infoNavDestinations: "Ziele",
+infoNavLegal: "Rechtliche Hinweise",
+infoNavPrivacy: "Datenschutz",
+infoNavTerms: "AGB",
+infoNavContact: "Kontakt",
       
 // German
 whyFooterSlogan: "Ihr Komfort, unsere Priorität.",
