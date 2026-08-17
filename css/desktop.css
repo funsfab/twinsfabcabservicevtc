@@ -355,9 +355,17 @@ body:not(.information-page) #mainHeader nav a[aria-current="page"] {
 }
 
 /* Gold background ONLY while mouse is hovering */
-body:not(.information-page) #mainHeader nav a:hover {
+/* Home hover + Reservation hover, except Reservation ACCUEIL */
+body:not(.information-page):not(.reservation-page) #mainHeader nav a:hover,
+.reservation-page #mainHeader nav a:hover:not([href="index.html#accueil"]) {
   color: #b8860b !important;
   background: rgba(201, 149, 16, 0.12) !important;
+}
+
+/* Reservation ACCUEIL stays gold, with no hover background */
+.reservation-page #mainHeader nav a[href="index.html#accueil"] {
+  color: #b8860b !important;
+  background: transparent !important;
 }
 
   /* Remove the old large active background */
