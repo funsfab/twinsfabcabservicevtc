@@ -3222,4 +3222,8 @@ outline: none !important;
     font-size: 17px !important;
   }
 
+   .reservation-page .reservation-form-section {
+  margin-top: -140px !important;
+   }
+
 }
