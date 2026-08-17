@@ -342,16 +342,23 @@
 @media screen and (min-width: 1024px) {
 
   /* Remove the gold rectangle behind the active menu */
-  #mainHeader nav li,
-  #mainHeader nav a,
-  #mainHeader nav a.active,
-  #mainHeader nav li.active a,
-  #mainHeader nav a[aria-current="page"] {
-    background: transparent !important;
-    background-image: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-  }
+  /* Home + Reservation: no gold background normally */
+body:not(.information-page) #mainHeader nav li,
+body:not(.information-page) #mainHeader nav a,
+body:not(.information-page) #mainHeader nav a.active,
+body:not(.information-page) #mainHeader nav li.active a,
+body:not(.information-page) #mainHeader nav a[aria-current="page"] {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* Gold background ONLY while mouse is hovering */
+body:not(.information-page) #mainHeader nav a:hover {
+  color: #b8860b !important;
+  background: rgba(201, 149, 16, 0.12) !important;
+}
 
   /* Remove the old large active background */
   #mainHeader nav a::before {
