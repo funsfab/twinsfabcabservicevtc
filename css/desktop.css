@@ -238,6 +238,16 @@
     opacity: 1 !important;
   }
 
+   /* INFORMATION PAGE — MENU + LANGUAGES */
+.information-page #mainHeader nav {
+  margin-left: auto !important;
+  margin-right: 18px !important;
+}
+
+.information-page #mainHeader .desktop-language-switcher {
+  flex-shrink: 0 !important;
+  margin-left: 0 !important;
+}
 }
 /* =========================================
    DESKTOP 03 — HERO TITLE
