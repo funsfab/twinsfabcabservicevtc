@@ -12472,7 +12472,7 @@ html {
 /* ===== MOVE INFORMATION TITLE UP ===== */
 
 .information-page .information-hero {
-  padding-top: 0 !important;
+  padding-top: 110px !important;
   padding-bottom: 0 !important;
 }
 
