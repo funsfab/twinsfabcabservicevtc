@@ -386,11 +386,12 @@ body:not(.information-page) #mainHeader nav a:hover {
     transform-origin: center !important;
   }
 
-  #mainHeader nav a.active::after,
-  #mainHeader nav li.active a::after,
-  #mainHeader nav a[aria-current="page"]::after {
-    transform: scaleX(1) !important;
-  }
+#mainHeader nav a.active::after,
+#mainHeader nav li.active a::after,
+#mainHeader nav a[aria-current="page"]::after,
+.reservation-page #mainHeader nav a[href="index.html#accueil"]::after {
+  transform: scaleX(1) !important;
+}
 
   /* Move the city badge closer to the WhatsApp button */
   #accueil .hero-location {
