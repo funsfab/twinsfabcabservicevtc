@@ -3262,15 +3262,19 @@ outline: none !important;
   grid-column: 2 !important;
   width: 100% !important;
   min-width: 0 !important;
-}
-
-   .reservation-page .reservation-field-triptype .reservation-select-label {
-  font-size: 12px !important;
-  font-weight: 400 !important;
+  height: 64px !important;
+  min-height: 64px !important;
+  padding: 0 !important;
 }
 
 .reservation-page .reservation-field-triptype select {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 44px 0 18px !important;
   font-size: 15px !important;
   font-weight: 400 !important;
+  line-height: 1.2 !important;
 }
 }
