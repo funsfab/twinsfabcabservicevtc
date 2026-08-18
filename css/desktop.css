@@ -3263,4 +3263,14 @@ outline: none !important;
   width: 100% !important;
   min-width: 0 !important;
 }
+
+   .reservation-page .reservation-field-triptype .reservation-select-label {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+
+.reservation-page .reservation-field-triptype select {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
 }
