@@ -3251,4 +3251,16 @@ outline: none !important;
 .reservation-page .reservation-field-phone .iti {
   width: 100% !important;
 }
+
+   .reservation-page .reservation-field-transport {
+  grid-column: 1 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.reservation-page .reservation-field-triptype {
+  grid-column: 2 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
 }
