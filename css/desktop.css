@@ -3277,4 +3277,22 @@ outline: none !important;
   font-weight: 400 !important;
   line-height: 1.2 !important;
 }
+
+   .reservation-page .reservation-field-passengers {
+  grid-column: 1 / span 2 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.reservation-page .reservation-field-baggage {
+  grid-column: 3 / span 2 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.reservation-page .reservation-field-payment {
+  grid-column: 5 / span 2 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
 }
