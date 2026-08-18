@@ -3228,7 +3228,7 @@ outline: none !important;
 
    .reservation-page .reservation-form {
   display: grid !important;
-  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+ grid-template-columns: repeat(10, minmax(0, 1fr)) !important;
   column-gap: 18px !important;
 }
 
