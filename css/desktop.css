@@ -3295,4 +3295,12 @@ outline: none !important;
   width: 100% !important;
   min-width: 0 !important;
 }
+
+   .reservation-page .reservation-help-text p br {
+  display: none !important;
+}
+
+.reservation-page .reservation-help-text p {
+  white-space: nowrap !important;
+}
 }
