@@ -3228,7 +3228,7 @@ outline: none !important;
 
    .reservation-page .reservation-form {
   display: grid !important;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
   column-gap: 18px !important;
 }
 
@@ -3237,13 +3237,13 @@ outline: none !important;
 }
 
 .reservation-page .reservation-field-name {
-  grid-column: 1 !important;
+  grid-column: 1 / span 3 !important;
   width: 100% !important;
   min-width: 0 !important;
 }
 
 .reservation-page .reservation-field-phone {
-  grid-column: 2 !important;
+  grid-column: 4 / span 3 !important;
   width: 100% !important;
   min-width: 0 !important;
 }
@@ -3253,13 +3253,13 @@ outline: none !important;
 }
 
    .reservation-page .reservation-field-transport {
-  grid-column: 1 !important;
+  grid-column: 1 / span 3 !important;
   width: 100% !important;
   min-width: 0 !important;
 }
 
 .reservation-page .reservation-field-triptype {
-  grid-column: 2 !important;
+  grid-column: 4 / span 3 !important;
   width: 100% !important;
   min-width: 0 !important;
   height: 64px !important;
