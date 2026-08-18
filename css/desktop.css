@@ -3226,20 +3226,29 @@ outline: none !important;
   margin-top: -150px !important;
    }
 
-   .reservation-page .reservation-contact-row {
-  width: 100% !important;
+   .reservation-page .reservation-form {
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 18px !important;
-  align-items: stretch !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  column-gap: 18px !important;
 }
 
-.reservation-page .reservation-contact-row .reservation-field {
+.reservation-page .reservation-form > * {
+  grid-column: 1 / -1;
+}
+
+.reservation-page .reservation-field-name {
+  grid-column: 1 !important;
   width: 100% !important;
-  margin: 0 !important;
+  min-width: 0 !important;
 }
 
-.reservation-page .reservation-contact-row .iti {
+.reservation-page .reservation-field-phone {
+  grid-column: 2 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.reservation-page .reservation-field-phone .iti {
   width: 100% !important;
 }
 }
