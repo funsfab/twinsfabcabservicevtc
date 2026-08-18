@@ -3226,4 +3226,20 @@ outline: none !important;
   margin-top: -150px !important;
    }
 
+   .reservation-page .reservation-contact-row {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 18px !important;
+  align-items: stretch !important;
+}
+
+.reservation-page .reservation-contact-row .reservation-field {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.reservation-page .reservation-contact-row .iti {
+  width: 100% !important;
+}
 }
