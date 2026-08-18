@@ -3322,4 +3322,15 @@ outline: none !important;
   height: 58px !important;
   min-height: 58px !important;
 }
+
+   .reservation-page .reservation-scroll-down {
+  position: relative !important;
+  z-index: 50 !important;
+
+  display: flex !important;
+  width: 48px !important;
+  height: 48px !important;
+
+  margin: 24px auto 20px !important;
+   }
 }
