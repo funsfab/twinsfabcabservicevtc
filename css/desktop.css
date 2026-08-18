@@ -3334,4 +3334,9 @@ outline: none !important;
   margin: 24px auto 20px !important;
 top: -130px !important;
    }
+
+   .reservation-page .reservation-form-card {
+  width: min(96%, 1120px) !important;
+  max-width: 1120px !important;
+   }
 }
