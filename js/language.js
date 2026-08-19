@@ -259,6 +259,13 @@ reservationName: "Votre nom complet",
 reservationEmail: "Email",
 reservationDeparture: "Adresse de départ",
 reservationDestination: "Destination",
+    reservationFlightTrain: "N° de vol ou de train (optionnel)",
+reservationTripType: "Type de trajet",
+reservationPassengers: "Nombre de passagers",
+reservationPayment: "Mode de paiement souhaité",
+reservationBaggage: "Choisissez vos bagages",
+reservationAdditionalInfo: "Informations complémentaires (retard de vol, point de rendez-vous, demandes particulières...)",
+    
     },
 
     en: {
@@ -523,7 +530,14 @@ reservationName: "Your full name",
 reservationEmail: "Email",
 reservationDeparture: "Pickup address",
 reservationDestination: "Destination",
-    
+
+reservationFlightTrain: "Flight or train number (optional)",
+reservationTripType: "Trip type",
+reservationPassengers: "Number of passengers",
+reservationPayment: "Preferred payment method",
+reservationBaggage: "Select your luggage",
+reservationAdditionalInfo: "Additional information (flight delay, meeting point, special requests...)",
+      
     },
 
     es: {
@@ -785,6 +799,15 @@ reservationName: "Su nombre completo",
 reservationEmail: "Correo electrónico",
 reservationDeparture: "Dirección de recogida",
 reservationDestination: "Destino",
+
+
+      reservationFlightTrain: "N.º de vuelo o tren (opcional)",
+reservationTripType: "Tipo de trayecto",
+reservationPassengers: "Número de pasajeros",
+reservationPayment: "Método de pago preferido",
+reservationBaggage: "Seleccione su equipaje",
+reservationAdditionalInfo: "Información adicional (retraso del vuelo, punto de encuentro, solicitudes especiales...)",
+      
     },
 
     de: {
@@ -1048,6 +1071,13 @@ reservationName: "Ihr vollständiger Name",
 reservationEmail: "E-Mail",
 reservationDeparture: "Abholadresse",
 reservationDestination: "Ziel",
+
+reservationFlightTrain: "Flug- oder Zugnummer (optional)",
+reservationTripType: "Art der Fahrt",
+reservationPassengers: "Anzahl der Fahrgäste",
+reservationPayment: "Bevorzugte Zahlungsmethode",
+reservationBaggage: "Wählen Sie Ihr Gepäck",
+reservationAdditionalInfo: "Zusätzliche Informationen (Flugverspätung, Treffpunkt, besondere Wünsche...)",
       
     }
   };
