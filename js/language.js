@@ -265,7 +265,17 @@ reservationPassengers: "Nombre de passagers",
 reservationPayment: "Mode de paiement souhaité",
 reservationBaggage: "Choisissez vos bagages",
 reservationAdditionalInfo: "Informations complémentaires (retard de vol, point de rendez-vous, demandes particulières...)",
-    
+
+
+      reservationTripType: "Type de trajet",
+reservationTripOneWay: "Aller simple",
+reservationTripRoundTrip: "Aller-retour",
+
+reservationPassengers: "Nombre de passagers",
+reservationPassenger1: "1 passager",
+reservationPassenger2: "2 passagers",
+reservationPassenger3: "3 passagers",
+reservationPassenger4: "4 passagers",
     },
 
     en: {
@@ -537,7 +547,17 @@ reservationPassengers: "Number of passengers",
 reservationPayment: "Preferred payment method",
 reservationBaggage: "Select your luggage",
 reservationAdditionalInfo: "Additional information (flight delay, meeting point, special requests...)",
-      
+
+
+      reservationTripType: "Trip type",
+reservationTripOneWay: "One way",
+reservationTripRoundTrip: "Round trip",
+
+reservationPassengers: "Number of passengers",
+reservationPassenger1: "1 passenger",
+reservationPassenger2: "2 passengers",
+reservationPassenger3: "3 passengers",
+reservationPassenger4: "4 passengers",
     },
 
     es: {
@@ -807,6 +827,16 @@ reservationPassengers: "Número de pasajeros",
 reservationPayment: "Método de pago preferido",
 reservationBaggage: "Seleccione su equipaje",
 reservationAdditionalInfo: "Información adicional (retraso del vuelo, punto de encuentro, solicitudes especiales...)",
+
+reservationTripType: "Tipo de trayecto",
+reservationTripOneWay: "Solo ida",
+reservationTripRoundTrip: "Ida y vuelta",
+
+reservationPassengers: "Número de pasajeros",
+reservationPassenger1: "1 pasajero",
+reservationPassenger2: "2 pasajeros",
+reservationPassenger3: "3 pasajeros",
+reservationPassenger4: "4 pasajeros",
       
     },
 
@@ -1078,6 +1108,15 @@ reservationPassengers: "Anzahl der Fahrgäste",
 reservationPayment: "Bevorzugte Zahlungsmethode",
 reservationBaggage: "Wählen Sie Ihr Gepäck",
 reservationAdditionalInfo: "Zusätzliche Informationen (Flugverspätung, Treffpunkt, besondere Wünsche...)",
+reservationTripType: "Art der Fahrt",
+reservationTripOneWay: "Einfache Fahrt",
+reservationTripRoundTrip: "Hin- und Rückfahrt",
+
+reservationPassengers: "Anzahl der Fahrgäste",
+reservationPassenger1: "1 Fahrgast",
+reservationPassenger2: "2 Fahrgäste",
+reservationPassenger3: "3 Fahrgäste",
+reservationPassenger4: "4 Fahrgäste",
       
     }
   };
