@@ -3282,7 +3282,7 @@ grid-column: 11 / span 10 !important;
 }
 
    .reservation-page .reservation-field-passengers {
-    grid-column: 1 / span 6 !important
+    grid-column: 1 / span 6 !important;
       grid-row: 7 !important;
   width: 100% !important;
   min-width: 0 !important;
