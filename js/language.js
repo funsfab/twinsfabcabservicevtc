@@ -246,7 +246,7 @@ vehicleSlogan: "Voyagez autrement, voyagez mieux.",
       personalService: "Service<br>personnalisé",
 
       booking: "FAIRE UNE RÉSERVATION",
-      whatsapp: "NOUS ÉCRIRE SUR WHATSAPP"
+      whatsapp: "NOUS ÉCRIRE SUR WHATSAPP",
       reservationEyebrow: "RÉSERVATION",
 reservationTitle: "Réservez votre<br>chauffeur VTC",
 reservationDescription: "Demande de réservation minimum<br>24 heures avant le départ.",
@@ -502,7 +502,7 @@ vehicleSlogan: "Travel differently, travel better.",
       personalService: "Personalised<br>service",
 
       booking: "MAKE A RESERVATION",
-      whatsapp: "MESSAGE US ON WHATSAP"
+      whatsapp: "MESSAGE US ON WHATSAP",
 reservationEyebrow: "RESERVATION",
 reservationTitle: "Book your<br>VTC driver",
 reservationDescription: "Minimum reservation request<br>24 hours before departure.",
@@ -755,7 +755,7 @@ vehicleSlogan: "Viaje de otra manera, viaje mejor.",
       personalService: "Servicio<br>personalizado",
 
       booking: "HACER UNA RESERVA",
-      whatsapp: "ESCRÍBANOS POR WHATSAPP"
+      whatsapp: "ESCRÍBANOS POR WHATSAPP",
 
   reservationEyebrow: "RESERVA",
 reservationTitle: "Reserve su<br>chófer VTC",
@@ -1011,7 +1011,7 @@ vehicleSlogan: "Reisen Sie anders, reisen Sie besser.",
       personalService: "Persönlicher<br>Service",
 
       booking: "JETZT RESERVIEREN",
-      whatsapp: "WHATSAPP-NACHRICHT SENDEN"
+      whatsapp: "WHATSAPP-NACHRICHT SENDEN",
 reservationEyebrow: "– RESERVIERUNG –",
 reservationTitle: "Buchen Sie Ihren<br>VTC-Fahrer",
 reservationDescription: "Reservierung mindestens<br>24 Stunden vor der Abfahrt.",
