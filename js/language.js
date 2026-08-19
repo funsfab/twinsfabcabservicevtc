@@ -247,6 +247,10 @@ vehicleSlogan: "Voyagez autrement, voyagez mieux.",
 
       booking: "FAIRE UNE RÉSERVATION",
       whatsapp: "NOUS ÉCRIRE SUR WHATSAPP"
+      reservationEyebrow: "RÉSERVATION",
+reservationTitle: "Réservez votre<br>chauffeur VTC",
+reservationDescription: "Demande de réservation minimum<br>24 heures avant le départ.",
+reservationMinimum: "Tarif minimum : 20 €",
     },
 
     en: {
@@ -498,8 +502,13 @@ vehicleSlogan: "Travel differently, travel better.",
       personalService: "Personalised<br>service",
 
       booking: "MAKE A RESERVATION",
-      whatsapp: "MESSAGE US ON WHATSAPP"
-    },
+      whatsapp: "MESSAGE US ON WHATSAP"
+reservationEyebrow: "RESERVATION",
+reservationTitle: "Book your<br>VTC driver",
+reservationDescription: "Minimum reservation request<br>24 hours before departure.",
+reservationMinimum: "Minimum fare: €20",
+
+},
 
     es: {
   brandSubtitle: "Su chófer privado en Lille",
@@ -747,6 +756,11 @@ vehicleSlogan: "Viaje de otra manera, viaje mejor.",
 
       booking: "HACER UNA RESERVA",
       whatsapp: "ESCRÍBANOS POR WHATSAPP"
+
+  reservationEyebrow: "RESERVA",
+reservationTitle: "Reserve su<br>chófer VTC",
+reservationDescription: "Solicitud de reserva con un mínimo de<br>24 horas antes de la salida.",
+reservationMinimum: "Tarifa mínima: 20 €",
     },
 
     de: {
@@ -998,6 +1012,11 @@ vehicleSlogan: "Reisen Sie anders, reisen Sie besser.",
 
       booking: "JETZT RESERVIEREN",
       whatsapp: "WHATSAPP-NACHRICHT SENDEN"
+reservationEyebrow: "RESERVA",
+reservationTitle: "Reserve su<br>chófer VTC",
+reservationDescription: "Solicitud de reserva con un mínimo de<br>24 horas antes de la salida.",
+reservationMinimum: "Tarifa mínima: 20 €",
+      
     }
   };
 
