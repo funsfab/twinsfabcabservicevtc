@@ -276,6 +276,18 @@ reservationPassenger1: "1 passager",
 reservationPassenger2: "2 passagers",
 reservationPassenger3: "3 passagers",
 reservationPassenger4: "4 passagers",
+
+      reservationBaggage: "Choisissez vos bagages",
+reservationBaggageSmall1: "1 petit bagage",
+reservationBaggageLarge1: "1 grand bagage",
+reservationBaggageLarge1Small1: "1 grand + 1 petit",
+reservationBaggageLarge2Small1: "2 grands + 1 petit",
+reservationBaggageLarge2Small2: "2 grands + 2 petits (maximum)",
+
+reservationPayment: "Mode de paiement souhaité",
+reservationPaymentCash: "Espèces",
+reservationPaymentCard: "Carte bancaire",
+reservationPaymentBankTransfer: "Virement bancaire",
     },
 
     en: {
@@ -558,6 +570,19 @@ reservationPassenger1: "1 passenger",
 reservationPassenger2: "2 passengers",
 reservationPassenger3: "3 passengers",
 reservationPassenger4: "4 passengers",
+
+      reservationBaggage: "Choose your luggage",
+reservationBaggageSmall1: "1 small bag",
+reservationBaggageLarge1: "1 large bag",
+reservationBaggageLarge1Small1: "1 large + 1 small",
+reservationBaggageLarge2Small1: "2 large + 1 small",
+reservationBaggageLarge2Small2: "2 large + 2 small (maximum)",
+
+reservationPayment: "Preferred payment method",
+reservationPaymentCash: "Cash",
+reservationPaymentCard: "Bank card",
+reservationPaymentBankTransfer: "Bank transfer",
+      
     },
 
     es: {
@@ -837,6 +862,18 @@ reservationPassenger1: "1 pasajero",
 reservationPassenger2: "2 pasajeros",
 reservationPassenger3: "3 pasajeros",
 reservationPassenger4: "4 pasajeros",
+
+reservationBaggage: "Seleccione su equipaje",
+reservationBaggageSmall1: "1 equipaje pequeño",
+reservationBaggageLarge1: "1 equipaje grande",
+reservationBaggageLarge1Small1: "1 grande + 1 pequeño",
+reservationBaggageLarge2Small1: "2 grandes + 1 pequeño",
+reservationBaggageLarge2Small2: "2 grandes + 2 pequeños (máximo)",
+
+reservationPayment: "Método de pago preferido",
+reservationPaymentCash: "Efectivo",
+reservationPaymentCard: "Tarjeta bancaria",
+reservationPaymentBankTransfer: "Transferencia bancaria",
       
     },
 
@@ -1117,6 +1154,18 @@ reservationPassenger1: "1 Fahrgast",
 reservationPassenger2: "2 Fahrgäste",
 reservationPassenger3: "3 Fahrgäste",
 reservationPassenger4: "4 Fahrgäste",
+
+      reservationBaggage: "Wählen Sie Ihr Gepäck",
+reservationBaggageSmall1: "1 kleines Gepäckstück",
+reservationBaggageLarge1: "1 großes Gepäckstück",
+reservationBaggageLarge1Small1: "1 großes + 1 kleines",
+reservationBaggageLarge2Small1: "2 große + 1 kleines",
+reservationBaggageLarge2Small2: "2 große + 2 kleine (Maximum)",
+
+reservationPayment: "Bevorzugte Zahlungsmethode",
+reservationPaymentCash: "Bargeld",
+reservationPaymentCard: "Bankkarte",
+reservationPaymentBankTransfer: "Banküberweisung",
       
     }
   };
