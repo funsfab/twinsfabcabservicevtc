@@ -253,6 +253,12 @@ reservationHeroTitle2: "chauffeur VTC",
 reservationHeroDescription1: "Demande de réservation minimum",
 reservationHeroDescription2: "24 heures avant le départ.",
 reservationMinimumPrice: "Tarif minimum : 30 €",
+
+      reservationFormTitle: "Votre demande de réservation",
+reservationName: "Votre nom complet",
+reservationEmail: "Email",
+reservationDeparture: "Adresse de départ",
+reservationDestination: "Destination",
     },
 
     en: {
@@ -512,7 +518,13 @@ reservationHeroDescription1: "Reservation required at least",
 reservationHeroDescription2: "24 hours before departure.",
 reservationMinimumPrice: "Minimum fare: €30",
 
-},
+      reservationFormTitle: "Your reservation request",
+reservationName: "Your full name",
+reservationEmail: "Email",
+reservationDeparture: "Pickup address",
+reservationDestination: "Destination",
+    
+    },
 
     es: {
   brandSubtitle: "Su chófer privado en Lille",
@@ -767,6 +779,12 @@ reservationHeroTitle2: "chófer VTC",
 reservationHeroDescription1: "Reserva obligatoria con al menos",
 reservationHeroDescription2: "24 horas de antelación.",
 reservationMinimumPrice: "Tarifa mínima: 30 €",
+
+      reservationFormTitle: "Su solicitud de reserva",
+reservationName: "Su nombre completo",
+reservationEmail: "Correo electrónico",
+reservationDeparture: "Dirección de recogida",
+reservationDestination: "Destino",
     },
 
     de: {
@@ -1024,6 +1042,12 @@ reservationHeroTitle2: "VTC-Fahrer",
 reservationHeroDescription1: "Reservierung mindestens",
 reservationHeroDescription2: "24 Stunden vor der Abfahrt.",
 reservationMinimumPrice: "Mindesttarif: 30 €",
+
+      reservationFormTitle: "Ihre Reservierungsanfrage",
+reservationName: "Ihr vollständiger Name",
+reservationEmail: "E-Mail",
+reservationDeparture: "Abholadresse",
+reservationDestination: "Ziel",
       
     }
   };
