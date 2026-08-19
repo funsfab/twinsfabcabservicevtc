@@ -3301,7 +3301,9 @@ grid-column: 11 / span 10 !important;
   width: 100% !important;
   min-width: 0 !important;
 }
-
+.reservation-page .reservation-field-payment select {
+  padding-right: 32px !important;
+}
    .reservation-page .reservation-help-text p br {
   display: none !important;
 }
