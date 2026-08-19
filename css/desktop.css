@@ -3228,7 +3228,7 @@ outline: none !important;
 
    .reservation-page .reservation-form {
   display: grid !important;
- grid-template-columns: repeat(10, minmax(0, 1fr)) !important;
+ grid-template-columns: repeat(20, minmax(0, 1fr)) !important;
   column-gap: 18px !important;
 }
 
@@ -3236,14 +3236,16 @@ outline: none !important;
   grid-column: 1 / -1;
 }
 
+/* NOM — 50% */
 .reservation-page .reservation-field-name {
-  grid-column: 1 / span 3 !important;
+  grid-column: 1 / span 10 !important;
   width: 100% !important;
   min-width: 0 !important;
 }
 
+/* TÉLÉPHONE — 50% */
 .reservation-page .reservation-field-phone {
-  grid-column: 4 / span 3 !important;
+  grid-column: 11 / span 10 !important;
   width: 100% !important;
   min-width: 0 !important;
 }
@@ -3252,14 +3254,15 @@ outline: none !important;
   width: 100% !important;
 }
 
-   .reservation-page .reservation-field-transport {
-  grid-column: 1 / span 3 !important;
+   /* VOL / TRAIN — 50% */
+.reservation-page .reservation-field-transport {
+  grid-column: 1 / span 10 !important;
   width: 100% !important;
   min-width: 0 !important;
 }
 
 .reservation-page .reservation-field-triptype {
-  grid-column: 4 / span 3 !important;
+grid-column: 11 / span 10 !important;
   width: 100% !important;
   min-width: 0 !important;
   height: 64px !important;
@@ -3279,19 +3282,22 @@ outline: none !important;
 }
 
    .reservation-page .reservation-field-passengers {
-  grid-column: 1 / span 3 !important;
+    grid-column: 1 / span 6 !important
+      grid-row: 7 !important;
   width: 100% !important;
   min-width: 0 !important;
 }
 
 .reservation-page .reservation-field-baggage {
-  grid-column: 8 / span 3 !important;
+  grid-column: 14 / span 7 !important;
+  grid-row: 7 !important;
   width: 100% !important;
   min-width: 0 !important;
 }
 
 .reservation-page .reservation-field-payment {
-  grid-column: 4 / span 4 !important;
+  grid-column: 7 / span 7 !important;
+  grid-row: 7 !important;
   width: 100% !important;
   min-width: 0 !important;
 }
