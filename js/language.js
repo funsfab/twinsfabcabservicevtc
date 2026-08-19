@@ -297,6 +297,7 @@ reservationHelpWhatsApp: "WhatsApp",
 reservationHelpCall: "Appeler",
 reservationHelpSms: "SMS",
 reservationHelpEmail: "E-mail",
+      footerRightsReserved: "Tous droits réservés.",
     },
 
     en: {
@@ -600,6 +601,7 @@ reservationHelpWhatsApp: "WhatsApp",
 reservationHelpCall: "Call",
 reservationHelpSms: "SMS",
 reservationHelpEmail: "Email",
+      footerRightsReserved: "All rights reserved.",
       
     },
 
@@ -901,6 +903,7 @@ reservationHelpWhatsApp: "WhatsApp",
 reservationHelpCall: "Llamar",
 reservationHelpSms: "SMS",
 reservationHelpEmail: "Correo electrónico",
+      footerRightsReserved: "Todos los derechos reservados.",
       
     },
 
@@ -1202,7 +1205,7 @@ reservationHelpWhatsApp: "WhatsApp",
 reservationHelpCall: "Anrufen",
 reservationHelpSms: "SMS",
 reservationHelpEmail: "E-Mail",
-      
+      footerRightsReserved: "Alle Rechte vorbehalten.",
     }
   };
 
