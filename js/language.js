@@ -288,6 +288,15 @@ reservationPayment: "Mode de paiement souhaité",
 reservationPaymentCash: "Espèces",
 reservationPaymentCard: "Carte bancaire",
 reservationPaymentBankTransfer: "Virement bancaire",
+
+      reservationSubmit: "Envoyer ma demande",
+reservationPriceNotice: "Le tarif définitif sera communiqué après étude de votre demande.",
+reservationHelpTitle: "Besoin d’aide ou une question ?",
+reservationHelpText: "Notre équipe est à votre disposition pour toute question.",
+reservationHelpWhatsApp: "WhatsApp",
+reservationHelpCall: "Appeler",
+reservationHelpSms: "SMS",
+reservationHelpEmail: "E-mail",
     },
 
     en: {
@@ -582,6 +591,15 @@ reservationPayment: "Preferred payment method",
 reservationPaymentCash: "Cash",
 reservationPaymentCard: "Bank card",
 reservationPaymentBankTransfer: "Bank transfer",
+
+reservationSubmit: "Send my request",
+reservationPriceNotice: "The final price will be provided after reviewing your request.",
+reservationHelpTitle: "Need help or have a question?",
+reservationHelpText: "Our team is available to answer any questions.",
+reservationHelpWhatsApp: "WhatsApp",
+reservationHelpCall: "Call",
+reservationHelpSms: "SMS",
+reservationHelpEmail: "Email",
       
     },
 
@@ -874,6 +892,15 @@ reservationPayment: "Método de pago preferido",
 reservationPaymentCash: "Efectivo",
 reservationPaymentCard: "Tarjeta bancaria",
 reservationPaymentBankTransfer: "Transferencia bancaria",
+
+reservationSubmit: "Enviar mi solicitud",
+reservationPriceNotice: "El precio final se comunicará después de estudiar su solicitud.",
+reservationHelpTitle: "¿Necesita ayuda o tiene alguna pregunta?",
+reservationHelpText: "Nuestro equipo está a su disposición para cualquier consulta.",
+reservationHelpWhatsApp: "WhatsApp",
+reservationHelpCall: "Llamar",
+reservationHelpSms: "SMS",
+reservationHelpEmail: "Correo electrónico",
       
     },
 
@@ -1166,6 +1193,15 @@ reservationPayment: "Bevorzugte Zahlungsmethode",
 reservationPaymentCash: "Bargeld",
 reservationPaymentCard: "Bankkarte",
 reservationPaymentBankTransfer: "Banküberweisung",
+
+reservationSubmit: "Anfrage senden",
+reservationPriceNotice: "Der endgültige Preis wird Ihnen nach Prüfung Ihrer Anfrage mitgeteilt.",
+reservationHelpTitle: "Benötigen Sie Hilfe oder haben Sie eine Frage?",
+reservationHelpText: "Unser Team steht Ihnen für alle Fragen zur Verfügung.",
+reservationHelpWhatsApp: "WhatsApp",
+reservationHelpCall: "Anrufen",
+reservationHelpSms: "SMS",
+reservationHelpEmail: "E-Mail",
       
     }
   };
