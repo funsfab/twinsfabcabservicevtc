@@ -3284,6 +3284,9 @@ grid-column: 11 / span 10 !important;
   line-height: 1.2 !important;
 }
 
+.reservation-page .reservation-field-baggage select {
+  font-size: 14px !important;
+}
    
    .reservation-page .reservation-field-passengers {
     grid-column: 1 / span 6 !important;
