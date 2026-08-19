@@ -379,6 +379,7 @@ data-i18n-placeholder="reservationDestination"
                 id="transport"
                 name="transport"
                 placeholder="N° de vol ou de train (optionnel)"
+                data-i18n-data-i18n-placeholder="reservationFlightTrain"
               >
             </div>
 
@@ -392,7 +393,7 @@ data-i18n-placeholder="reservationDestination"
   aria-label="Type de trajet"
   required
 >
-  <option value="" selected disabled hidden>
+  <option value="" selected disabled hidden data-i18n="reservationTripType">
     Type de trajet
   </option>
 
@@ -447,7 +448,7 @@ data-i18n-placeholder="reservationDestination"
                 name="passagers"
                 required
               >
-                <option value="">
+                <option value="" data-i18n="reservationPassengers">
                   Nombre de passagers
                 </option>
 
@@ -478,7 +479,7 @@ data-i18n-placeholder="reservationDestination"
                 id="bagages"
                 name="bagages"
               >
-                <option value="">
+                <option value="" data-i18n="reservationBaggage" >
                   Choisissez vos bagages
                 </option>
 
@@ -513,7 +514,7 @@ data-i18n-placeholder="reservationDestination"
                 id="paiement"
                 name="paiement"
               >
-                <option value="">
+                <option value=""  data-i18n="reservationPayment">
                   Mode de paiement souhaité
                 </option>
 
@@ -536,7 +537,7 @@ data-i18n-placeholder="reservationDestination"
             <div class="reservation-field reservation-textarea-field">
               <i class="fa-regular fa-file-lines"></i>
 
-              <textarea
+              <textarea  data-i18n-placeholder="reservationAdditionalInfo"
                 id="message"
                 name="message"
                 placeholder="Informations complémentaires (retard de vol, point de rendez-vous, demandes particulières...)"
