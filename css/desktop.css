@@ -3303,6 +3303,7 @@ grid-column: 11 / span 10 !important;
 }
 .reservation-page .reservation-field-payment select {
   padding-right: 32px !important;
+font-size: 14px !important;  
 }
    .reservation-page .reservation-help-text p br {
   display: none !important;
