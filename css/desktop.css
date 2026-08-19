@@ -3235,7 +3235,11 @@ outline: none !important;
 .reservation-page .reservation-form > * {
   grid-column: 1 / -1;
 }
-
+.reservation-page .reservation-form input,
+.reservation-page .reservation-form select {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
 /* NOM — 50% */
 .reservation-page .reservation-field-name {
   grid-column: 1 / span 10 !important;
