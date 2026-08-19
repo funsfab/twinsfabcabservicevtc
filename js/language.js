@@ -1073,7 +1073,13 @@ reservationDestination: "Ziel",
 
     });
 
+document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+  const key = element.dataset.i18nPlaceholder;
 
+  if (selected[key] !== undefined) {
+    element.setAttribute("placeholder", selected[key]);
+  }
+});
     document.querySelectorAll(".language-option").forEach((button) => {
 
       button.classList.toggle(
