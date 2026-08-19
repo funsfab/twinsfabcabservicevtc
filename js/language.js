@@ -1012,10 +1012,12 @@ vehicleSlogan: "Reisen Sie anders, reisen Sie besser.",
 
       booking: "JETZT RESERVIEREN",
       whatsapp: "WHATSAPP-NACHRICHT SENDEN",
-reservationEyebrow: "– RESERVIERUNG –",
-reservationTitle: "Buchen Sie Ihren<br>VTC-Fahrer",
-reservationDescription: "Reservierung mindestens<br>24 Stunden vor der Abfahrt.",
-reservationMinimum: "Mindestpreis: 30 €",
+reservationEyebrow: "RESERVIERUNG",
+reservationHeroTitle1: "Buchen Sie Ihren",
+reservationHeroTitle2: "VTC-Fahrer",
+reservationHeroDescription1: "Reservierung mindestens",
+reservationHeroDescription2: "24 Stunden vor der Abfahrt.",
+reservationMinimumPrice: "Mindesttarif: 30 €",
       
     }
   };
