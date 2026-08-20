@@ -312,7 +312,11 @@ infoAirportsText: "Voir tous les aéroports",
       infoDestinationNotFound: "Destination non trouvée ?",
 infoCustomTrips: "Nous réalisons également des trajets sur mesure vers toute destination en France, en Belgique, aux Pays-Bas, en Allemagne et dans les pays voisins.",
 infoBookNow: "RÉSERVER MAINTENANT",
-  
+
+      infoLegalNotice: "Mentions légales",
+infoPrivacyPolicy: "Politique de confidentialité",
+infoTermsConditions: "Conditions générales de vente (CGV)",
+infoContact: "Contact",
     },
 
     en: {
@@ -631,7 +635,12 @@ infoAirportsText: "View all airports",
 infoDestinationNotFound: "Destination not found?",
 infoCustomTrips: "We also provide tailor-made journeys to any destination in France, Belgium, the Netherlands, Germany and neighboring countries.",
 infoBookNow: "BOOK NOW",
-      
+
+
+      infoLegalNotice: "Legal notice",
+infoPrivacyPolicy: "Privacy policy",
+infoTermsConditions: "General Terms and Conditions of Sale",
+infoContact: "Contact",
     },
 
     es: {
@@ -948,7 +957,12 @@ infoAirportsText: "Ver todos los aeropuertos",
 infoDestinationNotFound: "¿No encuentra su destino?",
 infoCustomTrips: "También realizamos trayectos a medida a cualquier destino en Francia, Bélgica, Países Bajos, Alemania y los países vecinos.",
 infoBookNow: "RESERVAR AHORA",
-      
+
+
+      infoLegalNotice: "Aviso legal",
+infoPrivacyPolicy: "Política de privacidad",
+infoTermsConditions: "Condiciones generales de venta",
+infoContact: "Contacto",
     },
 
     de: {
@@ -1264,6 +1278,13 @@ infoAirportsText: "Alle Flughäfen anzeigen",
       infoDestinationNotFound: "Ziel nicht gefunden?",
 infoCustomTrips: "Wir bieten auch maßgeschneiderte Fahrten zu jedem Ziel in Frankreich, Belgien, den Niederlanden, Deutschland und den Nachbarländern an.",
 infoBookNow: "JETZT BUCHEN",
+
+      infoLegalNotice: "Impressum",
+infoPrivacyPolicy: "Datenschutzerklärung",
+infoTermsConditions: "Allgemeine Geschäftsbedingungen (AGB)",
+infoContact: "Kontakt",
+
+      
     }
   };
 
