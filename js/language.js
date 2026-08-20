@@ -301,6 +301,13 @@ reservationHelpEmail: "E-mail",
 informationEyebrow: "TOUT CE QU’IL FAUT SAVOIR",
 informationTitle: "Informations utiles",
 informationDescription: "Retrouvez toutes les informations concernant nos destinations desservies, nos conditions de service et les informations légales.",
+
+      infoCitiesTitle: "Villes desservies",
+infoCitiesText: "Voir toutes les villes et régions",
+infoStationsTitle: "Gares desservies",
+infoStationsText: "Voir toutes les gares principales",
+infoAirportsTitle: "Aéroports desservis",
+infoAirportsText: "Voir tous les aéroports",
   
     },
 
@@ -610,6 +617,12 @@ informationEyebrow: "EVERYTHING YOU NEED TO KNOW",
 informationTitle: "Useful information",
 informationDescription: "Find all the information about the destinations we serve, our service conditions and legal information.",
 
+      infoCitiesTitle: "Cities served",
+infoCitiesText: "View all cities and regions",
+infoStationsTitle: "Train stations served",
+infoStationsText: "View all major train stations",
+infoAirportsTitle: "Airports served",
+infoAirportsText: "View all airports",
       
     },
 
@@ -916,6 +929,13 @@ reservationHelpEmail: "Correo electrónico",
 informationEyebrow: "TODO LO QUE NECESITA SABER",
 informationTitle: "Información útil",
 informationDescription: "Encuentre toda la información sobre los destinos que atendemos, nuestras condiciones de servicio y la información legal.",
+
+infoCitiesTitle: "Ciudades atendidas",
+infoCitiesText: "Ver todas las ciudades y regiones",
+infoStationsTitle: "Estaciones atendidas",
+infoStationsText: "Ver todas las estaciones principales",
+infoAirportsTitle: "Aeropuertos atendidos",
+infoAirportsText: "Ver todos los aeropuertos",
       
     },
 
@@ -1221,7 +1241,13 @@ reservationHelpEmail: "E-Mail",
 informationEyebrow: "ALLES, WAS SIE WISSEN MÜSSEN",
 informationTitle: "Nützliche Informationen",
 informationDescription: "Hier finden Sie alle Informationen zu unseren angefahrenen Zielen, unseren Servicebedingungen und den rechtlichen Informationen.",
-      
+
+      infoCitiesTitle: "Bediente Städte",
+infoCitiesText: "Alle Städte und Regionen anzeigen",
+infoStationsTitle: "Bediente Bahnhöfe",
+infoStationsText: "Alle wichtigen Bahnhöfe anzeigen",
+infoAirportsTitle: "Bediente Flughäfen",
+infoAirportsText: "Alle Flughäfen anzeigen",
     }
   };
 
