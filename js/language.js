@@ -330,6 +330,13 @@ infoOtherCitiesFrance: "Autres villes en France",
 infoBelgium: "Belgique",
 infoNetherlands: "Pays-Bas",
 
+      cityDunkirk: "Dunkerque",
+cityKortrijk: "Courtrai",
+cityRoeselare: "Roulers",
+cityBrussels: "Bruxelles",
+cityGhent: "Gand",
+cityAntwerp: "Anvers",
+      
       
     },
 
@@ -667,7 +674,14 @@ infoLilleMetropolis: "European Metropolis of Lille",
 infoOtherCitiesFrance: "Other cities in France",
 infoBelgium: "Belgium",
 infoNetherlands: "Netherlands",
+
       
+      cityDunkirk: "Dunkirk",
+cityKortrijk: "Kortrijk",
+cityRoeselare: "Roeselare",
+cityBrussels: "Brussels",
+cityGhent: "Ghent",
+cityAntwerp: "Antwerp",
     },
 
     es: {
@@ -1004,6 +1018,13 @@ infoOtherCitiesFrance: "Otras ciudades de Francia",
 infoBelgium: "Bélgica",
 infoNetherlands: "Países Bajos",
       
+
+cityDunkirk: "Dunkerque",
+cityKortrijk: "Cortrique",
+cityRoeselare: "Roeselare",
+cityBrussels: "Bruselas",
+cityGhent: "Gante",
+cityAntwerp: "Amberes",
       
     },
 
@@ -1338,6 +1359,15 @@ footerRightsReserved: "Alle Rechte vorbehalten.",
 infoOtherCitiesFrance: "Weitere Städte in Frankreich",
 infoBelgium: "Belgien",
 infoNetherlands: "Niederlande",
+
+
+      cityDunkirk: "Dünkirchen",
+cityKortrijk: "Kortrijk",
+cityRoeselare: "Roeselare",
+cityBrussels: "Brüssel",
+cityGhent: "Gent",
+cityAntwerp: "Antwerpen",
+
       
     }
   };
