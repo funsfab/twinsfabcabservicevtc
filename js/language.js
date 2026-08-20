@@ -349,6 +349,25 @@ stationBrusselsCentral: "Bruxelles-Central",
 stationBrusselsNord: "Bruxelles-Nord",
 stationGhentSintPieters: "Gand-Saint-Pierre",
 stationAntwerpCentral: "Anvers-Central",
+
+
+      airportLille: "Aéroport de Lille-Lesquin (LIL)",
+airportParisCDG: "Aéroport Paris-Charles-de-Gaulle (CDG)",
+airportParisOrly: "Aéroport de Paris-Orly (ORY)",
+airportBeauvais: "Aéroport de Beauvais-Tillé (BVA)",
+
+airportBrusselsZaventem: "Aéroport de Bruxelles-Zaventem (BRU)",
+airportBrusselsCharleroi: "Aéroport de Bruxelles-Charleroi (CRL)",
+
+airportAmsterdam: "Aéroport d'Amsterdam-Schiphol (AMS)",
+airportEindhoven: "Aéroport d'Eindhoven (EIN)",
+airportRotterdam: "Aéroport de Rotterdam-La Haye (RTM)",
+
+airportFrankfurt: "Aéroport de Francfort (FRA)",
+airportMunich: "Aéroport de Munich (MUC)",
+airportBerlin: "Aéroport de Berlin-Brandebourg (BER)",
+airportDusseldorf: "Aéroport de Düsseldorf (DUS)",
+airportMonchengladbach: "Aéroport de Mönchengladbach (MGL)",
       
     },
 
@@ -707,6 +726,23 @@ stationBrusselsNord: "Brussels-North",
 stationGhentSintPieters: "Ghent-Saint-Peter's",
 stationAntwerpCentral: "Antwerp-Central",
 
+      airportLille: "Lille-Lesquin Airport (LIL)",
+airportParisCDG: "Paris Charles de Gaulle Airport (CDG)",
+airportParisOrly: "Paris-Orly Airport (ORY)",
+airportBeauvais: "Beauvais-Tillé Airport (BVA)",
+
+airportBrusselsZaventem: "Brussels-Zaventem Airport (BRU)",
+airportBrusselsCharleroi: "Brussels-Charleroi Airport (CRL)",
+
+airportAmsterdam: "Amsterdam Schiphol Airport (AMS)",
+airportEindhoven: "Eindhoven Airport (EIN)",
+airportRotterdam: "Rotterdam The Hague Airport (RTM)",
+
+airportFrankfurt: "Frankfurt Airport (FRA)",
+airportMunich: "Munich Airport (MUC)",
+airportBerlin: "Berlin Brandenburg Airport (BER)",
+airportDusseldorf: "Düsseldorf Airport (DUS)",
+airportMonchengladbach: "Mönchengladbach Airport (MGL)",
       
     },
 
@@ -1064,6 +1100,26 @@ stationBrusselsCentral: "Bruselas-Central",
 stationBrusselsNord: "Bruselas-Norte",
 stationGhentSintPieters: "Gante-San Pedro",
 stationAntwerpCentral: "Amberes-Central",
+
+      airportLille: "Aeropuerto de Lille-Lesquin (LIL)",
+airportParisCDG: "Aeropuerto de París-Charles de Gaulle (CDG)",
+airportParisOrly: "Aeropuerto de París-Orly (ORY)",
+airportBeauvais: "Aeropuerto de Beauvais-Tillé (BVA)",
+
+airportBrusselsZaventem: "Aeropuerto de Bruselas-Zaventem (BRU)",
+airportBrusselsCharleroi: "Aeropuerto de Bruselas-Charleroi (CRL)",
+
+airportAmsterdam: "Aeropuerto de Ámsterdam-Schiphol (AMS)",
+airportEindhoven: "Aeropuerto de Eindhoven (EIN)",
+airportRotterdam: "Aeropuerto de Róterdam-La Haya (RTM)",
+
+airportFrankfurt: "Aeropuerto de Fráncfort (FRA)",
+airportMunich: "Aeropuerto de Múnich (MUC)",
+airportBerlin: "Aeropuerto de Berlín-Brandeburgo (BER)",
+airportDusseldorf: "Aeropuerto de Düsseldorf (DUS)",
+airportMonchengladbach: "Aeropuerto de Mönchengladbach (MGL)",
+
+      
     },
 
     de: {
@@ -1418,6 +1474,26 @@ stationBrusselsCentral: "Brüssel-Central",
 stationBrusselsNord: "Brüssel-Nord",
 stationGhentSintPieters: "Gent-Sankt-Peter",
 stationAntwerpCentral: "Antwerpen-Central",
+
+
+      airportLille: "Flughafen Lille-Lesquin (LIL)",
+airportParisCDG: "Flughafen Paris-Charles-de-Gaulle (CDG)",
+airportParisOrly: "Flughafen Paris-Orly (ORY)",
+airportBeauvais: "Flughafen Beauvais-Tillé (BVA)",
+
+airportBrusselsZaventem: "Flughafen Brüssel-Zaventem (BRU)",
+airportBrusselsCharleroi: "Flughafen Brüssel-Charleroi (CRL)",
+
+airportAmsterdam: "Flughafen Amsterdam-Schiphol (AMS)",
+airportEindhoven: "Flughafen Eindhoven (EIN)",
+airportRotterdam: "Flughafen Rotterdam-Den Haag (RTM)",
+
+airportFrankfurt: "Flughafen Frankfurt (FRA)",
+airportMunich: "Flughafen München (MUC)",
+airportBerlin: "Flughafen Berlin Brandenburg (BER)",
+airportDusseldorf: "Flughafen Düsseldorf (DUS)",
+airportMonchengladbach: "Flughafen Mönchengladbach (MGL)",
+
       
     }
   };
