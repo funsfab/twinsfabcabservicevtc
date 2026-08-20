@@ -308,6 +308,10 @@ infoStationsTitle: "Gares desservies",
 infoStationsText: "Voir toutes les gares principales",
 infoAirportsTitle: "Aéroports desservis",
 infoAirportsText: "Voir tous les aéroports",
+
+      infoDestinationNotFound: "Destination non trouvée ?",
+infoCustomTrips: "Nous réalisons également des trajets sur mesure vers toute destination en France, en Belgique, aux Pays-Bas, en Allemagne et dans les pays voisins.",
+infoBookNow: "RÉSERVER MAINTENANT",
   
     },
 
@@ -623,6 +627,10 @@ infoStationsTitle: "Train stations served",
 infoStationsText: "View all major train stations",
 infoAirportsTitle: "Airports served",
 infoAirportsText: "View all airports",
+
+infoDestinationNotFound: "Destination not found?",
+infoCustomTrips: "We also provide tailor-made journeys to any destination in France, Belgium, the Netherlands, Germany and neighboring countries.",
+infoBookNow: "BOOK NOW",
       
     },
 
@@ -936,6 +944,10 @@ infoStationsTitle: "Estaciones atendidas",
 infoStationsText: "Ver todas las estaciones principales",
 infoAirportsTitle: "Aeropuertos atendidos",
 infoAirportsText: "Ver todos los aeropuertos",
+
+infoDestinationNotFound: "¿No encuentra su destino?",
+infoCustomTrips: "También realizamos trayectos a medida a cualquier destino en Francia, Bélgica, Países Bajos, Alemania y los países vecinos.",
+infoBookNow: "RESERVAR AHORA",
       
     },
 
@@ -1248,6 +1260,10 @@ infoStationsTitle: "Bediente Bahnhöfe",
 infoStationsText: "Alle wichtigen Bahnhöfe anzeigen",
 infoAirportsTitle: "Bediente Flughäfen",
 infoAirportsText: "Alle Flughäfen anzeigen",
+
+      infoDestinationNotFound: "Ziel nicht gefunden?",
+infoCustomTrips: "Wir bieten auch maßgeschneiderte Fahrten zu jedem Ziel in Frankreich, Belgien, den Niederlanden, Deutschland und den Nachbarländern an.",
+infoBookNow: "JETZT BUCHEN",
     }
   };
 
