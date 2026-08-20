@@ -368,6 +368,11 @@ airportMunich: "Aéroport de Munich (MUC)",
 airportBerlin: "Aéroport de Berlin-Brandebourg (BER)",
 airportDusseldorf: "Aéroport de Düsseldorf (DUS)",
 airportMonchengladbach: "Aéroport de Mönchengladbach (MGL)",
+
+      infoContactAvailability: "Disponible 24h/24 et 7j/7",
+infoContactReservationNotice: "Réservation minimum 24 heures à l'avance.",
+
+      
       
     },
 
@@ -743,6 +748,9 @@ airportMunich: "Munich Airport (MUC)",
 airportBerlin: "Berlin Brandenburg Airport (BER)",
 airportDusseldorf: "Düsseldorf Airport (DUS)",
 airportMonchengladbach: "Mönchengladbach Airport (MGL)",
+
+      infoContactAvailability: "Available 24/7",
+infoContactReservationNotice: "Reservation required at least 24 hours in advance.",
       
     },
 
@@ -1119,6 +1127,9 @@ airportBerlin: "Aeropuerto de Berlín-Brandeburgo (BER)",
 airportDusseldorf: "Aeropuerto de Düsseldorf (DUS)",
 airportMonchengladbach: "Aeropuerto de Mönchengladbach (MGL)",
 
+
+      infoContactAvailability: "Disponible las 24 horas, los 7 días de la semana",
+infoContactReservationNotice: "Reserva requerida con al menos 24 horas de antelación.",
       
     },
 
@@ -1494,6 +1505,9 @@ airportBerlin: "Flughafen Berlin Brandenburg (BER)",
 airportDusseldorf: "Flughafen Düsseldorf (DUS)",
 airportMonchengladbach: "Flughafen Mönchengladbach (MGL)",
 
+
+      infoContactAvailability: "24 Stunden am Tag, 7 Tage die Woche verfügbar",
+infoContactReservationNotice: "Reservierung mindestens 24 Stunden im Voraus erforderlich.",
       
     }
   };
