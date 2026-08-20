@@ -324,6 +324,13 @@ footerPunctuality: "PONCTUALITÉ",
 footerSafety: "SÉCURITÉ",
 footerDiscretion: "DISCRÉTION",
 footerRightsReserved: "Tous droits réservés.",
+
+infoLilleMetropolis: "Métropole Européenne de Lille",
+infoOtherCitiesFrance: "Autres villes en France",
+infoBelgium: "Belgique",
+infoNetherlands: "Pays-Bas",
+
+      
     },
 
     en: {
@@ -655,6 +662,11 @@ footerPunctuality: "PUNCTUALITY",
 footerSafety: "SAFETY",
 footerDiscretion: "DISCRETION",
 footerRightsReserved: "All rights reserved.",
+
+infoLilleMetropolis: "European Metropolis of Lille",
+infoOtherCitiesFrance: "Other cities in France",
+infoBelgium: "Belgium",
+infoNetherlands: "Netherlands",
       
     },
 
@@ -985,6 +997,13 @@ footerPunctuality: "PUNTUALIDAD",
 footerSafety: "SEGURIDAD",
 footerDiscretion: "DISCRECIÓN",
 footerRightsReserved: "Todos los derechos reservados.",
+
+
+infoLilleMetropolis: "Metrópoli Europea de Lille",
+infoOtherCitiesFrance: "Otras ciudades de Francia",
+infoBelgium: "Bélgica",
+infoNetherlands: "Países Bajos",
+      
       
     },
 
@@ -1314,6 +1333,11 @@ footerPunctuality: "PÜNKTLICHKEIT",
 footerSafety: "SICHERHEIT",
 footerDiscretion: "DISKRETION",
 footerRightsReserved: "Alle Rechte vorbehalten.",
+
+      infoLilleMetropolis: "Europäische Metropole Lille",
+infoOtherCitiesFrance: "Weitere Städte in Frankreich",
+infoBelgium: "Belgien",
+infoNetherlands: "Niederlande",
       
     }
   };
