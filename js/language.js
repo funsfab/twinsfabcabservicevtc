@@ -317,6 +317,13 @@ infoBookNow: "RÉSERVER MAINTENANT",
 infoPrivacyPolicy: "Politique de confidentialité",
 infoTermsConditions: "Conditions générales de vente (CGV)",
 infoContact: "Contact",
+
+      footerFrance: "France",
+footerComfort: "CONFORT",
+footerPunctuality: "PONCTUALITÉ",
+footerSafety: "SÉCURITÉ",
+footerDiscretion: "DISCRÉTION",
+footerRightsReserved: "Tous droits réservés.",
     },
 
     en: {
@@ -641,6 +648,14 @@ infoBookNow: "BOOK NOW",
 infoPrivacyPolicy: "Privacy policy",
 infoTermsConditions: "General Terms and Conditions of Sale",
 infoContact: "Contact",
+
+      footerFrance: "France",
+footerComfort: "COMFORT",
+footerPunctuality: "PUNCTUALITY",
+footerSafety: "SAFETY",
+footerDiscretion: "DISCRETION",
+footerRightsReserved: "All rights reserved.",
+      
     },
 
     es: {
@@ -963,6 +978,14 @@ infoBookNow: "RESERVAR AHORA",
 infoPrivacyPolicy: "Política de privacidad",
 infoTermsConditions: "Condiciones generales de venta",
 infoContact: "Contacto",
+
+      footerFrance: "Francia",
+footerComfort: "CONFORT",
+footerPunctuality: "PUNTUALIDAD",
+footerSafety: "SEGURIDAD",
+footerDiscretion: "DISCRECIÓN",
+footerRightsReserved: "Todos los derechos reservados.",
+      
     },
 
     de: {
@@ -1284,6 +1307,13 @@ infoPrivacyPolicy: "Datenschutzerklärung",
 infoTermsConditions: "Allgemeine Geschäftsbedingungen (AGB)",
 infoContact: "Kontakt",
 
+
+      footerFrance: "Frankreich",
+footerComfort: "KOMFORT",
+footerPunctuality: "PÜNKTLICHKEIT",
+footerSafety: "SICHERHEIT",
+footerDiscretion: "DISKRETION",
+footerRightsReserved: "Alle Rechte vorbehalten.",
       
     }
   };
