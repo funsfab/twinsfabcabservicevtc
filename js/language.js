@@ -336,7 +336,19 @@ cityRoeselare: "Roulers",
 cityBrussels: "Bruxelles",
 cityGhent: "Gand",
 cityAntwerp: "Anvers",
-      
+
+
+      stationLilleFlandres: "Gare Lille-Flandres",
+stationLilleEurope: "Gare Lille-Europe",
+stationTourcoing: "Gare de Tourcoing",
+stationParisNord: "Gare de Paris-Nord",
+stationParisLyon: "Gare de Paris-Lyon",
+
+stationBrusselsMidi: "Bruxelles-Midi",
+stationBrusselsCentral: "Bruxelles-Central",
+stationBrusselsNord: "Bruxelles-Nord",
+stationGhentSintPieters: "Gand-Saint-Pierre",
+stationAntwerpCentral: "Anvers-Central",
       
     },
 
@@ -682,6 +694,20 @@ cityRoeselare: "Roeselare",
 cityBrussels: "Brussels",
 cityGhent: "Ghent",
 cityAntwerp: "Antwerp",
+
+      stationLilleFlandres: "Lille-Flandres Station",
+stationLilleEurope: "Lille-Europe Station",
+stationTourcoing: "Tourcoing Station",
+stationParisNord: "Paris-Nord Station",
+stationParisLyon: "Paris-Lyon Station",
+
+stationBrusselsMidi: "Brussels-South",
+stationBrusselsCentral: "Brussels-Central",
+stationBrusselsNord: "Brussels-North",
+stationGhentSintPieters: "Ghent-Saint-Peter's",
+stationAntwerpCentral: "Antwerp-Central",
+
+      
     },
 
     es: {
@@ -1025,7 +1051,19 @@ cityRoeselare: "Roeselare",
 cityBrussels: "Bruselas",
 cityGhent: "Gante",
 cityAntwerp: "Amberes",
-      
+
+
+      stationLilleFlandres: "Estación Lille-Flandres",
+stationLilleEurope: "Estación Lille-Europe",
+stationTourcoing: "Estación de Tourcoing",
+stationParisNord: "Estación París-Norte",
+stationParisLyon: "Estación París-Lyon",
+
+stationBrusselsMidi: "Bruselas-Sur",
+stationBrusselsCentral: "Bruselas-Central",
+stationBrusselsNord: "Bruselas-Norte",
+stationGhentSintPieters: "Gante-San Pedro",
+stationAntwerpCentral: "Amberes-Central",
     },
 
     de: {
@@ -1368,6 +1406,18 @@ cityBrussels: "Brüssel",
 cityGhent: "Gent",
 cityAntwerp: "Antwerpen",
 
+
+      stationLilleFlandres: "Bahnhof Lille-Flandres",
+stationLilleEurope: "Bahnhof Lille-Europe",
+stationTourcoing: "Bahnhof Tourcoing",
+stationParisNord: "Bahnhof Paris-Nord",
+stationParisLyon: "Bahnhof Paris-Lyon",
+
+stationBrusselsMidi: "Brüssel-Süd",
+stationBrusselsCentral: "Brüssel-Central",
+stationBrusselsNord: "Brüssel-Nord",
+stationGhentSintPieters: "Gent-Sankt-Peter",
+stationAntwerpCentral: "Antwerpen-Central",
       
     }
   };
