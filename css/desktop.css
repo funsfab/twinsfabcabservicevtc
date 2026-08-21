@@ -3559,3 +3559,12 @@ top: -130px !important;
 .information-page .footer-premium-brand .premium-brand-mark {
   margin: 0 !important;
 }
+
+
+   .information-page .information-footer__brand .premium-brand {
+  margin: 0 !important;
+}
+
+.information-page .information-footer__brand .premium-brand-text {
+  text-align: left !important;
+}
