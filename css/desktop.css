@@ -3550,3 +3550,12 @@ top: -130px !important;
 .information-page .information-footer__bottom p {
   margin: 0;
 }
+
+   .information-page .footer-premium-brand {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.information-page .footer-premium-brand .premium-brand-mark {
+  margin: 0 !important;
+}
