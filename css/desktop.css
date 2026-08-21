@@ -3453,42 +3453,6 @@ top: -130px !important;
 }
 
 
-/* COLUMN 1 — LOGO */
-
-.information-page .information-footer__brand-logo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.information-page .information-footer__brand-logo .premium-brand-mark {
-  margin: 0 !important;
-}
-
-
-/* COLUMN 2 — BRAND */
-
-.information-page .information-footer__brand-name {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3px;
-}
-
-.information-page .information-footer__brand-name strong {
-  color: #d9a62e;
-  font-size: 25px;
-  line-height: 1;
-  letter-spacing: 0.04em;
-}
-
-.information-page .information-footer__brand-name span {
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
 
 /* COLUMN 3 — CONTACT */
 
