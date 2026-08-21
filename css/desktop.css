@@ -3602,3 +3602,131 @@ top: -130px !important;
   margin: 20px auto 0 !important;
   text-align: center !important;
 }
+
+
+   /* =========================================
+   INFORMATION FOOTER — EXACT HEADER BRAND
+   ========================================= */
+
+.information-page .information-footer__brand .premium-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  text-decoration: none !important;
+  overflow: visible !important;
+}
+
+
+/* EXACT TF LOGO */
+
+.information-page .information-footer__brand .premium-brand-mark {
+  position: relative !important;
+
+  width: 48px !important;
+  height: 56px !important;
+  min-width: 48px !important;
+  flex: 0 0 48px !important;
+
+  margin: 0 !important;
+
+  color: transparent !important;
+  background: transparent !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+
+  overflow: visible !important;
+}
+
+
+/* CREAM TF BOX */
+
+.information-page .information-footer__brand .premium-brand-mark::before {
+  content: "TF" !important;
+
+  position: absolute !important;
+  top: 9px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+
+  width: 43px !important;
+  height: 46px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  color: #b8891f !important;
+  background: #fffaf0 !important;
+
+  border: 2px solid #c49a2c !important;
+  border-radius: 12px 12px 17px 17px !important;
+
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+
+  z-index: 1 !important;
+}
+
+
+/* EXACT GOLD CROWN */
+
+.information-page .information-footer__brand .premium-brand-mark::after {
+  content: "♛" !important;
+
+  position: absolute !important;
+  top: -3px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+
+  color: #c49a2c !important;
+  font-size: 17px !important;
+  line-height: 1 !important;
+
+  z-index: 2 !important;
+}
+
+
+/* SHOW TWINS FAB CAB SERVICE VTC */
+
+.information-page .information-footer__brand .premium-brand-text {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+
+  width: 190px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  text-align: left !important;
+}
+
+.information-page .information-footer__brand .premium-brand-text strong {
+  display: block !important;
+
+  color: #ffffff !important;
+
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 0.96 !important;
+
+  text-align: left !important;
+  text-transform: uppercase !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
