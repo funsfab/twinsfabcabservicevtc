@@ -3429,3 +3429,124 @@ top: -130px !important;
   pointer-events: auto;
   transform: translateY(0);
 }
+
+
+   /* =========================================
+   INFORMATION PAGE — COMPACT DESKTOP FOOTER
+   ========================================= */
+
+.information-page .information-footer {
+  margin-top: 16px !important;
+  padding: 28px 40px 18px !important;
+  text-align: left !important;
+}
+
+.information-page .information-footer__content {
+  width: min(100%, 1120px) !important;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+
+  display: grid !important;
+  grid-template-columns: 100px 230px 1fr 310px !important;
+  align-items: center !important;
+  gap: 28px !important;
+}
+
+
+/* COLUMN 1 — LOGO */
+
+.information-page .information-footer__brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.information-page .information-footer__brand-logo .premium-brand-mark {
+  margin: 0 !important;
+}
+
+
+/* COLUMN 2 — BRAND */
+
+.information-page .information-footer__brand-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.information-page .information-footer__brand-name strong {
+  color: #d9a62e;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.information-page .information-footer__brand-name span {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+/* COLUMN 3 — CONTACT */
+
+.information-page .information-footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.information-page .information-footer__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.information-page .information-footer__item i {
+  width: 20px;
+  text-align: center;
+}
+
+.information-page .information-footer__item a,
+.information-page .information-footer__item span {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/* COLUMN 4 — VALUES */
+
+.information-page .information-footer__benefits {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.information-page .information-footer__benefits p {
+  margin: 0 0 8px !important;
+  line-height: 1.5 !important;
+  white-space: nowrap;
+}
+
+.information-page .information-footer__benefits p:last-child {
+  margin-bottom: 0 !important;
+}
+
+
+/* COPYRIGHT */
+
+.information-page .information-footer__bottom {
+  width: min(100%, 1120px);
+  margin: 22px auto 0 !important;
+  padding-top: 14px !important;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  text-align: center;
+}
+
+.information-page .information-footer__bottom p {
+  margin: 0;
+}
