@@ -3364,29 +3364,68 @@ top: -130px !important;
   max-width: 1120px !important;
    }
 
-   .information-scroll-down,
-.information-scroll-top {
+/* INFORMATION PAGE — DOWN / UP ARROWS */
+
+.information-page .information-scroll-down,
+.information-page .information-scroll-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+
+  width: 64px;
+  height: 64px;
+
   border-radius: 50%;
+  background: #d9a441;
+
+  color: #1f2937;
+  font-size: 28px;
+
   text-decoration: none;
   cursor: pointer;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
 }
 
-.information-scroll-down {
+
+/* DOWN ARROW */
+
+.information-page .information-scroll-down {
   margin: 32px auto 0;
+  opacity: 1;
+  visibility: visible;
 }
 
-.information-scroll-top {
+
+/* UP ARROW */
+
+.information-page .information-scroll-top {
   position: fixed;
   right: 28px;
   bottom: 28px;
   z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
 }
-   html {
-  scroll-behavior: smooth;
-   }
+
+
+/* AFTER SCROLLING */
+
+.information-page .information-scroll-down.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.information-page .information-scroll-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
 }
