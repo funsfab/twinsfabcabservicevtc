@@ -3568,3 +3568,73 @@ top: -130px !important;
 .information-page .information-footer__brand .premium-brand-text {
   text-align: left !important;
 }
+/* =========================================
+   INFORMATION FOOTER — FINAL ALIGNMENT
+   ========================================= */
+
+.information-page .information-footer__content {
+  width: min(100%, 960px) !important;
+  max-width: 960px !important;
+  margin: 0 auto !important;
+
+  display: grid !important;
+  grid-template-columns: 300px 300px 300px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 30px !important;
+}
+
+
+/* BRAND — SAME STRUCTURE AS HEADER */
+
+.information-page .information-footer__brand {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.information-page .information-footer__brand .premium-brand {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.information-page .information-footer__brand .premium-brand-text {
+  display: block !important;
+  text-align: left !important;
+}
+
+.information-page .information-footer__brand .premium-brand-text strong {
+  display: block !important;
+  white-space: nowrap !important;
+}
+
+
+/* CONTACT */
+
+.information-page .information-footer__contact {
+  width: fit-content !important;
+  margin: 0 auto !important;
+}
+
+
+/* VALUES */
+
+.information-page .information-footer__benefits {
+  width: fit-content !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+
+/* COPYRIGHT */
+
+.information-page .information-footer__bottom {
+  max-width: 960px !important;
+  margin: 20px auto 0 !important;
+  text-align: center !important;
+}
