@@ -553,7 +553,12 @@
       .back-home::after { content: none !important; display: none !important; }
     }
 
-  </style>
+  
+    /* FINAL MOBILE COMPACT CARD SPACING */
+    @media (max-width: 768px) {
+      .cgv-grid { gap: 6px !important; }
+    }
+</style>
   <script src="js/language.js"></script>
 </head>
 
@@ -1262,7 +1267,7 @@
       </section>
 
 
-      <section class="cgv-card mediator-warning">
+      <section class="cgv-card cgv-card-full mediator-warning">
 
         <span class="mediator-status">
           Informations à compléter
