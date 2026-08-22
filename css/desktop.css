@@ -3815,3 +3815,51 @@ top: -130px !important;
     gap: 9px !important;
   }
 }
+
+/* =========================================================
+   HOMEPAGE — FINAL DESKTOP SECTION SPACING
+   Added 2026-08-22
+   Desktop only. Mobile remains untouched.
+   ========================================================= */
+@media screen and (min-width: 1024px) {
+
+  /* Remove the large empty area below the hero buttons.
+     Keep the background/car composition, but let the next
+     section begin much sooner. */
+  section#accueil.hero-premium {
+    min-height: 0 !important;
+    padding-bottom: 16px !important;
+  }
+
+  section#accueil.hero-premium .hero-premium-inner {
+    min-height: 500px !important;
+  }
+
+  /* Keep the down arrow as an overlay near the lower edge,
+     rather than reserving a large empty area for it. */
+  section#accueil.hero-premium .hero-scroll-down {
+    bottom: 12px !important;
+  }
+
+  /* Use one compact, consistent card-to-card gap throughout
+     the main homepage sections. */
+  section#vehicule.vehicle-experience {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  section#services.why-premium {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  section#tarifs.tarifs-premium {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  section#destinations.destinations-premium {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+}
