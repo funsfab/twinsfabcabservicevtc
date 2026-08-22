@@ -3730,3 +3730,88 @@ top: -130px !important;
   opacity: 1 !important;
   visibility: visible !important;
 }
+
+/* =========================================================
+   FINAL DESKTOP POLISH — HOMEPAGE HEADER + HERO
+   Added 2026-08-22
+   Desktop only; mobile remains untouched.
+   ========================================================= */
+@media screen and (min-width: 1024px) {
+
+  /* Keep the brand, navigation and language selector in the
+     same desktop slots on Home, Reservation and Information. */
+  #mainHeader.premium-header .header-inner {
+    display: grid !important;
+    grid-template-columns: 285px minmax(0, 1fr) 190px !important;
+    column-gap: 20px !important;
+    align-items: center !important;
+  }
+
+  #mainHeader .premium-brand {
+    grid-column: 1 !important;
+    justify-self: start !important;
+  }
+
+  #mainHeader nav,
+  .information-page #mainHeader nav {
+    grid-column: 2 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    justify-self: stretch !important;
+  }
+
+  #mainHeader nav ul {
+    width: 100% !important;
+    justify-content: flex-start !important;
+    gap: 18px !important;
+  }
+
+  #mainHeader .desktop-language-switcher,
+  .information-page #mainHeader .desktop-language-switcher {
+    grid-column: 3 !important;
+    justify-self: end !important;
+    margin: 0 !important;
+    gap: 14px !important;
+  }
+
+  /* Homepage title: match the Reservation title size. */
+  #accueil .hero-left h1 {
+    font-size: 40px !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.8px !important;
+  }
+
+  /* Lille remains highlighted, but slightly smaller. */
+  #accueil .hero-left h1 span {
+    font-size: 34px !important;
+    line-height: 1.05 !important;
+  }
+
+  /* Smaller, cleaner homepage supporting copy. */
+  section#accueil.hero-premium .hero-left .hero-description {
+    font-size: 16px !important;
+    line-height: 1.45 !important;
+  }
+}
+
+/* Slightly tighter desktop header spacing on narrower laptops
+   while preserving the same three fixed header slots. */
+@media screen and (min-width: 1024px) and (max-width: 1179px) {
+  #mainHeader.premium-header .header-inner {
+    grid-template-columns: 245px minmax(0, 1fr) 170px !important;
+    column-gap: 12px !important;
+  }
+
+  #mainHeader nav ul {
+    gap: 11px !important;
+  }
+
+  #mainHeader nav a {
+    font-size: 11px !important;
+  }
+
+  #mainHeader .desktop-language-switcher,
+  .information-page #mainHeader .desktop-language-switcher {
+    gap: 9px !important;
+  }
+}
