@@ -13329,3 +13329,124 @@ svg {
   }
 }
 
+
+/* =========================================================
+   FINAL MOBILE LANGUAGE MENU + COMPACT CARD SPACING
+   Added 2026-08-22
+   Reservation form/card spacing is intentionally untouched.
+   ========================================================= */
+
+.mobile-language-switcher {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Keep the four languages inside the hamburger panel so the
+     header itself remains clean and balanced. */
+  #mainHeader .desktop-language-switcher {
+    display: none !important;
+  }
+
+  #mainHeader nav .mobile-language-switcher {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+    width: 100% !important;
+    margin: 8px 0 0 !important;
+    padding: 10px 4px 2px !important;
+    border-top: 1px solid rgba(201, 154, 46, 0.24) !important;
+  }
+
+  #mainHeader nav .mobile-language-switcher .language-option {
+    appearance: none !important;
+    min-width: 0 !important;
+    min-height: 38px !important;
+    margin: 0 !important;
+    padding: 6px 4px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px !important;
+
+    color: #111111 !important;
+    background: #fffaf2 !important;
+    border: 1px solid rgba(201, 154, 46, 0.34) !important;
+    border-radius: 9px !important;
+    box-shadow: none !important;
+
+    font-family: inherit !important;
+    font-size: 10px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
+  }
+
+  #mainHeader nav .mobile-language-switcher .language-option img {
+    display: block !important;
+    width: 17px !important;
+    height: 12px !important;
+    object-fit: cover !important;
+    border-radius: 1px !important;
+  }
+
+  #mainHeader nav .mobile-language-switcher .language-option.is-active {
+    color: #8f6507 !important;
+    background: rgba(212, 166, 42, 0.16) !important;
+    border-color: #c99a2e !important;
+  }
+
+  /* HOME PAGE — tighten vertical gaps between card groups. */
+  body:not(.reservation-page) .vehicle-experience .vehicle-info-grid {
+    gap: 4px !important;
+  }
+
+  body:not(.reservation-page) .why-premium-list {
+    gap: 4px !important;
+  }
+
+  body:not(.reservation-page) .tarifs-list {
+    gap: 4px !important;
+  }
+
+  body:not(.reservation-page) .tarifs-layout {
+    gap: 6px !important;
+  }
+
+  body:not(.reservation-page) .tarifs-payment-list {
+    gap: 4px !important;
+  }
+
+  body:not(.reservation-page) .destinations-main-layout {
+    gap: 6px !important;
+  }
+
+  body:not(.reservation-page) .destinations-featured-list {
+    gap: 4px !important;
+  }
+
+  body:not(.reservation-page) .destinations-more-list {
+    gap: 4px !important;
+  }
+
+  body:not(.reservation-page) .luxury-contact__cards {
+    gap: 5px !important;
+  }
+
+  /* INFORMATION PAGE — compact every stacked card/section gap. */
+  .information-page section.information-links {
+    gap: 5px !important;
+    padding-top: 4px !important;
+    padding-bottom: 5px !important;
+  }
+
+  .information-page .information-custom-destination {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+  .information-page .information-footer {
+    margin-top: 5px !important;
+  }
+}

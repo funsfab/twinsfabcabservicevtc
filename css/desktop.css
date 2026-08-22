@@ -3863,3 +3863,106 @@ top: -130px !important;
     padding-bottom: 6px !important;
   }
 }
+
+/* =========================================================
+   FINAL DESKTOP HEADER ALIGNMENT + INFORMATION COMPACTNESS
+   Added 2026-08-22
+   ========================================================= */
+@media screen and (min-width: 1024px) {
+
+  /* Brand | centered navigation | language selector.
+     The navigation sits in the exact middle of the available
+     space between the brand and the language group. */
+  #mainHeader.premium-header .header-inner {
+    display: grid !important;
+    grid-template-columns: max-content minmax(0, 1fr) max-content !important;
+    column-gap: 24px !important;
+    align-items: center !important;
+  }
+
+  #mainHeader .premium-brand {
+    grid-column: 1 !important;
+    justify-self: start !important;
+  }
+
+  #mainHeader nav,
+  .information-page #mainHeader nav {
+    grid-column: 2 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    justify-self: stretch !important;
+  }
+
+  #mainHeader nav ul,
+  .information-page #mainHeader nav ul {
+    display: grid !important;
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    align-items: center !important;
+    width: min(100%, 720px) !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  #mainHeader nav li,
+  .information-page #mainHeader nav li {
+    width: 100% !important;
+    min-width: 0 !important;
+    text-align: center !important;
+  }
+
+  #mainHeader nav a,
+  .information-page #mainHeader nav a {
+    display: inline-block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    font-size: clamp(9px, 0.82vw, 12px) !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  #mainHeader .desktop-language-switcher,
+  .information-page #mainHeader .desktop-language-switcher {
+    grid-column: 3 !important;
+    justify-self: end !important;
+    margin: 0 !important;
+  }
+
+  #mainHeader .mobile-language-switcher {
+    display: none !important;
+  }
+
+  /* Information page: keep every major card group close together. */
+  .information-page section.information-links {
+    gap: 6px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+
+  .information-page .information-custom-destination {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+
+  .information-page .information-custom-card {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .information-page .information-footer {
+    margin-top: 6px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1179px) {
+  #mainHeader.premium-header .header-inner {
+    width: min(96%, 1420px) !important;
+    column-gap: 16px !important;
+  }
+
+  #mainHeader nav a,
+  .information-page #mainHeader nav a {
+    font-size: 8.5px !important;
+    letter-spacing: -0.1px !important;
+  }
+}
