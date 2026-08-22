@@ -1558,6 +1558,16 @@ document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
 
     button.addEventListener("click", () => {
       changeLanguage(button.dataset.lang);
+
+      // On mobile, close the navigation panel after the language is chosen.
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        const header = button.closest("#mainHeader");
+        const nav = header ? header.querySelector("nav") : null;
+        const menuButton = header ? header.querySelector(".menu-btn") : null;
+
+        if (nav) nav.classList.remove("open", "active");
+        if (menuButton) menuButton.setAttribute("aria-expanded", "false");
+      }
     });
 
   });
