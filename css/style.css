@@ -13170,3 +13170,162 @@ svg {
   }
 
 }
+
+/* =========================================================
+   INFORMATION PAGE — MOBILE FINAL REPAIR
+   Keeps desktop rules untouched (desktop.css starts at 1024px)
+   ========================================================= */
+@media screen and (max-width: 1023px) {
+
+  /* Keep the Information header flush with the top of the page. */
+  .information-page #mainHeader.premium-header {
+    top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .information-page .information-main {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Remove the large mobile gap before the Information title. */
+  .information-page .information-hero {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .information-page .information-hero__content {
+    padding: 18px 20px 24px !important;
+  }
+
+  /* When the down arrow is tapped, leave the top of the car visible
+     below the sticky mobile header. */
+  .information-page #information-content {
+    scroll-margin-top: 104px;
+  }
+
+  /* Matching gold circular down/up controls. */
+  .information-page .information-scroll-down,
+  .information-page .information-scroll-top {
+    width: 52px !important;
+    height: 52px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    color: #111111 !important;
+    background: linear-gradient(135deg, #d4a62a, #f0c64f) !important;
+    border: none !important;
+    border-radius: 50% !important;
+
+    font-size: 22px !important;
+    text-decoration: none !important;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28) !important;
+
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease,
+      transform 0.3s ease !important;
+  }
+
+  .information-page .information-scroll-down {
+    position: relative !important;
+    z-index: 20 !important;
+
+    margin: 20px auto 0 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  .information-page .information-scroll-down.is-hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  .information-page .information-scroll-top {
+    position: fixed !important;
+    right: 18px !important;
+    bottom: 22px !important;
+    left: auto !important;
+    top: auto !important;
+    z-index: 6000 !important;
+
+    margin: 0 !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    transform: translateY(12px) !important;
+  }
+
+  .information-page .information-scroll-top.is-visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+
+    transform: translateY(0) !important;
+  }
+
+  /* The footer brand text existed in the HTML but inherited dark text,
+     making it invisible on the black footer. */
+  .information-page .information-footer__brand {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    margin: 0 auto 26px !important;
+  }
+
+  .information-page .information-footer__brand .premium-brand {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #ffffff !important;
+    background: transparent !important;
+    text-decoration: none !important;
+  }
+
+  .information-page .information-footer__brand .premium-brand-text {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    width: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    text-align: left !important;
+  }
+
+  .information-page .information-footer__brand .premium-brand-text strong {
+    display: block !important;
+
+    color: #ffffff !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 1.02 !important;
+
+    text-align: left !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
