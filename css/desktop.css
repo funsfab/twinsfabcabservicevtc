@@ -3966,3 +3966,94 @@ top: -130px !important;
     letter-spacing: -0.1px !important;
   }
 }
+
+/* =========================================================
+   FINAL DESKTOP MENU SPACING FIX
+   Equal spacing between every navigation item.
+   Desktop only — mobile remains untouched.
+   ========================================================= */
+@media screen and (min-width: 1024px) {
+
+  /* Keep brand, nav and language group in fixed desktop slots. */
+  #mainHeader.premium-header .header-inner {
+    display: grid !important;
+    grid-template-columns: max-content minmax(0, 1fr) max-content !important;
+    column-gap: 24px !important;
+    align-items: center !important;
+  }
+
+  #mainHeader .premium-brand {
+    grid-column: 1 !important;
+    justify-self: start !important;
+  }
+
+  #mainHeader nav,
+  .information-page #mainHeader nav {
+    grid-column: 2 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    justify-self: stretch !important;
+  }
+
+  /* IMPORTANT: use flex, not six equal grid cells.
+     Equal grid cells were causing TRAJETS POPULAIRES and
+     NOTRE VÉHICULE to overlap. */
+  #mainHeader nav ul,
+  .information-page #mainHeader nav ul {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 18px !important;
+  }
+
+  #mainHeader nav li,
+  .information-page #mainHeader nav li {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    text-align: center !important;
+  }
+
+  #mainHeader nav a,
+  .information-page #mainHeader nav a {
+    display: inline-block !important;
+    width: auto !important;
+    max-width: none !important;
+    font-size: 11px !important;
+    letter-spacing: 0 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  #mainHeader .desktop-language-switcher,
+  .information-page #mainHeader .desktop-language-switcher {
+    grid-column: 3 !important;
+    justify-self: end !important;
+    margin: 0 !important;
+  }
+}
+
+/* Slightly tighter type/gaps on smaller desktop/laptop widths,
+   while preserving the same equal menu spacing behavior. */
+@media screen and (min-width: 1024px) and (max-width: 1179px) {
+  #mainHeader.premium-header .header-inner {
+    width: min(98%, 1420px) !important;
+    column-gap: 14px !important;
+  }
+
+  #mainHeader nav ul,
+  .information-page #mainHeader nav ul {
+    gap: 10px !important;
+  }
+
+  #mainHeader nav a,
+  .information-page #mainHeader nav a {
+    font-size: 9px !important;
+    letter-spacing: -0.1px !important;
+  }
+}
