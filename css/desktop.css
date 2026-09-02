@@ -292,27 +292,27 @@
 
 @media screen and (min-width: 1024px) {
   #accueil .google-rating {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 10px !important;
 
-    position: absolute !important;
-    top: 105px !important;
-    left: 6% !important;
+
+
+
+
+
+
     z-index: 20 !important;
 
-    width: max-content !important;
-    margin: 0 !important;
-    padding: 8px 14px !important;
+
+
+
 
     color: #ffffff !important;
     background: rgba(7, 12, 19, 0.65) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     border-radius: 10px !important;
 
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: none !important;
+
+
+
   }
 
   #accueil .rating-stars {
@@ -535,12 +535,12 @@ body:not(.information-page):not(.reservation-page) #mainHeader nav a:hover,
   #mainHeader.premium-header .premium-brand-mark {
     position: relative !important;
 
-    width: 72px !important;
-    height: 82px !important;
-    min-width: 72px !important;
-    flex: 0 0 72px !important;
 
-    margin: 4px 0 0 !important;
+
+
+
+
+
 
     color: transparent !important;
     background: transparent !important;
@@ -561,24 +561,24 @@ body:not(.information-page):not(.reservation-page) #mainHeader nav a:hover,
     content: "TF" !important;
 
     position: absolute !important;
-    top: 12px !important;
+
     left: 50% !important;
     transform: translateX(-50%) !important;
 
-    width: 60px !important;
-    height: 66px !important;
+
+
 
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
 
-    color: #b8891f !important;
-    background: #fffaf0 !important;
-    border: 3px solid #c49a2c !important;
-    border-radius: 18px 18px 25px 25px !important;
+
+
+
+
 
     font-family: Georgia, "Times New Roman", serif !important;
-    font-size: 29px !important;
+
     font-weight: 700 !important;
     line-height: 1 !important;
 
@@ -591,34 +591,30 @@ body:not(.information-page):not(.reservation-page) #mainHeader nav a:hover,
     content: "♛" !important;
 
     position: absolute !important;
-    top: -7px !important;
+
     left: 50% !important;
     transform: translateX(-50%) !important;
 
     color: #c49a2c !important;
-    font-size: 24px !important;
+
     line-height: 1 !important;
 
     z-index: 2 !important;
   }
 
-  #mainHeader.premium-header .premium-brand-text {
-    width: 240px !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
+
 
   #mainHeader.premium-header .premium-brand-text strong {
     font-family: Georgia, "Times New Roman", serif !important;
-    font-size: 23px !important;
+
     line-height: 0.96 !important;
-    text-align: center !important;
+
   }
 
   #mainHeader.premium-header .brand-subtitle {
     margin-top: 7px !important;
-    color: #d4a62a !important;
-    text-align: center !important;
+
+
   }
 }
 
@@ -652,7 +648,7 @@ body:not(.information-page):not(.reservation-page) #mainHeader nav a:hover,
     width: 43px !important;
     height: 46px !important;
 
-    background: #fffaf0 !important;
+
     border: 2px solid #c49a2c !important;
     border-radius: 12px 12px 17px 17px !important;
 
@@ -673,13 +669,13 @@ body:not(.information-page):not(.reservation-page) #mainHeader nav a:hover,
   }
 
   #mainHeader.premium-header .premium-brand-text strong {
-    color: #ffffff !important;
+
     font-size: 18px !important;
     text-align: left !important;
   }
 
   #mainHeader.premium-header .brand-subtitle {
-    color: #d4a62a !important;
+
     font-size: 8px !important;
     text-align: left !important;
   }
@@ -883,7 +879,7 @@ body:not(.information-page):not(.reservation-page) #mainHeader nav a:hover,
     aspect-ratio: 1.55 / 1;
 
     perspective: 1500px;
-    cursor: pointer;
+
   }
 
   #vehicule .tf-business-card {
@@ -894,9 +890,7 @@ body:not(.information-page):not(.reservation-page) #mainHeader nav a:hover,
 
     transform-style: preserve-3d;
 
-    transition:
-      transform 0.9s
-      cubic-bezier(0.22, 0.75, 0.25, 1);
+
   }
 
 
@@ -1179,8 +1173,8 @@ line-height: 1.2;
   #vehicule .business-card-logo .premium-brand-mark {
     position: relative !important;
 
-    width: 64px !important;
-    height: 72px !important;
+
+
 
     display: flex !important;
     align-items: center !important;
@@ -1190,12 +1184,12 @@ line-height: 1.2;
     background: #fffaf0 !important;
 
     border: 2px solid #d4a33a !important;
-    border-radius: 17px 17px 20px 20px !important;
+
 
     clip-path: none !important;
 
     font-family: Georgia, "Times New Roman", serif !important;
-    font-size: 25px !important;
+
     font-weight: 500 !important;
     line-height: 1 !important;
 
@@ -1208,7 +1202,7 @@ line-height: 1.2;
     content: "♛" !important;
 
     position: absolute !important;
-    top: -20px !important;
+
     left: 50% !important;
 
     transform: translateX(-50%) !important;
@@ -1216,7 +1210,7 @@ line-height: 1.2;
     color: #d4a12f !important;
     background: transparent !important;
 
-    font-size: 21px !important;
+
     line-height: 1 !important;
   }
 
@@ -2864,7 +2858,7 @@ outline: none !important;
     padding: 12px 10px !important;
     margin: 0 !important;
 
-    border: 1px solid rgba(224, 174, 43, 0.55) !important;
+
     border-radius: 13px !important;
 
     background: rgba(255, 255, 255, 0.015) !important;
@@ -3273,9 +3267,7 @@ grid-column: 11 / span 10 !important;
   min-height: 64px !important;
   padding: 0 !important;
 }
-   .reservation-page .reservation-field-passengers select {
-  font-size: 14px !important;
-   }
+
 
 .reservation-page .reservation-field-triptype select {
   width: 100% !important;
@@ -3441,16 +3433,7 @@ top: -130px !important;
   text-align: left !important;
 }
 
-.information-page .information-footer__content {
-  width: min(100%, 1120px) !important;
-  max-width: 1120px !important;
-  margin: 0 auto !important;
 
-  display: grid !important;
-  grid-template-columns: 100px 230px 1fr 310px !important;
-  align-items: center !important;
-  gap: 28px !important;
-}
 
 
 
@@ -3483,8 +3466,8 @@ top: -130px !important;
 /* COLUMN 4 — VALUES */
 
 .information-page .information-footer__benefits {
-  margin: 0 !important;
-  padding: 0 !important;
+
+
   border: 0 !important;
 }
 
@@ -3503,12 +3486,12 @@ top: -130px !important;
 
 .information-page .information-footer__bottom {
   width: min(100%, 1120px);
-  margin: 22px auto 0 !important;
+
   padding-top: 14px !important;
 
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 
-  text-align: center;
+
 }
 
 .information-page .information-footer__bottom p {
@@ -3525,13 +3508,9 @@ top: -130px !important;
 }
 
 
-   .information-page .information-footer__brand .premium-brand {
-  margin: 0 !important;
-}
 
-.information-page .information-footer__brand .premium-brand-text {
-  text-align: left !important;
-}
+
+
 /* =========================================
    INFORMATION FOOTER — FINAL ALIGNMENT
    ========================================= */
@@ -3558,22 +3537,19 @@ top: -130px !important;
 }
 
 .information-page .information-footer__brand .premium-brand {
-  display: flex !important;
-  align-items: center !important;
+
+
   justify-content: center !important;
-  gap: 16px !important;
+
   width: auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
+
+
 }
 
-.information-page .information-footer__brand .premium-brand-text {
-  display: block !important;
-  text-align: left !important;
-}
+
 
 .information-page .information-footer__brand .premium-brand-text strong {
-  display: block !important;
+
   white-space: nowrap !important;
 }
 
@@ -3740,25 +3716,11 @@ top: -130px !important;
 
   /* Keep the brand, navigation and language selector in the
      same desktop slots on Home, Reservation and Information. */
-  #mainHeader.premium-header .header-inner {
-    display: grid !important;
-    grid-template-columns: 285px minmax(0, 1fr) 190px !important;
-    column-gap: 20px !important;
-    align-items: center !important;
-  }
 
-  #mainHeader .premium-brand {
-    grid-column: 1 !important;
-    justify-self: start !important;
-  }
 
-  #mainHeader nav,
-  .information-page #mainHeader nav {
-    grid-column: 2 !important;
-    width: 100% !important;
-    margin: 0 !important;
-    justify-self: stretch !important;
-  }
+
+
+
 
   #mainHeader nav ul {
     width: 100% !important;
@@ -3768,9 +3730,9 @@ top: -130px !important;
 
   #mainHeader .desktop-language-switcher,
   .information-page #mainHeader .desktop-language-switcher {
-    grid-column: 3 !important;
-    justify-self: end !important;
-    margin: 0 !important;
+
+
+
     gap: 14px !important;
   }
 
@@ -3799,7 +3761,7 @@ top: -130px !important;
 @media screen and (min-width: 1024px) and (max-width: 1179px) {
   #mainHeader.premium-header .header-inner {
     grid-template-columns: 245px minmax(0, 1fr) 170px !important;
-    column-gap: 12px !important;
+
   }
 
   #mainHeader nav ul {
@@ -3873,60 +3835,28 @@ top: -130px !important;
   /* Brand | centered navigation | language selector.
      The navigation sits in the exact middle of the available
      space between the brand and the language group. */
-  #mainHeader.premium-header .header-inner {
-    display: grid !important;
-    grid-template-columns: max-content minmax(0, 1fr) max-content !important;
-    column-gap: 24px !important;
-    align-items: center !important;
-  }
 
-  #mainHeader .premium-brand {
-    grid-column: 1 !important;
-    justify-self: start !important;
-  }
 
-  #mainHeader nav,
-  .information-page #mainHeader nav {
-    grid-column: 2 !important;
-    width: 100% !important;
-    margin: 0 !important;
-    justify-self: stretch !important;
-  }
+
+
+
 
   #mainHeader nav ul,
   .information-page #mainHeader nav ul {
-    display: grid !important;
+
     grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
-    align-items: center !important;
-    width: min(100%, 720px) !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    gap: 0 !important;
+
+
+
+
+
   }
 
-  #mainHeader nav li,
-  .information-page #mainHeader nav li {
-    width: 100% !important;
-    min-width: 0 !important;
-    text-align: center !important;
-  }
 
-  #mainHeader nav a,
-  .information-page #mainHeader nav a {
-    display: inline-block !important;
-    width: auto !important;
-    max-width: 100% !important;
-    font-size: clamp(9px, 0.82vw, 12px) !important;
-    text-align: center !important;
-    white-space: nowrap !important;
-  }
 
-  #mainHeader .desktop-language-switcher,
-  .information-page #mainHeader .desktop-language-switcher {
-    grid-column: 3 !important;
-    justify-self: end !important;
-    margin: 0 !important;
-  }
+
+
+
 
   #mainHeader .mobile-language-switcher {
     display: none !important;
@@ -3955,16 +3885,9 @@ top: -130px !important;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1179px) {
-  #mainHeader.premium-header .header-inner {
-    width: min(96%, 1420px) !important;
-    column-gap: 16px !important;
-  }
 
-  #mainHeader nav a,
-  .information-page #mainHeader nav a {
-    font-size: 8.5px !important;
-    letter-spacing: -0.1px !important;
-  }
+
+
 }
 
 /* =========================================================
