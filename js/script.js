@@ -4,15 +4,18 @@ function toggleMenu(event) {
     event.stopPropagation();
   }
 
-  const menu = document.querySelector("#mainHeader nav");
+  const nav = document.querySelector("#mainHeader nav");
+  const menuButton = document.querySelector("#mainHeader .menu-btn");
 
-  if (!menu) return;
+  if (!nav || !menuButton) return;
 
-  menu.classList.toggle("open");
+  const isOpen = nav.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", String(isOpen));
 }
+
 document.addEventListener("click", function (event) {
   const nav = document.querySelector("#mainHeader nav");
-  const menuButton = document.querySelector(".menu-btn");
+  const menuButton = document.querySelector("#mainHeader .menu-btn");
 
   if (!nav || !menuButton) return;
 
@@ -21,152 +24,19 @@ document.addEventListener("click", function (event) {
 
   if (!clickedInsideMenu && !clickedMenuButton) {
     nav.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
   }
 });
 
 document.querySelectorAll("#mainHeader nav a").forEach(function (link) {
   link.addEventListener("click", function () {
     const nav = document.querySelector("#mainHeader nav");
+    const menuButton = document.querySelector("#mainHeader .menu-btn");
 
-    if (nav) {
-      nav.classList.remove("open");
-    }
+    if (nav) nav.classList.remove("open");
+    if (menuButton) menuButton.setAttribute("aria-expanded", "false");
   });
 });
-function sendReservation(event) {
-  event.preventDefault();
-  const nom = document.getElementById("nom").value;
-  const telephone = document.getElementById("telephone").value;
-  const email = document.getElementById("email").value;
-  const depart = document.getElementById("depart").value;
-  const destination = document.getElementById("destination").value;
-  const date = document.getElementById("date").value;
-  const dateFr = date
-  ? date.split("-").reverse().join("/")
-  : "Non précisée";
-  const heure = document.getElementById("heure").value;
-  const passagers = document.getElementById("passagers").value;
-  const bagages = document.getElementById("bagages")?.value || "Non précisé";
-const transport = document.getElementById("transport")?.value || "Non précisé";
-const allerRetour = document.getElementById("allerRetour")?.value || "Non précisé";
-  const paiement = document.getElementById("paiement").value;
-  const infos = document.getElementById("message").value;
-const tarifEstime = document.getElementById("tarifResultat")?.textContent || "Non estimé";
-  const message =
-`📋 *Demande de Réservation*
-👤 Nom : ${nom}
-📞 Téléphone : ${telephone}
-📧 Email : ${email}
-
-📍 Départ : ${depart}
-🎯 Destination : ${destination}
-
-📅 Date : ${dateFr}
-🕒 Heure : ${heure}
-
-👥 Passagers : ${passagers}
-🧳 Bagages : ${bagages || "Non précisé"}
-🔁 Type de trajet : ${allerRetour || "Non précisé"}
-✈️ N° de vol ou de train : ${transport || "Non précisé"}
-💳 Paiement : ${paiement}
-📝 Informations : ${infos || "Aucune"}
-💶 Tarif estimé : ${tarifEstime}
-`;
-alert("La demande est prête");
-  
-  reservationMessage = message;
-openContactModal();
-}
-let reservationMessage = "";
-
-function openContactModal() {
-  const modal = document.getElementById("contactModal");
-
-  if (!modal) {
-    console.error("La fenêtre contactModal est introuvable.");
-    return;
-  }
-
-  modal.classList.add("show");
-  modal.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
-}
-
-function closeContactModal() {
-  const modal = document.getElementById("contactModal");
-
-  if (!modal) return;
-
-  modal.classList.remove("show");
-  modal.setAttribute("aria-hidden", "true");
-  document.body.style.overflow = "";
-}
-
-function sendByWhatsApp() {
-  const numero = "33621144767";
-
-  window.location.href =
-    "https://wa.me/" +
-    numero +
-    "?text=" +
-    encodeURIComponent(reservationMessage);
-}
-
-function contactByPhone() {
-  window.location.href = "tel:+33621144767";
-}
-
-function sendBySms() {
-  const numero = "+33621144767";
-  const separator = /iPhone|iPad|iPod/i.test(navigator.userAgent)
-    ? "&"
-    : "?";
-
-  window.location.href =
-    "sms:" +
-    numero +
-    separator +
-    "body=" +
-    encodeURIComponent(reservationMessage);
-}
-
-function sendByEmail() {
-  const email = "funsfab@gmail.com";
-  const subject = "Demande de réservation VTC";
-
-  window.location.href =
-    "mailto:" +
-    email +
-    "?subject=" +
-    encodeURIComponent(subject) +
-    "&body=" +
-    encodeURIComponent(reservationMessage);
-}
-
-/* Fermer en touchant la zone sombre */
-document.addEventListener("click", function (event) {
-  const modal = document.getElementById("contactModal");
-
-  if (event.target === modal) {
-    closeContactModal();
-  }
-});
-
-function estimerTarif() {
-  const km = Number(document.getElementById("estKm").value);
-  const resultat = document.getElementById("tarifResultat");
-
-  if (!km || km <= 0) {
-    resultat.innerHTML = "Veuillez entrer une distance valide en kilomètres.";
-    return;
-  }
-
-  const prix = Math.max(30, km * 2);
-
-  resultat.innerHTML =
-    `Tarif estimé : ${prix.toFixed(0)} €<br><small>*Le tarif définitif sera confirmé après étude de votre trajet.</small>`;
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".counter");
 
@@ -338,9 +208,6 @@ if (destinationField) {
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
-  const menuButton = document.getElementById("reservationMenuButton");
-  const navigation = document.getElementById("reservationNavigation");
-
   const reservationForm = document.getElementById("reservationForm");
 
   const contactModal = document.getElementById("contactModal");
@@ -361,47 +228,6 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   let reservationMessage = "";
-
-
-  /* =========================
-     MENU MOBILE
-  ========================== */
-
-  if (menuButton && navigation) {
-    menuButton.addEventListener("click", function () {
-      const isOpen = navigation.classList.toggle("open");
-
-      menuButton.setAttribute(
-        "aria-expanded",
-        String(isOpen)
-      );
-
-      const icon = menuButton.querySelector("i");
-
-      if (icon) {
-        icon.className = isOpen
-          ? "fa-solid fa-xmark"
-          : "fa-solid fa-bars";
-      }
-    });
-
-    navigation.querySelectorAll("a").forEach(function (link) {
-      link.addEventListener("click", function () {
-        navigation.classList.remove("open");
-
-        menuButton.setAttribute(
-          "aria-expanded",
-          "false"
-        );
-
-        const icon = menuButton.querySelector("i");
-
-        if (icon) {
-          icon.className = "fa-solid fa-bars";
-        }
-      });
-    });
-  }
 
 
   /* =========================
@@ -739,10 +565,6 @@ Le tarif définitif sera communiqué après étude de la demande.`;
 
     document.body.style.overflow = "";
   }
-/* ==========================
-   GEOAPIFY AUTOCOMPLETE
-========================== */
-
 /* ==========================
    GEOAPIFY AUTOCOMPLETE
 ========================== */
