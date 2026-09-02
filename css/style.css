@@ -12497,10 +12497,11 @@ svg {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
 
-  /* Keep the four languages inside the hamburger panel so the
-     header itself remains clean and balanced. */
+  /* Mobile portrait keeps the four languages inside the hamburger panel.
+     Phone landscape uses the separate header language switcher defined
+     in the canonical MOBILE LANDSCAPE HEADER section above. */
   #mainHeader .desktop-language-switcher {
     display: none !important;
   }
@@ -12553,6 +12554,9 @@ svg {
     background: rgba(212, 166, 42, 0.16) !important;
     border-color: #c99a2e !important;
   }
+}
+
+@media screen and (max-width: 768px) {
 
   /* HOME PAGE — tighten vertical gaps between card groups. */
   body:not(.reservation-page) .vehicle-experience .vehicle-info-grid {
