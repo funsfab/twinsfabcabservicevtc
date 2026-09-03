@@ -9176,6 +9176,315 @@ min-height: 0 !important;
 }
 
 /* =========================================
+   TABLET PORTRAIT HEADER — CANONICAL
+   Dedicated 769–1023px portrait layout.
+   Mobile portrait/landscape and desktop are not affected.
+========================================= */
+@media screen and (orientation: portrait) and (min-width: 769px) and (max-width: 1023px) {
+  #mainHeader.premium-header {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    background: #f7f2e9;
+    box-shadow: none;
+  }
+
+  #mainHeader .header-inner {
+    position: relative;
+    width: calc(100% - 28px);
+    max-width: none;
+    min-height: 88px;
+    margin: 0 auto;
+    padding: 10px 14px;
+
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) auto auto;
+    align-items: center;
+    gap: 12px;
+
+    background: #fffaf2;
+    border: 1px solid rgba(201, 154, 46, 0.22);
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+    overflow: visible;
+  }
+
+  /* Full TF crest and company name. */
+  #mainHeader .premium-brand {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    min-width: 0;
+    margin: 0;
+    color: #111111;
+    text-decoration: none;
+  }
+
+  #mainHeader .premium-brand-mark {
+    position: relative;
+    width: 54px;
+    height: 62px;
+    flex: 0 0 54px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #c99a2e;
+    background: #fffaf2;
+    border: 2px solid #c99a2e;
+    border-radius: 10px 10px 22px 22px;
+    clip-path: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  #mainHeader .premium-brand-mark::before {
+    content: "♛";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c99a2e;
+    font-size: 21px;
+    line-height: 1;
+  }
+
+  #mainHeader .premium-brand-mark::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    background: #fffaf2;
+    border-right: 2px solid #c99a2e;
+    border-bottom: 2px solid #c99a2e;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  #mainHeader .premium-brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    line-height: 1.08;
+  }
+
+  #mainHeader .premium-brand-text strong {
+    margin: 0;
+    color: #111111;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.02;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  #mainHeader .premium-brand-text span {
+    position: static;
+    display: block;
+    width: auto;
+    margin: 5px 0 0;
+    padding: 0;
+    transform: none;
+    color: #b88923;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  #mainHeader .premium-brand-text span::before,
+  #mainHeader .premium-brand-text span::after {
+    display: none;
+    content: none;
+  }
+
+  /* The old blue Réserver shortcut is not part of the tablet header. */
+  #mainHeader .header-actions {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  #mainHeader .header-booking-btn {
+    display: none;
+  }
+
+  /* All four languages sit immediately before the hamburger. */
+  #mainHeader .desktop-language-switcher {
+    grid-column: 2;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  #mainHeader .desktop-language-switcher .language-option {
+    appearance: none;
+    width: 34px;
+    min-width: 34px;
+    height: 32px;
+    min-height: 32px;
+    margin: 0;
+    padding: 5px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fffaf2;
+    border: 1px solid rgba(201, 154, 46, 0.34);
+    border-radius: 8px;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  #mainHeader .desktop-language-switcher .language-option span {
+    display: none;
+  }
+
+  #mainHeader .desktop-language-switcher .language-option img {
+    display: block;
+    width: 21px;
+    height: 14px;
+    object-fit: cover;
+    border-radius: 1px;
+  }
+
+  #mainHeader .desktop-language-switcher .language-option.is-active {
+    background: rgba(212, 166, 42, 0.16);
+    border-color: #c99a2e;
+  }
+
+  #mainHeader .menu-btn {
+    position: static;
+    width: 52px;
+    min-width: 52px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #111111;
+    background: #fffaf2;
+    border: 2px solid #c99a2e;
+    border-radius: 12px;
+    box-shadow: none;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  /* Compact tablet dropdown. */
+  #mainHeader nav {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    left: auto;
+
+    display: block;
+    width: 300px;
+    max-width: calc(100vw - 28px);
+    height: auto;
+    margin: 0;
+    padding: 7px;
+
+    background: #ffffff;
+    border: 1px solid rgba(201, 154, 46, 0.30);
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-7px) scale(0.985);
+    transform-origin: top right;
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+    z-index: 100000;
+  }
+
+  #mainHeader nav.open,
+  #mainHeader nav.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+  }
+
+  #mainHeader nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 1px;
+    list-style: none;
+  }
+
+  #mainHeader nav li {
+    display: block;
+    width: 100%;
+  }
+
+  #mainHeader nav a {
+    display: block;
+    width: 100%;
+    padding: 8px 11px;
+    color: #111111;
+    background: transparent;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 650;
+    line-height: 1.15;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  #mainHeader nav a::after {
+    display: none;
+  }
+
+  #mainHeader nav a:hover,
+  #mainHeader nav a:active,
+  #mainHeader nav a.active {
+    color: #a97700;
+    background: rgba(201, 154, 46, 0.12);
+  }
+
+  /* Languages are outside the menu on tablet portrait. */
+  #mainHeader nav .mobile-language-switcher {
+    display: none;
+  }
+}
+
+/* =========================================
    MOBILE LANDSCAPE HEADER
    Canonical layout for phone landscape only.
 ========================================= */
