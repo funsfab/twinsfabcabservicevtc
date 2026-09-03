@@ -9547,10 +9547,10 @@ min-height: 0 !important;
   section#services .why-premium-inner::before {
     content: "";
     position: absolute;
-    top: 70px;
-    left: -245px;
-    width: 535px;
-    height: 585px;
+    top: 105px;
+    left: -210px;
+    width: 440px;
+    height: 440px;
     border: 0;
     border-right: 4px solid rgba(235, 188, 63, 0.98);
     border-radius: 50%;
