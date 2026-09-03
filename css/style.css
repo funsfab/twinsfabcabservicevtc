@@ -9197,7 +9197,7 @@ min-height: 0 !important;
     width: 44px;
     height: 44px;
     flex: 0 0 44px;
-    margin: 8px auto 8px;
+    margin: -8px auto 8px;
   }
 
   #mainHeader.premium-header {
