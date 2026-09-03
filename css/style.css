@@ -10240,6 +10240,51 @@ min-height: 0 !important;
     grid-column: 1 / -1;
   }
 
+  /* ==================================================
+     TABLET PORTRAIT — INFORMATION FOOTER BRAND
+     Uses the same approved TF mark and gold crown as the header.
+  ================================================== */
+
+  .information-page .information-footer__brand .premium-brand-mark {
+    position: relative;
+    width: 50px;
+    height: 60px;
+    flex: 0 0 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c99a2e;
+    background: #ffffff;
+    border: 2px solid #c99a2e;
+    border-radius: 14px;
+    clip-path: none;
+    box-shadow: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .information-page .information-footer__brand .premium-brand-mark::before {
+    content: "\f521";
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c99a2e;
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 2;
+  }
+
+  .information-page .information-footer__brand .premium-brand-mark::after {
+    display: none;
+    content: none;
+  }
+
   /* Cross-page links such as reservation → Accueil must land with
      the tablet header still visible above the hero. */
   #accueil {
