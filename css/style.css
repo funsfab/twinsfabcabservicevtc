@@ -9182,8 +9182,8 @@ min-height: 0 !important;
 ========================================= */
 @media screen and (orientation: portrait) and (min-width: 769px) and (max-width: 1023px) {
   #mainHeader.premium-header {
-    position: sticky;
-    top: 0;
+    position: sticky !important;
+    top: 0 !important;
     z-index: 99999;
     width: 100%;
     margin: 0;
@@ -9241,13 +9241,15 @@ min-height: 0 !important;
   }
 
   #mainHeader .premium-brand-mark::before {
-    content: "♛";
+    content: "\f521";
     position: absolute;
-    top: -18px;
+    top: -17px;
     left: 50%;
     transform: translateX(-50%);
     color: #c99a2e;
-    font-size: 21px;
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    font-weight: 900;
     line-height: 1;
     z-index: 2;
   }
@@ -9471,12 +9473,47 @@ min-height: 0 !important;
     display: none;
   }
 
-  /* Keep all tablet portrait crown icons gold. */
+  /* Keep the tablet portrait crown artwork consistent and gold. */
   .why-premium-crown,
-  .why-premium-crown i,
+  .why-premium-crown i {
+    color: #d6a62c;
+  }
+
   .tarifs-crown,
   .destinations-crown {
     color: #d6a62c;
+    font-size: 0;
+  }
+
+  .tarifs-crown::before,
+  .destinations-crown::before,
+  .vehicle-experience-heading::before,
+  .luxury-contact__crest::before {
+    content: "\f521";
+    color: #d6a62c;
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .vehicle-experience-heading::before {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .luxury-contact__crest::before {
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+  }
+
+  /* Cross-page links such as reservation → Accueil must land with
+     the tablet header still visible above the hero. */
+  #accueil {
+    scroll-margin-top: 112px;
   }
 }
 /* =========================================
