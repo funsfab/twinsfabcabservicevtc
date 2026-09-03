@@ -9200,6 +9200,32 @@ min-height: 0 !important;
     margin: -8px auto 8px;
   }
 
+  /* Information page: keep the approved portrait arrow in its original place,
+     but in phone landscape place the down arrow directly beside the gold line. */
+  .information-page .information-hero__line-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 14px auto 18px;
+  }
+
+  .information-page .information-hero__line-row .information-hero__line {
+    margin: 0;
+  }
+
+  .information-page .information-scroll-down--default {
+    display: none !important;
+  }
+
+  .information-page .information-scroll-down--landscape {
+    display: flex !important;
+    width: 44px !important;
+    height: 44px !important;
+    flex: 0 0 44px;
+    margin: 0 !important;
+  }
+
   #mainHeader.premium-header {
     min-height: 0 !important;
     padding: 7px 10px !important;
@@ -9480,12 +9506,20 @@ min-height: 0 !important;
   line-height: 1.05;
 }
 
+.information-hero__line-row {
+  display: block;
+}
+
 .information-hero__line {
   position: relative;
   width: 64px;
   height: 2px;
   margin: 20px auto;
   background: #c58c27;
+}
+
+.information-scroll-down--landscape {
+  display: none !important;
 }
 
 .information-hero__line::after {
