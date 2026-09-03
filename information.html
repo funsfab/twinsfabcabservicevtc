@@ -853,15 +853,15 @@ alt="Tesla Model Y">
 
   <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const downArrow = document.querySelector(".information-scroll-down");
+    const downArrows = document.querySelectorAll(".information-scroll-down");
     const upArrow = document.querySelector(".information-scroll-top");
 
     function updateInformationArrows() {
       if (window.scrollY > 200) {
-        downArrow?.classList.add("is-hidden");
+        downArrows.forEach((arrow) => arrow.classList.add("is-hidden"));
         upArrow?.classList.add("is-visible");
       } else {
-        downArrow?.classList.remove("is-hidden");
+        downArrows.forEach((arrow) => arrow.classList.remove("is-hidden"));
         upArrow?.classList.remove("is-visible");
       }
     }
