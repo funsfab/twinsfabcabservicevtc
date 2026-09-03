@@ -9175,6 +9175,25 @@ min-height: 0 !important;
 
 }
 
+/* Shared animated business-card flip used by desktop and tablet portrait. */
+@keyframes tfBusinessCardAutomaticFlip {
+
+  0%,
+  35% {
+    transform: rotateY(0deg);
+  }
+
+  45%,
+  85% {
+    transform: rotateY(180deg);
+  }
+
+  95%,
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 /* =========================================
    TABLET PORTRAIT HEADER — CANONICAL
    Dedicated 769–1023px portrait layout.
@@ -9510,175 +9529,499 @@ min-height: 0 !important;
     font-size: 30px;
   }
 
+
+  /* ==================================================
+     TABLET PORTRAIT — VTC EXPERIENCE
+     Compact service messages + animated business card.
+  ================================================== */
+
+  #vehicule .vehicle-experience-inner {
+    overflow: hidden;
+  }
+
+  #vehicule .vehicle-desktop-layout {
+    position: relative;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 0.78fr);
+    align-items: center;
+    gap: 18px;
+    padding: 26px 24px 112px;
+  }
+
+  #vehicule .vehicle-service-column {
+    min-width: 0;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-experience-heading {
+    padding: 0 8px 22px;
+    text-align: center;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-experience-heading p {
+    font-size: 25px;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-experience-heading h2 {
+    font-size: 31px;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-experience-line {
+    margin-top: 14px;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-grid {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 4px !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-item {
+    min-height: 0 !important;
+    padding: 5px 0 !important;
+    display: grid !important;
+    grid-template-columns: 38px minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 10px !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-icon {
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 14px !important;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.35) !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-item strong {
+    font-size: 14px !important;
+    line-height: 1.18 !important;
+  }
+
+  #vehicule .vehicle-service-column .vehicle-info-item span {
+    margin-top: 2px !important;
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+  }
+
+  #vehicule .vehicle-business-card-wrap {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    margin: 6px 0 0;
+  }
+
+  #vehicule .business-card-label {
+    margin-bottom: 11px;
+    color: #d9a72d;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #vehicule .tf-business-card-scene {
+    width: 100%;
+    max-width: 292px;
+    aspect-ratio: 1.55 / 1;
+    perspective: 1200px;
+    pointer-events: none;
+  }
+
+  #vehicule .tf-business-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: tfBusinessCardAutomaticFlip 10s ease-in-out infinite;
+  }
+
+  #vehicule .tf-business-card-face {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    padding: 16px;
+    border: 1px solid rgba(230, 179, 37, 0.75);
+    border-radius: 18px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background: radial-gradient(circle at 75% 30%, rgba(213, 160, 34, 0.14), transparent 38%), linear-gradient(145deg, #171717, #080808);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.40), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  #vehicule .tf-business-card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #vehicule .business-card-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #vehicule .business-card-logo .premium-brand-mark {
+    position: relative !important;
+    width: 32px !important;
+    height: 37px !important;
+    min-width: 32px !important;
+    min-height: 37px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #c9972f !important;
+    background: #fffaf0 !important;
+    border: 1.5px solid #d4a33a !important;
+    border-radius: 8px !important;
+    clip-path: none !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    box-shadow: none !important;
+  }
+
+  #vehicule .business-card-logo .premium-brand-mark::before {
+    content: "\f521" !important;
+    position: absolute !important;
+    top: -13px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    color: #d4a12f !important;
+    background: transparent !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
+  #vehicule .business-card-logo .premium-brand-mark::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  #vehicule .tf-business-card-front h3 {
+    margin: 10px 0 0;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+
+  #vehicule .tf-business-card-front h4 {
+    margin: 3px 0 0;
+    color: #d9a72d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  #vehicule .tf-business-card-front p {
+    margin: 9px 0 0;
+    color: #e7ddd0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 9px;
+    font-style: italic;
+  }
+
+  #vehicule .business-card-values {
+    margin-top: 10px;
+    color: #ddb145;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 8px;
+  }
+
+  #vehicule .tf-business-card-back {
+    display: flex;
+    flex-direction: column;
+    transform: rotateY(180deg);
+    text-align: left;
+  }
+
+  #vehicule .tf-business-card-back h3 {
+    margin: 0;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+  }
+
+  #vehicule .tf-business-card-back > p:first-of-type {
+    margin: 2px 0 7px;
+    color: #d7a62d;
+    font-size: 9px;
+  }
+
+  #vehicule .business-card-contact-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 6px 0;
+    color: #eee6dc;
+    border-bottom: 1px solid rgba(214, 166, 44, 0.20);
+    font-size: 8.5px;
+    overflow-wrap: anywhere;
+  }
+
+  #vehicule .business-card-contact-row i {
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 25px;
+    color: #dfa92d;
+    border: 1px solid rgba(223, 169, 45, 0.55);
+    border-radius: 50%;
+    font-size: 9px;
+  }
+
+  #vehicule .tf-business-card-back small {
+    margin-top: auto;
+    padding-top: 5px;
+    color: #d9a72d;
+    border-top: 1px solid rgba(214, 166, 44, 0.20);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 7.5px;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  #vehicule .vehicle-city-skyline {
+    bottom: 66px;
+    height: 82px;
+    opacity: 0.40;
+  }
+
+  /* ==================================================
+     TABLET PORTRAIT — RATES HEADING SIDE BADGES
+  ================================================== */
+
+  #tarifs .tarifs-heading {
+    position: relative;
+    max-width: 100%;
+    min-height: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 168px;
+  }
+
+  #tarifs .tarifs-heading-badge {
+    position: absolute !important;
+    top: 22px !important;
+    display: flex !important;
+    min-width: 0 !important;
+    width: 150px !important;
+    min-height: 44px !important;
+    align-items: center !important;
+    gap: 7px !important;
+    padding: 7px 10px !important;
+    color: #ffffff !important;
+    background: linear-gradient(145deg, rgba(20, 20, 20, 0.94), rgba(8, 8, 8, 0.90)) !important;
+    border: 1px solid rgba(217, 165, 46, 0.72) !important;
+    border-radius: 24px !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.24) !important;
+    z-index: 4 !important;
+  }
+
+  #tarifs .tarifs-badge-left { left: 0 !important; }
+  #tarifs .tarifs-badge-right { right: 0 !important; }
+
+  #tarifs .tarifs-heading-badge i {
+    width: 28px !important;
+    height: 28px !important;
+    display: grid !important;
+    place-items: center !important;
+    flex: 0 0 28px !important;
+    color: #d9a52e !important;
+    border: 1px solid rgba(217, 165, 46, 0.60) !important;
+    border-radius: 50% !important;
+    font-size: 11px !important;
+  }
+
+  #tarifs .tarifs-heading-badge strong {
+    display: block !important;
+    font-size: 9px !important;
+    line-height: 1.05 !important;
+    white-space: nowrap !important;
+  }
+
+  #tarifs .tarifs-heading-badge small {
+    display: block !important;
+    margin-top: 1px !important;
+    font-size: 7px !important;
+    line-height: 1.05 !important;
+    white-space: nowrap !important;
+  }
+
+  #tarifs .tarifs-badge-left::after,
+  #tarifs .tarifs-badge-right::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 50% !important;
+    width: 45px !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, rgba(217, 165, 46, 0.90), rgba(217, 165, 46, 0.18)) !important;
+  }
+
+  #tarifs .tarifs-badge-left::after { right: -46px !important; }
+  #tarifs .tarifs-badge-right::before { left: -46px !important; transform: rotate(180deg) !important; }
+
+  /* ==================================================
+     TABLET PORTRAIT — STATIONS/AIRPORTS HEADING BADGES
+  ================================================== */
+
+  #destinations .destinations-heading {
+    position: relative !important;
+    max-width: 100% !important;
+    min-height: 112px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 165px !important;
+    padding-right: 165px !important;
+  }
+
+  #destinations .destinations-heading .destinations-flight-label,
+  #destinations .destinations-heading .destinationsStationPickupLabel {
+    position: absolute !important;
+    top: 26px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    width: 150px !important;
+    min-width: 0 !important;
+    min-height: 44px !important;
+    padding: 7px 10px !important;
+    color: #f1d58b !important;
+    background: linear-gradient(145deg, rgba(20, 20, 20, 0.94), rgba(7, 7, 7, 0.90)) !important;
+    border: 1px solid rgba(217, 165, 46, 0.45) !important;
+    border-radius: 24px !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 9px !important;
+    line-height: 1.1 !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.24) !important;
+    z-index: 4 !important;
+    white-space: nowrap !important;
+  }
+
+  #destinations .destinations-heading .destinations-flight-label { left: 0 !important; }
+  #destinations .destinations-heading .destinationsStationPickupLabel { right: 0 !important; }
+
+  #destinations .destinations-heading .destinations-flight-label::after,
+  #destinations .destinations-heading .destinationsStationPickupLabel::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 50% !important;
+    width: 45px !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, rgba(217, 165, 46, 0.90), rgba(217, 165, 46, 0.18)) !important;
+  }
+
+  #destinations .destinations-heading .destinations-flight-label::after { right: -46px !important; }
+  #destinations .destinations-heading .destinationsStationPickupLabel::before { left: -46px !important; transform: rotate(180deg) !important; }
+
+  /* ==================================================
+     TABLET PORTRAIT — COMPACT CONTACT FOOTER
+  ================================================== */
+
+  .luxury-footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(270px, 0.9fr);
+    column-gap: 34px;
+    align-items: start;
+    padding: 42px 36px 24px;
+  }
+
+  .luxury-footer__contact {
+    grid-column: 1;
+    padding-bottom: 14px;
+    border-bottom: 0;
+  }
+
+  .luxury-footer__contact-list {
+    gap: 15px;
+    margin-top: 24px;
+  }
+
+  .luxury-footer__contact-list a,
+  .luxury-footer__contact-list > div,
+  .luxury-footer__contact-list .footer-contact-btn {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .luxury-footer__qualities {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    align-self: start;
+    margin: 52px 0 0;
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .luxury-footer__qualities > div {
+    min-height: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 11px;
+    text-align: left;
+    background: transparent;
+    border: 0 !important;
+  }
+
+  .luxury-footer__qualities i {
+    width: 30px;
+    flex: 0 0 30px;
+    color: #e9b42f;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .luxury-footer__qualities span {
+    color: #f2f2f2;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .luxury-footer__payments,
+  .luxury-footer__bottom {
+    grid-column: 1 / -1;
+  }
+
+  .luxury-footer__payments {
+    margin-top: 12px;
+    padding-top: 18px;
+  }
+
+  .luxury-footer__bottom {
+    margin-top: 22px;
+    padding-top: 20px;
+  }
+
   /* Cross-page links such as reservation → Accueil must land with
      the tablet header still visible above the hero. */
   #accueil {
     scroll-margin-top: 112px;
-  }
-
-  /* Keep the gold back-to-top control directly above the gold call
-     button on tablet portrait. */
-  #backToTop.back-to-top {
-    right: 18px;
-    bottom: 164px;
-    z-index: 1600;
-  }
-
-  /* Tablet portrait Why Choose Us: match the approved balanced design. */
-  section#services.why-premium {
-    padding: 20px 14px 30px;
-    overflow: visible;
-  }
-
-  section#services .why-premium-inner {
-    position: relative;
-    display: grid;
-    grid-template-columns: 34% minmax(0, 1fr);
-    align-items: start;
-    column-gap: 18px;
-    width: 100%;
-    max-width: 920px;
-    min-height: 720px;
-    margin: 0 auto;
-    padding: 26px 20px 175px;
-    overflow: hidden;
-  }
-
-  section#services .why-premium-inner::before {
-    content: "";
-    position: absolute;
-    top: 105px;
-    left: -210px;
-    width: 440px;
-    height: 440px;
-    border: 0;
-    border-right: 4px solid rgba(235, 188, 63, 0.98);
-    border-radius: 50%;
-    transform: none;
-    opacity: 1;
-    box-shadow:
-      5px 0 9px rgba(255, 210, 76, 0.80),
-      12px 0 28px rgba(225, 172, 45, 0.38);
-    pointer-events: none;
-  }
-
-  section#services .why-premium-intro {
-    position: relative;
-    z-index: 4;
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 185px 0 0 10px;
-    text-align: left;
-  }
-
-  section#services .why-premium-crown {
-    margin: 0 0 13px;
-    text-align: left;
-  }
-
-  section#services .why-premium-intro > p {
-    margin: 0 0 5px;
-    font-size: 23px;
-    line-height: 1.05;
-    text-align: left;
-  }
-
-  section#services .why-premium-intro h2 {
-    width: 145px;
-    max-width: 145px;
-    margin: 0;
-    font-size: 29px;
-    line-height: 1.06;
-    text-align: left;
-    white-space: normal;
-  }
-
-  section#services .why-premium-line {
-    width: 56px;
-    margin: 20px 0 18px;
-  }
-
-  section#services .why-premium-intro > span {
-    width: 135px;
-    max-width: 135px;
-    font-size: 14px;
-    line-height: 1.45;
-    text-align: left;
-  }
-
-  section#services .why-premium-diamond {
-    margin: 24px 0 0;
-    text-align: left;
-  }
-
-  section#services .why-premium-list {
-    position: relative;
-    z-index: 4;
-    grid-column: 2;
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    gap: 11px;
-  }
-
-  section#services .why-premium-card {
-    width: 100%;
-    min-height: 0;
-  }
-
-  section#services .why-premium-trigger {
-    position: relative;
-    width: 100%;
-    min-height: 88px;
-    padding: 13px 38px 13px 78px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-  }
-
-  section#services .why-premium-trigger .why-premium-icon {
-    left: 12px;
-    top: 50%;
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
-    transform: translateY(-50%);
-    font-size: 19px;
-  }
-
-  section#services .why-premium-text strong {
-    font-size: 15px;
-    line-height: 1.2;
-  }
-
-  section#services .why-premium-text small {
-    margin-top: 4px;
-    font-size: 11px;
-    line-height: 1.35;
-  }
-
-  section#services .why-premium-arrow {
-    right: 12px;
-  }
-
-  section#services .why-premium-skyline {
-    bottom: 68px;
-    height: 92px;
-  }
-
-  section#services .why-premium-footer {
-    left: 18px;
-    right: 18px;
-    bottom: 14px;
-    min-height: 50px;
-    padding: 10px 12px;
-    font-size: 14px;
   }
 }
 /* =========================================
