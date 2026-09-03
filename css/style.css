@@ -9196,15 +9196,12 @@ min-height: 0 !important;
     position: relative;
     width: calc(100% - 28px);
     max-width: none;
-    min-height: 88px;
+    min-height: 92px;
     margin: 0 auto;
-    padding: 10px 14px;
-
-    display: grid;
-    grid-template-columns: minmax(300px, 1fr) auto auto;
+    padding: 12px 124px 12px 14px;
+    display: flex;
     align-items: center;
-    gap: 12px;
-
+    justify-content: flex-start;
     background: #fffaf2;
     border: 1px solid rgba(201, 154, 46, 0.22);
     border-radius: 18px;
@@ -9212,12 +9209,10 @@ min-height: 0 !important;
     overflow: visible;
   }
 
-  /* Full TF crest and company name. */
   #mainHeader .premium-brand {
-    grid-column: 1;
     display: flex;
     align-items: center;
-    gap: 13px;
+    gap: 12px;
     min-width: 0;
     margin: 0;
     color: #111111;
@@ -9226,23 +9221,21 @@ min-height: 0 !important;
 
   #mainHeader .premium-brand-mark {
     position: relative;
-    width: 54px;
-    height: 62px;
-    flex: 0 0 54px;
+    width: 50px;
+    height: 60px;
+    flex: 0 0 50px;
     margin: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     color: #c99a2e;
-    background: #fffaf2;
+    background: #ffffff;
     border: 2px solid #c99a2e;
-    border-radius: 10px 10px 22px 22px;
+    border-radius: 14px;
     clip-path: none;
-
+    box-shadow: none;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1;
   }
@@ -9250,25 +9243,18 @@ min-height: 0 !important;
   #mainHeader .premium-brand-mark::before {
     content: "♛";
     position: absolute;
-    top: -20px;
+    top: -18px;
     left: 50%;
     transform: translateX(-50%);
     color: #c99a2e;
     font-size: 21px;
     line-height: 1;
+    z-index: 2;
   }
 
   #mainHeader .premium-brand-mark::after {
-    content: "";
-    position: absolute;
-    bottom: -7px;
-    left: 50%;
-    width: 14px;
-    height: 14px;
-    background: #fffaf2;
-    border-right: 2px solid #c99a2e;
-    border-bottom: 2px solid #c99a2e;
-    transform: translateX(-50%) rotate(45deg);
+    display: none;
+    content: none;
   }
 
   #mainHeader .premium-brand-text {
@@ -9276,14 +9262,15 @@ min-height: 0 !important;
     flex-direction: column;
     justify-content: center;
     min-width: 0;
-    line-height: 1.08;
+    line-height: 1.05;
+    text-align: left;
   }
 
   #mainHeader .premium-brand-text strong {
     margin: 0;
     color: #111111;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 700;
     line-height: 1.02;
     text-transform: uppercase;
@@ -9315,11 +9302,15 @@ min-height: 0 !important;
 
   /* The old blue Réserver shortcut is not part of the tablet header. */
   #mainHeader .header-actions {
-    grid-column: 3;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin: 0;
+    z-index: 5;
   }
 
   #mainHeader .header-booking-btn {
@@ -9328,7 +9319,10 @@ min-height: 0 !important;
 
   /* All four languages sit immediately before the hamburger. */
   #mainHeader .desktop-language-switcher {
-    grid-column: 2;
+    position: absolute;
+    top: 50%;
+    right: 72px;
+    transform: translateY(-50%);
     display: flex !important;
     align-items: center;
     justify-content: flex-end;
@@ -9339,21 +9333,20 @@ min-height: 0 !important;
     background: transparent;
     border: 0;
     box-shadow: none;
+    z-index: 4;
   }
 
   #mainHeader .desktop-language-switcher .language-option {
     appearance: none;
-    width: 34px;
-    min-width: 34px;
-    height: 32px;
-    min-height: 32px;
+    width: 29px;
+    min-width: 29px;
+    height: 29px;
+    min-height: 29px;
     margin: 0;
-    padding: 5px;
-
+    padding: 4px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     background: #fffaf2;
     border: 1px solid rgba(201, 154, 46, 0.34);
     border-radius: 8px;
@@ -9367,8 +9360,8 @@ min-height: 0 !important;
 
   #mainHeader .desktop-language-switcher .language-option img {
     display: block;
-    width: 21px;
-    height: 14px;
+    width: 18px;
+    height: 12px;
     object-fit: cover;
     border-radius: 1px;
   }
@@ -9380,22 +9373,20 @@ min-height: 0 !important;
 
   #mainHeader .menu-btn {
     position: static;
-    width: 52px;
-    min-width: 52px;
-    height: 48px;
+    width: 48px;
+    min-width: 48px;
+    height: 46px;
     margin: 0;
     padding: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     color: #111111;
     background: #fffaf2;
     border: 2px solid #c99a2e;
     border-radius: 12px;
     box-shadow: none;
-    font-size: 26px;
+    font-size: 24px;
     cursor: pointer;
   }
 
@@ -9403,21 +9394,18 @@ min-height: 0 !important;
   #mainHeader nav {
     position: absolute;
     top: calc(100% + 8px);
-    right: 0;
+    right: 14px;
     left: auto;
-
     display: block;
-    width: 300px;
-    max-width: calc(100vw - 28px);
+    width: 280px;
+    max-width: calc(100vw - 40px);
     height: auto;
     margin: 0;
     padding: 7px;
-
     background: #ffffff;
     border: 1px solid rgba(201, 154, 46, 0.30);
     border-radius: 14px;
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -9482,8 +9470,15 @@ min-height: 0 !important;
   #mainHeader nav .mobile-language-switcher {
     display: none;
   }
-}
 
+  /* Keep all tablet portrait crown icons gold. */
+  .why-premium-crown,
+  .why-premium-crown i,
+  .tarifs-crown,
+  .destinations-crown {
+    color: #d6a62c;
+  }
+}
 /* =========================================
    MOBILE LANDSCAPE HEADER
    Canonical layout for phone landscape only.
