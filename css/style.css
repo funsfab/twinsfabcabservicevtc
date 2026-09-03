@@ -9273,11 +9273,11 @@ min-height: 0 !important;
   }
 
   #mainHeader .menu-btn {
-    position: absolute !important;
-    top: 50% !important;
+    position: fixed !important;
+    top: 18px !important;
     right: 14px !important;
     left: auto !important;
-    transform: translateY(-50%) !important;
+    transform: none !important;
     width: 54px !important;
     min-width: 54px !important;
     height: 50px !important;
@@ -9286,7 +9286,17 @@ min-height: 0 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    z-index: 10 !important;
+    z-index: 100003 !important;
+  }
+
+  /* Keep the landscape dropdown attached to the viewport as well,
+     so the fixed hamburger remains usable from anywhere on the page. */
+  #mainHeader nav {
+    position: fixed !important;
+    top: 76px !important;
+    right: 14px !important;
+    left: auto !important;
+    z-index: 100002 !important;
   }
 
   #mainHeader nav .mobile-language-switcher {
