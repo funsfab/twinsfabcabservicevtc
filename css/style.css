@@ -9319,20 +9319,23 @@ min-height: 0 !important;
     top: 76px !important;
     right: 14px !important;
     left: auto !important;
-    padding: 8px !important;
+    padding: 6px !important;
+    max-height: calc(100dvh - 84px) !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain !important;
     z-index: 100002 !important;
   }
 
   /* Phone-landscape menu is deliberately compact so every destination,
      including Contact, remains comfortably tappable without scrolling. */
   #mainHeader nav ul {
-    gap: 1px !important;
+    gap: 0 !important;
   }
 
   #mainHeader nav a {
-    padding: 8px 12px !important;
+    padding: 5px 10px !important;
     font-size: 13px !important;
-    line-height: 1.15 !important;
+    line-height: 1.08 !important;
   }
 
   #mainHeader nav .mobile-language-switcher {
