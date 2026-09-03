@@ -10185,6 +10185,61 @@ min-height: 0 !important;
     padding-top: 20px;
   }
 
+  /* ==================================================
+     TABLET PORTRAIT — RESERVATION PHONE + PASSENGERS
+     Phone and passenger count share one 50/50 row.
+  ================================================== */
+
+  body.reservation-page .reservation-form {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 12px;
+    row-gap: 14px;
+  }
+
+  body.reservation-page .reservation-form > * {
+    grid-column: 1 / -1;
+  }
+
+  body.reservation-page .reservation-field-name {
+    grid-row: 1;
+  }
+
+  body.reservation-page .reservation-field-phone {
+    grid-column: 1;
+    grid-row: 2;
+    min-width: 0;
+  }
+
+  body.reservation-page .reservation-field-passengers {
+    grid-column: 2;
+    grid-row: 2;
+    min-width: 0;
+  }
+
+  body.reservation-page .reservation-field-phone .iti {
+    width: 100%;
+  }
+
+  body.reservation-page .reservation-field-passengers > i {
+    left: 14px;
+    font-size: 17px;
+  }
+
+  body.reservation-page .reservation-field-passengers select {
+    min-height: 58px;
+    padding-left: 43px;
+    padding-right: 24px;
+    font-size: 13px;
+  }
+
+  body.reservation-page .reservation-form > .reservation-field:not(.reservation-field-name):not(.reservation-field-phone):not(.reservation-field-passengers),
+  body.reservation-page .reservation-date-time-grid,
+  body.reservation-page .reservation-submit-button,
+  body.reservation-page .reservation-form-note {
+    grid-column: 1 / -1;
+  }
+
   /* Cross-page links such as reservation → Accueil must land with
      the tablet header still visible above the hero. */
   #accueil {
