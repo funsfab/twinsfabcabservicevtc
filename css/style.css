@@ -9319,7 +9319,20 @@ min-height: 0 !important;
     top: 76px !important;
     right: 14px !important;
     left: auto !important;
+    padding: 8px !important;
     z-index: 100002 !important;
+  }
+
+  /* Phone-landscape menu is deliberately compact so every destination,
+     including Contact, remains comfortably tappable without scrolling. */
+  #mainHeader nav ul {
+    gap: 1px !important;
+  }
+
+  #mainHeader nav a {
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+    line-height: 1.15 !important;
   }
 
   #mainHeader nav .mobile-language-switcher {
