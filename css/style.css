@@ -9189,10 +9189,28 @@ min-height: 0 !important;
   #mainHeader.premium-header {
     min-height: 0 !important;
     padding: 7px 10px !important;
+
+    /* In phone landscape the hamburger is fixed to the viewport.
+       Do not let header filter/containment turn it into a header-relative
+       fixed element that scrolls away with the header. */
+    transform: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    perspective: none !important;
+    contain: none !important;
+    will-change: auto !important;
   }
 
   #mainHeader .header-inner {
     position: relative !important;
+    transform: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    perspective: none !important;
+    contain: none !important;
+    will-change: auto !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -9266,6 +9284,11 @@ min-height: 0 !important;
 
   #mainHeader .header-actions {
     display: block !important;
+    transform: none !important;
+    filter: none !important;
+    perspective: none !important;
+    contain: none !important;
+    will-change: auto !important;
   }
 
   #mainHeader .header-booking-btn {
