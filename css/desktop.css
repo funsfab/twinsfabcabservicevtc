@@ -4043,4 +4043,21 @@ top: -130px !important;
     font-weight: 900 !important;
     line-height: 1 !important;
   }
+
+  /* Reservation page: tablet landscape uses the arrow that already sits
+     between the title and the reservation requirement text. The normal
+     post-hero arrow stays hidden in this viewing mode. */
+  .reservation-page .reservation-scroll-down--default {
+    display: none !important;
+  }
+
+  .reservation-page .reservation-scroll-down--landscape {
+    position: relative !important;
+    top: auto !important;
+    display: flex !important;
+    width: 48px !important;
+    height: 48px !important;
+    flex: 0 0 48px !important;
+    margin: 10px auto 10px !important;
+  }
 }
