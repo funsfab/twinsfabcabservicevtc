@@ -4044,6 +4044,16 @@ top: -130px !important;
     line-height: 1 !important;
   }
 
+  /* 8. Information footer TF logo crown */
+  .information-page .information-footer__brand .premium-brand-mark::after {
+    content: "\f521" !important;
+    color: #c99a2e !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-size: 18px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
   /* Reservation page: tablet landscape uses the arrow that already sits
      between the title and the reservation requirement text. The normal
      post-hero arrow stays hidden in this viewing mode. */
