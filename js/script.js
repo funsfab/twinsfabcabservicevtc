@@ -368,7 +368,7 @@ emailField.setCustomValidity("");
         }
 
 
-        /* Vérification du délai de 24 heures */
+        /* Vérification du délai de 12 heures */
         const departureDate = new Date(
           `${date}T${heure}`
         );
@@ -376,12 +376,12 @@ emailField.setCustomValidity("");
         const currentDate = new Date();
 
         const minimumDepartureDate = new Date(
-          currentDate.getTime() + 24 * 60 * 60 * 1000
+          currentDate.getTime() + 12 * 60 * 60 * 1000
         );
 
         if (departureDate < minimumDepartureDate) {
           alert(
-            "La réservation doit être effectuée au minimum 24 heures avant le départ."
+            "La réservation doit être effectuée au minimum 12 heures avant le départ."
           );
 
           return;

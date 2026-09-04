@@ -40,7 +40,7 @@ whyAvailabilityText: "Nous sommes disponibles à tout moment.",
 whyAvailabilityDetail1: "Trajets privés et professionnels",
 whyAvailabilityDetail2: "Transferts gares et aéroports",
 whyAvailabilityDetail3: "Longues distances en France et en Europe",
-whyAvailabilityDetail4: "Réservation minimum 24 heures avant le départ",
+whyAvailabilityDetail4: "Réservation minimum 12 heures avant le départ",
 
 whyPaymentTitle: "Paiement sécurisé",
 whyPaymentText: "Plusieurs moyens de paiement disponibles.",
@@ -194,7 +194,7 @@ tarifsBankTransfer: "Virement bancaire",
       // French
 tarifsBookNow: "Réserver maintenant",
       // French
-tarifsFooterNote: "Réservation requise minimum 24h avant le départ.",
+tarifsFooterNote: "Réservation requise minimum 12h avant le départ.",
 
 
       infoNavHome: "Accueil",
@@ -225,7 +225,7 @@ businessCardSubtitle: "Votre chauffeur privé à Lille",
 businessCardValues: "Confort • Ponctualité • Sérénité",
 businessCardJob: "Chauffeur VTC professionnel",
 businessCardLocation: "Lille - France",
-businessCardBooking: "Réservation minimum 24 h à l’avance.",
+businessCardBooking: "Réservation minimum 12 h à l’avance.",
 
 vehicleSlogan: "Voyagez autrement, voyagez mieux.",
       navHome: "ACCUEIL",
@@ -251,7 +251,7 @@ vehicleSlogan: "Voyagez autrement, voyagez mieux.",
 reservationHeroTitle1: "Réservez votre",
 reservationHeroTitle2: "chauffeur VTC",
 reservationHeroDescription1: "Demande de réservation minimum",
-reservationHeroDescription2: "24 heures avant le départ.",
+reservationHeroDescription2: "12 heures avant le départ.",
 reservationMinimumPrice: "Tarif minimum : 30 €",
 
       reservationFormTitle: "Votre demande de réservation",
@@ -370,7 +370,7 @@ airportDusseldorf: "Aéroport de Düsseldorf (DUS)",
 airportMonchengladbach: "Aéroport de Mönchengladbach (MGL)",
 
       infoContactAvailability: "Disponible 24h/24 et 7j/7",
-infoContactReservationNotice: "Réservation minimum 24 heures à l'avance.",
+infoContactReservationNotice: "Réservation minimum 12 heures à l'avance.",
 
       
       
@@ -415,7 +415,7 @@ whyAvailabilityText: "We are available at all times.",
 whyAvailabilityDetail1: "Private and business trips",
 whyAvailabilityDetail2: "Train station and airport transfers",
 whyAvailabilityDetail3: "Long-distance travel in France and Europe",
-whyAvailabilityDetail4: "Reservation at least 24 hours before departure",
+whyAvailabilityDetail4: "Reservation at least 12 hours before departure",
 
 whyPaymentTitle: "Secure payment",
 whyPaymentText: "Several payment methods available.",
@@ -571,7 +571,7 @@ tarifsBankTransfer: "Bank transfer",
       // English
 tarifsBookNow: "Book now",
       // English
-tarifsFooterNote: "Reservation required at least 24 hours before departure.",
+tarifsFooterNote: "Reservation required at least 12 hours before departure.",
 
 
 
@@ -604,7 +604,7 @@ businessCardSubtitle: "Your private driver in Lille",
 businessCardValues: "Comfort • Punctuality • Serenity",
 businessCardJob: "Professional VTC driver",
 businessCardLocation: "Lille - France",
-businessCardBooking: "Booking required at least 24 hours in advance.",
+businessCardBooking: "Booking required at least 12 hours in advance.",
 
 vehicleSlogan: "Travel differently, travel better.",
       navHome: "HOME",
@@ -630,7 +630,7 @@ reservationEyebrow: "RESERVATION",
 reservationHeroTitle1: "Book your",
 reservationHeroTitle2: "VTC driver",
 reservationHeroDescription1: "Reservation required at least",
-reservationHeroDescription2: "24 hours before departure.",
+reservationHeroDescription2: "12 hours before departure.",
 reservationMinimumPrice: "Minimum fare: €30",
 
       reservationFormTitle: "Your reservation request",
@@ -750,7 +750,7 @@ airportDusseldorf: "Düsseldorf Airport (DUS)",
 airportMonchengladbach: "Mönchengladbach Airport (MGL)",
 
       infoContactAvailability: "Available 24/7",
-infoContactReservationNotice: "Reservation required at least 24 hours in advance.",
+infoContactReservationNotice: "Reservation required at least 12 hours in advance.",
       
     },
 
@@ -912,7 +912,7 @@ whyAvailabilityText: "Estamos disponibles en todo momento.",
 whyAvailabilityDetail1: "Trayectos privados y profesionales",
 whyAvailabilityDetail2: "Traslados a estaciones y aeropuertos",
 whyAvailabilityDetail3: "Largas distancias en Francia y Europa",
-whyAvailabilityDetail4: "Reserva mínima 24 horas antes de la salida",
+whyAvailabilityDetail4: "Reserva mínima 12 horas antes de la salida",
 
 whyPaymentTitle: "Pago seguro",
 whyPaymentText: "Varios métodos de pago disponibles.",
@@ -948,7 +948,7 @@ tarifsBankTransfer: "Transferencia bancaria",
       // Spanish
 tarifsBookNow: "Reservar ahora",
       // Spanish
-tarifsFooterNote: "Reserva obligatoria al menos 24 horas antes de la salida.",
+tarifsFooterNote: "Reserva obligatoria al menos 12 horas antes de la salida.",
 
 
       infoNavHome: "Inicio",
@@ -979,7 +979,7 @@ businessCardSubtitle: "Su chófer privado en Lille",
 businessCardValues: "Confort • Puntualidad • Serenidad",
 businessCardJob: "Chófer VTC profesional",
 businessCardLocation: "Lille - Francia",
-businessCardBooking: "Reserva obligatoria con al menos 24 h de antelación.",
+businessCardBooking: "Reserva obligatoria con al menos 12 h de antelación.",
 
 vehicleSlogan: "Viaje de otra manera, viaje mejor.",
       navHome: "INICIO",
@@ -1005,7 +1005,7 @@ vehicleSlogan: "Viaje de otra manera, viaje mejor.",
 reservationHeroTitle1: "Reserve su",
 reservationHeroTitle2: "chófer VTC",
 reservationHeroDescription1: "Reserva obligatoria con al menos",
-reservationHeroDescription2: "24 horas de antelación.",
+reservationHeroDescription2: "12 horas de antelación.",
 reservationMinimumPrice: "Tarifa mínima: 30 €",
 
       reservationFormTitle: "Su solicitud de reserva",
@@ -1129,7 +1129,7 @@ airportMonchengladbach: "Aeropuerto de Mönchengladbach (MGL)",
 
 
       infoContactAvailability: "Disponible las 24 horas, los 7 días de la semana",
-infoContactReservationNotice: "Reserva requerida con al menos 24 horas de antelación.",
+infoContactReservationNotice: "Reserva requerida con al menos 12 horas de antelación.",
       
     },
 
@@ -1292,7 +1292,7 @@ whyAvailabilityText: "Wir sind jederzeit verfügbar.",
 whyAvailabilityDetail1: "Private und geschäftliche Fahrten",
 whyAvailabilityDetail2: "Transfers zu Bahnhöfen und Flughäfen",
 whyAvailabilityDetail3: "Langstreckenfahrten in Frankreich und Europa",
-whyAvailabilityDetail4: "Reservierung mindestens 24 Stunden vor Abfahrt",
+whyAvailabilityDetail4: "Reservierung mindestens 12 Stunden vor Abfahrt",
 
 whyPaymentTitle: "Sichere Zahlung",
 whyPaymentText: "Mehrere Zahlungsmethoden verfügbar.",
@@ -1329,7 +1329,7 @@ tarifsBankTransfer: "Banküberweisung",
       // German
 tarifsBookNow: "Jetzt buchen",
       // German
-tarifsFooterNote: "Reservierung mindestens 24 Stunden vor der Abfahrt erforderlich.",
+tarifsFooterNote: "Reservierung mindestens 12 Stunden vor der Abfahrt erforderlich.",
 
 
       infoNavHome: "Startseite",
@@ -1360,7 +1360,7 @@ businessCardSubtitle: "Ihr privater Chauffeur in Lille",
 businessCardValues: "Komfort • Pünktlichkeit • Gelassenheit",
 businessCardJob: "Professioneller VTC-Chauffeur",
 businessCardLocation: "Lille - Frankreich",
-businessCardBooking: "Reservierung mindestens 24 Stunden im Voraus erforderlich.",
+businessCardBooking: "Reservierung mindestens 12 Stunden im Voraus erforderlich.",
 
 vehicleSlogan: "Reisen Sie anders, reisen Sie besser.",
       navHome: "STARTSEITE",
@@ -1386,7 +1386,7 @@ reservationEyebrow: "RESERVIERUNG",
 reservationHeroTitle1: "Buchen Sie Ihren",
 reservationHeroTitle2: "VTC-Fahrer",
 reservationHeroDescription1: "Reservierung mindestens",
-reservationHeroDescription2: "24 Stunden vor der Abfahrt.",
+reservationHeroDescription2: "12 Stunden vor der Abfahrt.",
 reservationMinimumPrice: "Mindesttarif: 30 €",
 
       reservationFormTitle: "Ihre Reservierungsanfrage",
@@ -1507,7 +1507,7 @@ airportMonchengladbach: "Flughafen Mönchengladbach (MGL)",
 
 
       infoContactAvailability: "24 Stunden am Tag, 7 Tage die Woche verfügbar",
-infoContactReservationNotice: "Reservierung mindestens 24 Stunden im Voraus erforderlich.",
+infoContactReservationNotice: "Reservierung mindestens 12 Stunden im Voraus erforderlich.",
       
     }
   };
