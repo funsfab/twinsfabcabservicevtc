@@ -3962,3 +3962,85 @@ top: -130px !important;
     letter-spacing: -0.1px !important;
   }
 }
+
+/* ==========================================================
+   TABLET LANDSCAPE — APPROVED GOLD CROWN ARTWORK
+   Touch tablets only. Keep desktop and all portrait modes unchanged.
+========================================================== */
+@media screen and (orientation: landscape) and (min-width: 1024px) and (hover: none) and (pointer: coarse) {
+
+  /* 1. Header TF logo crown */
+  #mainHeader.premium-header .premium-brand-mark::after {
+    content: "\f521" !important;
+    color: #c99a2e !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
+  /* 2. VTC Experience heading crown */
+  #vehicule .vehicle-experience-heading::before {
+    content: "\f521" !important;
+    color: #d6a62c !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
+  /* 3. Animated business-card TF logo crown */
+  #vehicule .business-card-logo .premium-brand-mark::before {
+    content: "\f521" !important;
+    color: #d4a12f !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
+  /* 4. Why Choose Us crown */
+  section#services .why-premium-crown::before {
+    content: "\f521" !important;
+    color: #d4a12f !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
+  /* 5. Our Rates crown */
+  #tarifs .tarifs-crown {
+    font-size: 0 !important;
+  }
+
+  #tarifs .tarifs-crown::before {
+    content: "\f521" !important;
+    display: inline-block !important;
+    color: #d6a62c !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-size: 19px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
+  /* 6. Train Stations & Airports Served crown */
+  #destinations .destinations-crown {
+    font-size: 0 !important;
+  }
+
+  #destinations .destinations-crown::before {
+    content: "\f521" !important;
+    display: inline-block !important;
+    color: #d6a62c !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-size: 19px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
+  /* 7. Quick Contact TF logo crown */
+  #contact .luxury-contact__crest::before {
+    content: "\f521" !important;
+    color: #e4b532 !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+}
