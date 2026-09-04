@@ -4060,4 +4060,12 @@ top: -130px !important;
     flex: 0 0 48px !important;
     margin: 10px auto 10px !important;
   }
+
+  /* The normal arrow below the hero is hidden in tablet landscape, so its
+     former layout space must not be subtracted a second time. Keeping only
+     the intended overlap prevents the form card from covering the hero
+     description and minimum-fare badge. */
+  .reservation-page .reservation-form-section {
+    margin-top: -58px !important;
+  }
 }
