@@ -230,13 +230,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const reservationModalTitle = document.getElementById("reservationModalTitle");
   const reservationModalText1 = document.getElementById("reservationModalText1");
   const reservationModalText2 = document.getElementById("reservationModalText2");
-  const reservationSendFeedback = document.getElementById("reservationSendFeedback");
-  const reservationFeedbackTitle = document.getElementById("reservationFeedbackTitle");
-  const reservationFeedbackText = document.getElementById("reservationFeedbackText");
-  const reservationFeedbackClose = document.getElementById("reservationFeedbackClose");
+
+  const reservationFormSection = document.getElementById("reservationFormSection");
+  const reservationPostSendSection = document.getElementById("reservationPostSendSection");
+  const reservationPostSendCard = reservationPostSendSection
+    ? reservationPostSendSection.querySelector(".reservation-post-send-card")
+    : null;
+  const reservationPostSendIcon = document.getElementById("reservationPostSendIcon");
+  const reservationPostSendEyebrow = document.getElementById("reservationPostSendEyebrow");
+  const reservationPostSendTitle = document.getElementById("reservationPostSendTitle");
+  const reservationPostSendText = document.getElementById("reservationPostSendText");
+  const reservationPostSendActions = document.getElementById("reservationPostSendActions");
+  const reservationConfirmSent = document.getElementById("reservationConfirmSent");
+  const reservationReturnForm = document.getElementById("reservationReturnForm");
+  const reservationNewRequest = document.getElementById("reservationNewRequest");
 
   let reservationMessage = "";
-  let reservationFeedbackTimer = null;
+  let reservationContactChannel = "";
 
   function reservationUiText(key) {
     const lang = (document.documentElement.lang || "fr").toLowerCase();
@@ -250,10 +260,17 @@ document.addEventListener("DOMContentLoaded", function () {
         modalTitle: "Choisissez votre moyen de communication",
         modalText1: "Votre demande de réservation est prête.",
         modalText2: "Comment souhaitez-vous nous contacter ?",
-        feedbackTitle: "Demande préparée avec succès",
-        feedbackWhatsApp: "WhatsApp est ouvert. Envoyez le message préparé pour transmettre votre demande. La réservation reste soumise à notre confirmation.",
-        feedbackSms: "Votre application SMS est ouverte. Envoyez le message préparé pour transmettre votre demande. La réservation reste soumise à notre confirmation.",
-        feedbackEmail: "Votre application e-mail est ouverte. Envoyez le message préparé pour transmettre votre demande. La réservation reste soumise à notre confirmation."
+        postSendEyebrow: "Dernière étape",
+        postSendTitle: "Avez-vous envoyé votre demande ?",
+        postSendWhatsApp: "WhatsApp a été ouvert avec votre message préparé. Envoyez-le dans WhatsApp, puis revenez ici.",
+        postSendSms: "Votre application SMS a été ouverte avec votre message préparé. Envoyez-le, puis revenez ici.",
+        postSendEmail: "Votre application e-mail a été ouverte avec votre message préparé. Envoyez-le, puis revenez ici.",
+        postSendYes: "Oui, je l’ai envoyée",
+        postSendNo: "Non, revenir au formulaire",
+        postSendCompleteEyebrow: "Demande terminée",
+        postSendCompleteTitle: "Merci, votre demande est envoyée",
+        postSendCompleteText: "Nous traiterons votre demande dès que possible. Votre réservation devient définitive uniquement après confirmation de Twins Fab Cab Service VTC.",
+        postSendNew: "Faire une nouvelle demande"
       },
       en: {
         emailRequired: "Email address is required.",
@@ -264,10 +281,17 @@ document.addEventListener("DOMContentLoaded", function () {
         modalTitle: "Choose how to contact us",
         modalText1: "Your reservation request is ready.",
         modalText2: "How would you like to contact us?",
-        feedbackTitle: "Request prepared successfully",
-        feedbackWhatsApp: "WhatsApp has opened. Send the prepared message to submit your request. Your booking remains subject to our confirmation.",
-        feedbackSms: "Your SMS app has opened. Send the prepared message to submit your request. Your booking remains subject to our confirmation.",
-        feedbackEmail: "Your email app has opened. Send the prepared message to submit your request. Your booking remains subject to our confirmation."
+        postSendEyebrow: "Final step",
+        postSendTitle: "Did you send your request?",
+        postSendWhatsApp: "WhatsApp opened with your prepared message. Send it in WhatsApp, then return here.",
+        postSendSms: "Your SMS app opened with your prepared message. Send it, then return here.",
+        postSendEmail: "Your email app opened with your prepared message. Send it, then return here.",
+        postSendYes: "Yes, I sent it",
+        postSendNo: "No, return to the form",
+        postSendCompleteEyebrow: "Request complete",
+        postSendCompleteTitle: "Thank you, your request has been sent",
+        postSendCompleteText: "We will review your request as soon as possible. Your booking becomes final only after confirmation from Twins Fab Cab Service VTC.",
+        postSendNew: "Make a new request"
       },
       es: {
         emailRequired: "La dirección de correo electrónico es obligatoria.",
@@ -278,10 +302,17 @@ document.addEventListener("DOMContentLoaded", function () {
         modalTitle: "Elija cómo contactarnos",
         modalText1: "Su solicitud de reserva está lista.",
         modalText2: "¿Cómo desea ponerse en contacto con nosotros?",
-        feedbackTitle: "Solicitud preparada correctamente",
-        feedbackWhatsApp: "WhatsApp se ha abierto. Envíe el mensaje preparado para transmitir su solicitud. La reserva queda sujeta a nuestra confirmación.",
-        feedbackSms: "Su aplicación de SMS se ha abierto. Envíe el mensaje preparado para transmitir su solicitud. La reserva queda sujeta a nuestra confirmación.",
-        feedbackEmail: "Su aplicación de correo se ha abierto. Envíe el mensaje preparado para transmitir su solicitud. La reserva queda sujeta a nuestra confirmación."
+        postSendEyebrow: "Último paso",
+        postSendTitle: "¿Ha enviado su solicitud?",
+        postSendWhatsApp: "WhatsApp se abrió con su mensaje preparado. Envíelo en WhatsApp y luego vuelva aquí.",
+        postSendSms: "Su aplicación de SMS se abrió con su mensaje preparado. Envíelo y luego vuelva aquí.",
+        postSendEmail: "Su aplicación de correo se abrió con su mensaje preparado. Envíelo y luego vuelva aquí.",
+        postSendYes: "Sí, la he enviado",
+        postSendNo: "No, volver al formulario",
+        postSendCompleteEyebrow: "Solicitud terminada",
+        postSendCompleteTitle: "Gracias, su solicitud ha sido enviada",
+        postSendCompleteText: "Revisaremos su solicitud lo antes posible. La reserva solo será definitiva después de la confirmación de Twins Fab Cab Service VTC.",
+        postSendNew: "Hacer una nueva solicitud"
       },
       pt: {
         emailRequired: "O endereço de e-mail é obrigatório.",
@@ -292,10 +323,17 @@ document.addEventListener("DOMContentLoaded", function () {
         modalTitle: "Escolha como nos contactar",
         modalText1: "O seu pedido de reserva está pronto.",
         modalText2: "Como deseja contactar-nos?",
-        feedbackTitle: "Pedido preparado com sucesso",
-        feedbackWhatsApp: "O WhatsApp foi aberto. Envie a mensagem preparada para transmitir o seu pedido. A reserva fica sujeita à nossa confirmação.",
-        feedbackSms: "A aplicação de SMS foi aberta. Envie a mensagem preparada para transmitir o seu pedido. A reserva fica sujeita à nossa confirmação.",
-        feedbackEmail: "A aplicação de e-mail foi aberta. Envie a mensagem preparada para transmitir o seu pedido. A reserva fica sujeita à nossa confirmação."
+        postSendEyebrow: "Última etapa",
+        postSendTitle: "Enviou o seu pedido?",
+        postSendWhatsApp: "O WhatsApp foi aberto com a sua mensagem preparada. Envie-a no WhatsApp e depois volte aqui.",
+        postSendSms: "A aplicação de SMS foi aberta com a sua mensagem preparada. Envie-a e depois volte aqui.",
+        postSendEmail: "A aplicação de e-mail foi aberta com a sua mensagem preparada. Envie-a e depois volte aqui.",
+        postSendYes: "Sim, já enviei",
+        postSendNo: "Não, voltar ao formulário",
+        postSendCompleteEyebrow: "Pedido concluído",
+        postSendCompleteTitle: "Obrigado, o seu pedido foi enviado",
+        postSendCompleteText: "Analisaremos o seu pedido assim que possível. A reserva só se torna definitiva após confirmação da Twins Fab Cab Service VTC.",
+        postSendNew: "Fazer um novo pedido"
       },
       de: {
         emailRequired: "Die E-Mail-Adresse ist erforderlich.",
@@ -306,10 +344,17 @@ document.addEventListener("DOMContentLoaded", function () {
         modalTitle: "Wählen Sie Ihren Kontaktweg",
         modalText1: "Ihre Reservierungsanfrage ist bereit.",
         modalText2: "Wie möchten Sie uns kontaktieren?",
-        feedbackTitle: "Anfrage erfolgreich vorbereitet",
-        feedbackWhatsApp: "WhatsApp wurde geöffnet. Senden Sie die vorbereitete Nachricht, um Ihre Anfrage zu übermitteln. Die Buchung bleibt von unserer Bestätigung abhängig.",
-        feedbackSms: "Ihre SMS-App wurde geöffnet. Senden Sie die vorbereitete Nachricht, um Ihre Anfrage zu übermitteln. Die Buchung bleibt von unserer Bestätigung abhängig.",
-        feedbackEmail: "Ihre E-Mail-App wurde geöffnet. Senden Sie die vorbereitete Nachricht, um Ihre Anfrage zu übermitteln. Die Buchung bleibt von unserer Bestätigung abhängig."
+        postSendEyebrow: "Letzter Schritt",
+        postSendTitle: "Haben Sie Ihre Anfrage gesendet?",
+        postSendWhatsApp: "WhatsApp wurde mit Ihrer vorbereiteten Nachricht geöffnet. Senden Sie sie in WhatsApp und kehren Sie anschließend hierher zurück.",
+        postSendSms: "Ihre SMS-App wurde mit Ihrer vorbereiteten Nachricht geöffnet. Senden Sie sie und kehren Sie anschließend hierher zurück.",
+        postSendEmail: "Ihre E-Mail-App wurde mit Ihrer vorbereiteten Nachricht geöffnet. Senden Sie sie und kehren Sie anschließend hierher zurück.",
+        postSendYes: "Ja, ich habe sie gesendet",
+        postSendNo: "Nein, zurück zum Formular",
+        postSendCompleteEyebrow: "Anfrage abgeschlossen",
+        postSendCompleteTitle: "Vielen Dank, Ihre Anfrage wurde gesendet",
+        postSendCompleteText: "Wir prüfen Ihre Anfrage so schnell wie möglich. Die Buchung ist erst nach Bestätigung durch Twins Fab Cab Service VTC verbindlich.",
+        postSendNew: "Neue Anfrage erstellen"
       }
     };
     return (messages[lang] || messages.fr)[key];
@@ -570,7 +615,7 @@ Le tarif définitif sera communiqué après étude de la demande.`;
         );
 
         closeReservationModal();
-        showReservationFeedback("whatsapp");
+        showPostSendQuestion("whatsapp");
       }
     );
   }
@@ -591,7 +636,7 @@ Le tarif définitif sera communiqué après étude de la demande.`;
           `?body=${encodeURIComponent(reservationMessage)}`;
 
         closeReservationModal();
-        showReservationFeedback("sms");
+        showPostSendQuestion("sms");
         window.location.href = smsUrl;
       }
     );
@@ -619,7 +664,7 @@ Le tarif définitif sera communiqué après étude de la demande.`;
           `&body=${encodeURIComponent(reservationMessage)}`;
 
         closeReservationModal();
-        showReservationFeedback("email");
+        showPostSendQuestion("email");
         window.location.href = emailUrl;
       }
     );
@@ -650,29 +695,92 @@ Le tarif définitif sera communiqué après étude de la demande.`;
   }
 
 
-  function showReservationFeedback(channel) {
-    if (!reservationSendFeedback) return;
+  function showPostSendQuestion(channel) {
+    if (!reservationPostSendSection || !reservationFormSection) return;
 
-    const messageKey = channel === "whatsapp" ? "feedbackWhatsApp" : channel === "sms" ? "feedbackSms" : "feedbackEmail";
+    reservationContactChannel = channel;
 
-    if (reservationFeedbackTitle) reservationFeedbackTitle.textContent = reservationUiText("feedbackTitle");
-    if (reservationFeedbackText) reservationFeedbackText.textContent = reservationUiText(messageKey);
+    const textKey =
+      channel === "whatsapp"
+        ? "postSendWhatsApp"
+        : channel === "sms"
+          ? "postSendSms"
+          : "postSendEmail";
 
-    reservationSendFeedback.classList.add("show");
-    reservationSendFeedback.setAttribute("aria-hidden", "false");
+    if (reservationPostSendCard) reservationPostSendCard.classList.remove("is-complete");
+    if (reservationPostSendIcon) reservationPostSendIcon.innerHTML = '<i class="fa-regular fa-paper-plane"></i>';
+    if (reservationPostSendEyebrow) reservationPostSendEyebrow.textContent = reservationUiText("postSendEyebrow");
+    if (reservationPostSendTitle) reservationPostSendTitle.textContent = reservationUiText("postSendTitle");
+    if (reservationPostSendText) reservationPostSendText.textContent = reservationUiText(textKey);
 
-    if (reservationFeedbackTimer) window.clearTimeout(reservationFeedbackTimer);
-    reservationFeedbackTimer = window.setTimeout(function () {
-      reservationSendFeedback.classList.remove("show");
-      reservationSendFeedback.setAttribute("aria-hidden", "true");
-    }, 9000);
+    if (reservationConfirmSent) {
+      const label = reservationConfirmSent.querySelector("span");
+      if (label) label.textContent = reservationUiText("postSendYes");
+    }
+
+    if (reservationReturnForm) {
+      const label = reservationReturnForm.querySelector("span");
+      if (label) label.textContent = reservationUiText("postSendNo");
+    }
+
+    if (reservationPostSendActions) reservationPostSendActions.hidden = false;
+    if (reservationNewRequest) reservationNewRequest.hidden = true;
+
+    reservationFormSection.hidden = true;
+    reservationPostSendSection.hidden = false;
+
+    window.setTimeout(function () {
+      reservationPostSendSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 60);
   }
 
-  if (reservationFeedbackClose) {
-    reservationFeedbackClose.addEventListener("click", function () {
-      if (!reservationSendFeedback) return;
-      reservationSendFeedback.classList.remove("show");
-      reservationSendFeedback.setAttribute("aria-hidden", "true");
+  function showCompletedRequestState() {
+    if (!reservationPostSendSection) return;
+
+    if (reservationPostSendCard) reservationPostSendCard.classList.add("is-complete");
+    if (reservationPostSendIcon) reservationPostSendIcon.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+    if (reservationPostSendEyebrow) reservationPostSendEyebrow.textContent = reservationUiText("postSendCompleteEyebrow");
+    if (reservationPostSendTitle) reservationPostSendTitle.textContent = reservationUiText("postSendCompleteTitle");
+    if (reservationPostSendText) reservationPostSendText.textContent = reservationUiText("postSendCompleteText");
+    if (reservationPostSendActions) reservationPostSendActions.hidden = true;
+
+    if (reservationNewRequest) {
+      reservationNewRequest.hidden = false;
+      const label = reservationNewRequest.querySelector("span");
+      if (label) label.textContent = reservationUiText("postSendNew");
+    }
+
+    if (reservationForm) reservationForm.reset();
+    reservationMessage = "";
+    reservationContactChannel = "";
+  }
+
+  function returnToReservationForm(resetForm) {
+    if (!reservationPostSendSection || !reservationFormSection) return;
+
+    if (resetForm && reservationForm) reservationForm.reset();
+
+    reservationPostSendSection.hidden = true;
+    reservationFormSection.hidden = false;
+
+    window.setTimeout(function () {
+      reservationFormSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 60);
+  }
+
+  if (reservationConfirmSent) {
+    reservationConfirmSent.addEventListener("click", showCompletedRequestState);
+  }
+
+  if (reservationReturnForm) {
+    reservationReturnForm.addEventListener("click", function () {
+      returnToReservationForm(false);
+    });
+  }
+
+  if (reservationNewRequest) {
+    reservationNewRequest.addEventListener("click", function () {
+      returnToReservationForm(true);
     });
   }
 
