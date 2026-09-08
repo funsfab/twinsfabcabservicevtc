@@ -1801,6 +1801,10 @@ section#services .why-premium-arrow {
     font-size: 13px !important;
   }
 
+  #tarifs .tarif-service-price.tarif-service-tag i { font-size: 14px !important; }
+  #tarifs .tarif-service-price.tarif-service-tag strong { font-size: 11px !important; line-height: 1.1 !important; }
+  #tarifs .tarif-service-price.tarif-service-tag span { font-size: 7px !important; line-height: 1.1 !important; }
+
 
   /* ===== €30 MINIMUM CARD ===== */
 
@@ -3358,8 +3362,8 @@ font-size: 14px !important;
   width: 48px !important;
   height: 48px !important;
 
-  margin: 24px auto 20px !important;
-top: -130px !important;
+  margin: 16px auto 14px !important;
+  top: auto !important;
    }
 
    .reservation-page .reservation-form-card {
@@ -4083,22 +4087,7 @@ top: -130px !important;
     line-height: 1 !important;
   }
 
-  /* Reservation page: tablet landscape uses the arrow that already sits
-     between the title and the reservation requirement text. The normal
-     post-hero arrow stays hidden in this viewing mode. */
-  .reservation-page .reservation-scroll-down--default {
-    display: none !important;
-  }
-
-  .reservation-page .reservation-scroll-down--landscape {
-    position: relative !important;
-    top: auto !important;
-    display: flex !important;
-    width: 48px !important;
-    height: 48px !important;
-    flex: 0 0 48px !important;
-    margin: 10px auto 10px !important;
-  }
+  /* Tablet landscape uses the same single in-hero reservation arrow. */
 
   /* The normal arrow below the hero is hidden in tablet landscape, so its
      former layout space must not be subtracted a second time. Keeping only

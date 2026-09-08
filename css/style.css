@@ -5839,6 +5839,34 @@ section,
   text-transform: uppercase;
 }
 
+/* Category tags replace the repeated €30 figures on the three service rows. */
+.tarif-service-price.tarif-service-tag {
+  gap: 3px;
+}
+
+.tarif-service-price.tarif-service-tag i {
+  margin-bottom: 2px;
+  color: #f1c64e;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.tarif-service-price.tarif-service-tag strong {
+  margin-top: 0;
+  max-width: 100%;
+  color: #f1c64e;
+  font-size: 14px;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.tarif-service-price.tarif-service-tag span {
+  margin-top: 1px;
+  max-width: 100%;
+  font-size: 9px;
+  line-height: 1.15;
+}
+
 /* ---------- MINIMUM FARE CARD ---------- */
 
 .tarif-minimum-card {
@@ -6140,6 +6168,18 @@ section,
 
   .tarif-service-price .tarif-quote {
     font-size: 12px;
+  }
+
+  .tarif-service-price.tarif-service-tag i {
+    font-size: 14px;
+  }
+
+  .tarif-service-price.tarif-service-tag strong {
+    font-size: 11px;
+  }
+
+  .tarif-service-price.tarif-service-tag span {
+    font-size: 7px;
   }
 
   .tarif-minimum-card {
@@ -10332,19 +10372,55 @@ min-height: 0 !important;
     --hero-scroll-bottom: auto;
   }
 
-  /* Reservation page: in phone landscape, show the down arrow directly
-     between the hero title and the reservation requirement text. */
-  .reservation-page .reservation-scroll-down--default {
-    display: none;
+  /* Reservation contact modal: keep all three choices visible in phone landscape. */
+  .reservation-page .reservation-modal {
+    padding: 8px;
   }
 
-  .reservation-page .reservation-scroll-down--landscape {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    flex: 0 0 44px;
-    margin: -8px auto 8px;
+  .reservation-page .reservation-modal-box {
+    width: min(94vw, 620px);
+    max-height: calc(100vh - 16px);
+    padding: 12px 14px 14px;
+    overflow-y: auto;
+    border-radius: 16px;
   }
+
+  .reservation-page .reservation-modal-icon {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 6px;
+    font-size: 17px;
+  }
+
+  .reservation-page .reservation-modal-box h2 {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .reservation-page .reservation-modal-box > p {
+    margin-bottom: 9px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .reservation-page .reservation-modal-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .reservation-page .reservation-modal-choice {
+    min-height: 44px;
+    padding: 8px 10px;
+    gap: 7px;
+    font-size: 13px;
+  }
+
+  .reservation-page .reservation-modal-close {
+    top: 6px;
+    right: 8px;
+    font-size: 28px;
+  }
+
 
   /* Reservation phone field: use the same full row width as name/email
      in phone landscape. The intl-tel-input wrapper is inline-sized by
@@ -11421,7 +11497,7 @@ color:#fff;
 }
 
 .reservation-hero-description {
-  margin: 22px 0 20px;
+  margin: 8px 0 20px;
   color: #3d4653;
   font-size: 16px;
   line-height: 1.55;
@@ -11900,6 +11976,48 @@ color:#fff;
 
 .reservation-modal-choice.email {
   color: #414851;
+}
+
+/* Contact order is the same in all five responsive modes. */
+#sendWhatsAppButton { display: flex !important; order: 1; }
+#sendSmsButton { display: flex !important; order: 2; }
+#sendEmailButton { display: flex !important; order: 3; }
+
+/* Feedback shown after a contact method is opened. */
+.reservation-send-feedback {
+  position: fixed;
+  z-index: 5000;
+  right: 20px;
+  bottom: 20px;
+  width: min(430px, calc(100vw - 40px));
+  padding: 15px 46px 15px 16px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 12px;
+  color: #20252d;
+  background: #fffdf8;
+  border: 1px solid rgba(199, 154, 42, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px);
+  transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+}
+.reservation-send-feedback.show { opacity: 1; visibility: visible; transform: translateY(0); }
+.reservation-send-feedback > i { margin-top: 2px; color: #18a957; font-size: 24px; }
+.reservation-send-feedback strong, .reservation-send-feedback span { display: block; }
+.reservation-send-feedback strong { margin-bottom: 3px; font-size: 15px; line-height: 1.25; }
+.reservation-send-feedback span { color: #505966; font-size: 13px; line-height: 1.4; }
+.reservation-feedback-close {
+  position: absolute; top: 7px; right: 9px; width: 32px; height: 32px; padding: 0;
+  border: 0; background: transparent; color: #303640; cursor: pointer; font-size: 25px; line-height: 1;
+}
+@media (max-width: 820px) {
+  .reservation-send-feedback { right: 12px; bottom: 12px; width: calc(100vw - 24px); padding: 13px 42px 13px 14px; }
+  .reservation-send-feedback strong { font-size: 14px; }
+  .reservation-send-feedback span { font-size: 12px; }
 }
 
 
@@ -13101,7 +13219,7 @@ svg {
 
 /* ===== RESERVATION DOWN ARROW ===== */
 
-#reservationForm {
+#reservationFormSection {
   scroll-margin-top: 20px;
 }
 
@@ -13133,10 +13251,11 @@ svg {
   font-size: 23px;
 }
 
-/* The extra arrow is used only for phone landscape.
-   Other responsive versions keep the original reservation arrow position. */
-.reservation-scroll-down--landscape {
-  display: none;
+/* One canonical reservation arrow is used in every responsive mode. */
+.reservation-scroll-down--single {
+  display: flex;
+  flex: 0 0 48px;
+  margin: 16px auto 14px;
 }
 
 @keyframes reservationArrowBounce {
