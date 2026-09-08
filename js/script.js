@@ -266,10 +266,13 @@ document.addEventListener("DOMContentLoaded", function () {
         postSendSms: "Votre application SMS a été ouverte avec votre message préparé. Envoyez-le, puis revenez ici.",
         postSendEmail: "Votre application e-mail a été ouverte avec votre message préparé. Envoyez-le, puis revenez ici.",
         postSendYes: "Oui, je l’ai envoyée",
-        postSendNo: "Non, revenir au formulaire",
+        postSendNo: "Non, je ne l’ai pas envoyée",
         postSendCompleteEyebrow: "Demande terminée",
         postSendCompleteTitle: "Merci, votre demande est envoyée",
         postSendCompleteText: "Nous traiterons votre demande dès que possible. Votre réservation devient définitive uniquement après confirmation de Twins Fab Cab Service VTC.",
+        postSendNotSentEyebrow: "Demande non envoyée",
+        postSendNotSentTitle: "Votre demande n’a pas été envoyée",
+        postSendNotSentText: "Aucun message n’a été confirmé comme envoyé. Pour recommencer, utilisez le bouton Faire une nouvelle demande.",
         postSendNew: "Faire une nouvelle demande"
       },
       en: {
@@ -287,10 +290,13 @@ document.addEventListener("DOMContentLoaded", function () {
         postSendSms: "Your SMS app opened with your prepared message. Send it, then return here.",
         postSendEmail: "Your email app opened with your prepared message. Send it, then return here.",
         postSendYes: "Yes, I sent it",
-        postSendNo: "No, return to the form",
+        postSendNo: "No, I didn’t send it",
         postSendCompleteEyebrow: "Request complete",
         postSendCompleteTitle: "Thank you, your request has been sent",
         postSendCompleteText: "We will review your request as soon as possible. Your booking becomes final only after confirmation from Twins Fab Cab Service VTC.",
+        postSendNotSentEyebrow: "Request not sent",
+        postSendNotSentTitle: "Your request was not sent",
+        postSendNotSentText: "No message has been confirmed as sent. To start again, use the Make a new request button.",
         postSendNew: "Make a new request"
       },
       es: {
@@ -308,10 +314,13 @@ document.addEventListener("DOMContentLoaded", function () {
         postSendSms: "Su aplicación de SMS se abrió con su mensaje preparado. Envíelo y luego vuelva aquí.",
         postSendEmail: "Su aplicación de correo se abrió con su mensaje preparado. Envíelo y luego vuelva aquí.",
         postSendYes: "Sí, la he enviado",
-        postSendNo: "No, volver al formulario",
+        postSendNo: "No, no la he enviado",
         postSendCompleteEyebrow: "Solicitud terminada",
         postSendCompleteTitle: "Gracias, su solicitud ha sido enviada",
         postSendCompleteText: "Revisaremos su solicitud lo antes posible. La reserva solo será definitiva después de la confirmación de Twins Fab Cab Service VTC.",
+        postSendNotSentEyebrow: "Solicitud no enviada",
+        postSendNotSentTitle: "Su solicitud no se ha enviado",
+        postSendNotSentText: "No se ha confirmado el envío de ningún mensaje. Para empezar de nuevo, utilice el botón Hacer una nueva solicitud.",
         postSendNew: "Hacer una nueva solicitud"
       },
       pt: {
@@ -329,10 +338,13 @@ document.addEventListener("DOMContentLoaded", function () {
         postSendSms: "A aplicação de SMS foi aberta com a sua mensagem preparada. Envie-a e depois volte aqui.",
         postSendEmail: "A aplicação de e-mail foi aberta com a sua mensagem preparada. Envie-a e depois volte aqui.",
         postSendYes: "Sim, já enviei",
-        postSendNo: "Não, voltar ao formulário",
+        postSendNo: "Não, não enviei",
         postSendCompleteEyebrow: "Pedido concluído",
         postSendCompleteTitle: "Obrigado, o seu pedido foi enviado",
         postSendCompleteText: "Analisaremos o seu pedido assim que possível. A reserva só se torna definitiva após confirmação da Twins Fab Cab Service VTC.",
+        postSendNotSentEyebrow: "Pedido não enviado",
+        postSendNotSentTitle: "O seu pedido não foi enviado",
+        postSendNotSentText: "Nenhuma mensagem foi confirmada como enviada. Para começar de novo, utilize o botão Fazer um novo pedido.",
         postSendNew: "Fazer um novo pedido"
       },
       de: {
@@ -350,10 +362,13 @@ document.addEventListener("DOMContentLoaded", function () {
         postSendSms: "Ihre SMS-App wurde mit Ihrer vorbereiteten Nachricht geöffnet. Senden Sie sie und kehren Sie anschließend hierher zurück.",
         postSendEmail: "Ihre E-Mail-App wurde mit Ihrer vorbereiteten Nachricht geöffnet. Senden Sie sie und kehren Sie anschließend hierher zurück.",
         postSendYes: "Ja, ich habe sie gesendet",
-        postSendNo: "Nein, zurück zum Formular",
+        postSendNo: "Nein, ich habe sie nicht gesendet",
         postSendCompleteEyebrow: "Anfrage abgeschlossen",
         postSendCompleteTitle: "Vielen Dank, Ihre Anfrage wurde gesendet",
         postSendCompleteText: "Wir prüfen Ihre Anfrage so schnell wie möglich. Die Buchung ist erst nach Bestätigung durch Twins Fab Cab Service VTC verbindlich.",
+        postSendNotSentEyebrow: "Anfrage nicht gesendet",
+        postSendNotSentTitle: "Ihre Anfrage wurde nicht gesendet",
+        postSendNotSentText: "Es wurde keine Nachricht als gesendet bestätigt. Um neu zu beginnen, verwenden Sie die Schaltfläche Neue Anfrage erstellen.",
         postSendNew: "Neue Anfrage erstellen"
       }
     };
@@ -387,6 +402,55 @@ document.addEventListener("DOMContentLoaded", function () {
   /* =========================
      ENVOI DU FORMULAIRE
   ========================== */
+
+  /* =========================
+     DATE / HEURE : OUVRIR LE SÉLECTEUR SUR TOUTE LA CARTE
+     + fermer le sélecteur d’heure après un choix complet
+  ========================== */
+  const timeInput = document.getElementById("heure");
+
+  function openNativePicker(input) {
+    if (!input || input.disabled) return;
+
+    input.focus({ preventScroll: true });
+
+    if (typeof input.showPicker === "function") {
+      try {
+        input.showPicker();
+        return;
+      } catch (error) {
+        /* Fallback ci-dessous pour les navigateurs qui refusent showPicker(). */
+      }
+    }
+
+    /* Sur les navigateurs sans showPicker(), le focus reste actif.
+       Un clic direct sur le champ continue d’utiliser le sélecteur natif. */
+  }
+
+  [dateInput, timeInput].forEach(function (input) {
+    if (!input) return;
+
+    const field = input.closest(".reservation-field");
+    if (!field) return;
+
+    field.classList.add("reservation-picker-field");
+    field.addEventListener("click", function () {
+      openNativePicker(input);
+    });
+  });
+
+  if (timeInput) {
+    function closeTimePickerAfterSelection() {
+      if (!timeInput.value) return;
+
+      window.setTimeout(function () {
+        timeInput.blur();
+      }, 80);
+    }
+
+    timeInput.addEventListener("input", closeTimePickerAfterSelection);
+    timeInput.addEventListener("change", closeTimePickerAfterSelection);
+  }
 
   if (reservationForm) {
     reservationForm.addEventListener(
@@ -724,6 +788,13 @@ Le tarif définitif sera communiqué après étude de la demande.`;
     }
 
     if (reservationPostSendActions) reservationPostSendActions.hidden = false;
+
+    [reservationConfirmSent, reservationReturnForm].forEach(function (button) {
+      if (!button) return;
+      button.disabled = false;
+      button.setAttribute("aria-disabled", "false");
+    });
+
     if (reservationNewRequest) reservationNewRequest.hidden = true;
 
     reservationFormSection.hidden = true;
@@ -734,6 +805,22 @@ Le tarif définitif sera communiqué après étude de la demande.`;
     }, 60);
   }
 
+  function lockPostSendDecisionButtons() {
+    [reservationConfirmSent, reservationReturnForm].forEach(function (button) {
+      if (!button) return;
+      button.disabled = true;
+      button.setAttribute("aria-disabled", "true");
+    });
+
+    if (reservationPostSendActions) reservationPostSendActions.hidden = false;
+
+    if (reservationNewRequest) {
+      reservationNewRequest.hidden = false;
+      const label = reservationNewRequest.querySelector("span");
+      if (label) label.textContent = reservationUiText("postSendNew");
+    }
+  }
+
   function showCompletedRequestState() {
     if (!reservationPostSendSection) return;
 
@@ -742,17 +829,24 @@ Le tarif définitif sera communiqué après étude de la demande.`;
     if (reservationPostSendEyebrow) reservationPostSendEyebrow.textContent = reservationUiText("postSendCompleteEyebrow");
     if (reservationPostSendTitle) reservationPostSendTitle.textContent = reservationUiText("postSendCompleteTitle");
     if (reservationPostSendText) reservationPostSendText.textContent = reservationUiText("postSendCompleteText");
-    if (reservationPostSendActions) reservationPostSendActions.hidden = true;
 
-    if (reservationNewRequest) {
-      reservationNewRequest.hidden = false;
-      const label = reservationNewRequest.querySelector("span");
-      if (label) label.textContent = reservationUiText("postSendNew");
-    }
+    lockPostSendDecisionButtons();
 
     if (reservationForm) reservationForm.reset();
     reservationMessage = "";
     reservationContactChannel = "";
+  }
+
+  function showNotSentRequestState() {
+    if (!reservationPostSendSection) return;
+
+    if (reservationPostSendCard) reservationPostSendCard.classList.remove("is-complete");
+    if (reservationPostSendIcon) reservationPostSendIcon.innerHTML = '<i class="fa-solid fa-circle-xmark"></i>';
+    if (reservationPostSendEyebrow) reservationPostSendEyebrow.textContent = reservationUiText("postSendNotSentEyebrow");
+    if (reservationPostSendTitle) reservationPostSendTitle.textContent = reservationUiText("postSendNotSentTitle");
+    if (reservationPostSendText) reservationPostSendText.textContent = reservationUiText("postSendNotSentText");
+
+    lockPostSendDecisionButtons();
   }
 
   function returnToReservationForm(resetForm) {
@@ -773,9 +867,7 @@ Le tarif définitif sera communiqué après étude de la demande.`;
   }
 
   if (reservationReturnForm) {
-    reservationReturnForm.addEventListener("click", function () {
-      returnToReservationForm(false);
-    });
+    reservationReturnForm.addEventListener("click", showNotSentRequestState);
   }
 
   if (reservationNewRequest) {
