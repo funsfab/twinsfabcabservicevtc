@@ -633,6 +633,49 @@ data-i18n-placeholder="reservationDestination"
 
 
     <!-- =========================
+         ÉTAPE APRÈS OUVERTURE DE L’APPLICATION
+         Le site ne peut pas savoir si le message a réellement été envoyé.
+         Le client confirme donc son envoi au retour sur la page.
+    ========================== -->
+    <section
+      class="reservation-post-send-section"
+      id="reservationPostSendSection"
+      hidden
+      aria-live="polite"
+    >
+      <div class="reservation-container">
+        <div class="reservation-post-send-card">
+          <div class="reservation-post-send-icon" id="reservationPostSendIcon" aria-hidden="true">
+            <i class="fa-regular fa-paper-plane"></i>
+          </div>
+
+          <p class="reservation-post-send-eyebrow" id="reservationPostSendEyebrow">Dernière étape</p>
+          <h2 id="reservationPostSendTitle">Avez-vous envoyé votre demande ?</h2>
+          <p id="reservationPostSendText">
+            Votre message préparé a été ouvert dans l’application choisie. Envoyez-le, puis revenez ici pour confirmer.
+          </p>
+
+          <div class="reservation-post-send-actions" id="reservationPostSendActions">
+            <button type="button" class="reservation-post-send-primary" id="reservationConfirmSent">
+              <i class="fa-solid fa-check"></i>
+              <span>Oui, je l’ai envoyée</span>
+            </button>
+            <button type="button" class="reservation-post-send-secondary" id="reservationReturnForm">
+              <i class="fa-solid fa-arrow-left"></i>
+              <span>Non, revenir au formulaire</span>
+            </button>
+          </div>
+
+          <button type="button" class="reservation-new-request" id="reservationNewRequest" hidden>
+            <i class="fa-regular fa-calendar-plus"></i>
+            <span>Faire une nouvelle demande</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
          CARTE DE CONTACT
     ========================== -->
     <section class="reservation-help-section">
@@ -765,7 +808,7 @@ data-i18n-placeholder="reservationDestination"
 
         <button
           type="button"
-          class="reservation-modal-choice whatsapp"
+          class="reservation-modal-choice reservation-modal-whatsapp"
           id="sendWhatsAppButton"
         >
           <i class="fa-brands fa-whatsapp"></i>
@@ -793,23 +836,6 @@ data-i18n-placeholder="reservationDestination"
     </div>
   </div>
 
-
-
-  <!-- Confirmation de l'ouverture du moyen de contact -->
-  <div
-    class="reservation-send-feedback"
-    id="reservationSendFeedback"
-    role="status"
-    aria-live="polite"
-    aria-hidden="true"
-  >
-    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-    <div>
-      <strong id="reservationFeedbackTitle">Demande préparée avec succès</strong>
-      <span id="reservationFeedbackText">Envoyez le message préparé pour transmettre votre demande.</span>
-    </div>
-    <button type="button" class="reservation-feedback-close" id="reservationFeedbackClose" aria-label="Fermer">×</button>
-  </div>
 
   <!-- =========================
        FOOTER
