@@ -227,7 +227,16 @@ document.addEventListener("DOMContentLoaded", function () {
     "sendEmailButton"
   );
 
+  const reservationModalTitle = document.getElementById("reservationModalTitle");
+  const reservationModalText1 = document.getElementById("reservationModalText1");
+  const reservationModalText2 = document.getElementById("reservationModalText2");
+  const reservationSendFeedback = document.getElementById("reservationSendFeedback");
+  const reservationFeedbackTitle = document.getElementById("reservationFeedbackTitle");
+  const reservationFeedbackText = document.getElementById("reservationFeedbackText");
+  const reservationFeedbackClose = document.getElementById("reservationFeedbackClose");
+
   let reservationMessage = "";
+  let reservationFeedbackTimer = null;
 
   function reservationUiText(key) {
     const lang = (document.documentElement.lang || "fr").toLowerCase();
@@ -237,35 +246,70 @@ document.addEventListener("DOMContentLoaded", function () {
         emailInvalid: "Entrez une adresse e-mail valide, par exemple nom@gmail.com.",
         requiredFields: "Veuillez remplir tous les champs obligatoires.",
         futureDate: "Veuillez choisir une date et une heure de départ dans le futur.",
-        shortNotice: "Demande à moins de 12 heures : contactez-nous pour vérifier la disponibilité. La prise en charge n’est pas garantie avant notre confirmation."
+        shortNotice: "Demande à moins de 12 heures : contactez-nous pour vérifier la disponibilité. La prise en charge n’est pas garantie avant notre confirmation.",
+        modalTitle: "Choisissez votre moyen de communication",
+        modalText1: "Votre demande de réservation est prête.",
+        modalText2: "Comment souhaitez-vous nous contacter ?",
+        feedbackTitle: "Demande préparée avec succès",
+        feedbackWhatsApp: "WhatsApp est ouvert. Envoyez le message préparé pour transmettre votre demande. La réservation reste soumise à notre confirmation.",
+        feedbackSms: "Votre application SMS est ouverte. Envoyez le message préparé pour transmettre votre demande. La réservation reste soumise à notre confirmation.",
+        feedbackEmail: "Votre application e-mail est ouverte. Envoyez le message préparé pour transmettre votre demande. La réservation reste soumise à notre confirmation."
       },
       en: {
         emailRequired: "Email address is required.",
         emailInvalid: "Enter a valid email address, for example name@gmail.com.",
         requiredFields: "Please complete all required fields.",
         futureDate: "Please choose a departure date and time in the future.",
-        shortNotice: "Request with less than 12 hours’ notice: please contact us to check availability. Service is not guaranteed until we confirm it."
+        shortNotice: "Request with less than 12 hours’ notice: please contact us to check availability. Service is not guaranteed until we confirm it.",
+        modalTitle: "Choose how to contact us",
+        modalText1: "Your reservation request is ready.",
+        modalText2: "How would you like to contact us?",
+        feedbackTitle: "Request prepared successfully",
+        feedbackWhatsApp: "WhatsApp has opened. Send the prepared message to submit your request. Your booking remains subject to our confirmation.",
+        feedbackSms: "Your SMS app has opened. Send the prepared message to submit your request. Your booking remains subject to our confirmation.",
+        feedbackEmail: "Your email app has opened. Send the prepared message to submit your request. Your booking remains subject to our confirmation."
       },
       es: {
         emailRequired: "La dirección de correo electrónico es obligatoria.",
         emailInvalid: "Introduzca una dirección de correo válida, por ejemplo nombre@gmail.com.",
         requiredFields: "Complete todos los campos obligatorios.",
         futureDate: "Elija una fecha y hora de salida futuras.",
-        shortNotice: "Solicitud con menos de 12 horas de antelación: contáctenos para consultar disponibilidad. El servicio no está garantizado hasta nuestra confirmación."
+        shortNotice: "Solicitud con menos de 12 horas de antelación: contáctenos para consultar disponibilidad. El servicio no está garantizado hasta nuestra confirmación.",
+        modalTitle: "Elija cómo contactarnos",
+        modalText1: "Su solicitud de reserva está lista.",
+        modalText2: "¿Cómo desea ponerse en contacto con nosotros?",
+        feedbackTitle: "Solicitud preparada correctamente",
+        feedbackWhatsApp: "WhatsApp se ha abierto. Envíe el mensaje preparado para transmitir su solicitud. La reserva queda sujeta a nuestra confirmación.",
+        feedbackSms: "Su aplicación de SMS se ha abierto. Envíe el mensaje preparado para transmitir su solicitud. La reserva queda sujeta a nuestra confirmación.",
+        feedbackEmail: "Su aplicación de correo se ha abierto. Envíe el mensaje preparado para transmitir su solicitud. La reserva queda sujeta a nuestra confirmación."
       },
       pt: {
         emailRequired: "O endereço de e-mail é obrigatório.",
         emailInvalid: "Introduza um endereço de e-mail válido, por exemplo nome@gmail.com.",
         requiredFields: "Preencha todos os campos obrigatórios.",
         futureDate: "Escolha uma data e hora de partida futuras.",
-        shortNotice: "Pedido com menos de 12 horas de antecedência: contacte-nos para verificar a disponibilidade. O serviço não é garantido até à nossa confirmação."
+        shortNotice: "Pedido com menos de 12 horas de antecedência: contacte-nos para verificar a disponibilidade. O serviço não é garantido até à nossa confirmação.",
+        modalTitle: "Escolha como nos contactar",
+        modalText1: "O seu pedido de reserva está pronto.",
+        modalText2: "Como deseja contactar-nos?",
+        feedbackTitle: "Pedido preparado com sucesso",
+        feedbackWhatsApp: "O WhatsApp foi aberto. Envie a mensagem preparada para transmitir o seu pedido. A reserva fica sujeita à nossa confirmação.",
+        feedbackSms: "A aplicação de SMS foi aberta. Envie a mensagem preparada para transmitir o seu pedido. A reserva fica sujeita à nossa confirmação.",
+        feedbackEmail: "A aplicação de e-mail foi aberta. Envie a mensagem preparada para transmitir o seu pedido. A reserva fica sujeita à nossa confirmação."
       },
       de: {
         emailRequired: "Die E-Mail-Adresse ist erforderlich.",
         emailInvalid: "Geben Sie eine gültige E-Mail-Adresse ein, zum Beispiel name@gmail.com.",
         requiredFields: "Bitte füllen Sie alle Pflichtfelder aus.",
         futureDate: "Bitte wählen Sie ein zukünftiges Abfahrtsdatum und eine zukünftige Uhrzeit.",
-        shortNotice: "Anfrage mit weniger als 12 Stunden Vorlauf: Kontaktieren Sie uns zur Verfügbarkeitsprüfung. Die Fahrt ist erst nach unserer Bestätigung garantiert."
+        shortNotice: "Anfrage mit weniger als 12 Stunden Vorlauf: Kontaktieren Sie uns zur Verfügbarkeitsprüfung. Die Fahrt ist erst nach unserer Bestätigung garantiert.",
+        modalTitle: "Wählen Sie Ihren Kontaktweg",
+        modalText1: "Ihre Reservierungsanfrage ist bereit.",
+        modalText2: "Wie möchten Sie uns kontaktieren?",
+        feedbackTitle: "Anfrage erfolgreich vorbereitet",
+        feedbackWhatsApp: "WhatsApp wurde geöffnet. Senden Sie die vorbereitete Nachricht, um Ihre Anfrage zu übermitteln. Die Buchung bleibt von unserer Bestätigung abhängig.",
+        feedbackSms: "Ihre SMS-App wurde geöffnet. Senden Sie die vorbereitete Nachricht, um Ihre Anfrage zu übermitteln. Die Buchung bleibt von unserer Bestätigung abhängig.",
+        feedbackEmail: "Ihre E-Mail-App wurde geöffnet. Senden Sie die vorbereitete Nachricht, um Ihre Anfrage zu übermitteln. Die Buchung bleibt von unserer Bestätigung abhängig."
       }
     };
     return (messages[lang] || messages.fr)[key];
@@ -526,6 +570,7 @@ Le tarif définitif sera communiqué après étude de la demande.`;
         );
 
         closeReservationModal();
+        showReservationFeedback("whatsapp");
       }
     );
   }
@@ -545,9 +590,9 @@ Le tarif définitif sera communiqué après étude de la demande.`;
           `sms:${phoneNumber}` +
           `?body=${encodeURIComponent(reservationMessage)}`;
 
-        window.location.href = smsUrl;
-
         closeReservationModal();
+        showReservationFeedback("sms");
+        window.location.href = smsUrl;
       }
     );
   }
@@ -573,9 +618,9 @@ Le tarif définitif sera communiqué après étude de la demande.`;
           `?subject=${encodeURIComponent(subject)}` +
           `&body=${encodeURIComponent(reservationMessage)}`;
 
-        window.location.href = emailUrl;
-
         closeReservationModal();
+        showReservationFeedback("email");
+        window.location.href = emailUrl;
       }
     );
   }
@@ -590,6 +635,10 @@ Le tarif définitif sera communiqué après étude de la demande.`;
       return;
     }
 
+    if (reservationModalTitle) reservationModalTitle.textContent = reservationUiText("modalTitle");
+    if (reservationModalText1) reservationModalText1.textContent = reservationUiText("modalText1");
+    if (reservationModalText2) reservationModalText2.textContent = reservationUiText("modalText2");
+
     contactModal.classList.add("open");
 
     contactModal.setAttribute(
@@ -600,6 +649,32 @@ Le tarif définitif sera communiqué après étude de la demande.`;
     document.body.style.overflow = "hidden";
   }
 
+
+  function showReservationFeedback(channel) {
+    if (!reservationSendFeedback) return;
+
+    const messageKey = channel === "whatsapp" ? "feedbackWhatsApp" : channel === "sms" ? "feedbackSms" : "feedbackEmail";
+
+    if (reservationFeedbackTitle) reservationFeedbackTitle.textContent = reservationUiText("feedbackTitle");
+    if (reservationFeedbackText) reservationFeedbackText.textContent = reservationUiText(messageKey);
+
+    reservationSendFeedback.classList.add("show");
+    reservationSendFeedback.setAttribute("aria-hidden", "false");
+
+    if (reservationFeedbackTimer) window.clearTimeout(reservationFeedbackTimer);
+    reservationFeedbackTimer = window.setTimeout(function () {
+      reservationSendFeedback.classList.remove("show");
+      reservationSendFeedback.setAttribute("aria-hidden", "true");
+    }, 9000);
+  }
+
+  if (reservationFeedbackClose) {
+    reservationFeedbackClose.addEventListener("click", function () {
+      if (!reservationSendFeedback) return;
+      reservationSendFeedback.classList.remove("show");
+      reservationSendFeedback.setAttribute("aria-hidden", "true");
+    });
+  }
 
   function closeReservationModal() {
     if (!contactModal) {
