@@ -11848,6 +11848,172 @@ color:#fff;
 
 
 /* =========================================================
+   RETOUR APRÈS WHATSAPP / SMS / E-MAIL
+   ========================================================= */
+
+.reservation-post-send-section {
+  padding: 26px 20px 34px;
+  background: #ffffff;
+}
+
+.reservation-post-send-section[hidden] {
+  display: none !important;
+}
+
+.reservation-post-send-card {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding: 42px 34px;
+  border: 1px solid rgba(201, 154, 46, 0.28);
+  border-radius: 24px;
+  background: linear-gradient(180deg, #fffdfa 0%, #fff8ea 100%);
+  box-shadow: 0 16px 42px rgba(32, 37, 44, 0.10);
+  text-align: center;
+}
+
+.reservation-post-send-icon {
+  display: flex;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 16px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f4c64f;
+  color: #171b23;
+  font-size: 28px;
+}
+
+.reservation-post-send-card.is-complete .reservation-post-send-icon {
+  background: #e9f8ef;
+  color: #15994a;
+}
+
+.reservation-post-send-eyebrow {
+  margin: 0 0 7px;
+  color: var(--reservation-gold-dark);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reservation-post-send-card h2 {
+  margin: 0 0 12px;
+  color: #171b23;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.2;
+}
+
+.reservation-post-send-card > p:not(.reservation-post-send-eyebrow) {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #58616d;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.reservation-post-send-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.reservation-post-send-primary,
+.reservation-post-send-secondary,
+.reservation-new-request {
+  min-height: 52px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.reservation-post-send-primary {
+  border: 1px solid #c99a2e;
+  background: linear-gradient(135deg, #d4a62a, #f0c64f);
+  color: #171b23;
+}
+
+.reservation-post-send-secondary {
+  border: 1px solid #d8dce1;
+  background: #ffffff;
+  color: #414851;
+}
+
+.reservation-new-request {
+  display: inline-flex;
+  margin: 24px auto 0;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid #c99a2e;
+  background: #ffffff;
+  color: var(--reservation-gold-dark);
+}
+
+.reservation-new-request[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .reservation-post-send-section {
+    padding: 18px 14px 28px;
+  }
+
+  .reservation-post-send-card {
+    padding: 30px 18px;
+    border-radius: 18px;
+  }
+
+  .reservation-post-send-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 950px) and (max-height: 500px) {
+  .reservation-post-send-section {
+    padding: 12px 14px 18px;
+  }
+
+  .reservation-post-send-card {
+    width: min(96%, 760px);
+    padding: 18px 22px;
+  }
+
+  .reservation-post-send-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    font-size: 21px;
+  }
+
+  .reservation-post-send-card h2 {
+    margin-bottom: 7px;
+    font-size: 22px;
+  }
+
+  .reservation-post-send-card > p:not(.reservation-post-send-eyebrow) {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .reservation-post-send-actions {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12px;
+  }
+
+  .reservation-post-send-primary,
+  .reservation-post-send-secondary,
+  .reservation-new-request {
+    min-height: 44px;
+    font-size: 13px;
+  }
+}
+
+/* =========================================================
    FOOTER
    ========================================================= */
 
@@ -11964,7 +12130,7 @@ color:#fff;
   font-weight: 800;
 }
 
-.reservation-modal-choice.whatsapp {
+.reservation-modal-choice.reservation-modal-whatsapp {
   border-color: #29b965;
   color: #15994a;
 }
@@ -11982,44 +12148,6 @@ color:#fff;
 #sendWhatsAppButton { display: flex !important; order: 1; }
 #sendSmsButton { display: flex !important; order: 2; }
 #sendEmailButton { display: flex !important; order: 3; }
-
-/* Feedback shown after a contact method is opened. */
-.reservation-send-feedback {
-  position: fixed;
-  z-index: 5000;
-  right: 20px;
-  bottom: 20px;
-  width: min(430px, calc(100vw - 40px));
-  padding: 15px 46px 15px 16px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: start;
-  gap: 12px;
-  color: #20252d;
-  background: #fffdf8;
-  border: 1px solid rgba(199, 154, 42, 0.5);
-  border-radius: 15px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(14px);
-  transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
-}
-.reservation-send-feedback.show { opacity: 1; visibility: visible; transform: translateY(0); }
-.reservation-send-feedback > i { margin-top: 2px; color: #18a957; font-size: 24px; }
-.reservation-send-feedback strong, .reservation-send-feedback span { display: block; }
-.reservation-send-feedback strong { margin-bottom: 3px; font-size: 15px; line-height: 1.25; }
-.reservation-send-feedback span { color: #505966; font-size: 13px; line-height: 1.4; }
-.reservation-feedback-close {
-  position: absolute; top: 7px; right: 9px; width: 32px; height: 32px; padding: 0;
-  border: 0; background: transparent; color: #303640; cursor: pointer; font-size: 25px; line-height: 1;
-}
-@media (max-width: 820px) {
-  .reservation-send-feedback { right: 12px; bottom: 12px; width: calc(100vw - 24px); padding: 13px 42px 13px 14px; }
-  .reservation-send-feedback strong { font-size: 14px; }
-  .reservation-send-feedback span { font-size: 12px; }
-}
-
 
 /* =========================================================
    VERSION MOBILE

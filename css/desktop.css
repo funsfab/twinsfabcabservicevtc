@@ -3232,7 +3232,7 @@ outline: none !important;
   }
 
    .reservation-page .reservation-form-section {
-  margin-top: -150px !important;
+  margin-top: 0 !important;
    }
 
    .reservation-page .reservation-form {
