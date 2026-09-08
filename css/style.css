@@ -11943,6 +11943,23 @@ color:#fff;
   color: #414851;
 }
 
+/* Une fois Oui ou Non choisi, la décision est verrouillée. */
+.reservation-post-send-primary:disabled,
+.reservation-post-send-secondary:disabled {
+  border-color: #d6d8dc;
+  background: #e7e8ea;
+  color: #8b9097;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 1;
+}
+
+/* La date et l’heure s’ouvrent depuis toute la carte, pas seulement l’icône native. */
+.reservation-picker-field,
+.reservation-picker-field input {
+  cursor: pointer;
+}
+
 .reservation-new-request {
   display: inline-flex;
   margin: 24px auto 0;
