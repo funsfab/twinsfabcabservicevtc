@@ -35,11 +35,11 @@
 
 
   <!-- CSS principal -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20260908c">
 
   <link
   rel="stylesheet"
-  href="css/desktop.css?v=5"
+  href="css/desktop.css?v=20260908c"
   media="screen and (min-width: 1024px)"
 >
 
@@ -53,8 +53,8 @@
   href="https://cdn.jsdelivr.net/npm/intl-tel-input@29.1.2/dist/css/intlTelInput.css"
 >
 
-  <script src="js/language.js"></script>
-  <script src="js/seo.js" defer></script>
+  <script src="js/language.js?v=20260908c"></script>
+  <script src="js/seo.js?v=20260908c" defer></script>
 </head>
 
 <body class="reservation-page">
@@ -280,7 +280,7 @@
 
       <div class="reservation-hero-content">
 
-        <p class="reservation-eyebrow" data-i18<p class="reservation-eyebrow" data-i18n="reservationEyebrow">
+        <p class="reservation-eyebrow" data-i18n="reservationEyebrow">
   - RÉSERVATION -
 </p>
 
@@ -290,8 +290,8 @@
 </h1>
 
 <a
-  href="#reservationForm"
-  class="reservation-scroll-down reservation-scroll-down--landscape"
+  href="#reservationFormSection"
+  class="reservation-scroll-down reservation-scroll-down--single"
   aria-label="Aller au formulaire de réservation"
 >
   <i class="fa-solid fa-chevron-down"></i>
@@ -316,19 +316,11 @@
       </div>
 
     </section>
-<a
-  href="#reservationForm"
-  class="reservation-scroll-down reservation-scroll-down--default"
-  aria-label="Aller au formulaire de réservation"
->
-  <i class="fa-solid fa-chevron-down"></i>
-</a>
-
     <!-- =========================
          FORMULAIRE
     ========================== -->
     <section
-  id="reservationForm"
+  id="reservationFormSection"
   class="reservation-form-section"
 >
 
@@ -677,6 +669,7 @@ data-i18n-placeholder="reservationDestination"
     target="_blank"
     rel="noopener noreferrer"
     class="reservation-contact-option reservation-whatsapp-option"
+  >
     <svg
   class="whatsapp-svg"
   viewBox="0 0 24 24"
@@ -763,9 +756,9 @@ data-i18n-placeholder="reservationDestination"
         Choisissez votre moyen de communication
       </h2>
 
-      <p>
-        Votre demande de réservation est prête.<br>
-        Comment souhaitez-vous nous contacter ?
+      <p id="reservationModalDescription">
+        <span id="reservationModalText1">Votre demande de réservation est prête.</span><br>
+        <span id="reservationModalText2">Comment souhaitez-vous nous contacter ?</span>
       </p>
 
       <div class="reservation-modal-options">
@@ -800,6 +793,24 @@ data-i18n-placeholder="reservationDestination"
     </div>
   </div>
 
+
+
+  <!-- Confirmation de l'ouverture du moyen de contact -->
+  <div
+    class="reservation-send-feedback"
+    id="reservationSendFeedback"
+    role="status"
+    aria-live="polite"
+    aria-hidden="true"
+  >
+    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+    <div>
+      <strong id="reservationFeedbackTitle">Demande préparée avec succès</strong>
+      <span id="reservationFeedbackText">Envoyez le message préparé pour transmettre votre demande.</span>
+    </div>
+    <button type="button" class="reservation-feedback-close" id="reservationFeedbackClose" aria-label="Fermer">×</button>
+  </div>
+
   <!-- =========================
        FOOTER
   ========================== -->
@@ -822,6 +833,6 @@ data-i18n-placeholder="reservationDestination"
 
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@29.1.2/dist/js/intlTelInput.min.js"></script>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js?v=20260908c"></script>
 </body>
 </html>
