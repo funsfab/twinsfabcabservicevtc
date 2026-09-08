@@ -2415,7 +2415,7 @@ section,
   margin: 0;
   color: #ffffff;
 
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.55;
 }
 
@@ -5196,7 +5196,7 @@ section,
   display: block;
 
   color: #ffffff;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
 }
@@ -7228,7 +7228,7 @@ section,
   max-width: 520px;
   margin: 18px auto 0;
   color: #dedede;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -7312,7 +7312,7 @@ section,
   margin-top: 18px;
   color: #e5b32c;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -7667,7 +7667,7 @@ section,
   max-width: 620px;
   margin: 18px auto 38px;
   color: #d7ad39;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.65;
   text-align: center;
@@ -8424,7 +8424,7 @@ transform:translateY(-50%) scale(1.08);
   align-items: center;
   gap: 16px;
   color: #eeeeee;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.4;
   text-decoration: none;
 }
@@ -11423,7 +11423,7 @@ color:#fff;
 .reservation-hero-description {
   margin: 22px 0 20px;
   color: #3d4653;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 1.55;
 }
 
@@ -11535,7 +11535,7 @@ color:#fff;
   background: #ffffff;
   color: #222934;
   font-family: inherit;
-  font-size: 17px;
+  font-size: 16px;
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
@@ -12003,7 +12003,7 @@ color:#fff;
 
  .reservation-hero-description{
     margin: 8px 0 12px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.45;
 }
 
@@ -12640,7 +12640,7 @@ button.luxury-contact__card{
     margin: 0;
 
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.55;
     text-align: center;
 
@@ -12669,7 +12669,7 @@ button.luxury-contact__card{
     border: none;
 
     font: inherit;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 30px;
     text-decoration: underline;
