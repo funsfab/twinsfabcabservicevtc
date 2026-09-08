@@ -229,6 +229,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let reservationMessage = "";
 
+  function reservationUiText(key) {
+    const lang = (document.documentElement.lang || "fr").toLowerCase();
+    const messages = {
+      fr: {
+        emailRequired: "L’adresse e-mail est obligatoire.",
+        emailInvalid: "Entrez une adresse e-mail valide, par exemple nom@gmail.com.",
+        requiredFields: "Veuillez remplir tous les champs obligatoires.",
+        futureDate: "Veuillez choisir une date et une heure de départ dans le futur.",
+        shortNotice: "Demande à moins de 12 heures : contactez-nous pour vérifier la disponibilité. La prise en charge n’est pas garantie avant notre confirmation."
+      },
+      en: {
+        emailRequired: "Email address is required.",
+        emailInvalid: "Enter a valid email address, for example name@gmail.com.",
+        requiredFields: "Please complete all required fields.",
+        futureDate: "Please choose a departure date and time in the future.",
+        shortNotice: "Request with less than 12 hours’ notice: please contact us to check availability. Service is not guaranteed until we confirm it."
+      },
+      es: {
+        emailRequired: "La dirección de correo electrónico es obligatoria.",
+        emailInvalid: "Introduzca una dirección de correo válida, por ejemplo nombre@gmail.com.",
+        requiredFields: "Complete todos los campos obligatorios.",
+        futureDate: "Elija una fecha y hora de salida futuras.",
+        shortNotice: "Solicitud con menos de 12 horas de antelación: contáctenos para consultar disponibilidad. El servicio no está garantizado hasta nuestra confirmación."
+      },
+      pt: {
+        emailRequired: "O endereço de e-mail é obrigatório.",
+        emailInvalid: "Introduza um endereço de e-mail válido, por exemplo nome@gmail.com.",
+        requiredFields: "Preencha todos os campos obrigatórios.",
+        futureDate: "Escolha uma data e hora de partida futuras.",
+        shortNotice: "Pedido com menos de 12 horas de antecedência: contacte-nos para verificar a disponibilidade. O serviço não é garantido até à nossa confirmação."
+      },
+      de: {
+        emailRequired: "Die E-Mail-Adresse ist erforderlich.",
+        emailInvalid: "Geben Sie eine gültige E-Mail-Adresse ein, zum Beispiel name@gmail.com.",
+        requiredFields: "Bitte füllen Sie alle Pflichtfelder aus.",
+        futureDate: "Bitte wählen Sie ein zukünftiges Abfahrtsdatum und eine zukünftige Uhrzeit.",
+        shortNotice: "Anfrage mit weniger als 12 Stunden Vorlauf: Kontaktieren Sie uns zur Verfügbarkeitsprüfung. Die Fahrt ist erst nach unserer Bestätigung garantiert."
+      }
+    };
+    return (messages[lang] || messages.fr)[key];
+  }
+
 
   /* =========================
      DATE MINIMUM
@@ -237,18 +279,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const dateInput = document.getElementById("date");
 
   if (dateInput) {
-    const tomorrow = new Date();
+    const today = new Date();
 
-    tomorrow.setDate(tomorrow.getDate() + 1);
-
-    const year = tomorrow.getFullYear();
+    const year = today.getFullYear();
 
     const month = String(
-      tomorrow.getMonth() + 1
+      today.getMonth() + 1
     ).padStart(2, "0");
 
     const day = String(
-      tomorrow.getDate()
+      today.getDate()
     ).padStart(2, "0");
 
     dateInput.min = `${year}-${month}-${day}`;
@@ -285,7 +325,7 @@ emailField.setCustomValidity("");
 
 if (email === "") {
   emailField.setCustomValidity(
-    "L’adresse e-mail est obligatoire."
+    reservationUiText("emailRequired")
   );
   emailField.reportValidity();
   emailField.focus();
@@ -297,7 +337,7 @@ const emailFormat =
 
 if (!emailFormat.test(email)) {
   emailField.setCustomValidity(
-    "Entrez une adresse e-mail valide, par exemple nom@gmail.com."
+    reservationUiText("emailInvalid")
   );
   emailField.reportValidity();
   emailField.focus();
@@ -361,38 +401,49 @@ emailField.setCustomValidity("");
           !passagers
         ) {
           alert(
-            "Veuillez remplir tous les champs obligatoires."
+            reservationUiText("requiredFields")
           );
 
           return;
         }
 
 
-        /* Vérification du délai de 12 heures */
+        /* Vérification de la date et gestion des demandes à moins de 12 heures */
         const departureDate = new Date(
           `${date}T${heure}`
         );
 
         const currentDate = new Date();
 
+        if (departureDate <= currentDate) {
+          alert(
+            reservationUiText("futureDate")
+          );
+          return;
+        }
+
         const minimumDepartureDate = new Date(
           currentDate.getTime() + 12 * 60 * 60 * 1000
         );
 
-        if (departureDate < minimumDepartureDate) {
-          alert(
-            "La réservation doit être effectuée au minimum 12 heures avant le départ."
-          );
+        const isShortNotice =
+          departureDate < minimumDepartureDate;
 
-          return;
+        if (isShortNotice) {
+          alert(
+            reservationUiText("shortNotice")
+          );
         }
 
 
         const formattedDate = formatReservationDate(date);
 
+        const requestHeading = isShortNotice
+          ? "DEMANDE DE DISPONIBILITÉ — MOINS DE 12H"
+          : "DEMANDE DE RÉSERVATION";
 
         reservationMessage =
-`DEMANDE DE RÉSERVATION
+`${requestHeading}
 
 Nom : ${nom}
 Téléphone : ${telephone}
@@ -412,6 +463,8 @@ Mode de paiement : ${paiement || "Non renseigné"}
 
 Informations complémentaires :
 ${message || "Aucune information complémentaire"}
+
+${isShortNotice ? "Demande à moins de 12h : sous réserve de disponibilité et de confirmation." : "Réservation conseillée au moins 12h à l’avance."}
 
 Tarif minimum : 30 €
 Le tarif définitif sera communiqué après étude de la demande.`;
@@ -508,10 +561,7 @@ Le tarif définitif sera communiqué après étude de la demande.`;
     sendEmailButton.addEventListener(
       "click",
       function () {
-        /*
-          Remplace l’adresse ci-dessous
-          par ton adresse e-mail professionnelle.
-        */
+        /* Adresse e-mail actuellement utilisée par l’entreprise. */
         const professionalEmail =
           "funsfab@gmail.com";
 
